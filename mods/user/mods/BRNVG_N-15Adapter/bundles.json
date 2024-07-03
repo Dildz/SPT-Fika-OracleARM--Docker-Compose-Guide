@@ -1,0 +1,24 @@
+{
+    "manifest": [
+         {
+            "key": "assets/content/items/equipment/customizable/gpnvg/nvg_l3_gpnvg-18_anvis.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "assets/content/items/equipment/nvg_pvs14/pvs14_textures.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "assets/content/items/equipment/customizable/pvs_14/nvg_pvs_14.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "assets/content/items/equipment/customizable/nvg_armasight_n-15/nvg_armasight_n-15.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "assets/content/items/equipment/customizable/nvg_alfa_pnv-10t/nvg_alfa_pnv-10t.bundle",
+            "dependencyKeys": []
+        }
+    ]
+}

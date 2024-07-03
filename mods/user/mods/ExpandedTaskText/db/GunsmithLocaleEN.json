@@ -1,0 +1,339 @@
+{
+    "5ac23c6186f7741247042bad": {
+        "QuestName": "Gunsmith Part 1",
+        "RequiredParts": [
+            "55d45f484bdc2d972f8b456d",
+            "56083a334bdc2dc8488b4571",
+            "5cc9c20cd7f00c001336c65d"
+        ]
+    },
+    "5ac2426c86f774138762edfe": {
+        "QuestName": "Gunsmith Part 2",
+        "RequiredParts": [
+            "57ffa9f4245977728561e844",
+            "5c87ca002e221600114cb150",
+            "55d482194bdc2d1d4e8b456b"
+        ]
+    },
+    "5ac2428686f77412450b42bf": {
+        "QuestName": "Gunsmith Part 3",
+        "RequiredParts": [
+            "5a351711c4a282000b1521a4",
+            "59c63b4486f7747afb151c1c",
+            "5cc9c20cd7f00c001336c65d",
+            "5926f34786f77469195bfe92",
+            "5926f2e086f7745aae644231",
+            "5926d33d86f77410de68ebc0"
+        ]
+    },
+    "639872f9decada40426d3447": {
+        "QuestName": "Gunsmith Part 4",
+        "RequiredParts": [
+            "587df583245977373c4f1129",
+            "6415d33eda439c6a97048b5b",
+            "5dff772da3651922b360bf91",
+            "5dff77c759400025ea5150cf",
+            "5afd7ded5acfc40017541f5e",
+            "5afd7e095acfc40017541f61",
+            "5947f92f86f77427344a76b1",
+            "55d4ae6c4bdc2d8b2f8b456e",
+            "593d490386f7745ee97a1555"
+        ]
+    },
+    "5ae3267986f7742a413592fe": {
+        "QuestName": "Gunsmith Part 5",
+        "RequiredParts": [
+            "5c0111ab0db834001966914d",
+            "58272d7f2459774f6311ddfd",
+            "5a788068c5856700137e4c8f",
+            "5b7be4895acfc400170e2dd5",
+            "5c87ca002e221600114cb150",
+            "5b7be47f5acfc400170e2dd2",
+            "5cc9c20cd7f00c001336c65d",
+            "5a78813bc5856700186c4abe"
+        ]
+    },
+    "5ae3270f86f77445ba41d4dd": {
+        "QuestName": "Gunsmith Part 6",
+        "RequiredParts": [
+            "59f8a37386f7747af3328f06",
+            "59bffc1f86f77435b128b872",
+            "59bffbb386f77435b379b9c2",
+            "5947f92f86f77427344a76b1",
+            "59d6272486f77466146386ff",
+            "57cff947245977638e6f2a19",
+            "5b7be4895acfc400170e2dd5",
+            "5d2c76ed48f03532f2136169",
+            "6477772ea8a38bb2050ed4db"
+        ]
+    },
+    "5ac244eb86f7741356335af1": {
+        "QuestName": "Gunsmith Part 7",
+        "RequiredParts": [
+            "544a37c44bdc2d25388b4567",
+            "59db7e1086f77448be30ddf3",
+            "5fbbaa86f9986c4cff3fe5f6",
+            "5a339805c4a2826c6e06d73d",
+            "5c78f2792e221600106f4683",
+            "55d35ee94bdc2d61338b4568",
+            "55d6190f4bdc2d87028b4567",
+            "56ea8d2fd2720b7c698b4570",
+            "651a8e529829226ceb67c319",
+            "5c7fb51d2e2216001219ce11"
+        ]
+    },
+    "5ae3277186f7745973054106": {
+        "QuestName": "Gunsmith Part 8",
+        "RequiredParts": [
+            "59ecc3dd86f7746dc827481c",
+            "59ecc28286f7746d7a68aa8c",
+            "5649ae4a4bdc2d1b2b8b4588",
+            "5649af884bdc2d1b2b8b4589",
+            "5efaf417aeb21837e749c7f2",
+            "5649ab884bdc2ded0b8b457f",
+            "5c1bc4812e22164bef5cfde7",
+            "5bed61680db834001d2c45ab",
+            "5a5f1ce64f39f90b401987bc"
+        ]
+    },
+    "639872fa9b4fb827b200d8e5": {
+        "QuestName": "Gunsmith Part 9",
+        "RequiredParts": [
+            "5c0009510db834001966907f",
+            "5c00076d0db834001d23ee1f",
+            "5c920e902e221644f31c3c99",
+            "5cc9c20cd7f00c001336c65d",
+            "5c6beec32e221601da3578f2",
+            "587de4282459771bca0ec90b"
+        ]
+    },
+    "5ae327c886f7745c7b3f2f3f": {
+        "QuestName": "Gunsmith Part 10",
+        "RequiredParts": [
+            "55d482194bdc2d1d4e8b456b",
+            "5cbda392ae92155f3c17c39f",
+            "5c87ca002e221600114cb150",
+            "5d2c76ed48f03532f2136169",
+            "5947f92f86f77427344a76b1",
+            "59bffc1f86f77435b128b872",
+            "59bffbb386f77435b379b9c2",
+            "5ac78eaf5acfc4001926317a",
+            "5b222d405acfc400153af4fe",
+            "6477772ea8a38bb2050ed4db"
+        ]
+    },
+    "639872fc93ae507d5858c3a6": {
+        "QuestName": "Gunsmith Part 11",
+        "RequiredParts": [
+            "5fbb978207e8a97d1f0902d3",
+            "5f6340d3ca442212f4047eb2",
+            "5a7ad2e851dfba0016153692",
+            "5fbbc383d5cb881a7363194a",
+            "5a32a064c4a28200741e22de",
+            "5fb655b748c711690e3a8d5a",
+            "5649be884bdc2d79388b4577",
+            "5fbbaa86f9986c4cff3fe5f6"
+        ]
+    },
+    "5b47799d86f7746c5d6a5fd8": {
+        "QuestName": "Gunsmith Part 12",
+        "RequiredParts": [
+            "5b07db875acfc40dc528a5f6",
+            "5b3a16655acfc40016387a2a",
+            "5b07dd285acfc4001754240d",
+            "64806bdd26c80811d408d37a"
+        ]
+    },
+    "5ac244c486f77413e12cf945": {
+        "QuestName": "Gunsmith Part 13",
+        "RequiredParts": [
+            "59bffc1f86f77435b128b872",
+            "59bffbb386f77435b379b9c2",
+            "5c0102b20db834001d23eebc",
+            "5c7fc87d2e221644f31c0298",
+            "5aa66be6e5b5b0214e506e97",
+            "5c86592b2e2216000e69e77c",
+            "5c1780312e221602b66cc189",
+            "5c17804b2e2216152006c02f",
+            "6113c3586c780c1e710c90bc"
+        ]
+    },
+    "639872fe8871e1272b10ccf6": {
+        "QuestName": "Gunsmith Part 14",
+        "RequiredParts": [
+            "55d4887d4bdc2d962f8b4570",
+            "5c6d10fa2e221600106f3f23",
+            "6269220d70b6c02e665f2635",
+            "5d15cf3bd7ad1a67e71518b2",
+            "5947eab886f77475961d96c5",
+            "5bb20d92d4351e00853263eb",
+            "5c7fb51d2e2216001219ce11",
+            "5ea17bbc09aa976f2e7a51cd",
+            "5b7be4895acfc400170e2dd5",
+            "5fce0cf655375d18a253eff0",
+            "5c06595c0db834001a66af6c",
+            "5c18b9192e2216398b5a8104",
+            "5bc09a30d4351e00367fb7c8",
+            "558022b54bdc2dac148b458d"
+        ]
+    },
+    "5ae3280386f7742a41359364": {
+        "QuestName": "Gunsmith Part 15",
+        "RequiredParts": [
+            "5a9eb32da2750c00171b3f9c",
+            "5a7c74b3e899ef0014332c29",
+            "544909bb4bdc2d6f028b4577",
+            "5a9e81fba2750c00164f6b11",
+            "5a69a2ed8dc32e000d46d1f1",
+            "57a3459f245977764a01f703"
+        ]
+    },
+    "5ac242ab86f77412464f68b4": {
+        "QuestName": "Gunsmith Part 16",
+        "RequiredParts": [
+            "5cc9c20cd7f00c001336c65d",
+            "5aa66be6e5b5b0214e506e97",
+            "5c86592b2e2216000e69e77c"
+        ]
+    },
+    "5b47749f86f7746c5d6a5fd4": {
+        "QuestName": "Gunsmith Part 17",
+        "RequiredParts": [
+            "5e21ca18e4d47f0da15e77dd",
+            "5947f92f86f77427344a76b1",
+            "5648b4534bdc2d3d1c8b4580",
+            "5649af884bdc2d1b2b8b4589",
+            "5beec8b20db834001961942a",
+            "5c0548ae0db834001966a3c2",
+            "6130ca3fd92c473c77020dbd",
+            "588226ef24597767af46e39c",
+            "5b3a337e5acfc4704b4a19a0",
+            "5f6372e2865db925d54f3869",
+            "5f6339d53ada5942720e2dc3",
+            "5fbbaa86f9986c4cff3fe5f6",
+            "6477772ea8a38bb2050ed4db"
+        ]
+    },
+    "5b477b6f86f7747290681823": {
+        "QuestName": "Gunsmith Part 18",
+        "RequiredParts": [
+            "57cff947245977638e6f2a19",
+            "57cffb66245977632f391a99",
+            "5b0e794b5acfc47a877359b2",
+            "5b30ac585acfc433000eb79c",
+            "59d6272486f77466146386ff",
+            "5a9fbacda2750c00141e080f",
+            "5c07dd120db834001c39092d",
+            "5d2c76ed48f03532f2136169"
+        ]
+    },
+    "639873003693c63d86328f25": {
+        "QuestName": "Gunsmith Part 19",
+        "RequiredParts": [
+            "6516b129609aaf354b34b3a8",
+            "5b30ac585acfc433000eb79c",
+            "6197b229af1f5202c57a9bea",
+            "5dfcd0e547101c39625f66f9",
+            "5dfce88fe9dc277128008b2e",
+            "5947e98b86f774778f1448bc",
+            "5e01e9e273d8eb11426f5bc3",
+            "5e01ea19e9dc277128008c0b",
+            "57c69dd424597774c03b7bbc",
+            "57c5ac0824597754771e88a9"
+        ]
+    },
+    "5b477f7686f7744d1b23c4d2": {
+        "QuestName": "Gunsmith Part 20",
+        "RequiredParts": [
+            "5aaf8a0be5b5b00015693243",
+            "5addbf175acfc408fb13965b",
+            "5addbfbb5acfc400194dbcf7",
+            "5aa66be6e5b5b0214e506e97",
+            "5c86592b2e2216000e69e77c",
+            "58d399e486f77442e0016fe7",
+            "58d39d3d86f77445bb794ae7",
+            "57fd23e32459772d0805bcf1",
+            "5addbfef5acfc400185c2857"
+        ]
+    },
+    "63987301e11ec11ff5504036": {
+        "QuestName": "Gunsmith Part 21",
+        "RequiredParts": [
+            "5cde739cd7f00c0010373bd3",
+            "5a339805c4a2826c6e06d73d",
+            "5cde7afdd7f00c000d36b89d",
+            "5649be884bdc2d79388b4577",
+            "5fbbaa86f9986c4cff3fe5f6",
+            "5cde7b43d7f00c000d36b93e",
+            "5d1f819086f7744b355c219b",
+            "5cff9e84d7ad1a049e54ed55",
+            "61713cc4d8e3106d9806c109",
+            "62850c28da09541f43158cca"
+        ]
+    },
+    "5b47825886f77468074618d3": {
+        "QuestName": "Gunsmith Part 22",
+        "RequiredParts": [
+            "544a37c44bdc2d25388b4567",
+            "5b30bc285acfc47a8608615d",
+            "64806bdd26c80811d408d37a",
+            "5b2cfa535acfc432ff4db7a0",
+            "59db3a1d86f77429e05b4e92",
+            "55d35ee94bdc2d61338b4568",
+            "56ea8180d2720bf2698b456a",
+            "57dbb57e2459774673234890",
+            "56eabcd4d2720b66698b4574",
+            "5a1ead28fcdbcb001912fa9f",
+            "639c39807c1532d85b0162a9",
+            "5a1eacb3fcdbcb09800872be",
+            "591aef7986f774139d495f03"
+        ]
+    },
+    "64f83bb69878a0569d6ecfbe": {
+        "QuestName": "Gunsmith Part 23",
+        "RequiredParts": [
+            "5d00ef6dd7ad1a0940739b16",
+            "6065878ac9cf8012264142fd",
+            "5bbdb8bdd4351e4502011460",
+            "5f6340d3ca442212f4047eb2",
+            "5a800961159bd4315e3a1657",
+            "59f9d81586f7744c7506ee62",
+            "5c87a07c2e2216001219d4a2",
+            "6113cce3d92c473c770200c7",
+            "5c6175362e221600133e3b94"
+        ]
+    },
+    "64f83bcdde58fc437700d8fa": {
+        "QuestName": "Gunsmith Part 24",
+        "RequiredParts": [
+            "5d025cc1d7ad1a53845279ef",
+            "5df8f535bb49d91fb446d6b0",
+            "5d44069ca4b9361ebd26fc37",
+            "5d1b5e94d7ad1a2b865a96b0",
+            "5dfa3d2b0dee1b22f862eade",
+            "6269220d70b6c02e665f2635",
+            "5d2369418abbc306c62e0c80",
+            "5b7be4895acfc400170e2dd5",
+            "5b057b4f5acfc4771e1bd3e9",
+            "5649a2464bdc2d91118b45a8",
+            "577d128124597739d65d0e56",
+            "577d141e24597739c5255e01",
+            "5dfa3cd1b33c0951220c079b"
+        ]
+    },
+    "64f83bd983cfca080a362c82": {
+        "QuestName": "Gunsmith Part 25",
+        "RequiredParts": [
+            "6491c6f6ef312a876705191b",
+            "646371faf2404ab67905c8e9",
+            "6492ef63cfcf7c89e701abf1",
+            "6492d7847363b8a52206bc52",
+            "5947f92f86f77427344a76b1",
+            "5cf638cbd7f00c06595bc936",
+            "5cf639aad7f00c065703d455",
+            "5cc9c20cd7f00c001336c65d",
+            "5a0c59791526d8dba737bba7",
+            "5649ad3f4bdc2df8348b4585"
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Realistic-Thermals",
+    "author": "Borkel",
+    "license": "Attribution-ShareAlike 4.0 International",
+    "main": "package.js",
+    "version": "1.0.3",
+    "akiVersion": "3.8.*",
+    "isBundleMod": true,
+    "devdependencies": {}
+}

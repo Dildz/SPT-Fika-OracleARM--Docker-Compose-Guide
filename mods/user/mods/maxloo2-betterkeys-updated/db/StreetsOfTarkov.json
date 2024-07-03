@@ -1,0 +1,204 @@
+{
+  "_version": "1.0.0",
+  "Keys": {
+    "63a39667c9b3aa4b61683e98": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["PC", "Bag", "LooseLoot", "LooseVal"]
+    },
+    "63a71ed21031ac76fe773c7f": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["Jacket", "Drawer", "Safe", "PC"]
+    },
+    "63a399193901f439517cafb6": {
+      "Extract": [],
+      "Quest": ["639135534b15ca31f76bc317"],
+      "Loot": ["Drawer", "PC"]
+    },
+    "63a397d3af870e651d58e65b": {
+      "Extract": [],
+      "Quest": ["639135534b15ca31f76bc317"],
+      "Loot": ["Crate", "WeaponBox", "PC", "LooseLoot"]
+    },
+    "63a39c69af870e651d58e6aa": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["Drawer", "PC", "Safe", "Bag", "LooseLoot"]
+    },
+    "63a39ce4cd6db0635c1975fa": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["Drawer", "LooseLoot"]
+    },
+    "63a39e49cd6db0635c1975fc": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["Drawer"]
+    },
+    "63a39f6e64283b5e9c56b289": {
+      "Extract": [],
+      "Quest": ["639135c3744e452011470807"],
+      "Loot": ["LooseLoot", "LooseVal"]
+    },
+    "63a39fd1c9b3aa4b61683efb": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": []
+    },
+    "63a39fdf1e21260da44a0256": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["Grenade", "WeaponBox", "LooseLoot"]
+    },
+    "63a3a93f8a56922e82001f5d": {
+      "Extract": [],
+      "Quest": ["6391372c8ba6894d155e77d7"],
+      "Loot": ["WeaponBox", "LooseLoot", "LooseVal"]
+    },
+    "63a39cb1c9b3aa4b61683ee2": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["Jacket", "Medbag", "Bag", "LooseLoot"]
+    },
+    "63a39c7964283b5e9c56b280": {
+      "Extract": [],
+      "Quest": ["639135e8c115f907b14700aa"],
+      "Loot": ["PC", "Safe", "LooseLoot"]
+    },
+    "63a71e781031ac76fe773c7d": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["LooseVal"]
+    },
+    "63a71e922b25f7513905ca20": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["LooseLoot"]
+    },
+    "63a71e86b7f4570d3a293169": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["PC", "LooseLoot"]
+    },
+    "63a39f18c2d53c2c6839c1d3": {
+      "Extract": [],
+      "Quest": ["639dbaf17c898a131e1cffff"],
+      "Loot": ["LooseLoot"]
+    },
+    "63a39f08cd6db0635c197600": {
+      "Extract": [],
+      "Quest": ["639136fa9444fb141f4e6eee"],
+      "Loot": ["LooseLoot"]
+    },
+    "63a39fc0af870e651d58e6ae": {
+      "Extract": [],
+      "Quest": ["639135cd8ba6894d155e77cb"],
+      "Loot": ["LooseLoot"]
+    },
+    "63a39e1d234195315d4020bd": {
+      "Extract": [],
+      "Quest": [
+        "639135a7e705511c8a4a1b78",
+        "639135bbc115f907b14700a6",
+        "6396700fea19ac7ed845db32"
+      ],
+      "Loot": ["PC", "LooseLoot", "LooseVal"]
+    },
+    "63a71eb5b7f4570d3a29316b": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["LooseLoot"]
+    },
+    "6398fd8ad3de3849057f5128": {
+      "Extract": [],
+      "Quest": ["63966fbeea19ac7ed845db2e"],
+      "Loot": ["Crate", "Bag", "Toolbox", "LooseLoot", "LooseVal"]
+    },
+    "63a39dfe3901f439517cafba": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["Bag", "Jacket", "LooseVal"]
+    },
+    "63a39df18a56922e82001f25": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["Bag", "LooseLoot"]
+    },
+    "64ccc1d4a0f13c24561edf27": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["LooseLoot", "LooseVal"]
+    },
+    "64ccc1f4ff54fb38131acf27": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["LooseLoot", "LooseVal"]
+    },
+    "64ccc1fe088064307e14a6f7": {
+      "Extract": [],
+      "Quest": ["64f5e20652fc01298e2c61e3"],
+      "Loot": ["Safe", "PC", "Jacket", "Drawer", "Bag", "LooseLoot"]
+    },
+    "64ccc206793ca11c8f450a38": {
+      "Extract": [],
+      "Quest": ["64f6aafd67e11a7c6206e0d0"],
+      "Loot": ["LooseVal", "Drawer"]
+    },
+    "64ccc2111779ad6ba200a139": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["CashReg", "Safe"]
+    },
+    "64ccc246ff54fb38131acf29": {
+      "Extract": [],
+      "Quest": ["64f731ab83cfca080a361e42"],
+      "Loot": ["Drawer", "LooseLoot"]
+    },
+    "64ccc24de61ea448b507d34d": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["WeaponBox", "PC", "Crate", "Grenade", "WeaponRack"]
+    },
+    "64ccc25f95763a1ae376e447": {
+      "Extract": [],
+      "Quest": ["64ee99639878a0569d6ec8c9"],
+      "Loot": ["LooseVal", "LooseLoot"]
+    },
+    "64ccc268c41e91416064ebc7": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["LooseLoot"]
+    },
+    "6582dbe43a2e5248357dbe9a": {
+      "Extract": [],
+      "Quest": ["65733403eefc2c312a759ddb"],
+      "Loot": ["LooseVal", "Medbag", "PC"]
+    },
+    "6582dbf0b8d7830efc45016f": {
+      "Extract": [],
+      "Quest": ["6573382e557ff128bf3da536"],
+      "Loot": ["LooseVal", "Bag", "LooseLoot"]
+    },
+    "6582dc4b6ba9e979af6b79f4": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["LooseVal", "DeadScav", "Bag", "LooseLoot"]
+    },
+    "6582dc5740562727a654ebb1": {
+      "Extract": [],
+      "Quest": ["6573397ef3f8344c4575cd87"],
+      "Loot": ["LooseVal", "LooseLoot"]
+    },
+    "64d4b23dc1b37504b41ac2b6": {
+      "Extract": [],
+      "Quest": ["64ee9df4496db64f9b7a4432"],
+      "Loot": ["LooseVal", "LooseLoot"]
+    },
+    "64ccc1ec1779ad6ba200a137": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["LooseVal", "LooseLoot"]
+    }
+  }
+}

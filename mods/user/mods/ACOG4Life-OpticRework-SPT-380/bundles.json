@@ -1,0 +1,676 @@
+{
+	"manifest": [
+		{
+			"key": "assets/content/items/mods/scopes/scope_7mm_vomz_target_ring.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/systems/effects/collimator.bundle",
+				"cubemaps",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_25_4mm_vomz_pilad_4x32m.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_base_npz_1p78_1_2,8x24.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_34mm_s&b_pm_ii_3_12x50.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_30mm_razor_hd_gen_2_1_6x24.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_30mm_s&b_pm_ii_1_8x24.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_30mm_burris_fullfield_tac30_1_4x24.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/items/mods/scopes/scope_30mm_burris_fullfield_tac30_1_4x24_textures.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_30mm_burris_fullfield_tac30_1_4x24_textures.bundle",
+			"dependencyKeys": [
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_30mm_eotech_vudu_1_6x24.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_aimpoint_micro_h1_high_mark",
+			"dependencyKeys": [
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_30mm_march_tactical_3-24x42.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_30mm_leupold_mark4_lr_6,5_20x50.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_34mm_hensoldt_zf_4_16x56_ff.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_base_trijicon_acog_ta01nsn_4x32_mark",
+			"dependencyKeys": [
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_belomo_pk_06.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_monstrum_compact_prism_scope_2x32.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_dovetail_npz_1p29_4x.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_eotech_hhs_1.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"assets/content/items/mods/scopes/scope_all_eotech_exps3_gloss_nrm",
+				"assets/content/items/mods/scopes/scope_all_eotech_g33_gloss_nrm",
+				"assets/content/textures/holemanager/eotech_spec_mask.bundle",
+				"assets/content/items/mods/scopes/scope_all_eotech_hhs_1_mesh",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_eotech_hhs_1_tan.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"assets/content/items/mods/scopes/scope_all_eotech_exps3_gloss_nrm",
+				"assets/content/items/mods/scopes/scope_all_eotech_g33_gloss_nrm",
+				"assets/content/textures/holemanager/eotech_spec_mask.bundle",
+				"assets/content/items/mods/scopes/scope_all_eotech_hhs_1_tan_mesh",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_34mm_nightforce_atacr_7_35x56.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_dovetail_belomo_pso_1m2_4x24.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_dovetail_belomo_pso_1_4x24.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_dovetail_belomo_pso_1m2_1_4x24.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_base_trijicon_acog_ta11_3,5x35.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_base_trijicon_reap-ir.bundle",
+			"dependencyKeys": [
+				"assets/systems/effects/nightvision.bundle",
+				"assets/systems/effects/nightvision/mask_nv_textures",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"cubemaps",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_ekb_okp7.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/systems/effects/collimator.bundle",
+				"cubemaps",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_p90_fn_ring_sight_std.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/systems/effects/collimator.bundle",
+				"cubemaps",
+				"shaders",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_base_kmz_1p59_3_10x.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"shaders",
+				"assets/content/items/mods/scopes/scope_base_kmz_1p59_1p69_3_10x_textures",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_base_kmz_1p69_3_10x.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"shaders",
+				"assets/content/items/mods/scopes/scope_base_kmz_1p59_1p69_3_10x_textures",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_eotech_553.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/systems/effects/collimator.bundle",
+				"cubemaps",
+				"assets/content/textures/holemanager/eotech_spec_mask.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_valday_ps320.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_base_progress_pu_3,5x.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"cubemaps",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_dovetail_npz_nspum_3,5x.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"assets/paroxe/ultimatebloom/dirttexturesample/createdwithdirtgenerator2.bundle",
+				"assets/systems/effects/nightvision.bundle",
+				"assets/systems/effects/nightvision/mask_nv_textures",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_base_burris_fast_fire_3.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/content/items/mods/scopes/scope_base_burris_fast_fire_3_textures.bundle",
+				"assets/content/items/mods/scopes/scope_all_aimpoint_micro_h1_high_mark",
+				"assets/systems/effects/collimator.bundle",
+				"assets/content/textures/holemanager/eotech_spec_mask.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_sig_romeo_8t.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"cubemaps",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_walther_mrs.bundle",
+			"dependencyKeys": [
+				"assets/systems/effects/collimator.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"cubemaps",
+				"shaders"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_elcan_specter_dr_1-4_fde.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/content/items/mods/scopes/scope_all_elcan_specter_dr_textures.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/content/items/mods/scopes/scope_all_elcan_specter_dr_marks.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/items/mods/scopes/scope_all_elcan_specter_dr_1-4_mesh",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_elcan_specter_dr_1-4.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/content/items/mods/scopes/scope_all_elcan_specter_dr_textures.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/content/items/mods/scopes/scope_all_elcan_specter_dr_marks.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/items/mods/scopes/scope_all_elcan_specter_dr_1-4_mesh",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_base_trijicon_rmr.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_base_sig_romeo_4.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_trijicon_srs_02.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_base_aimpoint_micro_t1.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_base_leupold_deltapoint.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_base_aimpoint_micro_t1.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_base_aimpooint_comp_m4.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_base_trijicon_acog_ta01nsn_4x32_tan.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/content/items/mods/scopes/scope_base_trijicon_acog_ta01nsn_4x32_textures",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/content/items/mods/scopes/scope_base_trijicon_acog_ta01nsn_4x32_mark",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/items/mods/scopes/scope_base_trijicon_acog_ta01nsn_4x32_mesh",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_base_trijicon_acog_ta01nsn_4x32.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/content/items/mods/scopes/scope_base_trijicon_acog_ta01nsn_4x32_textures",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/content/items/mods/scopes/scope_base_trijicon_acog_ta01nsn_4x32_mark",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/items/mods/scopes/scope_base_trijicon_acog_ta01nsn_4x32_mesh",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_ncstar_advance_dual_optic_3_9x_42.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"assets/content/items/mods/scopes/scope_all_aimpoint_micro_h1_high_mark",
+				"assets/systems/effects/collimator.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_holosun_hs401g5.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"assets/content/textures/holemanager/glow_particle_bright.bundle",
+				"assets/systems/effects/multiflare/multiflare.bundle",
+				"assets/systems/effects/collimator.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/systems/effects/laserbeam/laser.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_valday_krechet.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/content/items/mods/scopes/scope_all_valday_krechet_mark.bundle",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_sig_bravo4_4x30.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_leupold_mark4_hamr.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_flir_rs32_225_9x_35_60hz.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"assets/content/textures/holemanager/round_spec_mask.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/systems/effects/nightvision/mask_nv_textures"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_base_primary_arms_compact_prism_scope_2,5x.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/systems/effects/opticsight/opticsightsmasks.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_elcan_specter_dr_marks.bundle",
+			"dependencyKeys": [
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_eotech_exps3.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"assets/content/items/mods/scopes/scope_all_eotech_exps3_tan_textures",
+				"cubemaps",
+				"assets/content/items/mods/scopes/scope_all_eotech_exps3_gloss_nrm",
+				"assets/content/items/mods/scopes/scope_all_eotech_xps3_textures.bundle",
+				"assets/content/textures/holemanager/eotech_spec_mask.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/items/mods/scopes/scope_all_eotech_exps3_mesh"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_eotech_xps3-2.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/content/items/mods/scopes/scope_all_eotech_xps3_textures.bundle",
+				"assets/content/textures/holemanager/eotech_spec_mask.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_eotech_xps3-0.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/content/items/mods/scopes/scope_all_eotech_xps3_textures.bundle",
+				"assets/content/textures/holemanager/eotech_spec_mask.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/scopes/scope_all_vortex_razor_amg_uh-1.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/content/textures/holemanager/eotech_spec_mask.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/recievers/reciever_ar15_hk_hk416a5_std.bundle",
+			"dependencyKeys": [
+				"cubemaps",
+				"assets/content/items/mods/recievers/reciever_ar15_hk_hk416a5_std_assets.bundle",
+				"assets/content/weapons/hk416/textures/client_assets.bundle",
+				"shaders",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/recievers/reciever_ar15_colt_m4a1_std.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/recievers/reciever_ar15_adar_2-15_std.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/recievers/reciever_ar15_lone_star_tx15_lightweight.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/recievers/reciever_ar15_noveske_gen3.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/recievers/reciever_ar15_vltor_mur-1s.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		}
+	]
+}

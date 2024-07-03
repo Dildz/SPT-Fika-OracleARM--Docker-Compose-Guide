@@ -1,0 +1,76 @@
+{
+  "SAINPersonality": "GigaChad",
+  "Name": "GigaChad",
+  "Description": "A true alpha threat. Hyper Aggressive and typically wearing high tier equipment.",
+  "Assignment": {
+    "MaximumOfThisTypePerRaid": 0.0,
+    "Enabled": true,
+    "CanBeRandomlyAssigned": true,
+    "RandomlyAssignedChance": 3.0,
+    "MinLevel": 0.0,
+    "MaxLevel": 100.0,
+    "PowerLevelScaleStart": 250.0,
+    "PowerLevelScaleEnd": 500.0,
+    "InverseScale": false,
+    "PowerLevelMin": 250.0,
+    "PowerLevelMax": 1000.0,
+    "MaxChanceIfMeetRequirements": 80.0,
+    "AllowedTypes": [
+      "sptUsec",
+      "sptBear"
+    ]
+  },
+  "Behavior": {
+    "General": {
+      "AggressionMultiplier": 1.0,
+      "KickOpenAllDoors": true,
+      "HoldGroundBaseTime": 1.25,
+      "HoldGroundMinRandom": 0.65,
+      "HoldGroundMaxRandom": 1.5
+    },
+    "Search": {
+      "WillSearchForEnemy": true,
+      "WillSearchFromAudio": true,
+      "WillChaseDistantGunshots": true,
+      "AudioStraightDistanceToIgnore": 125.0,
+      "AudioPathLengthDistanceToIgnore": 175.0,
+      "SearchBaseTime": 6.0,
+      "SearchWaitMultiplier": 3.0,
+      "SprintWhileSearchChance": 60.0,
+      "Sneaky": false,
+      "SneakySpeed": 1.0,
+      "SneakyPose": 1.0,
+      "SearchNoEnemySpeed": 1.0,
+      "SearchNoEnemyPose": 1.0,
+      "SearchHasEnemySpeed": 1.0,
+      "SearchHasEnemyPose": 1.0
+    },
+    "Rush": {
+      "CanRushEnemyReloadHeal": true,
+      "CanJumpCorners": true,
+      "JumpCornerChance": 40.0,
+      "CanBunnyHop": true,
+      "BunnyHopChance": 5.0
+    },
+    "Cover": {
+      "CanShiftCoverPosition": true,
+      "ShiftCoverTimeMultiplier": 0.5,
+      "MoveToCoverNoEnemySpeed": 1.0,
+      "MoveToCoverNoEnemyPose": 1.0,
+      "MoveToCoverHasEnemySpeed": 1.0,
+      "MoveToCoverHasEnemyPose": 1.0
+    },
+    "Talk": {
+      "CanTaunt": true,
+      "FrequentTaunt": true,
+      "ConstantTaunt": true,
+      "CanRespondToEnemyVoice": true,
+      "TauntFrequency": 8.0,
+      "TauntMaxDistance": 65.0,
+      "CanFakeDeathRare": true,
+      "FakeDeathChance": 3.0,
+      "CanBegForLife": false
+    }
+  },
+  "StatModifiers": {}
+}

@@ -1,0 +1,75 @@
+{
+  "_version": "1.0.0",
+  "Keys": {
+    "5ad5ccd186f774446d5706e9": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["PC", "LooseLoot"]
+    },
+    "5ad5cfbd86f7742c825d6104": {
+      "Extract": [],
+      "Quest": ["5ae4493d86f7744b8e15aa8f"],
+      "Loot": ["PC", "LooseLoot"]
+    },
+    "5ad5d20586f77449be26d877": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["LooseLoot"]
+    },
+    "5ad5d49886f77455f9731921": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["Crate", "WeaponBox", "LooseLoot"]
+    },
+    "5ad5d64486f774079b080af8": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["LooseLoot"]
+    },
+    "5ad5d7d286f77450166e0a89": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": []
+    },
+    "5addaffe86f77470b455f900": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["WeaponBox", "CashReg", "LooseCash", "LooseLoot"]
+    },
+    "5ad5db3786f7743568421cce": {
+      "Extract": [],
+      "Quest": ["5b478eca86f7744642012254"],
+      "Loot": ["Medbag", "Jacket", "Bag", "LooseLoot"]
+    },
+    "5ad7217186f7746744498875": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["CashReg"]
+    },
+    "5ad7242b86f7740a6a3abd43": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["CashReg"]
+    },
+    "5ad7247386f7747487619dc3": {
+      "Extract": [],
+      "Quest": ["5ae449d986f774453a54a7e1"],
+      "Loot": ["CashReg"]
+    },
+    "5e42c71586f7747f245e1343": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["Medbag", "LooseLoot"]
+    },
+    "5e42c83786f7742a021fdf3c": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["WeaponBox"]
+    },
+    "5e42c81886f7742a01529f57": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["WeaponBox"]
+    }
+  }
+}

@@ -1,7 +1,16 @@
 # fcpy.sh
 
 #!/bin/bash
-echo "FIKA Docker"
+echo "MODDED FIKA Docker"
+
+LOGFILE="/home/ubuntu/docker/logs/modded-fika.log"
+
+# Ensure the log directory exists
+mkdir -p /home/ubuntu/docker/logs
+chmod 777 /home/ubuntu/docker/logs
+
+# Clear the log file if it exists, or create it if it doesn't
+> $LOGFILE
 
 if [ -d "/opt/srv" ]; then
     start=$(date +%s)
@@ -23,11 +32,18 @@ fi
 if [ -e "/opt/server/delete_me" ]; then
     echo "Error: Safety file found. Exiting."
     echo "Please follow the instructions."
-     sleep 30
+    sleep 30
     exit 1
 fi
 
-cd /opt/server && ./Aki.Server.exe
+cd /opt/server
+
+# Start the server and log output to both stdout and the log file
+./Aki.Server.exe 2>&1 | tee -a $LOGFILE &
+AKI_SERVER_PID=$!
+
+# Wait for the server process to end
+wait $AKI_SERVER_PID
 
 echo "Exiting."
 exit 0

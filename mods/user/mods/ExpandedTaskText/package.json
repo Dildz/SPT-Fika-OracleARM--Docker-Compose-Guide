@@ -1,0 +1,23 @@
+{
+    "name": "Expanded Task Text",
+    "version": "1.5.1",
+    "main": "src/mod.js",
+    "license": "BY-NC-ND 4.0",
+    "author": "Dirtbikercj",
+    "akiVersion": "3.8.x",
+    "scripts": {
+        "setup": "npm i",
+        "build": "node ./packageBuild.ts"
+    },
+    "devDependencies": {
+        "@types/node": "20.11",
+        "@typescript-eslint/eslint-plugin": "7.2",
+        "@typescript-eslint/parser": "7.2",
+        "bestzip": "2.2.1",
+        "eslint": "8.30.0",
+        "fs-extra": "11.1.0",
+        "glob": "8.0.3",
+        "tsyringe": "4.8.0",
+        "typescript": "5.4"
+    }
+}

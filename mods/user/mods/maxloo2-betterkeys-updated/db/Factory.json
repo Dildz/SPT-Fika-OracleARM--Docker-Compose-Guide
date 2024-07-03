@@ -1,0 +1,20 @@
+{
+  "_version": "1.0.0",
+  "Keys": {
+    "5448ba0b4bdc2d02308b456c": {
+      "Extract": ["ZB-013", "Gate 0", "Med Tent Gate", "Cellars"],
+      "Quest": ["5967530a86f77462ba22226b"],
+      "Loot": ["Jacket", "LooseLoot"]
+    },
+    "57a349b2245977762b199ec7": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["LooseLoot"]
+    },
+    "593858c486f774253a24cb52": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["LooseLoot"]
+    }
+  }
+}
