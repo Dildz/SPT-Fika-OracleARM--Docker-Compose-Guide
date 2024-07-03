@@ -29,6 +29,7 @@ You can verify your Docker installation by running `docker --version`
 Create a new docker folder in the ubuntu home folder.
 
 ```
+cd ~
 mkdir docker
 cd docker
 ```
