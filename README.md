@@ -80,7 +80,7 @@ mkdir github-repos
 
 Then we clone the repository.
 
-you can do this with:
+You can do this with:
 
 ```
 git clone https://github.com/Dildz/SPT-Fika-modded--Docker-Guide.git
