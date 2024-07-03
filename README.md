@@ -253,9 +253,6 @@ cd server
 ```
 docker run --pull=never -v /home/ubuntu/docker/containers/spt-fika-modded/server:/opt/server -v /home/ubuntu/docker/logs:/home/ubuntu/docker/logs -p 6969:6969 -p 6970:6970 -p 6971:6971 -it --name modded-fika --log-opt max-size=10m --log-opt max-file=3 modded-fika
 ```
-```
-sudo /home/ubuntu/vscode/github-repos/SPT-Fika-modded--Docker-Guide/files/modscpy.sh
-```
 
 Then run the following command to change the permissions for the profiles and mods folders.
 
@@ -267,8 +264,17 @@ sudo chown -R ubuntu:ubuntu /home/ubuntu/docker/containers/spt-fika-modded/serve
 sudo chmod -R 775 /home/ubuntu/docker/containers/spt-fika-modded/server/user/mods
 ```
 
-Now you can restore any backed up profiles.
-Once profiles are restored, start the server with:
+Now you can restore any backed up profiles and the mods.
+To do that run the following commands:
+
+```
+cp -r /home/ubuntu/docker/containers/spt-fika-modded-backup/server/user/profiles/* /home/ubuntu/docker/containers/spt-fika-modded/server/user/profiles/
+```
+```
+cp -r /home/ubuntu/docker/containers/spt-fika-modded-backup/server/user/mods/* /home/ubuntu/docker/containers/spt-fika-modded/server/user/mods/
+```
+
+Once the mods & profiles are restored, start the server with:
 
 ```
 sudo /home/ubuntu/docker/containers/spt-fika-modded/fika/restart_fika.sh
