@@ -127,7 +127,6 @@ Then we will run the container with the following command:
 
 ```
 docker run --pull=never -v /home/ubuntu/docker/containers/spt-fika-modded/server:/opt/server -v /home/ubuntu/docker/logs:/home/ubuntu/docker/logs -p 6969:6969 -p 6970:6970 -p 6971:6971 -it --name modded-fika --log-opt max-size=10m --log-opt max-file=3 modded-fika
-
 ```
 
 ## Copying the "mod-pack"
