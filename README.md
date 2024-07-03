@@ -244,7 +244,7 @@ cd /home/ubuntu/docker/containers/spt-fika-modded/fika
 docker build --no-cache --label modded-fika -t modded-fika .
 ```
 
-And then we can start it back up with: [REMEMBER TO CHANGE PATHTOYOURSERVERFILE](https://gist.github.com/OnniSaarni/a3f840cef63335212ae085a3c6c10d5c#setting-up-the-docker-container)
+And then we can start it back up with:
 
 ```
 cd ..
