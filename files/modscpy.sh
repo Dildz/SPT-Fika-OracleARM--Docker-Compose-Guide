@@ -1,34 +1,31 @@
+# modscpy.sh
+
 #!/bin/bash
 echo "Copying mods to the server folder..."
 
 # Ensure the script is run with sudo
 if [ "$(id -u)" -ne 0 ]; then
-    echo "This script must be run as root. Use sudo to run it."
+    echo "This script must be run as sudo. To run it, use: sudo ./modscpy.sh"
     exit 1
 fi
 
 # Define the source and destination directories
-MODS_SOURCE="/home/ubuntu/github-repos/SPT-Fika-modded--Docker-Guide/mods/*"
-SERVER_DEST="/home/ubuntu/docker/containers/spt-fika-modded/server/"
-
-# Ensure the destination directory exists
-if [ ! -d "$SERVER_DEST" ]; then
-    echo "Destination directory does not exist. Creating it..."
-    mkdir -p "$SERVER_DEST"
-fi
+MODS_SOURCE="$HOME/github-repos/SPT-Fika-modded--Docker-Guide/mod-pack/*"
+SERVER_DEST="$HOME/docker/containers/spt-fika-modded/server/"
 
 # Copy the contents of the mods folder to the server directory
-cp -r $MODS_SOURCE $SERVER_DEST
+cp -rf $MODS_SOURCE $SERVER_DEST
 
-# Ensure all files have the correct permissions for the ubuntu user
-chown -R ubuntu:ubuntu $SERVER_DEST
+# Ensure all mod files have the correct permissions for the user running the script
+chown -R $SUDO_USER:$SUDO_USER $HOME/docker/containers/spt-fika-modded/server/user/mods
+chmod -R 775 $HOME/docker/containers/spt-fika-modded/server/user/mods
 
 # Verify that the files have been copied successfully
 if [ $? -eq 0 ]; then
-    echo "Mods copied successfully."
+    echo "Mod-Pack copied successfully."
 else
-    echo "Failed to copy mods."
+    echo "Failed to copy mod-pack."
     exit 1
 fi
 
-echo "Mod files have been copied and permissions set."
+echo "Mod-Pack files have been copied and permissions set."

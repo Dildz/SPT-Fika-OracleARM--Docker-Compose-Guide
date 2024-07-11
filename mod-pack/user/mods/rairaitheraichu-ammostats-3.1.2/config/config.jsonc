@@ -1,0 +1,284 @@
+{
+        /*
+        / Valid values are "prepend" or "append".
+        / Prepend will cause the information to appear at the beginning of the description.
+        / Append will add the information to the end.
+        */
+        "MODE": "prepend",
+        /*
+        / Valid values are "oneline" or "newline".
+        / Oneline will add all values on one line separated by pipes ( | )
+        / Newline will place each value on a new line.
+        */
+        "SEPARATOR": "newline",
+        // The following three options are now set to false by default, thanks to BSG adding official ammo stat displays.
+        // "True" will add the damage of the ammunition to the description of the bullet.
+        "addDamage": false,
+        // "True" will add the penetration of the ammunition to the description of the bullet.
+        "addPen": false,
+        // "True" will add the calculated armor level efficacy to the description of the bullet.
+        "addEffectArmorLv": false,
+        // Set this to true and the penetration level will be shown in the bullet name.
+        // This will also allow you to see the armor level it will penetrate when doing a mag check.
+        "showPenInName": false,
+        /*
+        / If you're running SPT Realism, by default the mod will use those values for determining armor penetration tier.
+        / If you turn off Realism Ballistics module, this mod will still use Realism's stats for armor, so...
+        / Set this to "true" if you have Realism running without its Ballistic module enabled to get accurate tiers.
+        */
+        "disableRealismSupport": false,
+        // If this is set to true, the background colors of bullets will be color-coded based on the armor level they are effective against.
+        "enableCustomBackgroundColors": true,
+        /*
+        / If you are NOT using the Color Converter API plugin, you can choose from the following colors:
+        / default, red, orange, yellow, green, blue, violet, grey, black
+        / This is for people who are NOT using the SPT Realism mod.
+        */
+        "backgroundColors": {
+                "0": "red",
+                "1": "red",
+                "2": "orange",
+                "3": "yellow",
+                "4": "green",
+                "5": "blue",
+                "6": "violet"
+        },
+        // These color settings are for the SPT Realism mod.
+        "realismBackgroundColors": {
+                "0": "red",
+                "1": "red",
+                "2": "orange",
+                "3": "orange",
+                "4": "yellow",
+                "5": "yellow",
+                "6": "green",
+                "7": "green",
+                "8": "blue",
+                "9": "blue",
+                "10": "violet"
+        },
+        // The options below require the Color Converter plugin to function, otherwise they do nothing!
+        "enableExtendedBackgroundColors": true,
+        /*
+        / Select a color profile/customize a profile here.
+        / Valid options: Custom, Rainbow, Grayscale, GrayscaleInverted
+        / The ColorProfiles entries will be used if you are NOT using SPT Realism.
+        / The ColorProfilesRealism entries will be used if you ARE using SPT Realism.
+        */
+        "ColorProfile": "Rainbow",
+        "ColorProfileRealism": "Rainbow",
+        "ColorProfiles": {
+                "Custom": {
+                        "0": "#A10000",
+                        "1": "#A10000",
+                        "2": "#A15000",
+                        "3": "#A1A100",
+                        "4": "#416600",
+                        "5": "#008282",
+                        "6": "#6A006A"
+                },
+                "Rainbow": {
+                        "0": "#A10000",
+                        "1": "#A10000",
+                        "2": "#A15000",
+                        "3": "#A1A100",
+                        "4": "#416600",
+                        "5": "#008282",
+                        "6": "#6A006A"
+                },
+                "Grayscale": {
+                        "0": "#333333",
+                        "1": "#333333",
+                        "2": "#585858",
+                        "3": "#7A7A7A",
+                        "4": "#9E9E9E",
+                        "5": "#B0B0B0",
+                        "6": "#D2D2D2"
+                },
+                "GrayscaleInverted": {
+                        "0": "#D2D2D2",
+                        "1": "#D2D2D2",
+                        "2": "#B0B0B0",
+                        "3": "#9E9E9E",
+                        "4": "#7A7A7A",
+                        "5": "#585858",
+                        "6": "#333333"
+                }
+        },
+        "ColorProfilesRealism": {
+                "Custom": {
+                        "0": "#A10000",
+                        "1": "#A10000",
+                        "2": "#A25203",
+                        "3": "#A1A100",
+                        "4": "#658200",
+                        "5": "#416600",
+                        "6": "#078446",
+                        "7": "#008282",
+                        "8": "#004182",
+                        "9": "#631DB4",
+                        "10": "#99004D"
+                },
+                "Rainbow": {
+                        "0": "#A10000",
+                        "1": "#A10000",
+                        "2": "#A25203",
+                        "3": "#A1A100",
+                        "4": "#658200",
+                        "5": "#416600",
+                        "6": "#078446",
+                        "7": "#008282",
+                        "8": "#004182",
+                        "9": "#631DB4",
+                        "10": "#99004D"
+                },
+                "Grayscale": {
+                        "0": "#222222",
+                        "1": "#333333",
+                        "2": "#444444",
+                        "3": "#555555",
+                        "4": "#666666",
+                        "5": "#777777",
+                        "6": "#888888",
+                        "7": "#999999",
+                        "8": "#AAAAAA",
+                        "9": "#BBBBBB",
+                        "10": "#CCCCCC"
+                },
+                "GrayscaleInverted": {
+                        "0": "#CCCCCC",
+                        "1": "#BBBBBB",
+                        "2": "#AAAAAA",
+                        "3": "#999999",
+                        "4": "#888888",
+                        "5": "#777777",
+                        "6": "#666666",
+                        "7": "#555555",
+                        "8": "#444444",
+                        "9": "#333333",
+                        "10": "#222222"
+                }
+        },
+        /*
+        / EN Author: /user/6798-rairaitheraichu/ on hub.sp-tarkov.com
+        / KR Author (thanks!): /user/9002-lua/ on hub.sp-tarkov.com
+        / RU Author (thanks!): /user/18247-melody/ on hub.sp-tarkov.com
+        / CH Author (thanks!): /user/13111-egnbv/ on hub.sp-tarkov.com
+        / FR Author (thanks!): /user/18495-masterauger/ on hub.sp-tarkov.com
+        / JP Author (thanks!): /user/24187-jackrippergame/ on hub.sp-tarkov.com
+        / CZ Author (thanks!): /user/25383-lastocka/ on hub.sp-tarkov.com
+        / ES/ES-MX Author (thanks!): /user/19569-javitecge/ on hub.sp-tarkov.com
+        / GE Author (thanks!): /user/24350-maege/ on hub.sp-tarkov.com
+        / PL Author (thanks!): /user/30356-randomcitizen/ on hub.sp-tarkov.com
+        / TW Author (thanks!): /user/53869-lisamika/ on hub.sp-tarkov.com
+        / IT Author (thanks!): /user/33597-octopussy/ on hub.sp-tarkov.com
+        / PT/BR Author (thanks!): /user/27639-manodavis/ on hub.sp-tarkov.com
+        */
+        /*
+        / Locales list. To add your own, copy the "en" section and change the "en" to your language key.
+        / Change the text within the quotes on the right side.
+        / Submit it via the comments on the mod to be included in the next release version!
+        */
+        "Locales": {
+                "en": {
+                        "Damage": "Damage",
+                        "Penetration": "Penetration",
+                        "TextEffectArmorLv": "Effective against armor level",
+                        "EffectNone": "None",
+                        "Pellets": "Pellets"
+                },
+                "kr": {
+                        "Damage": "데미지",
+                        "Penetration": "관통력",
+                        "TextEffectArmorLv": "유효한 장비 등급",
+                        "EffectNone": "없음",
+                        "Pellets": "발"
+                },
+                "ru": {
+                        "Damage": "Урон",
+                        "Penetration": "Бронепробитие",
+                        "TextEffectArmorLv": "Эффективен против брони уровня",
+                        "EffectNone": "Нет",
+                        "Pellets": "Дробинок"
+                },
+                "ch": {
+                        "Damage": "伤害",
+                        "Penetration": "穿透力",
+                        "TextEffectArmorLv": "可对抗的护甲等级",
+                        "EffectNone": "无",
+                        "Pellets": "个弹丸"
+                },
+                "fr": {
+                        "Damage": "Dommage",
+                        "Penetration": "Pénétration",
+                        "TextEffectArmorLv": "Efficace contre le niveau d’armure",
+                        "EffectNone": "Aucune",
+                        "Pellets": "Grains"
+                },
+                "jp": {
+                        "Damage": "ダメージ",
+                        "Penetration": "貫通力",
+                        "TextEffectArmorLv": "効果的なアーマークラス",
+                        "EffectNone": "なし",
+                        "Pellets": "ペレット"
+                },
+                "cz": {
+                        "Damage": "Poškození",
+                        "Penetration": "Průraznost",
+                        "TextEffectArmorLv": "Efektivní proti zbroji úrovně",
+                        "EffectNone": "Žádný efekt",
+                        "Pellets": "Broky"
+                },
+                "es": {
+                        "Damage": "Daño",
+                        "Penetration": "Penetración",
+                        "TextEffectArmorLv": "Eficaz contra el nivel de armadura",
+                        "EffectNone": "Ninguna",
+                        "Pellets": "Perdigones"
+                },
+                "es-mx": {
+                        "Damage": "Daño",
+                        "Penetration": "Penetración",
+                        "TextEffectArmorLv": "Eficaz contra el nivel de armadura",
+                        "EffectNone": "Ninguna",
+                        "Pellets": "Perdigones"
+                },
+                "ge": {
+                        "Damage": "Schaden",
+                        "Penetration": "Durchdringungskraft",
+                        "TextEffectArmorLv": "Effektiv gegen Panzerung level",
+                        "EffectNone": "Keinen",
+                        "Pellets": "Schrotkugeln"
+                },
+                "pl": {
+                        "Damage": "Obrażenia",
+                        "Penetration": "Siła penetracji",
+                        "TextEffectArmorLv": "Skuteczny przeciwko pancerzowi poziomu",
+                        "EffectNone": "Brak efektu",
+                        "Pellets": "Śrucin"
+                },
+                "tw": {
+                        "Damage": "傷害",
+                        "Penetration": "穿透力",
+                        "TextEffectArmorLv": "可對抗的護甲等級",
+                        "EffectNone": "無",
+                        "Pellets": "彈丸數"
+                },
+                "it": {
+                        "Damage": "Danno",
+                        "Penetration": "Penetrazione",
+                        "TextEffectArmorLv": "Efficace contro armatura livello",
+                        "EffectNone": "Nessuno",
+                        "Pellets": "Piombini"
+                },
+                "PT/BR": {
+                        "Damage": "Dano",
+                        "Penetration": "Penetração",
+                        "TextEffectArmorLv": "Efetivo contra armadura de level",
+                        "EffectNone": "Nenhum",
+                        "Pellets": "Paleta de Cores"
+                }
+        },
+        // Enable this to print additional debug info.
+        "debugLogging": false
+}

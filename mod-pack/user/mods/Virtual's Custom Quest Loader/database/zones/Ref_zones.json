@@ -1,0 +1,52 @@
+[
+  {
+    "ZoneId": "ref_overseer_room_find",
+    "ZoneName": "ref_overseer_room_find",
+    "ZoneLocation": "bigmap",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "176.9949",
+      "Y": "3.831572",
+      "Z": "166.1052",
+      "W": "0"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0.05233596",
+      "Z": "0",
+      "W": "0.9986295"
+    },
+    "Scale": {
+      "X": "1.75",
+      "Y": "2",
+      "Z": "1.5",
+      "W": "0"
+    }
+  },
+  {
+    "ZoneId": "ref_overseer_room_inside",
+    "ZoneName": "ref_overseer_room_inside",
+    "ZoneLocation": "bigmap",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "181.5675",
+      "Y": "3.807981",
+      "Z": "163.6602",
+      "W": "0"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0.06322598",
+      "Z": "0",
+      "W": "0.9979993"
+    },
+    "Scale": {
+      "X": "1.5",
+      "Y": "2",
+      "Z": "2",
+      "W": "0"
+    }
+  }
+]

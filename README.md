@@ -1,5 +1,5 @@
 # Setting up Fika SPT server with docker for Ubuntu on Oracle Cloud ARM instance
-Last updated: 02/07/2024 | Dildz
+Last updated: 11/07/2024 | Dildz
 
 **Make sure your oracle instance is 64-bit! Arm64 works too!**
 
@@ -79,38 +79,35 @@ cd ~
 mkdir github-repos
 ```
 
-Then we clone the repository.
+Then we clone the repository inside the github-repos folder.
 
 You can do this with:
 
 ```
+cd github-repos
 git clone https://github.com/Dildz/SPT-Fika-modded--Docker-Guide.git
 ```
 
 ## Copying the files
 
-Now we're going to copy the files from SPT-Fika-modded--Docker-Guide to the docker container location.
+Now we're going to copy the files from github-repos/SPT-Fika-modded--Docker-Guide folder to the docker container location.
 
 You can do this with:
 
 ```
-cp /home/ubuntu/github-repos/SPT-Fika-modded--Docker-Guide/files/Dockerfile /home/ubuntu/docker/containers/spt-fika-modded/fika/
-cp /home/ubuntu/github-repos/SPT-Fika-modded--Docker-Guide/files/fcpy.sh /home/ubuntu/docker/containers/spt-fika-modded/fika/
-cp /home/ubuntu/github-repos/SPT-Fika-modded--Docker-Guide/files/restart_fika.sh /home/ubuntu/docker/containers/spt-fika-modded/fika/
+cp $HOME/github-repos/SPT-Fika-modded--Docker-Guide/files/Dockerfile $HOME/docker/containers/spt-fika-modded/fika/
+cp $HOME/github-repos/SPT-Fika-modded--Docker-Guide/files/fcpy.sh $HOME/docker/containers/spt-fika-modded/fika/
+cp $HOME/github-repos/SPT-Fika-modded--Docker-Guide/files/restart_fika.sh $HOME/docker/containers/spt-fika-modded/fika/
 ```
 
-You will now have the Dockerfile, fcpy.sh and restart_fika.sh copied to the spt-fika-modded/fika/ folder.
-You can change the Fika and SPT versions If SPT or FIKA gets updated.
-In the `Dockerfile` you can change `FIKA_BRANCH` and `SPT_BRANCH` args to the version you want. E.g. `ARG SPT_BRANCH=3.8.1` can be changed to `ARG SPT_BRANCH=3.8.3`.
+You should now have the Dockerfile, fcpy.sh and restart_fika.sh copied to the spt-fika-modded/fika/ folder ready for the setup.
 
 ## Setting up the Docker container
 
-After the files have been copied we can start the setup.
-
-First off we're going to run this in the "fika" directory:
+First off, we're going to run this in the "fika" directory:
 
 ```
-cd /home/ubuntu/docker/containers/spt-fika-modded/fika
+cd $HOME/docker/containers/spt-fika-modded/fika
 docker build --no-cache --label modded-fika -t modded-fika .
 ```
 
@@ -127,54 +124,94 @@ cd server
 Then we will run the container with the following command:
 
 ```
-docker run --pull=never -v /home/ubuntu/docker/containers/spt-fika-modded/server:/opt/server -v /home/ubuntu/docker/logs:/home/ubuntu/docker/logs -p 6969:6969 -p 6970:6970 -p 6971:6971 -it --name modded-fika --log-opt max-size=10m --log-opt max-file=3 modded-fika
+docker run --pull=never -v $HOME/docker/containers/spt-fika-modded/server:/opt/server -v $HOME/docker/logs:$HOME/docker/logs -p 6969:6969 -p 6970:6970 -p 6971:6971 -it --name modded-fika --log-opt max-size=10m --log-opt max-file=3 modded-fika
 ```
 
 ## Copying the "mod-pack"
 List of mods used in this "mod-pack" [(Google Doc Link)](https://docs.google.com/document/d/12jq1-nWixf5p0ye7Foqhjgr9OFkqzGVUvVqVjPdHG14?usp=drive_fs)
 
-Once the run command has completed successfully - we can run the modscpy.sh script as sudo to copy the mod-pack:
+Once the run command has completed successfully - we can run the modscpy.sh script **as sudo** to copy the mod-pack:
 
 ```
-sudo /home/ubuntu/github-repos/SPT-Fika-modded--Docker-Guide/files/modscpy.sh
+sudo $HOME/github-repos/SPT-Fika-modded--Docker-Guide/files/modscpy.sh
 ```
 
 ## Starting the container
-Start the container using the restart.sh script in the fika folder.
+Start the container for the first time using:
 
 ```
-sudo /home/ubuntu/docker/containers/spt-fika-modded/fika/restart_fika.sh
+$HOME/docker/containers/spt-fika-modded/fika/restart_fika.sh
 ```
+(This restart script will stop/start the server and ensures logs are cleared & written to a log file while displaying the logs in real-time.)
 
-After the first run after the setup - run the following command to update the restart status.
+Then run the following command to update the restart status.
+Press **Ctrl + C** to exit out of the log-stream, then:
 
 ```
 docker update --restart unless-stopped modded-fika
 ```
+(This makes sure that the container will restart if stopped unexpectedly.)
 
-Then run the following command to change the permissions for the profiles folder.
+You can see the logs again at any time with the `docker logs modded-fika -f` command.
+
+Logs can also be accessed in the $HOME/docker/logs folder for further processing with a discord bot, which can also be hosted on the same Oracle VPS.
+(for example - I wrote a bot for my discord that updates an embed message every 10sec showing the server status / players online / active raid map & time / time to next reboot in hours, this way other players can quickly see if the fika server is online, who is online & if a raid is active).
+Note - The modded-fika container logs are cleared each time the restart_fika.sh script runs.
+
+## Creating a cron reboot job
+
+To have the modded-fika server auto-reboot daily, we will create a new cron-job:
 
 ```
-sudo chown -R ubuntu:ubuntu /home/ubuntu/docker/containers/spt-fika-modded/server/user/profiles
-sudo chmod -R 775 /home/ubuntu/docker/containers/spt-fika-modded/server/user/profiles
-
-sudo chown -R ubuntu:ubuntu /home/ubuntu/docker/containers/spt-fika-modded/server/user/mods
-sudo chmod -R 775 /home/ubuntu/docker/containers/spt-fika-modded/server/user/mods
+cd ~
+contab -e
 ```
 
-After starting the container you can see the logs with `docker logs modded-fika -f`
-Logs can also be accessed in the /home/ubuntu/docker/logs folder for further processing with a discord bot (for example).
-The modded-fika logs are cleared on docker restart as per the restart_fika.sh script.
+Add the following to the end of the file:
+**make sure to replace [USERNAME] with your username**
+
+```
+# MODDED-FIKA docker server reboot - 2am daily
+0 2 * * * /home/[USERNAME]/docker/containers/spt-fika-modded/fika/restart_fika.sh
+```
+
+Press **Ctrl + O** (you will be prompted to save the file-name)
+Press **Enter** to save
+Press **Ctrl + X** to exit
+
+This will reboot the modded-fika server every day at 2am according to the system time - change the "2" value to an hour that suits your needs.
 
 ## Starting mods for new players
 
 Any new players to the modded-fika server will need to have a fresh SPT install with the following mods pre-installed before connecting:
+**NOTE -- Until Corter-ModSync gets updated for SPT 3.9, new players will need to use the G-Drive link to install mods as per the ReadMe**
+[(Google Drive Link)](https://drive.google.com/drive/folders/15wUVnloywf1qb9tNZQtZlkXKX_GSR87t?usp=sharing)
 
 [(FIKA client & server)](https://github.com/project-fika/Fika-Plugin/releases/)
 
-[(Corter-ModSync)](https://github.com/c-orter/modsync)
+[(Corter-ModSync client only)](https://github.com/c-orter/modsync)
 
-Download & install both mods to the SPT install folder before connecting to the modded-fika server - the client & server mods!!
+## Editing player profiles
+
+You will find the new profiles that get created when players join will be permission locked to the root user and you won't be able to save changes.
+To make changes to player HP / Energy / Hydration for example we need to run the following commands:
+**Change [PROFILE_ID] to the ID of the profile you want to edit**
+**Change [USERNAME] to your system username**
+
+First stop the modded-fika server:
+
+```
+docker stop modded-fika
+```
+
+Then we will change the profile permissions:
+
+```
+sudo chmod 775 $HOME/docker/containers/spt-fika-modded-new/server/user/profiles/PROFILE_ID.json
+sudo chown USERNAME:USERNAME $HOME/docker/containers/spt-fika-modded-new/server/user/profiles/PROFILE_ID.json
+```
+
+Using something like WinSCP - Browse to & open the profile / Make changes & save / Start the modded-fika server
 
 ## Helpful Docker commands
 
@@ -194,52 +231,68 @@ docker stop modded-fika
 To start or restart the container:
 
 ```
-sudo /home/ubuntu/docker/containers/spt-fika-modded/fika/restart_fika.sh
+$HOME/docker/containers/spt-fika-modded/fika/restart_fika.sh
 ```
 
 ## Updating to newer versions
 
-First off you will have to stop the server with:
+First you will have to stop the server with:
 
 ```
 docker stop modded-fika
 ```
 
-[How to find out your server directory path](https://gist.github.com/OnniSaarni/a3f840cef63335212ae085a3c6c10d5c#setting-up-the-docker-container)
+[Creating a backup script](https://gist.github.com/OnniSaarni/a3f840cef63335212ae085a3c6c10d5c#setting-up-the-docker-container)
 -- see ahandleman's comment re: bash script to backup mods/profiles & updating
 
-It is recommended to backup your profiles in your server/user/profiles directory and the mods in your server/mods directory.
+It is recommended to backup your players profiles and the BepInEx / user mods.
 You can copy them to your container backup directory with these commands:
 
 ```
-cp -r /home/ubuntu/docker/containers/spt-fika-modded/server/user/profiles /home/ubuntu/docker/containers/spt-fika-modded-backup
+mkdir -p $HOME/docker/containers/spt-fika-modded-backup/user/profiles
+mkdir -p $HOME/docker/containers/spt-fika-modded-backup/user/mods
+mkdir -p $HOME/docker/containers/spt-fika-modded-backup/BepInEx
 ```
 ```
-cp -r /home/ubuntu/docker/containers/spt-fika-modded/server/user/mods /home/ubuntu/docker/containers/spt-fika-modded-backup
+cp -r $HOME/docker/containers/spt-fika-modded/server/user/profiles/* $HOME/docker/containers/spt-fika-modded-backup/user/profiles
+```
+```
+cp -r $HOME/docker/containers/spt-fika-modded/server/user/mods/* $HOME/docker/containers/spt-fika-modded-backup/user/mods
+```
+```
+cp -r $HOME/docker/containers/spt-fika-modded/server/BepInEx/* $HOME/docker/containers/spt-fika-modded-backup/BepInEx
 ```
 
 Next we need to delete the container and the image. We can do that by running these commands one at a time:
-
+List containers:
+```
+docker ps
+```
+Remove container:
 ```
 docker rm modded-fika
 ```
-```
-docker rmi modded-fika
-```
+List images:
 ```
 docker images
 ```
+Remove image:
+```
+docker rmi modded-fika
+```
+Prune images:
 ```
 docker image prune
 ```
+Remove contents of server directory:
 ```
-sudo rm -rf /home/ubuntu/docker/containers/spt-fika-modded/server/*
+sudo rm -rf $HOME/docker/containers/spt-fika-modded/server/*
 ```
 
 After that we need to rebuild the container:
 
 ```
-cd /home/ubuntu/docker/containers/spt-fika-modded/fika
+cd $HOME/docker/containers/spt-fika-modded/fika
 ```
 ```
 docker build --no-cache --label modded-fika -t modded-fika .
@@ -252,33 +305,48 @@ cd ..
 cd server
 ```
 ```
-docker run --pull=never -v /home/ubuntu/docker/containers/spt-fika-modded/server:/opt/server -v /home/ubuntu/docker/logs:/home/ubuntu/docker/logs -p 6969:6969 -p 6970:6970 -p 6971:6971 -it --name modded-fika --log-opt max-size=10m --log-opt max-file=3 modded-fika
+docker run --pull=never -v $HOME/docker/containers/spt-fika-modded/server:/opt/server -v $HOME/docker/logs:$HOME/docker/logs -p 6969:6969 -p 6970:6970 -p 6971:6971 -it --name modded-fika --log-opt max-size=10m --log-opt max-file=3 modded-fika
+```
+
+Now we start / stop the container to make sure we verify the build:
+
+```
+docker start modded-fika
+```
+```
+docker logs modded-fika -f
+```
+**Ctrl + C** to exit the logs when server is ready:
+```
+docker stop modded-fika
 ```
 
 Then run the following command to change the permissions for the profiles and mods folders.
+**Change [USERNAME] to your system username**
 
 ```
-sudo chown -R ubuntu:ubuntu /home/ubuntu/docker/containers/spt-fika-modded/server/user/profiles
-sudo chmod -R 775 /home/ubuntu/docker/containers/spt-fika-modded/server/user/profiles
-
-sudo chown -R ubuntu:ubuntu /home/ubuntu/docker/containers/spt-fika-modded/server/user/mods
-sudo chmod -R 775 /home/ubuntu/docker/containers/spt-fika-modded/server/user/mods
+sudo chmod -R 775 $HOME/docker/containers/spt-fika-modded/server/user/profiles
+sudo chown -R USERNAME:USERNAME $HOME/docker/containers/spt-fika-modded/server/user/profiles
+```
+```
+sudo chmod -R 775 $HOME/docker/containers/spt-fika-modded/server/user/mods
+sudo chown -R USERNAME:USERNAME $HOME/docker/containers/spt-fika-modded/server/user/mods
 ```
 
-Now you can restore any backed up profiles and the mods.
+Now you can restore the backed up profiles and mods.
 To do that run the following commands:
 
 ```
-cp -r /home/ubuntu/docker/containers/spt-fika-modded-backup/server/user/profiles/* /home/ubuntu/docker/containers/spt-fika-modded/server/user/profiles/
+cp -r $HOME/docker/containers/spt-fika-modded-backup/server/user/profiles/* $HOME/docker/containers/spt-fika-modded/server/user/profiles/
 ```
 ```
-cp -r /home/ubuntu/docker/containers/spt-fika-modded-backup/server/user/mods/* /home/ubuntu/docker/containers/spt-fika-modded/server/user/mods/
+cp -r $HOME/docker/containers/spt-fika-modded-backup/server/user/mods/* $HOME/docker/containers/spt-fika-modded/server/user/mods/
 ```
 
 Once the mods & profiles are restored, start the server with:
 
 ```
-sudo /home/ubuntu/docker/containers/spt-fika-modded/fika/restart_fika.sh
+sudo $HOME/docker/containers/spt-fika-modded/fika/restart_fika.sh
 ```
 ```
 docker update --restart unless-stopped modded-fika
@@ -286,50 +354,25 @@ docker update --restart unless-stopped modded-fika
 
 Now your server is updated.
 
-[To update your client you can follow the instructions here.](https://dev.sp-tarkov.com/SPT/Stable-releases/releases) [You will also need to download the newest Fika plugin from here.](https://github.com/project-fika/Fika-Plugin/releases)
+[To update your client you can follow the instructions here.](https://dev.sp-tarkov.com/SPT/Stable-releases/releases)
+[Or follow the ReadMe file in the G-Drive folder to do a fresh client install.](https://drive.google.com/drive/folders/15wUVnloywf1qb9tNZQtZlkXKX_GSR87t?usp=sharing)
+[You will also need to download the newest Fika plugin from here.](https://github.com/project-fika/Fika-Plugin/releases)
 
-## Modding and other possibly helpful info
+## Other possibly helpful info
 
-To play with your friends you first have to port forward or disable the firewall for port 6969 on the server.
+To play with friends you have several options:
+ZeroTier One
+RADMIN VPN
+Direct connection with port forwarding
+[More info over here](https://github.com/project-fika/Fika-Documentation?tab=readme-ov-file#installation)
 
-To host Co-Op raids with your friends you either have to have UPnP enabled or have port 25565 forwarded to your PC. 
-You should also disable the firewall for the EscapeFromTarkov.exe and allow ports in the firewall. [More info over here](https://github.com/project-fika/Fika-Documentation?tab=readme-ov-file#installation)
-
-To add more mods to the game you have to add them to the "users" directory in the server directory.
-
-http.json should be pre configured for portforwarding in this setup.
+To add more mods to the game you have to add them to the "user/mods" directory in the server directory.
 
 [You might also want to look into making automatic backups with cron.](https://unix.stackexchange.com/a/16954)
-It's not necessary but it's a plus. I'm not going to go into it in depth but if someone wants they are free to make a simple guide for it.
 
 ## Errors
 
-[If you're having this error and you have installed the realism mod, you have to do this fix:](https://github.com/space-commits/SPT-Realism-Mod-Server/pull/42)
-
-```
-[2024-05-03T03:21:21.203Z] error:     TypeError: Cannot read properties of undefined (reading 'replaceAll')
-[2024-05-03T03:21:21.204Z] error:     TypeError: Cannot read properties of undefined (reading 'replaceAll')
-[2024-05-03T03:21:21.204Z] error:     TypeError: Cannot read properties of undefined (reading 'replaceAll')
-    at HttpRouter.getResponse (/opt/server/user/mods/mpt-server/src/overrides/routers/HttpRouter.ts:29:41)
-    at AkiHttpListener.getResponse (/snapshot/src/servers/http/AkiHttpListener.ts:150:38)
-    at AkiHttpListener.handle (/snapshot/src/servers/http/AkiHttpListener.ts:39:39)
-    at HttpServer.handleRequest (/snapshot/src/servers/HttpServer.ts:103:26)
-    at Server.<anonymous> (/snapshot/src/servers/HttpServer.ts:45:18)
-    at Server.emit (node:events:518:28)
-    at parserOnIncoming (node:_http_server:1151:12)
-    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
-[2024-05-03T03:21:21.203Z] error:     TypeError: Cannot read properties of undefined (reading 'replaceAll')
-    at HttpRouter.getResponse (/opt/server/user/mods/mpt-server/src/overrides/routers/HttpRouter.ts:29:41)
-    at AkiHttpListener.getResponse (/snapshot/src/servers/http/AkiHttpListener.ts:150:38)
-    at AkiHttpListener.handle (/snapshot/src/servers/http/AkiHttpListener.ts:39:39)
-    at HttpServer.handleRequest (/snapshot/src/servers/HttpServer.ts:103:26)
-    at Server.<anonymous> (/snapshot/src/servers/HttpServer.ts:45:18)
-    at Server.emit (node:events:518:28)
-    at parserOnIncoming (node:_http_server:1151:12)
-    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
-```
-
-I was also having an error which was fixed by deleting all the files in the "cache" directory.
+I was having an error which was fixed by deleting all the files in the "cache" directory.
 
 A lot of the errors can be fixed by just searching the Fika Discord server for the error.
 
@@ -337,4 +380,5 @@ A lot of the errors can be fixed by just searching the Fika Discord server for t
 
 Thanks to @MonstraG and @lommy7 for helping others in the comments and providing fixes.
 
-[Special thanks to k2rlxyz for making the original Dockerfile.](https://hub.docker.com/r/k2rlxyz/fika) It can also be found in the [Discord](https://discord.gg/project-fika).
+[Special thanks to k2rlxyz for making the original Dockerfile.](https://hub.docker.com/r/k2rlxyz/fika). It can also be found in the [Discord](https://discord.gg/project-fika).
+[Special thanks to OnniSaarni for making the original SPT-Fika-Docker-Guide.](https://github.com/OnniSaarni/SPT-Fika-Docker-Guide).

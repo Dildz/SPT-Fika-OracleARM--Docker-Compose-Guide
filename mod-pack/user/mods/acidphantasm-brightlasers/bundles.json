@@ -1,0 +1,8 @@
+{
+	"manifest": [
+		{
+			"key": "assets/systems/effects/laserbeam/laser.bundle",
+			"dependencyKeys": []
+		}
+	]
+}
