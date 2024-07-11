@@ -128,7 +128,7 @@ docker run --pull=never -v $HOME/docker/containers/spt-fika-modded/server:/opt/s
 ```
 
 ## Copying the "mod-pack"
-List of mods used in this "mod-pack" [(Google Doc Link)](https://docs.google.com/document/d/12jq1-nWixf5p0ye7Foqhjgr9OFkqzGVUvVqVjPdHG14/edit)
+List of mods used in this "mod-pack" [(Google Doc Link)](https://docs.google.com/document/d/1eBul9mYMUJPAPbLsmKR8M5sK6DMl647HM87JrKmG2Vg/edit)
 
 Once the run command has completed successfully - we can run the modscpy.sh script **as sudo** to copy the mod-pack:
 
