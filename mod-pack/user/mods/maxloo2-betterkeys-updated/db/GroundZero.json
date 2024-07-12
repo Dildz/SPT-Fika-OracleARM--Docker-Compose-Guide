@@ -1,0 +1,20 @@
+{
+  "_version": "3.9.0",
+  "Keys": {
+    "658199aa38c79576a2569e13": {
+      "Extract": [],
+      "Quest": ["657315e4a6af4ab4b50f3459"],
+      "Loot": ["PC", "Drawer", "LooseLoot"]
+    },
+    "658199972dc4e60f6d556a2f": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["DeadBody", "Ammo", "Toolbox", "Grenade", "Weapon"]
+    },
+    "6581998038c79576a2569e11": {
+      "Extract": [],
+      "Quest": [],
+      "Loot": ["Safe", "Drawer"]
+    }
+  }
+}

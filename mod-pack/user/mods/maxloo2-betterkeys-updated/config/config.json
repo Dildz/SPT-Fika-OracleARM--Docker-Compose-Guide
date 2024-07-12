@@ -1,0 +1,22 @@
+{
+  "enableAutoUpdate": false,
+  "github": "https://raw.githubusercontent.com/maxloo2/betterkeys-updated/main",
+  "backgroundColor": true,
+  "descriptionInfo": true,
+  "yellowMarkedKeys": false,
+  "requiredInQuests": true,
+  "requiredForExtracts": true,
+  "behindTheLoock": true,
+  "backgroundColors": {
+    "Factory": "green",
+    "Customs": "blue",
+    "Woods": "tracerGreen",
+    "Shoreline": "orange",
+    "Interchange": "tracerRed",
+    "The Lab": "tracerYellow",
+    "Reserve": "violet",
+    "Lighthouse": "red",
+    "Streets of Tarkov": "green",
+    "Ground Zero": "blue"
+  }
+}

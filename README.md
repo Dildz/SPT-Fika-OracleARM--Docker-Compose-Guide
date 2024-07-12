@@ -195,8 +195,7 @@ Any new players to the modded-fika server will need to have a fresh SPT install 
 
 You will find the new profiles that get created when players join will be permission locked to the root user and you won't be able to save changes.
 To make changes to player HP / Energy / Hydration for example we need to run the following commands:
-**Change [PROFILE_ID] to the ID of the profile you want to edit**
-**Change [USERNAME] to your system username**
+**Change [PROFILE_ID] to the ID of the profile you want to edit** and **Change [USERNAME] to your system username**
 
 First stop the modded-fika server:
 
