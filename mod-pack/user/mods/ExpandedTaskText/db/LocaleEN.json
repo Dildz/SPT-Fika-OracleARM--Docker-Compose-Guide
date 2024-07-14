@@ -342,6 +342,13 @@
         "OptionalKey": ""
     },
 
+    "64f5e20652fc01298e2c61e3": {
+        "QuestName": "Beyond The RedMeat P1",
+        "IsKeyRequired": false,
+        "RequiredKey": "",
+        "OptionalKey": "Beluga restaurant director key"
+    },
+
     "64f6aafd67e11a7c6206e0d0": {
         "QuestName": "Beyond The RedMeat P2",
         "IsKeyRequired": true,
@@ -361,5 +368,19 @@
         "IsKeyRequired": true,
         "RequiredKey": "\"Negotiation\" room key",
         "OptionalKey": ""
+    },
+
+    "6573382e557ff128bf3da536": {
+        "QuestName": "Developer Secrets Part 2",
+        "IsKeyRequired": true,
+        "RequiredKey": "Relaxation room key",
+        "OptionalKey": ""
+    },
+
+    "6573397ef3f8344c4575cd87": {
+        "QuestName": "Properties All Around",
+        "IsKeyRequired": false,
+        "RequiredKey": "",
+        "OptionalKey": "Real estate agency office room key"
     }
 }

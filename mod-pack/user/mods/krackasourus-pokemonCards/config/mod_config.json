@@ -1,0 +1,11 @@
+{
+    "debug": false,
+    "fallback_trader": "ragman",
+    "enable_container_spawns": true,
+
+    "--//Item probability scalers": "0 - 1",
+    "common": 0.5,
+    "uncommon": 0.35,
+    "rare": 0.15,
+    "epic": 0.07
+}

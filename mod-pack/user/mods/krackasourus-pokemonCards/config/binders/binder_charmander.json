@@ -1,0 +1,958 @@
+{
+    "item_type": "binder",
+    "clone_item": "5a9d6d00a2750c5c985b5305",
+    "id": "binder_charmander",
+    "item_name": "Card Binder",
+    "item_short_name": "Binder",
+    "item_description": "A binder that holds all you favorite collectable cards",
+    "item_parent": "55802f3e4bdc2de7118b4584",
+    "category_id": "5b5f6fa186f77409407a7eb7",
+    "item_prefab_path": "binders/binder_charmander.bundle",
+    "color": "blue",
+    "lootable": false,
+    "sold": true,
+    "trader": "k_collector",
+    "trader_loyalty_level": 1,
+    "item_sound": "item_book",
+    "stack_max_size": 1,
+    "currency": "roubles",
+    "price": 350000,
+    "weight": 0.3,
+    "container": "5909e4b686f7747f5b744fa4",
+    "unlimited_stock": true,
+    "stock_amount": 999999,
+    "ExternalSize": {
+        "width": 1,
+        "height": 2
+    },
+    "slotStructure": [
+        {
+            "_name": "mod_mount_3",
+            "_id": "binder_binder_charmander_slot_4",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_4"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_4",
+            "_id": "binder_binder_charmander_slot_5",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_5"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_5",
+            "_id": "binder_binder_charmander_slot_6",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_6"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_12",
+            "_id": "binder_binder_charmander_slot_13",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_13"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_13",
+            "_id": "binder_binder_charmander_slot_14",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_14"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_14",
+            "_id": "binder_binder_charmander_slot_15",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_15"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_21",
+            "_id": "binder_binder_charmander_slot_22",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_22"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_22",
+            "_id": "binder_binder_charmander_slot_23",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_23"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_23",
+            "_id": "binder_binder_charmander_slot_24",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_24"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_30",
+            "_id": "binder_binder_charmander_slot_31",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_31"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_31",
+            "_id": "binder_binder_charmander_slot_32",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_32"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_32",
+            "_id": "binder_binder_charmander_slot_33",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_33"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_39",
+            "_id": "binder_binder_charmander_slot_40",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_40"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_40",
+            "_id": "binder_binder_charmander_slot_41",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_41"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_41",
+            "_id": "binder_binder_charmander_slot_42",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_42"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_48",
+            "_id": "binder_binder_charmander_slot_49",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_49"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_49",
+            "_id": "binder_binder_charmander_slot_50",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_50"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_50",
+            "_id": "binder_binder_charmander_slot_51",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_51"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_57",
+            "_id": "binder_binder_charmander_slot_58",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_58"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_58",
+            "_id": "binder_binder_charmander_slot_59",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_59"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_59",
+            "_id": "binder_binder_charmander_slot_60",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_60"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_66",
+            "_id": "binder_binder_charmander_slot_67",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_67"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_67",
+            "_id": "binder_binder_charmander_slot_68",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_68"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_68",
+            "_id": "binder_binder_charmander_slot_69",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_69"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_75",
+            "_id": "binder_binder_charmander_slot_76",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_76"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_76",
+            "_id": "binder_binder_charmander_slot_77",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_77"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_77",
+            "_id": "binder_binder_charmander_slot_78",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_78"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_84",
+            "_id": "binder_binder_charmander_slot_85",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_85"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_85",
+            "_id": "binder_binder_charmander_slot_86",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_86"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_86",
+            "_id": "binder_binder_charmander_slot_87",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_87"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_93",
+            "_id": "binder_binder_charmander_slot_94",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_94"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_94",
+            "_id": "binder_binder_charmander_slot_95",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_95"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_95",
+            "_id": "binder_binder_charmander_slot_96",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_96"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_102",
+            "_id": "binder_binder_charmander_slot_103",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_103"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_103",
+            "_id": "binder_binder_charmander_slot_104",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_104"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_104",
+            "_id": "binder_binder_charmander_slot_105",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_105"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_111",
+            "_id": "binder_binder_charmander_slot_112",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_112"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_112",
+            "_id": "binder_binder_charmander_slot_113",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_113"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_113",
+            "_id": "binder_binder_charmander_slot_114",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_114"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_120",
+            "_id": "binder_binder_charmander_slot_121",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_121"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_121",
+            "_id": "binder_binder_charmander_slot_122",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_122"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_122",
+            "_id": "binder_binder_charmander_slot_123",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_123"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_129",
+            "_id": "binder_binder_charmander_slot_130",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_130"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_130",
+            "_id": "binder_binder_charmander_slot_131",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_131"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_131",
+            "_id": "binder_binder_charmander_slot_132",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_132"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_138",
+            "_id": "binder_binder_charmander_slot_139",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_139"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_139",
+            "_id": "binder_binder_charmander_slot_140",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_140"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_140",
+            "_id": "binder_binder_charmander_slot_141",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_141"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_147",
+            "_id": "binder_binder_charmander_slot_148",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_148"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_148",
+            "_id": "binder_binder_charmander_slot_149",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_149"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_149",
+            "_id": "binder_binder_charmander_slot_150",
+            "_parent": "binder_binder_charmander",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_150"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        }
+    ],
+    "quest_item": false,
+    "insurancedisabled": true,
+    "availableforinsurance": false,
+    "examinedbydefault": false,
+    "isunremovable": false,
+    "discardingblock": false,
+    "isundiscardable": false,
+    "CanSellOnRagfair": false,
+    "isungivable": false,
+    "discardlimit": 2
+}

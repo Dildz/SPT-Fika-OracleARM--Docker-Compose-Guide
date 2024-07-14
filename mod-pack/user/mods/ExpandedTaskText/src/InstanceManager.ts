@@ -25,10 +25,10 @@ export class InstanceManager
     public modName: string;
     public debug: boolean;
     // Useful Paths
-    public modPath: string = path.join(process.cwd(), "\\user\\mods\\TarkovTools\\");
-    public dbPath: string = path.join(process.cwd(), "\\user\\mods\\TarkovTools\\database");
-    public profilePath: string = path.join(process.cwd(), "\\user\\profiles");
-    public cachePath: string = path.resolve(__dirname, "..\\config\\cache.json");
+    public modPath: string = path.join(process.cwd(), "user", "mods", "TarkovTools");
+    public dbPath: string = path.join(process.cwd(), "user", "mods", "TarkovTools", "database");
+    public profilePath: string = path.join(process.cwd(), "user", "profiles");
+    public cachePath: string = path.join(path.dirname(__filename), "..", "config", "cache.json");
 
     // Instances
     public container: DependencyContainer;
@@ -40,7 +40,7 @@ export class InstanceManager
     public staticRouter: StaticRouterModService;
     //#endregion
 
-    //#region Acceessible in or after postDBLoad
+    //#region Accessible in or after postDBLoad
     public database: IDatabaseTables;
     public customItem: CustomItemService;
     public imageRouter: ImageRouter;

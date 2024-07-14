@@ -1,0 +1,134 @@
+{
+	// keyWeight sets missing keys weight to this weight, additionally bumping up weight of keys that already in loot table but below this value to this value.
+	// default key weights in jackets are like 300-1500
+	// set keyWeight to 0 to disable adding keys to loot
+	"keyWeight": 500,
+	
+	// set keycardWeight to 0 disable adding keycards to loot
+	"keycardWeight": 50,
+
+	// since now finding 3 mil keys is actually a lot easier, this will reduce key sell prices a bit. set both to 1 to not change anything.
+	"keyFleaPricesMultiplier" : 0.75,
+	"keyTraderPricesMultiplier": 0.75,
+
+	"overRideLootDistributionJackets": [
+		{
+			"count": 8,
+			"relativeProbability": 10
+		},
+		{
+			"count": 7,
+			"relativeProbability": 50
+		},
+		{
+			"count": 6,
+			"relativeProbability": 200
+		},
+		{
+			"count": 5,
+			"relativeProbability": 400
+		},
+		{
+			"count": 4,
+			"relativeProbability": 1600
+		},
+		{
+			"count": 3,
+			"relativeProbability": 3200
+		},
+		{
+			"count": 2,
+			"relativeProbability": 12800
+		},
+		{
+			"count": 1,
+			"relativeProbability": 8400
+		},
+		{
+			"count": 0,
+			"relativeProbability": 200
+		}
+	],
+
+	"overRideLootDistributionDuffleBags": [
+		{
+			"count": 8,
+			"relativeProbability": 10
+		},
+		{
+			"count": 7,
+			"relativeProbability": 50
+		},
+		{
+			"count": 6,
+			"relativeProbability": 200
+		},
+		{
+			"count": 5,
+			"relativeProbability": 400
+		},
+		{
+			"count": 4,
+			"relativeProbability": 800
+		},
+		{
+			"count": 3,
+			"relativeProbability": 1600
+		},
+		{
+			"count": 2,
+			"relativeProbability": 3200
+		},
+		{
+			"count": 1,
+			"relativeProbability": 4800
+		},
+		{
+			"count": 0,
+			"relativeProbability": 200
+		}
+	],
+
+	"overRideLootDistributionDeadScavs": [
+		{
+			"count": 8,
+			"relativeProbability": 10
+		},
+		{
+			"count": 7,
+			"relativeProbability": 50
+		},
+		{
+			"count": 6,
+			"relativeProbability": 200
+		},
+		{
+			"count": 5,
+			"relativeProbability": 400
+		},
+		{
+			"count": 4,
+			"relativeProbability": 800
+		},
+		{
+			"count": 3,
+			"relativeProbability": 3200
+		},
+		{
+			"count": 2,
+			"relativeProbability": 3200
+		},
+		{
+			"count": 1,
+			"relativeProbability": 3200
+		},
+		{
+			"count": 0,
+			"relativeProbability": 200
+		}
+	],
+
+	// Override jacket container size. Default 2x2
+	"cellsH": 2,
+	"cellsV": 2
+}

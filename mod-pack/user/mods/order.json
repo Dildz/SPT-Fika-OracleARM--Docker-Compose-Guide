@@ -1,7 +1,7 @@
 {
   "order": [
-    "acidphantasm-390temporaryfixes",
     "acidphantasm-bosseshavelegamedals",
+    "krackasourus-pokemonCards",
     "acidphantasm-brightlasers",
     "DrakiaXYZ-LiveFleaPrices",
     "ExpandedTaskText",
@@ -14,8 +14,11 @@
     "tyfon-uifixes",
     "Virtual's Custom Quest Loader",
     "acidphantasm-refsptfriendlyquests",
+    "maxloo2-betterkeys-updated",
+    "zzMusicManiac-KeysInLoot",
     "zSolarint-SAIN-ServerMod",
     "Skwizzy-LootingBots-ServerMod",
+    "SWAG",
     "fika-server"
   ]
 }

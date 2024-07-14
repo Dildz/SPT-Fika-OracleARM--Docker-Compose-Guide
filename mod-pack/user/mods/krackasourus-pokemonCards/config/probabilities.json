@@ -1,0 +1,1755 @@
+{
+    "bigmap": {
+        "5909d7cf86f77470ee57d75a": {
+            "min_found": 1,
+            "max_found": 2276,
+            "average": 1138,
+            "15p": 342,
+            "65p": 1480
+        },
+        "578f8778245977358849a9b5": {
+            "min_found": 10,
+            "max_found": 27882,
+            "average": 13946,
+            "15p": 4183,
+            "65p": 18124
+        },
+        "578f87a3245977356274f2cb": {
+            "min_found": 2,
+            "max_found": 4253,
+            "average": 2127,
+            "15p": 638,
+            "65p": 2765
+        },
+        "5d6fd13186f77424ad2a8c69": {
+            "min_found": 137,
+            "max_found": 1604,
+            "average": 870,
+            "15p": 241,
+            "65p": 1043
+        },
+        "578f879c24597735401e6bc6": {
+            "min_found": 62415,
+            "max_found": 62415,
+            "average": 62415,
+            "15p": 9363,
+            "65p": 40570
+        },
+        "5909e4b686f7747f5b744fa4": {
+            "min_found": 1,
+            "max_found": 6929,
+            "average": 3465,
+            "15p": 1040,
+            "65p": 4504
+        },
+        "59139c2186f77411564f8e42": {
+            "min_found": 1504,
+            "max_found": 18998,
+            "average": 10251,
+            "15p": 2850,
+            "65p": 12349
+        },
+        "578f87ad245977356274f2cc": {
+            "min_found": 2,
+            "max_found": 1884,
+            "average": 943,
+            "15p": 283,
+            "65p": 1225
+        },
+        "578f87b7245977356274f2cd": {
+            "min_found": 69,
+            "max_found": 14516,
+            "average": 7292,
+            "15p": 2178,
+            "65p": 9436
+        },
+        "578f8782245977354405a1e3": {
+            "min_found": 3,
+            "max_found": 48826,
+            "average": 24414,
+            "15p": 7324,
+            "65p": 31737
+        },
+        "5909d89086f77472591234a0": {
+            "min_found": 1,
+            "max_found": 828,
+            "average": 414,
+            "15p": 125,
+            "65p": 539
+        },
+        "5d6fd45b86f774317075ed43": {
+            "min_found": 386,
+            "max_found": 5269,
+            "average": 2827,
+            "15p": 791,
+            "65p": 3425
+        },
+        "5909d24f86f77466f56e6855": {
+            "min_found": 101,
+            "max_found": 4151,
+            "average": 2126,
+            "15p": 623,
+            "65p": 2699
+        },
+        "5909d76c86f77471e53d2adf": {
+            "min_found": 1,
+            "max_found": 972,
+            "average": 486,
+            "15p": 146,
+            "65p": 632
+        },
+        "5909d50c86f774659e6aaebe": {
+            "min_found": 597,
+            "max_found": 8458,
+            "average": 4527,
+            "15p": 1269,
+            "65p": 5498
+        },
+        "5d6d2b5486f774785c2ba8ea": {
+            "min_found": 1,
+            "max_found": 1503,
+            "average": 752,
+            "15p": 226,
+            "65p": 977
+        },
+        "5909d45286f77465a8136dc6": {
+            "min_found": 7,
+            "max_found": 1522,
+            "average": 764,
+            "15p": 229,
+            "65p": 990
+        },
+        "5909d5ef86f77467974efbd8": {
+            "min_found": 1,
+            "max_found": 1346,
+            "average": 673,
+            "15p": 202,
+            "65p": 875
+        },
+        "5d6d2bb386f774785b07a77a": {
+            "min_found": 1,
+            "max_found": 2274,
+            "average": 1137,
+            "15p": 342,
+            "65p": 1479
+        },
+        "5d6fe50986f77449d97f7463": {
+            "min_found": 73,
+            "max_found": 3089,
+            "average": 1581,
+            "15p": 464,
+            "65p": 2008
+        },
+        "5937ef2b86f77408a47244b3": {
+            "min_found": 6929,
+            "max_found": 6929,
+            "average": 6929,
+            "15p": 1040,
+            "65p": 4504
+        },
+        "5909d4c186f7746ad34e805a": {
+            "min_found": 279,
+            "max_found": 13254,
+            "average": 6766,
+            "15p": 1989,
+            "65p": 8616
+        },
+        "59387ac686f77401442ddd61": {
+            "min_found": 28,
+            "max_found": 979,
+            "average": 503,
+            "15p": 147,
+            "65p": 637
+        },
+        "5909d36d86f774660f0bb900": {
+            "min_found": 568,
+            "max_found": 5177,
+            "average": 2872,
+            "15p": 777,
+            "65p": 3366
+        },
+        "6582e6d7b14c3f72eb071420": {
+            "min_found": 1,
+            "max_found": 121,
+            "average": 61,
+            "15p": 19,
+            "65p": 79
+        },
+        "5914944186f774189e5e76c2": {
+            "min_found": 1,
+            "max_found": 2,
+            "average": 1,
+            "15p": 1,
+            "65p": 2
+        }
+    },
+    "factory4_day": {
+        "5909d24f86f77466f56e6855": {
+            "min_found": 2,
+            "max_found": 556,
+            "average": 279,
+            "15p": 84,
+            "65p": 362
+        },
+        "578f87b7245977356274f2cd": {
+            "min_found": 2,
+            "max_found": 2358,
+            "average": 1180,
+            "15p": 354,
+            "65p": 1533
+        },
+        "578f8778245977358849a9b5": {
+            "min_found": 3,
+            "max_found": 4793,
+            "average": 2398,
+            "15p": 719,
+            "65p": 3116
+        },
+        "578f87a3245977356274f2cb": {
+            "min_found": 1,
+            "max_found": 93,
+            "average": 47,
+            "15p": 14,
+            "65p": 61
+        },
+        "5d6fd45b86f774317075ed43": {
+            "min_found": 56,
+            "max_found": 1050,
+            "average": 553,
+            "15p": 158,
+            "65p": 683
+        },
+        "5d6fe50986f77449d97f7463": {
+            "min_found": 46,
+            "max_found": 1855,
+            "average": 950,
+            "15p": 279,
+            "65p": 1206
+        },
+        "578f8782245977354405a1e3": {
+            "min_found": 14,
+            "max_found": 7065,
+            "average": 3539,
+            "15p": 1060,
+            "65p": 4593
+        },
+        "5909e4b686f7747f5b744fa4": {
+            "min_found": 1,
+            "max_found": 346,
+            "average": 173,
+            "15p": 52,
+            "65p": 225
+        },
+        "5909d76c86f77471e53d2adf": {
+            "min_found": 1,
+            "max_found": 142,
+            "average": 71,
+            "15p": 22,
+            "65p": 93
+        },
+        "5909d5ef86f77467974efbd8": {
+            "min_found": 1,
+            "max_found": 347,
+            "average": 174,
+            "15p": 53,
+            "65p": 226
+        },
+        "578f87ad245977356274f2cc": {
+            "min_found": 3,
+            "max_found": 670,
+            "average": 336,
+            "15p": 101,
+            "65p": 436
+        },
+        "5909d50c86f774659e6aaebe": {
+            "min_found": 32,
+            "max_found": 635,
+            "average": 333,
+            "15p": 96,
+            "65p": 413
+        },
+        "5909d36d86f774660f0bb900": {
+            "min_found": 132,
+            "max_found": 1170,
+            "average": 651,
+            "15p": 176,
+            "65p": 761
+        }
+    },
+    "factory4_night": {
+        "578f87b7245977356274f2cd": {
+            "min_found": 9,
+            "max_found": 1336,
+            "average": 672,
+            "15p": 201,
+            "65p": 869
+        },
+        "578f87a3245977356274f2cb": {
+            "min_found": 1,
+            "max_found": 55,
+            "average": 28,
+            "15p": 9,
+            "65p": 36
+        },
+        "578f8778245977358849a9b5": {
+            "min_found": 2,
+            "max_found": 2505,
+            "average": 1253,
+            "15p": 376,
+            "65p": 1629
+        },
+        "5d6fd45b86f774317075ed43": {
+            "min_found": 34,
+            "max_found": 535,
+            "average": 284,
+            "15p": 81,
+            "65p": 348
+        },
+        "5909d50c86f774659e6aaebe": {
+            "min_found": 16,
+            "max_found": 348,
+            "average": 182,
+            "15p": 53,
+            "65p": 227
+        },
+        "578f87ad245977356274f2cc": {
+            "min_found": 1,
+            "max_found": 355,
+            "average": 178,
+            "15p": 54,
+            "65p": 231
+        },
+        "5d6fe50986f77449d97f7463": {
+            "min_found": 32,
+            "max_found": 1042,
+            "average": 537,
+            "15p": 157,
+            "65p": 678
+        },
+        "5909e4b686f7747f5b744fa4": {
+            "min_found": 1,
+            "max_found": 179,
+            "average": 90,
+            "15p": 27,
+            "65p": 117
+        },
+        "578f8782245977354405a1e3": {
+            "min_found": 3,
+            "max_found": 3485,
+            "average": 1744,
+            "15p": 523,
+            "65p": 2266
+        },
+        "5909d5ef86f77467974efbd8": {
+            "min_found": 1,
+            "max_found": 202,
+            "average": 101,
+            "15p": 31,
+            "65p": 132
+        },
+        "5909d24f86f77466f56e6855": {
+            "min_found": 3,
+            "max_found": 264,
+            "average": 133,
+            "15p": 40,
+            "65p": 172
+        },
+        "5909d76c86f77471e53d2adf": {
+            "min_found": 1,
+            "max_found": 65,
+            "average": 33,
+            "15p": 10,
+            "65p": 43
+        },
+        "5909d36d86f774660f0bb900": {
+            "min_found": 46,
+            "max_found": 574,
+            "average": 310,
+            "15p": 87,
+            "65p": 374
+        }
+    },
+    "interchange": {
+        "5909d7cf86f77470ee57d75a": {
+            "min_found": 1,
+            "max_found": 3938,
+            "average": 1969,
+            "15p": 591,
+            "65p": 2560
+        },
+        "5ad74cf586f774391278f6f0": {
+            "min_found": 1026394,
+            "max_found": 1026394,
+            "average": 1026394,
+            "15p": 153960,
+            "65p": 667157
+        },
+        "578f879c24597735401e6bc6": {
+            "min_found": 467218,
+            "max_found": 467218,
+            "average": 467218,
+            "15p": 70083,
+            "65p": 303692
+        },
+        "578f8778245977358849a9b5": {
+            "min_found": 4,
+            "max_found": 5432,
+            "average": 2718,
+            "15p": 815,
+            "65p": 3531
+        },
+        "5909d5ef86f77467974efbd8": {
+            "min_found": 2,
+            "max_found": 3113,
+            "average": 1557,
+            "15p": 467,
+            "65p": 2024
+        },
+        "578f87a3245977356274f2cb": {
+            "min_found": 1,
+            "max_found": 7474,
+            "average": 3737,
+            "15p": 1122,
+            "65p": 4859
+        },
+        "5909d76c86f77471e53d2adf": {
+            "min_found": 1,
+            "max_found": 2171,
+            "average": 1086,
+            "15p": 326,
+            "65p": 1412
+        },
+        "578f87b7245977356274f2cd": {
+            "min_found": 12,
+            "max_found": 3655,
+            "average": 1833,
+            "15p": 549,
+            "65p": 2376
+        },
+        "5909d36d86f774660f0bb900": {
+            "min_found": 1411,
+            "max_found": 12750,
+            "average": 7080,
+            "15p": 1913,
+            "65p": 8288
+        },
+        "59139c2186f77411564f8e42": {
+            "min_found": 3199,
+            "max_found": 37878,
+            "average": 20538,
+            "15p": 5682,
+            "65p": 24621
+        },
+        "5909d50c86f774659e6aaebe": {
+            "min_found": 745,
+            "max_found": 9468,
+            "average": 5106,
+            "15p": 1421,
+            "65p": 6155
+        },
+        "578f87ad245977356274f2cc": {
+            "min_found": 1,
+            "max_found": 830,
+            "average": 415,
+            "15p": 125,
+            "65p": 540
+        },
+        "5909d24f86f77466f56e6855": {
+            "min_found": 83,
+            "max_found": 3884,
+            "average": 1983,
+            "15p": 583,
+            "65p": 2525
+        },
+        "5909d45286f77465a8136dc6": {
+            "min_found": 1,
+            "max_found": 673,
+            "average": 337,
+            "15p": 101,
+            "65p": 438
+        },
+        "5d6d2b5486f774785c2ba8ea": {
+            "min_found": 1,
+            "max_found": 524,
+            "average": 262,
+            "15p": 79,
+            "65p": 341
+        },
+        "5909d4c186f7746ad34e805a": {
+            "min_found": 32,
+            "max_found": 1988,
+            "average": 1010,
+            "15p": 299,
+            "65p": 1293
+        },
+        "5909d89086f77472591234a0": {
+            "min_found": 1,
+            "max_found": 472,
+            "average": 236,
+            "15p": 71,
+            "65p": 307
+        },
+        "5c052cea86f7746b2101e8d8": {
+            "min_found": 4,
+            "max_found": 1664,
+            "average": 834,
+            "15p": 250,
+            "65p": 1082
+        },
+        "5d6d2bb386f774785b07a77a": {
+            "min_found": 1,
+            "max_found": 1603,
+            "average": 802,
+            "15p": 241,
+            "65p": 1042
+        },
+        "5909e4b686f7747f5b744fa4": {
+            "min_found": 1,
+            "max_found": 597,
+            "average": 299,
+            "15p": 90,
+            "65p": 389
+        }
+    },
+    "laboratory": {
+        "59139c2186f77411564f8e42": {
+            "min_found": 4868,
+            "max_found": 55412,
+            "average": 30140,
+            "15p": 8312,
+            "65p": 36018
+        },
+        "578f87a3245977356274f2cb": {
+            "min_found": 12,
+            "max_found": 2230,
+            "average": 1121,
+            "15p": 335,
+            "65p": 1450
+        },
+        "578f8778245977358849a9b5": {
+            "min_found": 4,
+            "max_found": 4104,
+            "average": 2054,
+            "15p": 616,
+            "65p": 2668
+        },
+        "578f87b7245977356274f2cd": {
+            "min_found": 57,
+            "max_found": 14065,
+            "average": 7061,
+            "15p": 2110,
+            "65p": 9143
+        },
+        "578f8782245977354405a1e3": {
+            "min_found": 4,
+            "max_found": 27868,
+            "average": 13936,
+            "15p": 4181,
+            "65p": 18115
+        },
+        "5909d7cf86f77470ee57d75a": {
+            "min_found": 1,
+            "max_found": 45361,
+            "average": 22681,
+            "15p": 6805,
+            "65p": 29485
+        },
+        "578f879c24597735401e6bc6": {
+            "min_found": 20629,
+            "max_found": 20629,
+            "average": 20629,
+            "15p": 3095,
+            "65p": 13409
+        },
+        "5909d76c86f77471e53d2adf": {
+            "min_found": 1,
+            "max_found": 819,
+            "average": 410,
+            "15p": 123,
+            "65p": 533
+        },
+        "5909d36d86f774660f0bb900": {
+            "min_found": 532,
+            "max_found": 4802,
+            "average": 2667,
+            "15p": 721,
+            "65p": 3122
+        },
+        "5909d4c186f7746ad34e805a": {
+            "min_found": 175,
+            "max_found": 7606,
+            "average": 3890,
+            "15p": 1141,
+            "65p": 4944
+        },
+        "5909d50c86f774659e6aaebe": {
+            "min_found": 616,
+            "max_found": 8266,
+            "average": 4441,
+            "15p": 1240,
+            "65p": 5373
+        },
+        "5909d89086f77472591234a0": {
+            "min_found": 1,
+            "max_found": 422,
+            "average": 211,
+            "15p": 64,
+            "65p": 275
+        },
+        "5909d5ef86f77467974efbd8": {
+            "min_found": 1,
+            "max_found": 627,
+            "average": 314,
+            "15p": 95,
+            "65p": 408
+        },
+        "5909d24f86f77466f56e6855": {
+            "min_found": 21,
+            "max_found": 1454,
+            "average": 737,
+            "15p": 219,
+            "65p": 946
+        },
+        "5c052cea86f7746b2101e8d8": {
+            "min_found": 1,
+            "max_found": 520,
+            "average": 260,
+            "15p": 79,
+            "65p": 339
+        }
+    },
+    "lighthouse": {
+        "578f8778245977358849a9b5": {
+            "min_found": 5,
+            "max_found": 12051,
+            "average": 6028,
+            "15p": 1808,
+            "65p": 7834
+        },
+        "5909d50c86f774659e6aaebe": {
+            "min_found": 2094,
+            "max_found": 26276,
+            "average": 14185,
+            "15p": 3942,
+            "65p": 17080
+        },
+        "5d6fd45b86f774317075ed43": {
+            "min_found": 593,
+            "max_found": 7771,
+            "average": 4182,
+            "15p": 1166,
+            "65p": 5052
+        },
+        "5909d4c186f7746ad34e805a": {
+            "min_found": 166,
+            "max_found": 5587,
+            "average": 2876,
+            "15p": 839,
+            "65p": 3632
+        },
+        "5909e4b686f7747f5b744fa4": {
+            "min_found": 1,
+            "max_found": 3279,
+            "average": 1640,
+            "15p": 492,
+            "65p": 2132
+        },
+        "5909d5ef86f77467974efbd8": {
+            "min_found": 1,
+            "max_found": 2906,
+            "average": 1453,
+            "15p": 436,
+            "65p": 1889
+        },
+        "578f87a3245977356274f2cb": {
+            "min_found": 1,
+            "max_found": 6191,
+            "average": 3096,
+            "15p": 929,
+            "65p": 4025
+        },
+        "5d6d2bb386f774785b07a77a": {
+            "min_found": 1,
+            "max_found": 3855,
+            "average": 1928,
+            "15p": 579,
+            "65p": 2506
+        },
+        "5909d7cf86f77470ee57d75a": {
+            "min_found": 2,
+            "max_found": 3301,
+            "average": 1651,
+            "15p": 496,
+            "65p": 2146
+        },
+        "5909d36d86f774660f0bb900": {
+            "min_found": 2689,
+            "max_found": 24892,
+            "average": 13790,
+            "15p": 3734,
+            "65p": 16180
+        },
+        "578f87ad245977356274f2cc": {
+            "min_found": 5,
+            "max_found": 1949,
+            "average": 977,
+            "15p": 293,
+            "65p": 1267
+        },
+        "578f87b7245977356274f2cd": {
+            "min_found": 64,
+            "max_found": 11151,
+            "average": 5607,
+            "15p": 1673,
+            "65p": 7249
+        },
+        "5909d89086f77472591234a0": {
+            "min_found": 1,
+            "max_found": 1216,
+            "average": 608,
+            "15p": 183,
+            "65p": 791
+        },
+        "578f8782245977354405a1e3": {
+            "min_found": 4,
+            "max_found": 9858,
+            "average": 4931,
+            "15p": 1479,
+            "65p": 6408
+        },
+        "5909d76c86f77471e53d2adf": {
+            "min_found": 1,
+            "max_found": 1158,
+            "average": 579,
+            "15p": 174,
+            "65p": 753
+        },
+        "59139c2186f77411564f8e42": {
+            "min_found": 896,
+            "max_found": 11317,
+            "average": 6106,
+            "15p": 1698,
+            "65p": 7357
+        },
+        "5d6d2b5486f774785c2ba8ea": {
+            "min_found": 1,
+            "max_found": 1930,
+            "average": 965,
+            "15p": 290,
+            "65p": 1255
+        },
+        "5909d45286f77465a8136dc6": {
+            "min_found": 1,
+            "max_found": 1135,
+            "average": 568,
+            "15p": 171,
+            "65p": 738
+        },
+        "5909d24f86f77466f56e6855": {
+            "min_found": 148,
+            "max_found": 7110,
+            "average": 3629,
+            "15p": 1067,
+            "65p": 4622
+        },
+        "61aa1ead84ea0800645777fd": {
+            "min_found": 81,
+            "max_found": 3900,
+            "average": 1990,
+            "15p": 586,
+            "65p": 2536
+        },
+        "5c052cea86f7746b2101e8d8": {
+            "min_found": 1,
+            "max_found": 512,
+            "average": 256,
+            "15p": 77,
+            "65p": 333
+        },
+        "578f879c24597735401e6bc6": {
+            "min_found": 7810,
+            "max_found": 7810,
+            "average": 7810,
+            "15p": 1172,
+            "65p": 5077
+        },
+        "5d6fd13186f77424ad2a8c69": {
+            "min_found": 226,
+            "max_found": 2674,
+            "average": 1450,
+            "15p": 402,
+            "65p": 1739
+        },
+        "61aa1e9a32a4743c3453d2cf": {
+            "min_found": 1,
+            "max_found": 150,
+            "average": 75,
+            "15p": 23,
+            "65p": 98
+        }
+    },
+    "rezervbase": {
+        "578f87b7245977356274f2cd": {
+            "min_found": 350,
+            "max_found": 79374,
+            "average": 39862,
+            "15p": 11907,
+            "65p": 51594
+        },
+        "578f87a3245977356274f2cb": {
+            "min_found": 1,
+            "max_found": 5978,
+            "average": 2989,
+            "15p": 897,
+            "65p": 3886
+        },
+        "5909d5ef86f77467974efbd8": {
+            "min_found": 1,
+            "max_found": 3221,
+            "average": 1611,
+            "15p": 484,
+            "65p": 2094
+        },
+        "5909e4b686f7747f5b744fa4": {
+            "min_found": 3,
+            "max_found": 2220,
+            "average": 1111,
+            "15p": 334,
+            "65p": 1444
+        },
+        "5d6fd13186f77424ad2a8c69": {
+            "min_found": 2859,
+            "max_found": 31732,
+            "average": 17295,
+            "15p": 4760,
+            "65p": 20626
+        },
+        "59139c2186f77411564f8e42": {
+            "min_found": 1971,
+            "max_found": 23630,
+            "average": 12800,
+            "15p": 3545,
+            "65p": 15360
+        },
+        "578f87ad245977356274f2cc": {
+            "min_found": 2,
+            "max_found": 2640,
+            "average": 1321,
+            "15p": 397,
+            "65p": 1717
+        },
+        "5909d36d86f774660f0bb900": {
+            "min_found": 3829,
+            "max_found": 34375,
+            "average": 19102,
+            "15p": 5157,
+            "65p": 22344
+        },
+        "578f8778245977358849a9b5": {
+            "min_found": 26,
+            "max_found": 16655,
+            "average": 8340,
+            "15p": 2499,
+            "65p": 10826
+        },
+        "5909d7cf86f77470ee57d75a": {
+            "min_found": 1,
+            "max_found": 2015,
+            "average": 1008,
+            "15p": 303,
+            "65p": 1310
+        },
+        "5909d50c86f774659e6aaebe": {
+            "min_found": 1343,
+            "max_found": 16656,
+            "average": 8999,
+            "15p": 2499,
+            "65p": 10827
+        },
+        "578f8782245977354405a1e3": {
+            "min_found": 4,
+            "max_found": 27719,
+            "average": 13861,
+            "15p": 4158,
+            "65p": 18018
+        },
+        "5d6fd45b86f774317075ed43": {
+            "min_found": 692,
+            "max_found": 8682,
+            "average": 4687,
+            "15p": 1303,
+            "65p": 5644
+        },
+        "5909d76c86f77471e53d2adf": {
+            "min_found": 2,
+            "max_found": 2620,
+            "average": 1311,
+            "15p": 394,
+            "65p": 1704
+        },
+        "5d6fe50986f77449d97f7463": {
+            "min_found": 443,
+            "max_found": 16341,
+            "average": 8392,
+            "15p": 2452,
+            "65p": 10622
+        },
+        "5909d89086f77472591234a0": {
+            "min_found": 1,
+            "max_found": 762,
+            "average": 381,
+            "15p": 115,
+            "65p": 496
+        },
+        "5909d24f86f77466f56e6855": {
+            "min_found": 68,
+            "max_found": 4245,
+            "average": 2156,
+            "15p": 637,
+            "65p": 2760
+        },
+        "5909d45286f77465a8136dc6": {
+            "min_found": 1,
+            "max_found": 112,
+            "average": 56,
+            "15p": 17,
+            "65p": 73
+        },
+        "5909d4c186f7746ad34e805a": {
+            "min_found": 15,
+            "max_found": 640,
+            "average": 327,
+            "15p": 97,
+            "65p": 417
+        }
+    },
+    "sandbox": {
+        "658420d8085fea07e674cdb6": {
+            "min_found": 394,
+            "max_found": 21702,
+            "average": 11048,
+            "15p": 3256,
+            "65p": 14107
+        },
+        "59139c2186f77411564f8e42": {
+            "min_found": 4245,
+            "max_found": 49658,
+            "average": 26951,
+            "15p": 7449,
+            "65p": 32278
+        },
+        "5909e4b686f7747f5b744fa4": {
+            "min_found": 2,
+            "max_found": 9675,
+            "average": 4838,
+            "15p": 1452,
+            "65p": 6289
+        },
+        "5d6fd45b86f774317075ed43": {
+            "min_found": 395,
+            "max_found": 5520,
+            "average": 2957,
+            "15p": 829,
+            "65p": 3589
+        },
+        "578f87b7245977356274f2cd": {
+            "min_found": 96,
+            "max_found": 22681,
+            "average": 11388,
+            "15p": 3403,
+            "65p": 14743
+        },
+        "5909d36d86f774660f0bb900": {
+            "min_found": 885,
+            "max_found": 8041,
+            "average": 4463,
+            "15p": 1207,
+            "65p": 5227
+        },
+        "6582e6d7b14c3f72eb071420": {
+            "min_found": 2,
+            "max_found": 5738,
+            "average": 2870,
+            "15p": 861,
+            "65p": 3730
+        },
+        "578f87a3245977356274f2cb": {
+            "min_found": 3,
+            "max_found": 2506,
+            "average": 1254,
+            "15p": 376,
+            "65p": 1629
+        },
+        "578f879c24597735401e6bc6": {
+            "min_found": 31254,
+            "max_found": 31254,
+            "average": 31254,
+            "15p": 4689,
+            "65p": 20316
+        },
+        "578f8782245977354405a1e3": {
+            "min_found": 3,
+            "max_found": 17900,
+            "average": 8951,
+            "15p": 2686,
+            "65p": 11636
+        },
+        "5909d89086f77472591234a0": {
+            "min_found": 1,
+            "max_found": 307,
+            "average": 154,
+            "15p": 47,
+            "65p": 200
+        },
+        "5909d45286f77465a8136dc6": {
+            "min_found": 1,
+            "max_found": 458,
+            "average": 229,
+            "15p": 69,
+            "65p": 298
+        },
+        "5909d50c86f774659e6aaebe": {
+            "min_found": 725,
+            "max_found": 9382,
+            "average": 5053,
+            "15p": 1408,
+            "65p": 6099
+        },
+        "578f87ad245977356274f2cc": {
+            "min_found": 2,
+            "max_found": 724,
+            "average": 363,
+            "15p": 109,
+            "65p": 471
+        },
+        "6582e6bb0c3b9823fe6d1840": {
+            "min_found": 6924,
+            "max_found": 6924,
+            "average": 6924,
+            "15p": 1039,
+            "65p": 4501
+        },
+        "5909d7cf86f77470ee57d75a": {
+            "min_found": 1,
+            "max_found": 425,
+            "average": 213,
+            "15p": 64,
+            "65p": 277
+        },
+        "5c052cea86f7746b2101e8d8": {
+            "min_found": 1,
+            "max_found": 1265,
+            "average": 633,
+            "15p": 190,
+            "65p": 823
+        },
+        "578f8778245977358849a9b5": {
+            "min_found": 1,
+            "max_found": 1083,
+            "average": 542,
+            "15p": 163,
+            "65p": 704
+        },
+        "6582e6c6edf14c4c6023adf2": {
+            "min_found": 6924,
+            "max_found": 6924,
+            "average": 6924,
+            "15p": 1039,
+            "65p": 4501
+        },
+        "5d6fe50986f77449d97f7463": {
+            "min_found": 74,
+            "max_found": 2448,
+            "average": 1261,
+            "15p": 368,
+            "65p": 1592
+        },
+        "5909d24f86f77466f56e6855": {
+            "min_found": 43,
+            "max_found": 2149,
+            "average": 1096,
+            "15p": 323,
+            "65p": 1397
+        },
+        "5909d5ef86f77467974efbd8": {
+            "min_found": 1,
+            "max_found": 174,
+            "average": 87,
+            "15p": 27,
+            "65p": 114
+        },
+        "5909d76c86f77471e53d2adf": {
+            "min_found": 1,
+            "max_found": 168,
+            "average": 84,
+            "15p": 26,
+            "65p": 110
+        },
+        "5d6fd13186f77424ad2a8c69": {
+            "min_found": 53,
+            "max_found": 501,
+            "average": 277,
+            "15p": 76,
+            "65p": 326
+        },
+        "5909d4c186f7746ad34e805a": {
+            "min_found": 12,
+            "max_found": 841,
+            "average": 426,
+            "15p": 127,
+            "65p": 547
+        }
+    },
+    "sandbox_high": {
+        "5d6fd45b86f774317075ed43": {
+            "min_found": 395,
+            "max_found": 5528,
+            "average": 2961,
+            "15p": 830,
+            "65p": 3594
+        },
+        "5909e4b686f7747f5b744fa4": {
+            "min_found": 1,
+            "max_found": 9396,
+            "average": 4698,
+            "15p": 1410,
+            "65p": 6108
+        },
+        "578f87a3245977356274f2cb": {
+            "min_found": 8,
+            "max_found": 2586,
+            "average": 1297,
+            "15p": 388,
+            "65p": 1681
+        },
+        "59139c2186f77411564f8e42": {
+            "min_found": 4411,
+            "max_found": 50029,
+            "average": 27220,
+            "15p": 7505,
+            "65p": 32519
+        },
+        "6582e6d7b14c3f72eb071420": {
+            "min_found": 5,
+            "max_found": 6151,
+            "average": 3078,
+            "15p": 923,
+            "65p": 3999
+        },
+        "578f87b7245977356274f2cd": {
+            "min_found": 91,
+            "max_found": 22902,
+            "average": 11496,
+            "15p": 3436,
+            "65p": 14887
+        },
+        "5909d36d86f774660f0bb900": {
+            "min_found": 893,
+            "max_found": 8054,
+            "average": 4473,
+            "15p": 1209,
+            "65p": 5236
+        },
+        "5d6fe50986f77449d97f7463": {
+            "min_found": 76,
+            "max_found": 2356,
+            "average": 1216,
+            "15p": 354,
+            "65p": 1532
+        },
+        "5909d5ef86f77467974efbd8": {
+            "min_found": 1,
+            "max_found": 171,
+            "average": 86,
+            "15p": 26,
+            "65p": 112
+        },
+        "578f87ad245977356274f2cc": {
+            "min_found": 2,
+            "max_found": 580,
+            "average": 291,
+            "15p": 88,
+            "65p": 378
+        },
+        "658420d8085fea07e674cdb6": {
+            "min_found": 389,
+            "max_found": 21931,
+            "average": 11160,
+            "15p": 3290,
+            "65p": 14256
+        },
+        "5c052cea86f7746b2101e8d8": {
+            "min_found": 1,
+            "max_found": 1356,
+            "average": 678,
+            "15p": 204,
+            "65p": 882
+        },
+        "5909d50c86f774659e6aaebe": {
+            "min_found": 737,
+            "max_found": 9658,
+            "average": 5197,
+            "15p": 1449,
+            "65p": 6278
+        },
+        "578f8778245977358849a9b5": {
+            "min_found": 1,
+            "max_found": 1024,
+            "average": 512,
+            "15p": 154,
+            "65p": 666
+        },
+        "578f8782245977354405a1e3": {
+            "min_found": 2,
+            "max_found": 17891,
+            "average": 8946,
+            "15p": 2684,
+            "65p": 11630
+        },
+        "578f879c24597735401e6bc6": {
+            "min_found": 31023,
+            "max_found": 31023,
+            "average": 31023,
+            "15p": 4654,
+            "65p": 20165
+        },
+        "5909d76c86f77471e53d2adf": {
+            "min_found": 1,
+            "max_found": 176,
+            "average": 88,
+            "15p": 27,
+            "65p": 115
+        },
+        "5909d24f86f77466f56e6855": {
+            "min_found": 42,
+            "max_found": 2240,
+            "average": 1141,
+            "15p": 337,
+            "65p": 1457
+        },
+        "5909d7cf86f77470ee57d75a": {
+            "min_found": 1,
+            "max_found": 410,
+            "average": 205,
+            "15p": 62,
+            "65p": 267
+        },
+        "5909d4c186f7746ad34e805a": {
+            "min_found": 23,
+            "max_found": 911,
+            "average": 467,
+            "15p": 137,
+            "65p": 593
+        },
+        "6582e6c6edf14c4c6023adf2": {
+            "min_found": 6922,
+            "max_found": 6922,
+            "average": 6922,
+            "15p": 1039,
+            "65p": 4500
+        },
+        "6582e6bb0c3b9823fe6d1840": {
+            "min_found": 6922,
+            "max_found": 6922,
+            "average": 6922,
+            "15p": 1039,
+            "65p": 4500
+        },
+        "5909d89086f77472591234a0": {
+            "min_found": 1,
+            "max_found": 350,
+            "average": 175,
+            "15p": 53,
+            "65p": 228
+        },
+        "5d6fd13186f77424ad2a8c69": {
+            "min_found": 51,
+            "max_found": 512,
+            "average": 281,
+            "15p": 77,
+            "65p": 333
+        },
+        "5909d45286f77465a8136dc6": {
+            "min_found": 1,
+            "max_found": 506,
+            "average": 253,
+            "15p": 76,
+            "65p": 329
+        }
+    },
+    "shoreline": {
+        "5909d50c86f774659e6aaebe": {
+            "min_found": 1765,
+            "max_found": 22515,
+            "average": 12140,
+            "15p": 3378,
+            "65p": 14635
+        },
+        "5909d5ef86f77467974efbd8": {
+            "min_found": 1,
+            "max_found": 1833,
+            "average": 917,
+            "15p": 275,
+            "65p": 1192
+        },
+        "578f87b7245977356274f2cd": {
+            "min_found": 50,
+            "max_found": 12938,
+            "average": 6494,
+            "15p": 1941,
+            "65p": 8410
+        },
+        "5d6d2b5486f774785c2ba8ea": {
+            "min_found": 1,
+            "max_found": 1886,
+            "average": 943,
+            "15p": 283,
+            "65p": 1226
+        },
+        "59139c2186f77411564f8e42": {
+            "min_found": 3413,
+            "max_found": 38702,
+            "average": 21057,
+            "15p": 5806,
+            "65p": 25157
+        },
+        "5909e4b686f7747f5b744fa4": {
+            "min_found": 2,
+            "max_found": 3554,
+            "average": 1778,
+            "15p": 534,
+            "65p": 2311
+        },
+        "5d6fd13186f77424ad2a8c69": {
+            "min_found": 499,
+            "max_found": 5301,
+            "average": 2900,
+            "15p": 796,
+            "65p": 3446
+        },
+        "5909d45286f77465a8136dc6": {
+            "min_found": 1,
+            "max_found": 787,
+            "average": 394,
+            "15p": 119,
+            "65p": 512
+        },
+        "578f87a3245977356274f2cb": {
+            "min_found": 1,
+            "max_found": 6750,
+            "average": 3375,
+            "15p": 1013,
+            "65p": 4388
+        },
+        "578f87ad245977356274f2cc": {
+            "min_found": 2,
+            "max_found": 1616,
+            "average": 809,
+            "15p": 243,
+            "65p": 1051
+        },
+        "5909d36d86f774660f0bb900": {
+            "min_found": 1328,
+            "max_found": 11618,
+            "average": 6473,
+            "15p": 1743,
+            "65p": 7552
+        },
+        "5d6fe50986f77449d97f7463": {
+            "min_found": 110,
+            "max_found": 3735,
+            "average": 1922,
+            "15p": 561,
+            "65p": 2428
+        },
+        "578f8778245977358849a9b5": {
+            "min_found": 4,
+            "max_found": 17903,
+            "average": 8953,
+            "15p": 2686,
+            "65p": 11637
+        },
+        "5909d76c86f77471e53d2adf": {
+            "min_found": 2,
+            "max_found": 2766,
+            "average": 1384,
+            "15p": 415,
+            "65p": 1798
+        },
+        "5909d24f86f77466f56e6855": {
+            "min_found": 318,
+            "max_found": 14802,
+            "average": 7560,
+            "15p": 2221,
+            "65p": 9622
+        },
+        "578f879c24597735401e6bc6": {
+            "min_found": 134691,
+            "max_found": 134691,
+            "average": 134691,
+            "15p": 20204,
+            "65p": 87550
+        },
+        "5c052cea86f7746b2101e8d8": {
+            "min_found": 2,
+            "max_found": 1955,
+            "average": 978,
+            "15p": 294,
+            "65p": 1271
+        },
+        "5909d7cf86f77470ee57d75a": {
+            "min_found": 1,
+            "max_found": 1953,
+            "average": 977,
+            "15p": 293,
+            "65p": 1270
+        },
+        "5d6d2bb386f774785b07a77a": {
+            "min_found": 2,
+            "max_found": 3726,
+            "average": 1864,
+            "15p": 559,
+            "65p": 2422
+        },
+        "578f8782245977354405a1e3": {
+            "min_found": 6,
+            "max_found": 76024,
+            "average": 38015,
+            "15p": 11404,
+            "65p": 49416
+        },
+        "5909d89086f77472591234a0": {
+            "min_found": 1,
+            "max_found": 2304,
+            "average": 1152,
+            "15p": 346,
+            "65p": 1498
+        },
+        "5909d4c186f7746ad34e805a": {
+            "min_found": 124,
+            "max_found": 5575,
+            "average": 2849,
+            "15p": 837,
+            "65p": 3624
+        }
+    },
+    "tarkovstreets": {
+        "578f87b7245977356274f2cd": {
+            "min_found": 523,
+            "max_found": 107975,
+            "average": 54249,
+            "15p": 16197,
+            "65p": 70184
+        },
+        "578f879c24597735401e6bc6": {
+            "min_found": 686135,
+            "max_found": 686135,
+            "average": 686135,
+            "15p": 102921,
+            "65p": 445988
+        },
+        "578f87a3245977356274f2cb": {
+            "min_found": 2,
+            "max_found": 23004,
+            "average": 11503,
+            "15p": 3451,
+            "65p": 14953
+        },
+        "578f8778245977358849a9b5": {
+            "min_found": 7,
+            "max_found": 22105,
+            "average": 11056,
+            "15p": 3316,
+            "65p": 14369
+        },
+        "578f87ad245977356274f2cc": {
+            "min_found": 7,
+            "max_found": 5134,
+            "average": 2570,
+            "15p": 771,
+            "65p": 3338
+        },
+        "5909e4b686f7747f5b744fa4": {
+            "min_found": 2,
+            "max_found": 18323,
+            "average": 9162,
+            "15p": 2749,
+            "65p": 11910
+        },
+        "5909d50c86f774659e6aaebe": {
+            "min_found": 3770,
+            "max_found": 47457,
+            "average": 25613,
+            "15p": 7119,
+            "65p": 30848
+        },
+        "59139c2186f77411564f8e42": {
+            "min_found": 6972,
+            "max_found": 78679,
+            "average": 42825,
+            "15p": 11802,
+            "65p": 51142
+        },
+        "5d6d2bb386f774785b07a77a": {
+            "min_found": 1,
+            "max_found": 5290,
+            "average": 2645,
+            "15p": 794,
+            "65p": 3439
+        },
+        "5909d5ef86f77467974efbd8": {
+            "min_found": 2,
+            "max_found": 2469,
+            "average": 1235,
+            "15p": 371,
+            "65p": 1605
+        },
+        "5909d4c186f7746ad34e805a": {
+            "min_found": 445,
+            "max_found": 17006,
+            "average": 8725,
+            "15p": 2551,
+            "65p": 11054
+        },
+        "578f8782245977354405a1e3": {
+            "min_found": 9,
+            "max_found": 62386,
+            "average": 31197,
+            "15p": 9358,
+            "65p": 40551
+        },
+        "5909d89086f77472591234a0": {
+            "min_found": 1,
+            "max_found": 1159,
+            "average": 580,
+            "15p": 174,
+            "65p": 754
+        },
+        "5d6fd45b86f774317075ed43": {
+            "min_found": 796,
+            "max_found": 10262,
+            "average": 5529,
+            "15p": 1540,
+            "65p": 6671
+        },
+        "5909d76c86f77471e53d2adf": {
+            "min_found": 1,
+            "max_found": 426,
+            "average": 213,
+            "15p": 64,
+            "65p": 277
+        },
+        "5909d36d86f774660f0bb900": {
+            "min_found": 3952,
+            "max_found": 36184,
+            "average": 20068,
+            "15p": 5428,
+            "65p": 23520
+        },
+        "5909d24f86f77466f56e6855": {
+            "min_found": 374,
+            "max_found": 16155,
+            "average": 8264,
+            "15p": 2424,
+            "65p": 10501
+        },
+        "5909d7cf86f77470ee57d75a": {
+            "min_found": 2,
+            "max_found": 2171,
+            "average": 1086,
+            "15p": 326,
+            "65p": 1412
+        },
+        "5c052cea86f7746b2101e8d8": {
+            "min_found": 1,
+            "max_found": 6091,
+            "average": 3046,
+            "15p": 914,
+            "65p": 3960
+        },
+        "5909d45286f77465a8136dc6": {
+            "min_found": 3,
+            "max_found": 2864,
+            "average": 1433,
+            "15p": 430,
+            "65p": 1862
+        },
+        "5d6fd13186f77424ad2a8c69": {
+            "min_found": 552,
+            "max_found": 6055,
+            "average": 3303,
+            "15p": 909,
+            "65p": 3936
+        },
+        "5d6fe50986f77449d97f7463": {
+            "min_found": 96,
+            "max_found": 3787,
+            "average": 1941,
+            "15p": 569,
+            "65p": 2462
+        },
+        "5ad74cf586f774391278f6f0": {
+            "min_found": 51818,
+            "max_found": 51818,
+            "average": 51818,
+            "15p": 7773,
+            "65p": 33682
+        },
+        "64d116f41a9c6143a956127d": {
+            "min_found": 1116,
+            "max_found": 62973,
+            "average": 32044,
+            "15p": 9446,
+            "65p": 40933
+        },
+        "64d11702dd0cd96ab82c3280": {
+            "min_found": 23611,
+            "max_found": 118291,
+            "average": 70951,
+            "15p": 17744,
+            "65p": 76890
+        }
+    },
+    "woods": {
+        "578f87a3245977356274f2cb": {
+            "min_found": 13,
+            "max_found": 3322,
+            "average": 1667,
+            "15p": 499,
+            "65p": 2160
+        },
+        "578f8778245977358849a9b5": {
+            "min_found": 4,
+            "max_found": 3325,
+            "average": 1664,
+            "15p": 499,
+            "65p": 2162
+        },
+        "578f87ad245977356274f2cc": {
+            "min_found": 9,
+            "max_found": 2177,
+            "average": 1093,
+            "15p": 327,
+            "65p": 1416
+        },
+        "5909d5ef86f77467974efbd8": {
+            "min_found": 1,
+            "max_found": 1112,
+            "average": 556,
+            "15p": 167,
+            "65p": 723
+        },
+        "5909e4b686f7747f5b744fa4": {
+            "min_found": 1,
+            "max_found": 2032,
+            "average": 1016,
+            "15p": 305,
+            "65p": 1321
+        },
+        "5d6d2bb386f774785b07a77a": {
+            "min_found": 1,
+            "max_found": 7274,
+            "average": 3637,
+            "15p": 1092,
+            "65p": 4729
+        },
+        "5909d50c86f774659e6aaebe": {
+            "min_found": 628,
+            "max_found": 8212,
+            "average": 4420,
+            "15p": 1232,
+            "65p": 5338
+        },
+        "5d07b91b86f7745a077a9432": {
+            "min_found": 3,
+            "max_found": 1477,
+            "average": 740,
+            "15p": 222,
+            "65p": 961
+        },
+        "578f87b7245977356274f2cd": {
+            "min_found": 25,
+            "max_found": 1599,
+            "average": 812,
+            "15p": 240,
+            "65p": 1040
+        },
+        "5909d7cf86f77470ee57d75a": {
+            "min_found": 1,
+            "max_found": 1073,
+            "average": 537,
+            "15p": 161,
+            "65p": 698
+        },
+        "5d6fd45b86f774317075ed43": {
+            "min_found": 480,
+            "max_found": 6330,
+            "average": 3405,
+            "15p": 950,
+            "65p": 4115
+        },
+        "5d6d2b5486f774785c2ba8ea": {
+            "min_found": 4,
+            "max_found": 3523,
+            "average": 1763,
+            "15p": 529,
+            "65p": 2290
+        },
+        "5d6fe50986f77449d97f7463": {
+            "min_found": 124,
+            "max_found": 4893,
+            "average": 2508,
+            "15p": 734,
+            "65p": 3181
+        },
+        "5909d76c86f77471e53d2adf": {
+            "min_found": 1,
+            "max_found": 518,
+            "average": 259,
+            "15p": 78,
+            "65p": 337
+        },
+        "5909d89086f77472591234a0": {
+            "min_found": 1,
+            "max_found": 333,
+            "average": 167,
+            "15p": 50,
+            "65p": 217
+        },
+        "5d6fd13186f77424ad2a8c69": {
+            "min_found": 980,
+            "max_found": 10711,
+            "average": 5845,
+            "15p": 1607,
+            "65p": 6963
+        },
+        "5909d45286f77465a8136dc6": {
+            "min_found": 1,
+            "max_found": 255,
+            "average": 128,
+            "15p": 39,
+            "65p": 166
+        },
+        "5909d36d86f774660f0bb900": {
+            "min_found": 687,
+            "max_found": 6921,
+            "average": 3804,
+            "15p": 1039,
+            "65p": 4499
+        },
+        "5909d24f86f77466f56e6855": {
+            "min_found": 33,
+            "max_found": 1959,
+            "average": 996,
+            "15p": 294,
+            "65p": 1274
+        },
+        "578f8782245977354405a1e3": {
+            "min_found": 2,
+            "max_found": 2598,
+            "average": 1300,
+            "15p": 390,
+            "65p": 1689
+        }
+    }
+}

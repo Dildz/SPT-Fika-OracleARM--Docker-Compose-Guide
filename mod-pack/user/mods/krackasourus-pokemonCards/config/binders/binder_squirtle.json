@@ -1,0 +1,958 @@
+{
+    "item_type": "binder",
+    "clone_item": "5a9d6d00a2750c5c985b5305",
+    "id": "binder_squirtle",
+    "item_name": "Card Binder",
+    "item_short_name": "Binder",
+    "item_description": "A binder that holds all you favorite collectable cards",
+    "item_parent": "55802f3e4bdc2de7118b4584",
+    "category_id": "5b5f6fa186f77409407a7eb7",
+    "item_prefab_path": "binders/binder_squirtle.bundle",
+    "color": "blue",
+    "lootable": false,
+    "sold": true,
+    "trader": "k_collector",
+    "trader_loyalty_level": 1,
+    "item_sound": "item_book",
+    "stack_max_size": 1,
+    "currency": "roubles",
+    "price": 350000,
+    "weight": 0.3,
+    "container": "5909e4b686f7747f5b744fa4",
+    "unlimited_stock": true,
+    "stock_amount": 999999,
+    "ExternalSize": {
+        "width": 1,
+        "height": 2
+    },
+    "slotStructure": [
+        {
+            "_name": "mod_mount_6",
+            "_id": "binder_binder_squirtle_slot_7",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_7"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_7",
+            "_id": "binder_binder_squirtle_slot_8",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_8"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_8",
+            "_id": "binder_binder_squirtle_slot_9",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_9"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_15",
+            "_id": "binder_binder_squirtle_slot_16",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_16"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_16",
+            "_id": "binder_binder_squirtle_slot_17",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_17"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_17",
+            "_id": "binder_binder_squirtle_slot_18",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_18"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_24",
+            "_id": "binder_binder_squirtle_slot_25",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_25"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_25",
+            "_id": "binder_binder_squirtle_slot_26",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_26"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_26",
+            "_id": "binder_binder_squirtle_slot_27",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_27"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_33",
+            "_id": "binder_binder_squirtle_slot_34",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_34"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_34",
+            "_id": "binder_binder_squirtle_slot_35",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_35"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_35",
+            "_id": "binder_binder_squirtle_slot_36",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_36"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_42",
+            "_id": "binder_binder_squirtle_slot_43",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_43"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_43",
+            "_id": "binder_binder_squirtle_slot_44",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_44"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_44",
+            "_id": "binder_binder_squirtle_slot_45",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_45"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_51",
+            "_id": "binder_binder_squirtle_slot_52",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_52"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_52",
+            "_id": "binder_binder_squirtle_slot_53",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_53"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_53",
+            "_id": "binder_binder_squirtle_slot_54",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_54"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_60",
+            "_id": "binder_binder_squirtle_slot_61",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_61"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_61",
+            "_id": "binder_binder_squirtle_slot_62",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_62"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_62",
+            "_id": "binder_binder_squirtle_slot_63",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_63"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_69",
+            "_id": "binder_binder_squirtle_slot_70",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_70"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_70",
+            "_id": "binder_binder_squirtle_slot_71",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_71"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_71",
+            "_id": "binder_binder_squirtle_slot_72",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_72"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_78",
+            "_id": "binder_binder_squirtle_slot_79",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_79"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_79",
+            "_id": "binder_binder_squirtle_slot_80",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_80"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_80",
+            "_id": "binder_binder_squirtle_slot_81",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_81"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_87",
+            "_id": "binder_binder_squirtle_slot_88",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_88"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_88",
+            "_id": "binder_binder_squirtle_slot_89",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_89"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_89",
+            "_id": "binder_binder_squirtle_slot_90",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_90"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_96",
+            "_id": "binder_binder_squirtle_slot_97",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_97"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_97",
+            "_id": "binder_binder_squirtle_slot_98",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_98"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_98",
+            "_id": "binder_binder_squirtle_slot_99",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_99"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_105",
+            "_id": "binder_binder_squirtle_slot_106",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_106"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_106",
+            "_id": "binder_binder_squirtle_slot_107",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_107"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_107",
+            "_id": "binder_binder_squirtle_slot_108",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_108"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_114",
+            "_id": "binder_binder_squirtle_slot_115",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_115"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_115",
+            "_id": "binder_binder_squirtle_slot_116",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_116"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_116",
+            "_id": "binder_binder_squirtle_slot_117",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_117"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_123",
+            "_id": "binder_binder_squirtle_slot_124",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_124"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_124",
+            "_id": "binder_binder_squirtle_slot_125",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_125"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_125",
+            "_id": "binder_binder_squirtle_slot_126",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_126"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_132",
+            "_id": "binder_binder_squirtle_slot_133",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_133"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_133",
+            "_id": "binder_binder_squirtle_slot_134",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_134"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_134",
+            "_id": "binder_binder_squirtle_slot_135",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_135"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_141",
+            "_id": "binder_binder_squirtle_slot_142",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_142"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_142",
+            "_id": "binder_binder_squirtle_slot_143",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_143"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_143",
+            "_id": "binder_binder_squirtle_slot_144",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_144"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_150",
+            "_id": "binder_binder_squirtle_slot_151",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_151"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_151",
+            "_id": "binder_binder_squirtle_slot_152",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_152"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_152",
+            "_id": "binder_binder_squirtle_slot_153",
+            "_parent": "binder_binder_squirtle",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_153"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        }
+    ],
+    "quest_item": false,
+    "insurancedisabled": true,
+    "availableforinsurance": false,
+    "examinedbydefault": false,
+    "isunremovable": false,
+    "discardingblock": false,
+    "isundiscardable": false,
+    "CanSellOnRagfair": false,
+    "isungivable": false,
+    "discardlimit": 2
+}

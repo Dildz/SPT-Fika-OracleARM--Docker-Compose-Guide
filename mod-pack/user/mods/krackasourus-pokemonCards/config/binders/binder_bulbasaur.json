@@ -1,0 +1,1011 @@
+{
+    "clone_item": "5a9d6d00a2750c5c985b5305",
+    "id": "binder_bulbasaur",
+    "item_name": "Card Binder",
+    "item_short_name": "Binder",
+    "item_description": "A binder that holds all you favorite collectable cards",
+    "item_parent": "55802f3e4bdc2de7118b4584",
+    "category_id": "5b5f6fa186f77409407a7eb7",
+    "item_prefab_path": "binders/binder_bulbasaur.bundle",
+    "color": "blue",
+    "lootable": false,
+    "sold": true,
+    "trader": "k_collector",
+    "trader_loyalty_level": 1,
+    "item_sound": "item_book",
+    "stack_max_size": 1,
+    "currency": "roubles",
+    "price": 350000,
+    "weight": 0.3,
+    "container": "5909e4b686f7747f5b744fa4",
+    "unlimited_stock": true,
+    "stock_amount": 999999,
+    "ExternalSize": {
+        "width": 1,
+        "height": 2
+    },
+    "slotStructure": [
+        {
+            "_name": "mod_mount_0",
+            "_id": "binder_binder_bulbasaur_slot_1",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_1"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_1",
+            "_id": "binder_binder_bulbasaur_slot_2",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_2"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_2",
+            "_id": "binder_binder_bulbasaur_slot_3",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_3"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_9",
+            "_id": "binder_binder_bulbasaur_slot_10",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_10"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_10",
+            "_id": "binder_binder_bulbasaur_slot_11",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_11"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_11",
+            "_id": "binder_binder_bulbasaur_slot_12",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_12"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_18",
+            "_id": "binder_binder_bulbasaur_slot_19",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_19"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_19",
+            "_id": "binder_binder_bulbasaur_slot_20",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_20"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_20",
+            "_id": "binder_binder_bulbasaur_slot_21",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_21"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_27",
+            "_id": "binder_binder_bulbasaur_slot_28",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_28"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_28",
+            "_id": "binder_binder_bulbasaur_slot_29",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_29"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_29",
+            "_id": "binder_binder_bulbasaur_slot_30",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_30"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_36",
+            "_id": "binder_binder_bulbasaur_slot_37",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_37"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_37",
+            "_id": "binder_binder_bulbasaur_slot_38",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_38"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_38",
+            "_id": "binder_binder_bulbasaur_slot_39",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_39"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_45",
+            "_id": "binder_binder_bulbasaur_slot_46",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_46"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_46",
+            "_id": "binder_binder_bulbasaur_slot_47",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_47"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_47",
+            "_id": "binder_binder_bulbasaur_slot_48",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_48"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_54",
+            "_id": "binder_binder_bulbasaur_slot_55",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_55"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_55",
+            "_id": "binder_binder_bulbasaur_slot_56",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_56"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_56",
+            "_id": "binder_binder_bulbasaur_slot_57",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_57"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_63",
+            "_id": "binder_binder_bulbasaur_slot_64",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_64"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_64",
+            "_id": "binder_binder_bulbasaur_slot_65",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_65"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_65",
+            "_id": "binder_binder_bulbasaur_slot_66",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_66"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_72",
+            "_id": "binder_binder_bulbasaur_slot_73",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_73"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_73",
+            "_id": "binder_binder_bulbasaur_slot_74",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_74"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_74",
+            "_id": "binder_binder_bulbasaur_slot_75",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_75"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_81",
+            "_id": "binder_binder_bulbasaur_slot_82",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_82"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_82",
+            "_id": "binder_binder_bulbasaur_slot_83",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_83"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_83",
+            "_id": "binder_binder_bulbasaur_slot_84",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_84"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_90",
+            "_id": "binder_binder_bulbasaur_slot_91",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_91"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_91",
+            "_id": "binder_binder_bulbasaur_slot_92",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_92"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_92",
+            "_id": "binder_binder_bulbasaur_slot_93",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_93"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_99",
+            "_id": "binder_binder_bulbasaur_slot_100",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_100"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_100",
+            "_id": "binder_binder_bulbasaur_slot_101",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_101"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_101",
+            "_id": "binder_binder_bulbasaur_slot_102",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_102"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_108",
+            "_id": "binder_binder_bulbasaur_slot_109",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_109"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_109",
+            "_id": "binder_binder_bulbasaur_slot_110",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_110"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_110",
+            "_id": "binder_binder_bulbasaur_slot_111",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_111"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_117",
+            "_id": "binder_binder_bulbasaur_slot_118",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_118"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_118",
+            "_id": "binder_binder_bulbasaur_slot_119",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_119"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_119",
+            "_id": "binder_binder_bulbasaur_slot_120",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_120"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_126",
+            "_id": "binder_binder_bulbasaur_slot_127",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_127"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_127",
+            "_id": "binder_binder_bulbasaur_slot_128",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_128"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_128",
+            "_id": "binder_binder_bulbasaur_slot_129",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_129"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_135",
+            "_id": "binder_binder_bulbasaur_slot_136",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_136"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_136",
+            "_id": "binder_binder_bulbasaur_slot_137",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_137"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_137",
+            "_id": "binder_binder_bulbasaur_slot_138",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_138"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_144",
+            "_id": "binder_binder_bulbasaur_slot_145",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_145"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_145",
+            "_id": "binder_binder_bulbasaur_slot_146",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_146"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_146",
+            "_id": "binder_binder_bulbasaur_slot_147",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_147"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_153",
+            "_id": "binder_binder_bulbasaur_slot_154",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_154"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_154",
+            "_id": "binder_binder_bulbasaur_slot_155",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_155"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        },
+        {
+            "_name": "mod_mount_155",
+            "_id": "binder_binder_bulbasaur_slot_156",
+            "_parent": "binder_binder_bulbasaur",
+            "_props": {
+                "filters": [
+                    {
+                        "Shift": 0,
+                        "Filter": [
+                            "card_156"
+                        ]
+                    }
+                ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+        }
+    ],
+    "quest_item": false,
+    "insurancedisabled": true,
+    "availableforinsurance": false,
+    "examinedbydefault": false,
+    "isunremovable": false,
+    "discardingblock": false,
+    "isundiscardable": false,
+    "CanSellOnRagfair": false,
+    "isungivable": false,
+    "discardlimit": 2
+}

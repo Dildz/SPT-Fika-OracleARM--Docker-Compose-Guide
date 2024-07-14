@@ -23,7 +23,7 @@ RUN git config --global http.postBuffer 524288000
 RUN git clone https://github.com/nvm-sh/nvm.git $HOME/.nvm || true
 RUN \. $HOME/.nvm/nvm.sh && nvm install $NODE
 
-## Clone the SPT repo or continue if it exist
+# Clone the SPT repo or continue if it exist
 RUN git clone --branch $SPT_BRANCH https://dev.sp-tarkov.com/SPT/Server.git srv || true
 
 ## Check out and git-lfs (specific commit --build-arg SPT=xxxx)
@@ -31,7 +31,7 @@ WORKDIR /opt/srv/project
 RUN git checkout $SPT
 RUN git-lfs pull
 
-## remove the encoding from spt - todo: find a better workaround
+## remove the encoding from aki - todo: find a better workaround
 RUN sed -i '/setEncoding/d' /opt/srv/project/src/Program.ts || true
 
 ## Install npm dependencies and run build
@@ -56,8 +56,8 @@ COPY fcpy.sh /opt/fcpy.sh
 # Fix for Windows
 RUN dos2unix /opt/fcpy.sh
 
-# Set permissions
-RUN chmod o+rwx /opt -R
+# Set permissions and change ownership to ubuntu user
+RUN chmod -R 775 /opt && chown -R ubuntu:ubuntu /opt
 
 # Exposing FIKA ports (+10 up from standard installation)
 EXPOSE 6969
