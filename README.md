@@ -398,9 +398,9 @@ Now your server is updated.
 
 ## Other possibly helpful info
 To play with friends you have several options:
-ZeroTier One
-RADMIN VPN
-Direct connection with port forwarding
+ZeroTier One / 
+RADMIN VPN / 
+Direct connection with port forwarding.
 [More info over here](https://github.com/project-fika/Fika-Documentation?tab=readme-ov-file#installation)
 
 I prefer using ZeroTier One, I've found this to be the most "hassle-free" experience for players.
