@@ -16,8 +16,7 @@
             "6033a35f80ae5e2f970ba6bb": 1,
             "618109c96d7ca35d076b3363": 1,
             "6295e8c3e08ed747e64aea00": 1,
-            "637b945722e2a933ed0e33c8": 1,
-            "66546f823b51a4d21e0d17d7": 1
+            "637b945722e2a933ed0e33c8": 1
         },
         "feet": {
             "5cde95ef7d6c8b04713c4f2d": 1,
@@ -39,10 +38,10 @@
         },
         "head": {
             "5cde96047d6c8b20b577f016": 1,
-            "5fdb4139e4ed5b5ea251e4ed": 1,
-            "5fdb5950f5264a66150d1c6e": 1,
             "60a6aa8fd559ae040d0d951f": 1,
             "619f9e338858a474c8685cc9": 1,
+            "5fdb5950f5264a66150d1c6e": 1,
+            "5fdb4139e4ed5b5ea251e4ed": 1,
             "62aca6a1310e67685a2fc2e7": 1,
             "6574aabee0423b9ebe0c79cf": 1
         },
@@ -77,18 +76,17 @@
             "mod_equipment_000": 25,
             "mod_equipment_001": 25,
             "mod_equipment_002": 25,
-            "mod_mount": 20,
             "mod_nvg": 40,
             "right_side_plate": 75
         },
         "weaponMods": {
-            "mod_barrel": 75,
+            "mod_barrel": 100,
             "mod_bipod": 100,
             "mod_catch": 25,
             "mod_charge": 60,
             "mod_flashlight": 75,
             "mod_foregrip": 65,
-            "mod_gas_block": 75,
+            "mod_gas_block": 100,
             "mod_hammer": 25,
             "mod_handguard": 85,
             "mod_launcher": 20,
@@ -2217,6 +2215,7 @@
         "Jester_Stacks",
         "Ninjaweb",
         "Clodan",
+        "Bepis",
         "Wrecker",
         "Andrudis",
         "王哈桑ザ",
@@ -2247,6 +2246,7 @@
         "ColonelPeePantz",
         "Aethas",
         "cinna.toastie",
+        "kova",
         "Claus1978",
         "NugentGL",
         "Spock",
@@ -2387,10 +2387,12 @@
         "Echo55",
         "Arokar",
         "Skwizzy",
+        "AshleyShcaefferBMW",
         "DevilFlippy",
         "BaddestDragon",
         "JaydanCan",
         "MacrossMX7167",
+        "Borkel",
         "Capataina",
         "ChiNoel",
         "igorir3",
@@ -2490,79 +2492,21 @@
         "Gizzy",
         "LuckyCharmT",
         "Rena-chan",
-        "HB",
-        "John Pork",
-        "Big Chungus",
-        "Floppa",
-        "Rasdow",
-        "ShiftedFocus",
-        "Panicdots",
-        "defonotmaple",
-        "scrob",
-        "redlaser42",
-        "valeska",
-        "tyvas",
-        "nimanul",
-        "3 TO 8 BATTLE CRABS",
-        "GIANT ENEMY CRAB",
-        "Clownmaster1995",
-        "HalfPotato",
-        "openingspark860",
-        "Scuvy",
-        "TetrisGG",
-        "rayleefx",
-        "matt5brasil",
-        "zerowindy9406",
-        "bunray",
-        "clmove",
-        "Brollgarth",
-        "Priv_P",
-        "Gyozone",
-        "vo1ter",
-        "Karthel",
-        "oidnacbdnjidbha",
-        "ClaudioIonck",
-        "SilverParsnip",
-        "nader",
-        "IsaacSin",
-        "Kaeno",
-        "TheSparta",
-        "Akiw",
-        "Capital_Grin",
-        "dav1dct",
-        "gamesensical",
-        "seionmoya",
-        "52sierra"
+        "HB"
     ],
     "generation": {
         "items": {
             "backpackLoot": {
                 "weights": {
                     "0": 1,
-                    "3": 5,
-                    "4": 7,
-                    "5": 6,
+                    "3": 2,
+                    "5": 5,
                     "8": 6,
                     "10": 5,
                     "12": 4,
                     "15": 4,
                     "20": 3,
                     "23": 1
-                },
-                "whitelist": []
-            },
-            "currency": {
-                "weights": {
-                    "0": 5,
-                    "1": 1
-                },
-                "whitelist": []
-            },
-            "drink": {
-                "weights": {
-                    "0": 5,
-                    "1": 5,
-                    "2": 1
                 },
                 "whitelist": []
             },
@@ -2579,6 +2523,21 @@
                     "0": 5,
                     "1": 5,
                     "2": 2
+                },
+                "whitelist": []
+            },
+            "drink": {
+                "weights": {
+                    "0": 5,
+                    "1": 5,
+                    "2": 1
+                },
+                "whitelist": []
+            },
+            "currency": {
+                "weights": {
+                    "0": 5,
+                    "1": 1
                 },
                 "whitelist": []
             },
@@ -2631,7 +2590,7 @@
             },
             "stims": {
                 "weights": {
-                    "0": 2,
+                    "0": 1,
                     "1": 2,
                     "2": 1
                 },
@@ -2640,7 +2599,7 @@
             "vestLoot": {
                 "weights": {
                     "0": 1,
-                    "1": 3,
+                    "1": 2,
                     "2": 3,
                     "3": 2,
                     "4": 1
@@ -3422,6 +3381,11 @@
                 "59e690b686f7746c9f75e848": 1,
                 "59e6920f86f77411d82aa167": 1,
                 "59e77a2386f7742ee578960a": 1,
+                "5a0ec6d286f7742c0b518fb5": 1,
+                "5a13eebd86f7746fd639aa93": 1,
+                "5a13ef7e86f7741290491063": 1,
+                "5a13f24186f77410e57c5626": 1,
+                "5a1452ee86f7746f33111763": 1,
                 "5a38ebd9c4a282000d722a5b": 1,
                 "5a3c16fe86f77452b62de32a": 1,
                 "5a6086ea4f39f99cd479502f": 1,
@@ -3458,6 +3422,7 @@
                 "5d6e6a42a4b9364f07165f52": 1,
                 "5d6e6a53a4b9361bd473feec": 1,
                 "5d6e6a5fa4b93614ec501745": 1,
+                "5d8e15b686f774445103b190": 1,
                 "5e023d34e8a400319a28ed44": 1,
                 "5e023d48186a883be655e551": 1,
                 "5e023e53d4353e3302577c4c": 1,
@@ -4508,7 +4473,8 @@
                     "5d6e68b3a4b9361bca7e50b5",
                     "5d6e6891a4b9361bd473feea",
                     "5d6e689ca4b9361bc8618956",
-                    "5d6e68d1a4b93622fe60e845"
+                    "5d6e68d1a4b93622fe60e845",
+                    "64b8ee384b75259c590fa89b"
                 ]
             },
             "55d4887d4bdc2d962f8b4570": {
@@ -5307,7 +5273,8 @@
                     "5d6e68b3a4b9361bca7e50b5",
                     "5d6e6891a4b9361bd473feea",
                     "5d6e689ca4b9361bc8618956",
-                    "5d6e68d1a4b93622fe60e845"
+                    "5d6e68d1a4b93622fe60e845",
+                    "64b8ee384b75259c590fa89b"
                 ]
             },
             "56ea8d2fd2720b7c698b4570": {
@@ -32400,6 +32367,27 @@
                     "6477772ea8a38bb2050ed4db",
                     "60a23797a37c940de7062d02",
                     "655f13e0a246670fb0373245"
+                ]
+            },
+            "5882163224597757561aa920": {
+                "cartridges": [
+                    "560d5e524bdc2d25448b4571",
+                    "5d6e6772a4b936088465b17c",
+                    "5d6e67fba4b9361bc73bc779",
+                    "5d6e6806a4b936088465b17e",
+                    "5d6e68dea4b9361bcc29e659",
+                    "5d6e6911a4b9361bd5780d52",
+                    "5c0d591486f7744c505b416f",
+                    "58820d1224597753c90aeb13",
+                    "5d6e68c4a4b9361b93413f79",
+                    "5d6e68a8a4b9360b6c0d54e2",
+                    "5d6e68e6a4b9361c140bcfe0",
+                    "5d6e6869a4b9361c140bcfde",
+                    "5d6e68b3a4b9361bca7e50b5",
+                    "5d6e6891a4b9361bd473feea",
+                    "5d6e689ca4b9361bc8618956",
+                    "5d6e68d1a4b93622fe60e845",
+                    "64b8ee384b75259c590fa89b"
                 ]
             },
             "588200c224597743990da9ed": {

@@ -31,8 +31,8 @@ class InstanceManager {
     modName;
     debug;
     // Useful Paths
-    modPath = path.join(process.cwd(), "user/mods/SkillsExtended");
-    profilePath = path.join(process.cwd(), "user/profiles");
+    modPath = path.join(process.cwd(), "\\user\\mods\\SkillsExtended\\");
+    profilePath = path.join(process.cwd(), "\\user\\profiles");
     // Instances
     container;
     preSptModLoader;

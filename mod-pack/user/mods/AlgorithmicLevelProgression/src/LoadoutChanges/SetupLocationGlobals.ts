@@ -21,5 +21,5 @@ export const SetupLocationGlobals = (
   globalValues.originalBotTypes = cloneDeep(tables.bots.types);
   globalValues.configServer = configServer;
   globalValues.originalWeighting = cloneDeep(botConfig.equipment.pmc);
-  // globalValues.setValuesForLocation('woods', 1)
+  // globalValues.setValuesForLocation("woods", 1);
 };

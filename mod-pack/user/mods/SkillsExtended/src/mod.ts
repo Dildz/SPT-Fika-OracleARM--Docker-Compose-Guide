@@ -2,6 +2,7 @@
 
 import { InstanceManager } from "./InstanceManager";
 
+import fs from 'fs';
 import path from "node:path";
 import JSON5 from "json5";
 
@@ -16,6 +17,7 @@ import type { IKeys } from "./Models/IKeys";
 import { Money } from "@spt/models/enums/Money";
 import { Traders } from "@spt/models/enums/Traders";
 import { BaseClasses } from "@spt/models/enums/BaseClasses";
+import { LogTextColor } from "@spt/models/spt/logging/LogTextColor";
 
 enum ItemIDS {
     Lockpick  = "6622c28aed7e3bc72e301e22",
@@ -34,8 +36,11 @@ class SkillsExtended implements IPreSptLoadMod, IPostDBLoadMod
     public preSptLoad(container: DependencyContainer): void 
     {
         this.Instance.preSptLoad(container, "Skills Extended");
+        
+        this.Instance.logger.logWithColor("Skills Extended loading", LogTextColor.GREEN);
+        
         this.vfs = container.resolve<VFS>("VFS");
-        this.SkillsConfigRaw = this.vfs.readFile(path.join(__dirname, "../config/SkillsConfig.json5"));
+        this.SkillsConfigRaw = this.vfs.readFile(path.join(path.dirname(__filename), "..", "config", "SkillsConfig.json5"));
         this.SkillsConfig = JSON5.parse(this.SkillsConfigRaw);
 
         this.registerRoutes();
@@ -46,6 +51,8 @@ class SkillsExtended implements IPreSptLoadMod, IPostDBLoadMod
         this.Instance.postDBLoad(container);
         this.customItemService = container.resolve<CustomItemService>("CustomItemService");
 
+        this.Instance.logger.logWithColor("Did you know, BSG has 10 faction specific skills they're too lazy to implement?", LogTextColor.BLUE);
+
         this.setLocales();
         this.CreateItems();
         this.addCraftsToDatabase();
@@ -54,16 +61,33 @@ class SkillsExtended implements IPreSptLoadMod, IPostDBLoadMod
 
     private setLocales(): void
     {
-        const global = this.Instance.database.locales.global[this.SkillsConfig.Locale];
+        const localePath = path.join(path.dirname(__filename), "..", "locale");
+        const files = fs.readdirSync(localePath);
+        
+        const jsonFiles = files
+            .filter(file => path.extname(file) === ".json")
+            .map(file => path.basename(file, ".json"));
 
-        const modPath = this.Instance.modPath;
-
-        const locales = this.Instance.loadStringDictionarySync(`${modPath}/locale/${this.SkillsConfig.Locale}.json`);
-
-        for (const entry in locales)
+        for (const file of jsonFiles)
         {
-            global[entry] = locales[entry];
+            // Portugeese locale uses `po` not `pt`
+            // Skip because I originally set it as pt by mistake.
+            // Dont trust users to delete my mistake /BONK
+            if (file === "pt") continue;
+
+            const filePath = path.join(path.dirname(__filename), "..", "locale", `${file}.json`);
+            const localeFile = this.Instance.loadStringDictionarySync(filePath);
+            const global = this.Instance.database.locales.global[file];
+
+            this.Instance.logger.logWithColor(`Loading locale: ${file}`, LogTextColor.GREEN);
+
+            for (const locale in localeFile)
+            {
+                global[locale] = localeFile[locale];
+            }
         }
+
+        this.Instance.logger.logWithColor("Skills Extended: Locales dynamically loaded. Select your locale in-game on the settings page!", LogTextColor.GREEN);
     }
 
     private getKeys(): string

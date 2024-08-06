@@ -61,8 +61,8 @@ export default function ProgressionChanges(
 
   const traders = tables.traders;
 
-  const usecInventory = tables.bots.types.usec.inventory;
-  const bearInventory = tables.bots.types.bear.inventory;
+  const usecInventory = tables.bots.types.pmcusec.inventory;
+  const bearInventory = tables.bots.types.pmcbear.inventory;
   const prices = tables.templates.prices;
   const handbook = tables.templates.handbook;
 
@@ -437,11 +437,13 @@ export default function ProgressionChanges(
         tables?.bots?.types?.bear?.generation?.items?.backpackLoot?.weights &&
         new Set(
           Object.values(
-            tables.bots.types.bear.generation.items.backpackLoot.weights
+            tables.bots.types.pmcbear.generation.items.backpackLoot.weights
           )
         ).size === 1
       ) {
-        console.log("[AlgorithmicLevelProgression] Looting bots detected");
+        console.log(
+          "[AlgorithmicLevelProgression] Looting bots detected, removing pmc loot"
+        );
         lootingBotsDetected = true;
       }
 
@@ -491,8 +493,8 @@ export default function ProgressionChanges(
     }
   } else {
     botConfig.equipment.pmc = botConfigequipmentpmc as any;
-    tables.bots.types.usec = tablesbotstypesusec as any;
-    tables.bots.types.bear = tablesbotstypesusec as any;
+    tables.bots.types.pmcusec = tablesbotstypesusec as any;
+    tables.bots.types.pmcbear = tablesbotstypesusec as any;
   }
 
   if (config.strictEquipmentTiering === false) {
@@ -514,6 +516,9 @@ export default function ProgressionChanges(
       )
     ).size === 1
   ) {
+    console.log(
+      "[AlgorithmicLevelProgression] Looting bots detected, removing scav loot"
+    );
     const generation = (botConfig.equipment.assault.randomisation[0] as any)
       .generation;
     generation.backpackLoot = {
@@ -538,9 +543,9 @@ export default function ProgressionChanges(
 
   globalValues.originalBotTypes = cloneDeep(tables.bots.types);
   globalValues.originalWeighting = cloneDeep(botConfig.equipment.pmc);
-  // tables.bots.types.usec
+  // tables.bots.types.pmcusec
   // botConfig.equipment.pmc
-  // saveToFile(tables.bots.types.usec, `Cache/tablesbotstypesusec.json`);
+  // saveToFile(tables.bots.types.pmcusec, `Cache/tablesbotstypesusec.json`);
   // saveToFile(botConfig.equipment.pmc, `Cache/botConfigequipmentpmc.json`);
 
   config.debug ||

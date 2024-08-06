@@ -1097,23 +1097,23 @@ export const buildOutModsObject = (
     ) {
       switch (true) {
         case checkParentRecursive(item._parent, items, [magParent]):
-          if (item?._props?.Height * item?._props?.Width < 3) {
-            const bulletList =
-              item?._props?.Cartridges?.[0]?._props?.filters?.[0]?.Filter.filter(
-                (_tpl) => !!_tpl && !blacklistedItems.has(_tpl)
-              );
-            if (bulletList) {
-              newModObject["cartridges"] = bulletList;
-              inventory.mods[id] = newModObject;
-            }
-          } else {
-            config.debug &&
-              console.warn(
-                id,
-                item._name,
-                item?._props?.Cartridges?.[0]?._max_count
-              );
+          // if (item?._props?.Height * item?._props?.Width < 3) {
+          const bulletList =
+            item?._props?.Cartridges?.[0]?._props?.filters?.[0]?.Filter.filter(
+              (_tpl) => !!_tpl && !blacklistedItems.has(_tpl)
+            );
+          if (bulletList) {
+            newModObject["cartridges"] = bulletList;
+            inventory.mods[id] = newModObject;
           }
+          // } else {
+          // config.debug &&
+          // console.warn(
+          //   id,
+          //   item._name,
+          //   item?._props?.Cartridges?.[0]?._max_count
+          // );
+          // }
           break;
         case checkParentRecursive(item._parent, items, [weaponParent]): //Weapon
           if (item?._props?.Slots?.length > 0) {

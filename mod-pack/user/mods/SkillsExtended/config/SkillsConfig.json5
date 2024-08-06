@@ -1,5 +1,5 @@
 {
-    "Locale": "en",                                         // Current available locales are; en, es, pt, fr, ge, and ru.
+    "Locale": "ru",                                         // Current available locales are; en, es, pt, fr, ge, and ru.
     "MedicalSkills": {        
         "ENABLE_FIELD_MEDICINE": true,                      // Enables the field medicine skill
         "ENABLE_FIRST_AID": true,                           // Enables the First Aid skill

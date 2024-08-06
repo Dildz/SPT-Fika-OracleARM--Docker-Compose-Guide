@@ -5,11 +5,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const InstanceManager_1 = require("./InstanceManager");
+const fs_1 = __importDefault(require("fs"));
 const node_path_1 = __importDefault(require("node:path"));
 const json5_1 = __importDefault(require("/snapshot/project/node_modules/json5"));
 const Money_1 = require("/snapshot/project/obj/models/enums/Money");
 const Traders_1 = require("/snapshot/project/obj/models/enums/Traders");
 const BaseClasses_1 = require("/snapshot/project/obj/models/enums/BaseClasses");
+const LogTextColor_1 = require("/snapshot/project/obj/models/spt/logging/LogTextColor");
 var ItemIDS;
 (function (ItemIDS) {
     ItemIDS["Lockpick"] = "6622c28aed7e3bc72e301e22";
@@ -24,26 +26,42 @@ class SkillsExtended {
     SkillsConfig;
     preSptLoad(container) {
         this.Instance.preSptLoad(container, "Skills Extended");
+        this.Instance.logger.logWithColor("Skills Extended loading", LogTextColor_1.LogTextColor.GREEN);
         this.vfs = container.resolve("VFS");
-        this.SkillsConfigRaw = this.vfs.readFile(node_path_1.default.join(__dirname, "../config/SkillsConfig.json5"));
+        this.SkillsConfigRaw = this.vfs.readFile(node_path_1.default.join(node_path_1.default.dirname(__filename), "..", "config", "SkillsConfig.json5"));
         this.SkillsConfig = json5_1.default.parse(this.SkillsConfigRaw);
         this.registerRoutes();
     }
     postDBLoad(container) {
         this.Instance.postDBLoad(container);
         this.customItemService = container.resolve("CustomItemService");
+        this.Instance.logger.logWithColor("Did you know, BSG has 10 faction specific skills they're too lazy to implement?", LogTextColor_1.LogTextColor.BLUE);
         this.setLocales();
         this.CreateItems();
         this.addCraftsToDatabase();
         this.locale = this.Instance.database.locales.global;
     }
     setLocales() {
-        const global = this.Instance.database.locales.global[this.SkillsConfig.Locale];
-        const modPath = this.Instance.modPath;
-        const locales = this.Instance.loadStringDictionarySync(`${modPath}/locale/${this.SkillsConfig.Locale}.json`);
-        for (const entry in locales) {
-            global[entry] = locales[entry];
+        const localePath = node_path_1.default.join(node_path_1.default.dirname(__filename), "..", "locale");
+        const files = fs_1.default.readdirSync(localePath);
+        const jsonFiles = files
+            .filter(file => node_path_1.default.extname(file) === ".json")
+            .map(file => node_path_1.default.basename(file, ".json"));
+        for (const file of jsonFiles) {
+            // Portugeese locale uses `po` not `pt`
+            // Skip because I originally set it as pt by mistake.
+            // Dont trust users to delete my mistake /BONK
+            if (file === "pt")
+                continue;
+            const filePath = node_path_1.default.join(node_path_1.default.dirname(__filename), "..", "locale", `${file}.json`);
+            const localeFile = this.Instance.loadStringDictionarySync(filePath);
+            const global = this.Instance.database.locales.global[file];
+            this.Instance.logger.logWithColor(`Loading locale: ${file}`, LogTextColor_1.LogTextColor.GREEN);
+            for (const locale in localeFile) {
+                global[locale] = localeFile[locale];
+            }
         }
+        this.Instance.logger.logWithColor("Skills Extended: Locales dynamically loaded. Select your locale in-game on the settings page!", LogTextColor_1.LogTextColor.GREEN);
     }
     getKeys() {
         const items = Object.values(this.Instance.database.templates.items);

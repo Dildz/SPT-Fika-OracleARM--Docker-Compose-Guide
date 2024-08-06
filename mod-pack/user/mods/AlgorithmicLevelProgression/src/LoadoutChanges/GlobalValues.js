@@ -51,7 +51,7 @@ class globalValues {
         this.config.debug &&
             this.Logger.info(`Algorthimic LevelProgression: Setting up values for map ${location}`);
         const botConfig = this.configServer.getConfig(ConfigTypes_1.ConfigTypes.BOT);
-        const mapWeightings = advancedConfig_json_1.default.locations[location].weightingAdjustments;
+        const mapWeightings = advancedConfig_json_1.default.locations?.[location]?.weightingAdjustments;
         const items = this.tables.templates.items;
         if (!mapWeightings) {
             return this.Logger.warning(`Algorthimic LevelProgression: did not recognize 'location': ${location}, using defaults`);

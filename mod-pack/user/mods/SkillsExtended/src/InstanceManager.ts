@@ -23,8 +23,8 @@ export class InstanceManager
     public modName: string;
     public debug: boolean;
     // Useful Paths
-    public modPath: string = path.join(process.cwd(), "user/mods/SkillsExtended");
-    public profilePath: string = path.join(process.cwd(), "user/profiles");
+    public modPath: string = path.join(process.cwd(), "\\user\\mods\\SkillsExtended\\");
+    public profilePath: string = path.join(process.cwd(), "\\user\\profiles");
 
     // Instances
     public container: DependencyContainer;

@@ -89,19 +89,22 @@ export class globalValues {
     const botConfig = this.configServer.getConfig<IBotConfig>(ConfigTypes.BOT);
 
     const mapWeightings =
-      advancedConfig.locations[location].weightingAdjustments;
+      advancedConfig.locations?.[location]?.weightingAdjustments;
 
     const items = this.tables.templates.items;
+
     if (!mapWeightings) {
       return this.Logger.warning(
         `Algorthimic LevelProgression: did not recognize 'location': ${location}, using defaults`
       );
     }
+
     if (!this.originalWeighting) {
       return this.Logger.error(
         `Algorthimic LevelProgression: 'originalWeighting' was not set correctly`
       );
     }
+    
     if (!items) {
       return this.Logger.error(
         `Algorthimic LevelProgression: 'items' was not set correctly`

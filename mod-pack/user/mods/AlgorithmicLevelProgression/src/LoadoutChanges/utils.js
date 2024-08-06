@@ -871,17 +871,20 @@ const buildOutModsObject = (traderList, items, inventory, botConfig) => {
             ])) {
             switch (true) {
                 case (0, exports.checkParentRecursive)(item._parent, items, [exports.magParent]):
-                    if (item?._props?.Height * item?._props?.Width < 3) {
-                        const bulletList = item?._props?.Cartridges?.[0]?._props?.filters?.[0]?.Filter.filter((_tpl) => !!_tpl && !exports.blacklistedItems.has(_tpl));
-                        if (bulletList) {
-                            newModObject["cartridges"] = bulletList;
-                            inventory.mods[id] = newModObject;
-                        }
+                    // if (item?._props?.Height * item?._props?.Width < 3) {
+                    const bulletList = item?._props?.Cartridges?.[0]?._props?.filters?.[0]?.Filter.filter((_tpl) => !!_tpl && !exports.blacklistedItems.has(_tpl));
+                    if (bulletList) {
+                        newModObject["cartridges"] = bulletList;
+                        inventory.mods[id] = newModObject;
                     }
-                    else {
-                        config_json_1.default.debug &&
-                            console.warn(id, item._name, item?._props?.Cartridges?.[0]?._max_count);
-                    }
+                    // } else {
+                    // config.debug &&
+                    // console.warn(
+                    //   id,
+                    //   item._name,
+                    //   item?._props?.Cartridges?.[0]?._max_count
+                    // );
+                    // }
                     break;
                 case (0, exports.checkParentRecursive)(item._parent, items, [exports.weaponParent]): //Weapon
                     if (item?._props?.Slots?.length > 0) {

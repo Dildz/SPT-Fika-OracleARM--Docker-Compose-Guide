@@ -27,8 +27,11 @@ function BotLevelChanges(container) {
             const randomizedRange = test.sort((a, b) => b.val - a.val)[0]
                 .levelRange;
             const range = { ...config_json_1.levelRange[randomizedRange] };
-            if (range.max > 99) {
-                range.max = Math.min(range.max, Math.max(range.min + 10, playerLevel + 10, range.max - range.min));
+            if (range.max > 79) {
+                range.max = 79;
+            }
+            if (range.min > 70) {
+                range.min = 50;
             }
             const level = Math.round((range.max - range.min) * Math.random()) + range.min;
             const final = {

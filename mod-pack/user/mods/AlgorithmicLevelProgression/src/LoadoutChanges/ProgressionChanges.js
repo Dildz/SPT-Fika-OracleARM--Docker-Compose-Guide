@@ -22,8 +22,8 @@ function ProgressionChanges(container) {
     const Logger = container.resolve("WinstonLogger");
     const items = tables.templates.items;
     const traders = tables.traders;
-    const usecInventory = tables.bots.types.usec.inventory;
-    const bearInventory = tables.bots.types.bear.inventory;
+    const usecInventory = tables.bots.types.pmcusec.inventory;
+    const bearInventory = tables.bots.types.pmcbear.inventory;
     const prices = tables.templates.prices;
     const handbook = tables.templates.handbook;
     let loot = {};
@@ -298,8 +298,8 @@ function ProgressionChanges(container) {
             (0, utils_1.setWeightingAdjustments)(items, botConfig, tradersMasterList, mods);
             let lootingBotsDetected = false;
             if (tables?.bots?.types?.bear?.generation?.items?.backpackLoot?.weights &&
-                new Set(Object.values(tables.bots.types.bear.generation.items.backpackLoot.weights)).size === 1) {
-                console.log("[AlgorithmicLevelProgression] Looting bots detected");
+                new Set(Object.values(tables.bots.types.pmcbear.generation.items.backpackLoot.weights)).size === 1) {
+                console.log("[AlgorithmicLevelProgression] Looting bots detected, removing pmc loot");
                 lootingBotsDetected = true;
             }
             (0, utils_1.buildInitialRandomization)(items, botConfig, tradersMasterList, lootingBotsDetected);
@@ -335,8 +335,8 @@ function ProgressionChanges(container) {
     }
     else {
         botConfig.equipment.pmc = botConfigequipmentpmc_json_1.default;
-        tables.bots.types.usec = tablesbotstypesusec_json_1.default;
-        tables.bots.types.bear = tablesbotstypesusec_json_1.default;
+        tables.bots.types.pmcusec = tablesbotstypesusec_json_1.default;
+        tables.bots.types.pmcbear = tablesbotstypesusec_json_1.default;
     }
     if (config_json_1.default.strictEquipmentTiering === false) {
         (0, utils_1.combineWhitelist)(botConfig.equipment.pmc);
@@ -349,6 +349,7 @@ function ProgressionChanges(container) {
     });
     if (tables?.bots?.types?.assault?.generation?.items?.backpackLoot?.weights &&
         new Set(Object.values(tables.bots.types.assault.generation.items.backpackLoot.weights)).size === 1) {
+        console.log("[AlgorithmicLevelProgression] Looting bots detected, removing scav loot");
         const generation = botConfig.equipment.assault.randomisation[0]
             .generation;
         generation.backpackLoot = {
@@ -371,9 +372,9 @@ function ProgressionChanges(container) {
     // saveToFile(pmcConfig, "pmcConfig1.json");
     GlobalValues_1.globalValues.originalBotTypes = (0, utils_1.cloneDeep)(tables.bots.types);
     GlobalValues_1.globalValues.originalWeighting = (0, utils_1.cloneDeep)(botConfig.equipment.pmc);
-    // tables.bots.types.usec
+    // tables.bots.types.pmcusec
     // botConfig.equipment.pmc
-    // saveToFile(tables.bots.types.usec, `Cache/tablesbotstypesusec.json`);
+    // saveToFile(tables.bots.types.pmcusec, `Cache/tablesbotstypesusec.json`);
     // saveToFile(botConfig.equipment.pmc, `Cache/botConfigequipmentpmc.json`);
     config_json_1.default.debug ||
         (config_json_1.default.forceCached &&

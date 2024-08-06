@@ -16,7 +16,7 @@ const SetupLocationGlobals = (container) => {
     GlobalValues_1.globalValues.originalBotTypes = (0, utils_1.cloneDeep)(tables.bots.types);
     GlobalValues_1.globalValues.configServer = configServer;
     GlobalValues_1.globalValues.originalWeighting = (0, utils_1.cloneDeep)(botConfig.equipment.pmc);
-    // globalValues.setValuesForLocation('woods', 1)
+    // globalValues.setValuesForLocation("woods", 1);
 };
 exports.SetupLocationGlobals = SetupLocationGlobals;
 //# sourceMappingURL=SetupLocationGlobals.js.map

@@ -8,8 +8,8 @@ function ClothingChanges(container) {
     const tables = databaseServer.getTables();
     const configServer = container.resolve("ConfigServer");
     const botConfig = configServer.getConfig(ConfigTypes_1.ConfigTypes.BOT);
-    const usecAppearance = tables.bots.types.usec.appearance;
-    const bearAppearance = tables.bots.types.bear.appearance;
+    const usecAppearance = tables.bots.types.pmcusec.appearance;
+    const bearAppearance = tables.bots.types.pmcbear.appearance;
     const traders = tables.traders;
     const customization = tables.templates.customization;
     let allTradersSuits = Object.values(traders)

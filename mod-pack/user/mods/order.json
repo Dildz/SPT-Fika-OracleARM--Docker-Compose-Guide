@@ -4,7 +4,6 @@
     "ACOG4Life-OpticRework-SPT-390",
     "acidphantasm-bosseshavelegamedals",
     "acidphantasm-brightlasers",
-    "acidphantasm-defaultfiremode",
     "acidphantasm-refsptfriendlyquests",
     "BARF",
     "DrakiaXYZ-LiveFleaPrices",
@@ -28,6 +27,7 @@
     "SWAG",
     "AlgorithmicLevelProgression",
     "zzMusicManiac-KeysInLoot",
+    "acidphantasm-defaultfiremode",
     "fika-server"
   ]
 }

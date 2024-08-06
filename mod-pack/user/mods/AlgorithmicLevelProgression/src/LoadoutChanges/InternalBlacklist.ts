@@ -239,10 +239,18 @@ export default [
   "5e81ebcd8e146c7080625e15", // FN40GL Mk2 40mm grenade launcher
   "59f32c3b86f77472a31742f0", // dogtags
   "59f32bb586f774757e1e8442", // dogtags
+  "6662e9f37fa79a6d83730fa0", // dogtags
+  "6662ea05f6259762c56f3189", // dogtags
+  "6662e9aca7e0b43baa3d5f74", // dogtags
+  "6662e9cda7e0b43baa3d5f76", // dogtags
+  "5b9b9020e7ef6f5716480215", // dogtags
   "65392f611406374f82152ba5", // mount_all_gbrs_hydra_micro_kit
   "653931da5db71d30ab1d6296", // GBRS Aimpoint Hydra Mount Kit (FDE)
   "618b9682a3884f56c957ca78", //Reptilia ROF-90 RMR mount for Geissele scope mounts
   "618ba92152ecee1505530bd3", //Reptilia ROF-90 RMR mount for Geissele scope mounts ddc
+  "6601546f86889319850bd566",
+  "66015072e9f84d5680039678",
+  "66015dc4aaad2f54cb04c56a"
 ];
 
 //5d0a29fed7ad1a002769ad08

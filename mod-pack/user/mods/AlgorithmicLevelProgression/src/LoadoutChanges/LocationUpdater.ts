@@ -30,6 +30,7 @@ export const LocationUpdater = (container: DependencyContainer): undefined => {
             const pmcData = globalValues.profileHelper.getPmcProfile(sessionId);
             globalValues.updateInventory(pmcData?.Info?.Level || 1);
           }
+          console.log("Algorthimic LevelProgression: Loaded");
           return output;
         },
       },
