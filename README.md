@@ -189,6 +189,8 @@ Note - The modded-fika container logs are cleared each time the restart_fika.sh 
 To have the modded-fika server auto-reboot daily, we will create a new cron-job:
 ```
 cd ~
+```
+```
 contab -e
 ```
 
