@@ -6,7 +6,6 @@ Last updated: 06/08/2024 | Dildz
 [For support you should join the Fika Discord server](https://discord.gg/project-fika)
 
 ## Table Of Contents
-
 [Installation](https://github.com/Dildz/SPT-Fika-modded--Docker-Guide#installing-docker)
 
 [Updating The Server](https://github.com/Dildz/SPT-Fika-modded--Docker-Guide#updating-to-newer-versions)
@@ -14,52 +13,66 @@ Last updated: 06/08/2024 | Dildz
 [Other Possibly Helpful Info](https://github.com/Dildz/SPT-Fika-modded--Docker-Guide#modding-and-other-possibly-helpful-info)
 
 ## Free VPS
-
 [A good free VPS from Oracle. It offers 24gb ram, 4 cores and 200gb of storage. It's ARM but works with this setup.](https://www.oracle.com/cloud/free/)
 
-## Installing Docker
+## Recommended tools
+SSH:
+[Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
+File Explorer:
+[WinSCP](https://winscp.net/eng/download.php)
+
+My personal recommendation - SSH & File Explorer:
+[VSCode](https://code.visualstudio.com/download) with the Remote Explorer extension installed.
+
+## Installing Docker
 First of all you need Docker. [You can download it by following this guide here.](https://docs.docker.com/engine/install/ubuntu/)
 This guide is for ubuntu but you can find guides for other operating systems/distributions on their website.
 
 You can verify your Docker installation by running `docker --version`
 
 ## Creating a working folder for docker
-
 Create a new docker folder in the ubuntu home folder.
-
 ```
 cd ~
+```
+```
 mkdir docker
+```
+```
 cd docker
 ```
 
 ## Setting up the directories
-
 After you've got docker installed you can start by creating a new directory for your project and navigate to it in your terminal.
 
 We're going to go ahead and create a new directory called "containers" and navigate to it.
 You can do this with:
-
 ```
 mkdir containers
+```
+```
 cd containers
 ```
 
 We're going to go ahead and create a new directory called "spt-fika-modded" and navigate to it.
-You can do this with:
-
+You can do this with
 ```
 mkdir spt-fika-modded
+```
+```
 cd spt-fika-modded
 ```
 
 We're going to create a new directories for our Fika Dockerfile and Fika SPT server and navigate to the Dockerfile directory.
 You can do this with:
-
 ```
 mkdir fika
+```
+```
 mkdir server
+```
+```
 cd fika
 ```
 
@@ -68,46 +81,49 @@ The file structure looks like this:
 ![file structure](images/fileStructure.png)
 
 ## Cloning the GitHub repository
-
 Now we're going to clone the SPT-Fika-modded--Docker-Guide [(This is a fork, original from OnniSaarni Docker Guide)](https://github.com/OnniSaarni/SPT-Fika-Docker-Guide)
 First we create a github-repos directory.
 
 You can do this with:
-
 ```
 cd ~
+```
+```
 mkdir github-repos
 ```
 
 Then we clone the repository inside the github-repos folder.
 
 You can do this with:
-
 ```
 cd github-repos
+```
+```
 git clone https://github.com/Dildz/SPT-Fika-modded--Docker-Guide.git
 ```
 
 ## Copying the files
-
 Now we're going to copy the files from github-repos/SPT-Fika-modded--Docker-Guide folder to the docker container location.
 
 You can do this with:
-
 ```
 cp $HOME/github-repos/SPT-Fika-modded--Docker-Guide/files/Dockerfile $HOME/docker/containers/spt-fika-modded/fika/
+```
+```
 cp $HOME/github-repos/SPT-Fika-modded--Docker-Guide/files/fcpy.sh $HOME/docker/containers/spt-fika-modded/fika/
+```
+```
 cp $HOME/github-repos/SPT-Fika-modded--Docker-Guide/files/restart_fika.sh $HOME/docker/containers/spt-fika-modded/fika/
 ```
 
 You should now have the Dockerfile, fcpy.sh and restart_fika.sh copied to the spt-fika-modded/fika/ folder ready for the setup.
 
 ## Setting up the Docker container
-
 First off, we're going to run this in the "fika" directory to build the container:
-
 ```
 cd $HOME/docker/containers/spt-fika-modded/fika
+```
+```
 docker build --no-cache --label modded-fika -t modded-fika .
 ```
 
@@ -115,14 +131,14 @@ It will take a while but once it is finished we are going to move on to the next
 
 **In the next command need to change to the server directory path.**
 You can navigate to the "server" directory by running:
-
 ```
 cd ..
+```
+```
 cd server
 ```
 
 Then we will run the container with the following command:
-
 ```
 docker run --pull=never -v $HOME/docker/containers/spt-fika-modded/server:/opt/server -v $HOME/docker/logs:$HOME/docker/logs -p 6969:6969 -p 6970:6970 -p 6971:6971 -it --name modded-fika --log-opt max-size=10m --log-opt max-file=3 modded-fika
 ```
@@ -180,7 +196,7 @@ Add the following to the end of the file:
 **make sure to replace [USERNAME] with your username**
 ```
 # MODDED-FIKA docker server reboot - 2am daily
-0 2 * * * /home/[USERNAME]/docker/containers/spt-fika-modded/fika/restart_fika.sh
+0 2 * * * /home/USERNAME/docker/containers/spt-fika-modded/fika/restart_fika.sh
 ```
 
 If using nano editor:
@@ -188,17 +204,20 @@ Press **Ctrl + O** (you will be prompted to save the file-name)
 Press **Enter** to save
 Press **Ctrl + X** to exit
 
-This creates a task to reboot the modded-fika server every day at 2am according to the system time - change the "2" value to an hour that suits your needs.
+This creates a task to reboot the modded-fika server every day at 2am according to the system time - change the "2" value to an hour that suits your needs in the 24hr format.
 
 ## Starting mods for new players
 Any new players to the modded-fika server will need to have a fresh SPT install with the following mods pre-installed before connecting:
+
 1: [(FIKA client only)](https://github.com/project-fika/Fika-Plugin/releases)
+
 2: [(Corter-ModSync client only)](https://github.com/c-orter/modsync)
 
 ## Editing player profiles
 You will find the new profiles that get created when players join will be permission locked to the root user and you won't be able to save changes.
 To make changes to player HP / Energy / Hydration for example we need to run the following commands:
-**Change [PROFILE_ID] to the ID of the profile you want to edit** and **Change [USERNAME] to your system username**
+**Change [PROFILE_ID] to the ID of the profile you want to edit**
+**Change [USERNAME] to your system username**
 
 First stop the modded-fika server:
 ```
@@ -209,6 +228,7 @@ Then we will change the profile permissions:
 ```
 sudo chmod 775 $HOME/docker/containers/spt-fika-modded-new/server/user/profiles/PROFILE_ID.json
 ```
+**make sure to replace [USERNAME] with your username**
 ```
 sudo chown USERNAME:USERNAME $HOME/docker/containers/spt-fika-modded-new/server/user/profiles/PROFILE_ID.json
 ```
@@ -216,18 +236,17 @@ sudo chown USERNAME:USERNAME $HOME/docker/containers/spt-fika-modded-new/server/
 Using something like WinSCP or (my personal fav) VSCode with Remote Explorer plugin - Browse to & open the profile / Make changes & save / Start the modded-fika server
 
 ## Helpful Docker commands
-To see the logs of the container:
+View container logs:
 ```
 docker logs modded-fika -f
 ```
-You can use **Ctrl + C** to exit the logs.
-
-To stop the container:
+Press **Ctrl + C** to exit the logs.
+Stop the container:
 ```
 docker stop modded-fika
 ```
 
-To start or restart the container:
+To start/restart the container:
 ```
 $HOME/docker/containers/spt-fika-modded/fika/restart_fika.sh
 ```
@@ -235,7 +254,7 @@ $HOME/docker/containers/spt-fika-modded/fika/restart_fika.sh
 See the commands.txt file for a full list of commands used.
 
 ## Updating to newer versions
-First you will have to stop the server with:
+First you will have to stop the server:
 ```
 docker stop modded-fika
 ```
@@ -307,6 +326,8 @@ docker build --no-cache --label modded-fika -t modded-fika .
 Move to the server directory:
 ```
 cd ..
+```
+```
 cd server
 ```
 ```
@@ -401,17 +422,21 @@ For new/updated server (user) mods:
 
 **Note - not all mods are FIKA compatible - see the FIKA discord's FAQ for a list of incompatible mods.**
 
-## Errors
+Existing players don't need to re-install SPT - they just need to download the latest SPT files from the Direct Download link on the [SPT Update page](https://dev.sp-tarkov.com/SPT/Stable-releases/releases) and replace the files in their SPTarkov install folder.
+
+## Errors/Issues
 Some errors are fixed by deleting all the files in the "cache" directory.
 
-A lot of the errors can be fixed by just searching the Fika Discord server for the error.
+A lot of the issues can be fixed by just searching the Fika Discord server for the error.
+Try to find an answer before asking one - someone has probably had your error before.
 
 If players are spawning apart from each other with the spawn together setting ON in the game settings when starting raids - someone has an mismatched FIKA version or the server isn't on the correct version.
 Make sure the server's FIKA client & server mod-files are on the latest version by replacing user & client files, reboot server & have all players reconnect.
 Corter-Modsync will push the update when players re-join.
 
-## Credits
-Thanks to @MonstraG and @lommy7 for helping others in the comments and providing fixes.
+If you have added new mods & players are not loading or any other new issues - check the logs and see which mod/s are causing problems & remove them.
+Remember to restart the server each time.
 
+## Credits
 [Special thanks to k2rlxyz for making the original Dockerfile.](https://hub.docker.com/r/k2rlxyz/fika). It can also be found in the [Discord](https://discord.gg/project-fika).
 [Special thanks to OnniSaarni for making the original SPT-Fika-Docker-Guide.](https://github.com/OnniSaarni/SPT-Fika-Docker-Guide).
