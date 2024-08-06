@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_80",
+    "id": "669979d0c73060411f04d2ea",
     "item_name": "Rapidash [\u25c6]",
     "item_short_name": "Rapidash",
     "item_description": "Very competitive, this Pok\u00e9mon will chase anything that moves fast in the hopes of racing it.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 20342,
+    "price": 34199,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "lighthouse",
-    "container": "5d6d2b5486f774785c2ba8ea",
+    "loot_locations": {
+        "rezervbase": [
+            "5d6fd45b86f774317075ed43",
+            "5909d76c86f77471e53d2adf",
+            "5d6fe50986f77449d97f7463"
+        ],
+        "sandbox": [
+            "578f87ad245977356274f2cc",
+            "6582e6bb0c3b9823fe6d1840",
+            "5909d7cf86f77470ee57d75a"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

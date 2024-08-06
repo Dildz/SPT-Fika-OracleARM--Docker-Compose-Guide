@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_83",
+    "id": "669979d0c73060411f04d2ed",
     "item_name": "Magnemite [\u25cf]",
     "item_short_name": "Magnemite",
     "item_description": "Uses anti-gravity to stay suspended. Appears without warning and uses attacks like Thunder Wave.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 7480,
+    "price": 5345,
     "weight": 0.01,
     "rarity": "common",
-    "map": "sandbox_high",
-    "container": "578f87b7245977356274f2cd",
+    "loot_locations": {
+        "bigmap": [
+            "59387ac686f77401442ddd61",
+            "5909d36d86f774660f0bb900",
+            "6582e6d7b14c3f72eb071420"
+        ],
+        "factory4_day": [
+            "5909d36d86f774660f0bb900",
+            "5909d24f86f77466f56e6855",
+            "578f87b7245977356274f2cd"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

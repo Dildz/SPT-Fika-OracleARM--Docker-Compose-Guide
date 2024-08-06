@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_132",
+    "id": "669979d0c73060411f04d288",
     "item_name": "Magmar [\u25c6]",
     "item_short_name": "Magmar",
     "item_description": "Found at the mouths of volcanoes and extremely hard to spot. There are very few instances of capturing this Pok\u00e9mon.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 31692,
+    "price": 20476,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "tarkovstreets",
-    "container": "5d6d2b5486f774785c2ba8ea",
+    "loot_locations": {
+        "factory4_night": [
+            "578f87a3245977356274f2cb",
+            "578f8778245977358849a9b5",
+            "5d6fd45b86f774317075ed43"
+        ],
+        "interchange": [
+            "578f87a3245977356274f2cb",
+            "5909d76c86f77471e53d2adf",
+            "578f87b7245977356274f2cd"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

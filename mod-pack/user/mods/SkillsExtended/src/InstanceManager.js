@@ -24,15 +24,15 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.InstanceManager = void 0;
+const fs = __importStar(require("fs"));
 const path = __importStar(require("path"));
 class InstanceManager {
     //#region Accessible in or after preAkiLoad
     modName;
     debug;
     // Useful Paths
-    modPath = path.join(process.cwd(), "\\user\\mods\\TarkovTools\\");
-    dbPath = path.join(process.cwd(), "\\user\\mods\\TarkovTools\\database");
-    profilePath = path.join(process.cwd(), "\\user\\profiles");
+    modPath = path.join(process.cwd(), "user/mods/SkillsExtended");
+    profilePath = path.join(process.cwd(), "user/profiles");
     // Instances
     container;
     preSptModLoader;
@@ -70,6 +70,18 @@ class InstanceManager {
         this.profileHelper = container.resolve("ProfileHelper");
         this.ragfairPriceService = container.resolve("RagfairPriceService");
         this.importerUtil = container.resolve("ImporterUtil");
+    }
+    loadStringDictionarySync(filePath) {
+        try {
+            const data = fs.readFileSync(filePath, 'utf-8');
+            const jsonData = JSON.parse(data); // Cast to desired type
+            return jsonData;
+        }
+        catch (error) {
+            console.error(`Error reading file ${filePath}: ${error}`);
+            // Consider throwing a custom error here for better handling
+            throw new Error('Failed to load dictionary');
+        }
     }
 }
 exports.InstanceManager = InstanceManager;

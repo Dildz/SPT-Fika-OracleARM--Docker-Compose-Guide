@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_78",
+    "id": "669979d0c73060411f04d2e7",
     "item_name": "Golem [\u25c6]",
     "item_short_name": "Golem",
     "item_description": "its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 21513,
+    "price": 31569,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "factory4_night",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "bigmap": [
+            "5909d24f86f77466f56e6855",
+            "5909d76c86f77471e53d2adf",
+            "5909d50c86f774659e6aaebe"
+        ],
+        "factory4_day": [
+            "578f8778245977358849a9b5",
+            "578f87a3245977356274f2cb",
+            "5d6fd45b86f774317075ed43"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

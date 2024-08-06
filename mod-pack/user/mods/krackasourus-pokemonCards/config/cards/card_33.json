@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_33",
+    "id": "669979d0c73060411f04d2b6",
     "item_name": "Nidoqueen [H\u2605]",
     "item_short_name": "Nidoqueen",
     "item_description": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 371220,
+    "price": 358827,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "lighthouse",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "tarkovstreets": [
+            "64d116f41a9c6143a956127d",
+            "64d11702dd0cd96ab82c3280",
+            "578f87b7245977356274f2cd"
+        ],
+        "woods": [
+            "578f8778245977358849a9b5",
+            "578f87ad245977356274f2cc",
+            "5909d5ef86f77467974efbd8"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_89",
+    "id": "669979d0c73060411f04d2f3",
     "item_name": "Dewgong [\u25c6]",
     "item_short_name": "Dewgong",
     "item_description": "Stores thermal energy in its body. Swims at a stead 8 knots even in intensely cold waters.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 21165,
+    "price": 20326,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "factory4_day",
-    "container": "5909d50c86f774659e6aaebe",
+    "loot_locations": {
+        "bigmap": [
+            "59139c2186f77411564f8e42",
+            "578f87ad245977356274f2cc",
+            "578f87b7245977356274f2cd"
+        ],
+        "factory4_day": [
+            "5909d5ef86f77467974efbd8",
+            "578f87ad245977356274f2cc",
+            "5909d50c86f774659e6aaebe"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

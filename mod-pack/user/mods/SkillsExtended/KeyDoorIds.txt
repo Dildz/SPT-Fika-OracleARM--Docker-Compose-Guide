@@ -236,11 +236,9 @@ Door ID: 00052 KeyID: 5c1e2d1f86f77431e9280bee Key Name: TerraGroup Labs weapon 
 Door ID: 00053 KeyID: 5c1e2d1f86f77431e9280bee Key Name: TerraGroup Labs weapon testing area key
 Door ID: 00075 KeyID: 5c1d0c5f86f7744bb2683cf0 Key Name: TerraGroup Labs keycard (Blue)
 Door ID: 00114 KeyID: 5c1d0dc586f7744baf2e7b79 Key Name: TerraGroup Labs keycard (Green)
-Door ID: 00115 KeyID: 5c1d0dc586f7744baf2e7b79 Key Name: TerraGroup Labs keycard (Green)
 Door ID: 00121 KeyID: 5efde6b4f5448336730dbd61 Key Name: Keycard with a blue marking
 Door ID: 00176 KeyID: 5c1d0d6d86f7744bb2683e1f Key Name: TerraGroup Labs keycard (Yellow)
 Door ID: 00291 KeyID: 5c1d0f4986f7744bb01837fa Key Name: TerraGroup Labs keycard (Black)
-Door ID: 00292 KeyID: 5c1d0f4986f7744bb01837fa Key Name: TerraGroup Labs keycard (Black)
 Door ID: 00363 KeyID: 5c1e495a86f7743109743dfb Key Name: TerraGroup Labs keycard (Violet)
 Door ID: 00366 KeyID: 5c1d0efb86f7744baf2e7b7b Key Name: TerraGroup Labs keycard (Red)
 Door ID: 00367 KeyID: 5c1f79a086f7746ed066fb8f Key Name: TerraGroup Labs arsenal storage room key

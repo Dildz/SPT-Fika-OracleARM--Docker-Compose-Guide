@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_51",
+    "id": "669979d0c73060411f04d2ca",
     "item_name": "Venomoth [H\u2605]",
     "item_short_name": "Venomoth",
     "item_description": "The dust-like scales covering its wings are color coded to indicate the kinds of poison it has.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 316727,
+    "price": 422729,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "woods",
-    "container": "578f87b7245977356274f2cd",
+    "loot_locations": {
+        "factory4_night": [
+            "5909e4b686f7747f5b744fa4",
+            "578f8782245977354405a1e3",
+            "5909d5ef86f77467974efbd8"
+        ],
+        "interchange": [
+            "5ad74cf586f774391278f6f0",
+            "578f879c24597735401e6bc6",
+            "578f8778245977358849a9b5"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

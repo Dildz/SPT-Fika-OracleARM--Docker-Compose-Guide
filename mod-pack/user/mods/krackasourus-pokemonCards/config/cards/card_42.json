@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_42",
+    "id": "669979d0c73060411f04d2c0",
     "item_name": "Wigglytuff [H\u2605]",
     "item_short_name": "Wigglytuff",
     "item_description": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 318587,
+    "price": 405973,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "factory4_night",
-    "container": "5d6d2b5486f774785c2ba8ea",
+    "loot_locations": {
+        "rezervbase": [
+            "5909d36d86f774660f0bb900",
+            "578f8778245977358849a9b5",
+            "5909d7cf86f77470ee57d75a"
+        ],
+        "sandbox": [
+            "5909d45286f77465a8136dc6",
+            "5909d50c86f774659e6aaebe",
+            "578f87ad245977356274f2cc"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

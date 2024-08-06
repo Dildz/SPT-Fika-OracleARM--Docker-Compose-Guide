@@ -1,6 +1,6 @@
 {
     "name": "Skills Extended",
-    "version": "0.5.8",
+    "version": "1.0.1",
     "main": "src/mod.js",
     "license": "CC BY-NC-ND 4.0",
     "author": "dirtbikercj",
@@ -8,8 +8,7 @@
     "isBundleMod": true,
     "loadBefore": [],
     "loadAfter": [],
-    "incompatibilities": [
-    ],
+    "incompatibilities": [],
     "contributors": [],
     "scripts": {
         "setup": "npm i",

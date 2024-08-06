@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_54",
+    "id": "669979d0c73060411f04d2cd",
     "item_name": "Meowth [\u25cf]",
     "item_short_name": "Meowth",
     "item_description": "Adores circular objects. Wanders the streets on a nightly basis to look for dropped loose change.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 6453,
+    "price": 8181,
     "weight": 0.01,
     "rarity": "common",
-    "map": "factory4_night",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "sandbox_high": [
+            "5c052cea86f7746b2101e8d8",
+            "5909d50c86f774659e6aaebe",
+            "578f8778245977358849a9b5"
+        ],
+        "shoreline": [
+            "5909d5ef86f77467974efbd8",
+            "578f87b7245977356274f2cd",
+            "5d6d2b5486f774785c2ba8ea"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

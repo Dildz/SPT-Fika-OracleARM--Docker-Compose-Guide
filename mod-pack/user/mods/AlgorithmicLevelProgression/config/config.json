@@ -1,0 +1,63 @@
+{
+  "enableProgressionChanges": true,
+  "enableLevelChanges": true,
+  "leveledClothing": true,
+  "enableNonPMCBotChanges": true,
+  "enableLootChanges": true,
+  "questUnlockedItemsShifted": false,
+  "tradedItemsShifted": false,
+  "addCustomTraderItems": false,
+  "customTradersToExclude": [
+    "insertTheTraderNameToIgnoreTheirItems",
+    "CustomTradersNamesWillPrintToConsoleIfFoundAndaddCustomTraderItemsIsSetToTrue"
+  ],
+  "customBlacklist": [
+    "get id's from here https://db.sp-tarkov.com/search/",
+    "5example3208of34not8f83real8a1id"
+  ],
+  "levelRange": {
+    "1": {
+      "min": 1,
+      "max": 14
+    },
+    "2": {
+      "min": 15,
+      "max": 28
+    },
+    "3": {
+      "min": 29,
+      "max": 39
+    },
+    "4": {
+      "min": 40,
+      "max": 55
+    },
+    "5": {
+      "min": 56,
+      "max": 100
+    }
+  },
+  "botRangeAtLevel": {
+    "1": [12, 5, 1, 1, 0],
+    "2": [8, 10, 5, 2, 1],
+    "3": [6, 8, 10, 5, 2],
+    "4": [4, 6, 8, 7, 3],
+    "5": [2, 4, 6, 9, 4]
+  },
+  "strictEquipmentTiering": true,
+  "higherTierAmmoChance": 0.3,
+  "randomness": {
+    "Ammo": 0.3,
+    "Holster": 0.2,
+    "Headwear": 0.3,
+    "FirstPrimaryWeapon": 0.3,
+    "Earpiece": 0.2,
+    "Backpack": 0.2,
+    "Eyewear": 0.5,
+    "TacticalVest": 0.1,
+    "ArmorVest": 0.1,
+    "FaceCover": 0.3
+  },
+  "forceCached": false,
+  "debug": false
+}

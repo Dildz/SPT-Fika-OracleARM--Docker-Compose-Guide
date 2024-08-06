@@ -33,7 +33,7 @@ echo "Captured current timestamp: $timestamp"
 
 # Clear the log file
 echo "Clearing the log file..."
-: > "$LOG_FILE"
+sudo : > "$LOG_FILE"
 
 # Truncate the existing Docker logs
 echo "Truncating the Docker logs for $CONTAINER_NAME..."
@@ -53,3 +53,4 @@ sleep 1
 echo "1"
 sleep 1
 docker logs $CONTAINER_NAME -f
+

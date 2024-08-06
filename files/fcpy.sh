@@ -1,7 +1,7 @@
 # fcpy.sh
 
 #!/bin/bash
-echo "MODDED FIKA Docker (SPT 3.9.1)"
+echo "MODDED FIKA Docker (SPT 3.9.5)"
 
 LOGFILE="/home/ubuntu/docker/logs/modded-fika.log"
 

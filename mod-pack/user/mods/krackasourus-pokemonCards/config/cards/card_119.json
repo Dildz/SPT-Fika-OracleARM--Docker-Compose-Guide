@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_119",
+    "id": "669979d0c73060411f04d279",
     "item_name": "Tangela [\u25cf]",
     "item_short_name": "Tangela",
     "item_description": "Its whole body is swathed with wide vines that are similar to seaweed. These vines shake as it walks.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 5465,
+    "price": 7073,
     "weight": 0.01,
     "rarity": "common",
-    "map": "shoreline",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "sandbox_high": [
+            "5d6fe50986f77449d97f7463",
+            "5909d5ef86f77467974efbd8",
+            "578f87ad245977356274f2cc"
+        ],
+        "shoreline": [
+            "5d6d2b5486f774785c2ba8ea",
+            "59139c2186f77411564f8e42",
+            "5909e4b686f7747f5b744fa4"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

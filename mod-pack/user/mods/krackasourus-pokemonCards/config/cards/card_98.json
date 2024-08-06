@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_98",
+    "id": "669979d0c73060411f04d2fd",
     "item_name": "Gengar [H\u2605]",
     "item_short_name": "Gengar",
     "item_description": "Under a full moon, this Pok\u00e9mon likes to mimic the shadows of people and laugh at their fright.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 306184,
+    "price": 347939,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "tarkovstreets",
-    "container": "578f8782245977354405a1e3",
+    "loot_locations": {
+        "sandbox_high": [
+            "5909d45286f77465a8136dc6",
+            "5d6fd45b86f774317075ed43",
+            "5909e4b686f7747f5b744fa4"
+        ],
+        "shoreline": [
+            "5d6d2b5486f774785c2ba8ea",
+            "59139c2186f77411564f8e42",
+            "5909e4b686f7747f5b744fa4"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

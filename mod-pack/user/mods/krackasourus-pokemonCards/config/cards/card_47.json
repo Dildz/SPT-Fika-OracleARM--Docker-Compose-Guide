@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_47",
+    "id": "669979d0c73060411f04d2c5",
     "item_name": "Vileplume [H\u2605]",
     "item_short_name": "Vileplume",
     "item_description": "The larger its petals, the more toxic pollen it contains. its big head is heavy and hard to hold up.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 412931,
+    "price": 364713,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "sandbox",
-    "container": "578f8782245977354405a1e3",
+    "loot_locations": {
+        "laboratory": [
+            "578f87b7245977356274f2cd",
+            "578f8782245977354405a1e3",
+            "5909d7cf86f77470ee57d75a"
+        ],
+        "lighthouse": [
+            "59139c2186f77411564f8e42",
+            "5d6d2b5486f774785c2ba8ea",
+            "5909d45286f77465a8136dc6"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

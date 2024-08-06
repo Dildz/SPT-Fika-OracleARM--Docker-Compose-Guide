@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_124",
+    "id": "669979d0c73060411f04d27f",
     "item_name": "Seaking [\u25c6]",
     "item_short_name": "Seaking",
     "item_description": "In the autumn spawning season, they can be seen swimming powerfully up rivers and creeks.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 26785,
+    "price": 22493,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "factory4_night",
-    "container": "578f8782245977354405a1e3",
+    "loot_locations": {
+        "sandbox_high": [
+            "5909d7cf86f77470ee57d75a",
+            "5909d4c186f7746ad34e805a",
+            "6582e6c6edf14c4c6023adf2"
+        ],
+        "shoreline": [
+            "5909d7cf86f77470ee57d75a",
+            "5d6d2bb386f774785b07a77a",
+            "578f8782245977354405a1e3"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

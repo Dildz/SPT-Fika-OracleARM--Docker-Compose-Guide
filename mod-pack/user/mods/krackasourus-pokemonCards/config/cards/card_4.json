@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_4",
+    "id": "669979d0c73060411f04d2bd",
     "item_name": "Charmander [\u25cf]",
     "item_short_name": "Charmander",
     "item_description": "Obviously prefers hot places. If it gets caught in the rain steam is said to spout from the tip of its tail.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 8166,
+    "price": 8956,
     "weight": 0.01,
     "rarity": "common",
-    "map": "woods",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "bigmap": [
+            "5937ef2b86f77408a47244b3",
+            "5909d4c186f7746ad34e805a",
+            "59387ac686f77401442ddd61"
+        ],
+        "factory4_day": [
+            "578f87ad245977356274f2cc",
+            "5909d50c86f774659e6aaebe",
+            "5909d36d86f774660f0bb900"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

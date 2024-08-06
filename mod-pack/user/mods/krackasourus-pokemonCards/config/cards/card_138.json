@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_138",
+    "id": "669979d0c73060411f04d28e",
     "item_name": "Ditto [\u2605]",
     "item_short_name": "Ditto",
     "item_description": "Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 48756,
+    "price": 66168,
     "weight": 0.01,
     "rarity": "rare",
-    "map": "laboratory",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "factory4_night": [
+            "5909d76c86f77471e53d2adf",
+            "5909d36d86f774660f0bb900",
+            "578f87b7245977356274f2cd"
+        ],
+        "interchange": [
+            "5ad74cf586f774391278f6f0",
+            "578f879c24597735401e6bc6",
+            "578f8778245977358849a9b5"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

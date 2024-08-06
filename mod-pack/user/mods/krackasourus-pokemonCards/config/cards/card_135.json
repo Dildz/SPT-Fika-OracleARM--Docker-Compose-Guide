@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_135",
+    "id": "669979d0c73060411f04d28b",
     "item_name": "Magikarp [\u25c6]",
     "item_short_name": "Magikarp",
     "item_description": "In the distant past, it was stronger than its horribly weak descendants that exist today.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 22329,
+    "price": 23609,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "factory4_day",
-    "container": "578f87b7245977356274f2cd",
+    "loot_locations": {
+        "sandbox_high": [
+            "578f879c24597735401e6bc6",
+            "5909d76c86f77471e53d2adf",
+            "5909d24f86f77466f56e6855"
+        ],
+        "shoreline": [
+            "5909d5ef86f77467974efbd8",
+            "578f87b7245977356274f2cd",
+            "5d6d2b5486f774785c2ba8ea"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_70",
+    "id": "669979d0c73060411f04d2df",
     "item_name": "Machamp [H\u2605]",
     "item_short_name": "Machamp",
     "item_description": "Using its amazing muscles, it throws powerful punches that can knock its victim clear over the horizon",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 349055,
+    "price": 370378,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "sandbox",
-    "container": "578f87b7245977356274f2cd",
+    "loot_locations": {
+        "sandbox_high": [
+            "5909d4c186f7746ad34e805a",
+            "6582e6c6edf14c4c6023adf2",
+            "6582e6bb0c3b9823fe6d1840"
+        ],
+        "shoreline": [
+            "5909d4c186f7746ad34e805a",
+            "5909d50c86f774659e6aaebe",
+            "5909d5ef86f77467974efbd8"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

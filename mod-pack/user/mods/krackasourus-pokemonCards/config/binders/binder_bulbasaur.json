@@ -1,6 +1,6 @@
 {
     "clone_item": "5a9d6d00a2750c5c985b5305",
-    "id": "binder_bulbasaur",
+    "id": "669997e1c73060411f04d2ff",
     "item_name": "Card Binder",
     "item_short_name": "Binder",
     "item_description": "A binder that holds all you favorite collectable cards",
@@ -17,7 +17,7 @@
     "currency": "roubles",
     "price": 350000,
     "weight": 0.3,
-    "container": "5909e4b686f7747f5b744fa4",
+    "loot_locations": {},
     "unlimited_stock": true,
     "stock_amount": 999999,
     "ExternalSize": {
@@ -27,14 +27,14 @@
     "slotStructure": [
         {
             "_name": "mod_mount_0",
-            "_id": "binder_binder_bulbasaur_slot_1",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_1",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_1"
+                            "669979d0c73060411f04d263"
                         ]
                     }
                 ]
@@ -45,14 +45,14 @@
         },
         {
             "_name": "mod_mount_1",
-            "_id": "binder_binder_bulbasaur_slot_2",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_2",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_2"
+                            "669979d0c73060411f04d264"
                         ]
                     }
                 ]
@@ -63,14 +63,14 @@
         },
         {
             "_name": "mod_mount_2",
-            "_id": "binder_binder_bulbasaur_slot_3",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_3",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_3"
+                            "669979d0c73060411f04d265"
                         ]
                     }
                 ]
@@ -81,14 +81,14 @@
         },
         {
             "_name": "mod_mount_9",
-            "_id": "binder_binder_bulbasaur_slot_10",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_10",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_10"
+                            "669979d0c73060411f04d26c"
                         ]
                     }
                 ]
@@ -99,14 +99,14 @@
         },
         {
             "_name": "mod_mount_10",
-            "_id": "binder_binder_bulbasaur_slot_11",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_11",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_11"
+                            "669979d0c73060411f04d26d"
                         ]
                     }
                 ]
@@ -117,14 +117,14 @@
         },
         {
             "_name": "mod_mount_11",
-            "_id": "binder_binder_bulbasaur_slot_12",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_12",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_12"
+                            "669979d0c73060411f04d26e"
                         ]
                     }
                 ]
@@ -135,14 +135,14 @@
         },
         {
             "_name": "mod_mount_18",
-            "_id": "binder_binder_bulbasaur_slot_19",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_19",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_19"
+                            "669979d0c73060411f04d275"
                         ]
                     }
                 ]
@@ -153,14 +153,14 @@
         },
         {
             "_name": "mod_mount_19",
-            "_id": "binder_binder_bulbasaur_slot_20",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_20",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_20"
+                            "669979d0c73060411f04d276"
                         ]
                     }
                 ]
@@ -171,14 +171,14 @@
         },
         {
             "_name": "mod_mount_20",
-            "_id": "binder_binder_bulbasaur_slot_21",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_21",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_21"
+                            "669979d0c73060411f04d277"
                         ]
                     }
                 ]
@@ -189,14 +189,14 @@
         },
         {
             "_name": "mod_mount_27",
-            "_id": "binder_binder_bulbasaur_slot_28",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_28",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_28"
+                            "669979d0c73060411f04d27e"
                         ]
                     }
                 ]
@@ -207,14 +207,14 @@
         },
         {
             "_name": "mod_mount_28",
-            "_id": "binder_binder_bulbasaur_slot_29",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_29",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_29"
+                            "669979d0c73060411f04d27f"
                         ]
                     }
                 ]
@@ -225,14 +225,14 @@
         },
         {
             "_name": "mod_mount_29",
-            "_id": "binder_binder_bulbasaur_slot_30",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_30",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_30"
+                            "669979d0c73060411f04d280"
                         ]
                     }
                 ]
@@ -243,14 +243,14 @@
         },
         {
             "_name": "mod_mount_36",
-            "_id": "binder_binder_bulbasaur_slot_37",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_37",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_37"
+                            "669979d0c73060411f04d287"
                         ]
                     }
                 ]
@@ -261,14 +261,14 @@
         },
         {
             "_name": "mod_mount_37",
-            "_id": "binder_binder_bulbasaur_slot_38",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_38",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_38"
+                            "669979d0c73060411f04d288"
                         ]
                     }
                 ]
@@ -279,14 +279,14 @@
         },
         {
             "_name": "mod_mount_38",
-            "_id": "binder_binder_bulbasaur_slot_39",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_39",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_39"
+                            "669979d0c73060411f04d289"
                         ]
                     }
                 ]
@@ -297,14 +297,14 @@
         },
         {
             "_name": "mod_mount_45",
-            "_id": "binder_binder_bulbasaur_slot_46",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_46",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_46"
+                            "669979d0c73060411f04d290"
                         ]
                     }
                 ]
@@ -315,14 +315,14 @@
         },
         {
             "_name": "mod_mount_46",
-            "_id": "binder_binder_bulbasaur_slot_47",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_47",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_47"
+                            "669979d0c73060411f04d291"
                         ]
                     }
                 ]
@@ -333,14 +333,14 @@
         },
         {
             "_name": "mod_mount_47",
-            "_id": "binder_binder_bulbasaur_slot_48",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_48",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_48"
+                            "669979d0c73060411f04d292"
                         ]
                     }
                 ]
@@ -351,14 +351,14 @@
         },
         {
             "_name": "mod_mount_54",
-            "_id": "binder_binder_bulbasaur_slot_55",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_55",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_55"
+                            "669979d0c73060411f04d299"
                         ]
                     }
                 ]
@@ -369,14 +369,14 @@
         },
         {
             "_name": "mod_mount_55",
-            "_id": "binder_binder_bulbasaur_slot_56",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_56",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_56"
+                            "669979d0c73060411f04d29a"
                         ]
                     }
                 ]
@@ -387,14 +387,14 @@
         },
         {
             "_name": "mod_mount_56",
-            "_id": "binder_binder_bulbasaur_slot_57",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_57",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_57"
+                            "669979d0c73060411f04d29b"
                         ]
                     }
                 ]
@@ -405,14 +405,14 @@
         },
         {
             "_name": "mod_mount_63",
-            "_id": "binder_binder_bulbasaur_slot_64",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_64",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_64"
+                            "669979d0c73060411f04d2a2"
                         ]
                     }
                 ]
@@ -423,14 +423,14 @@
         },
         {
             "_name": "mod_mount_64",
-            "_id": "binder_binder_bulbasaur_slot_65",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_65",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_65"
+                            "669979d0c73060411f04d2a3"
                         ]
                     }
                 ]
@@ -441,14 +441,14 @@
         },
         {
             "_name": "mod_mount_65",
-            "_id": "binder_binder_bulbasaur_slot_66",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_66",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_66"
+                            "669979d0c73060411f04d2a4"
                         ]
                     }
                 ]
@@ -459,14 +459,14 @@
         },
         {
             "_name": "mod_mount_72",
-            "_id": "binder_binder_bulbasaur_slot_73",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_73",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_73"
+                            "669979d0c73060411f04d2ab"
                         ]
                     }
                 ]
@@ -477,14 +477,14 @@
         },
         {
             "_name": "mod_mount_73",
-            "_id": "binder_binder_bulbasaur_slot_74",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_74",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_74"
+                            "669979d0c73060411f04d2ac"
                         ]
                     }
                 ]
@@ -495,14 +495,14 @@
         },
         {
             "_name": "mod_mount_74",
-            "_id": "binder_binder_bulbasaur_slot_75",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_75",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_75"
+                            "669979d0c73060411f04d2ad"
                         ]
                     }
                 ]
@@ -513,14 +513,14 @@
         },
         {
             "_name": "mod_mount_81",
-            "_id": "binder_binder_bulbasaur_slot_82",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_82",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_82"
+                            "669979d0c73060411f04d2b4"
                         ]
                     }
                 ]
@@ -531,14 +531,14 @@
         },
         {
             "_name": "mod_mount_82",
-            "_id": "binder_binder_bulbasaur_slot_83",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_83",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_83"
+                            "669979d0c73060411f04d2b5"
                         ]
                     }
                 ]
@@ -549,14 +549,14 @@
         },
         {
             "_name": "mod_mount_83",
-            "_id": "binder_binder_bulbasaur_slot_84",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_84",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_84"
+                            "669979d0c73060411f04d2b6"
                         ]
                     }
                 ]
@@ -567,14 +567,14 @@
         },
         {
             "_name": "mod_mount_90",
-            "_id": "binder_binder_bulbasaur_slot_91",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_91",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_91"
+                            "669979d0c73060411f04d2bd"
                         ]
                     }
                 ]
@@ -585,14 +585,14 @@
         },
         {
             "_name": "mod_mount_91",
-            "_id": "binder_binder_bulbasaur_slot_92",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_92",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_92"
+                            "669979d0c73060411f04d2be"
                         ]
                     }
                 ]
@@ -603,14 +603,14 @@
         },
         {
             "_name": "mod_mount_92",
-            "_id": "binder_binder_bulbasaur_slot_93",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_93",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_93"
+                            "669979d0c73060411f04d2bf"
                         ]
                     }
                 ]
@@ -621,14 +621,14 @@
         },
         {
             "_name": "mod_mount_99",
-            "_id": "binder_binder_bulbasaur_slot_100",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_100",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_100"
+                            "669979d0c73060411f04d2c6"
                         ]
                     }
                 ]
@@ -639,14 +639,14 @@
         },
         {
             "_name": "mod_mount_100",
-            "_id": "binder_binder_bulbasaur_slot_101",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_101",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_101"
+                            "669979d0c73060411f04d2c7"
                         ]
                     }
                 ]
@@ -657,14 +657,14 @@
         },
         {
             "_name": "mod_mount_101",
-            "_id": "binder_binder_bulbasaur_slot_102",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_102",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_102"
+                            "669979d0c73060411f04d2c8"
                         ]
                     }
                 ]
@@ -675,14 +675,14 @@
         },
         {
             "_name": "mod_mount_108",
-            "_id": "binder_binder_bulbasaur_slot_109",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_109",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_109"
+                            "669979d0c73060411f04d2cf"
                         ]
                     }
                 ]
@@ -693,14 +693,14 @@
         },
         {
             "_name": "mod_mount_109",
-            "_id": "binder_binder_bulbasaur_slot_110",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_110",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_110"
+                            "669979d0c73060411f04d2d0"
                         ]
                     }
                 ]
@@ -711,14 +711,14 @@
         },
         {
             "_name": "mod_mount_110",
-            "_id": "binder_binder_bulbasaur_slot_111",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_111",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_111"
+                            "669979d0c73060411f04d2d1"
                         ]
                     }
                 ]
@@ -729,14 +729,14 @@
         },
         {
             "_name": "mod_mount_117",
-            "_id": "binder_binder_bulbasaur_slot_118",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_118",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_118"
+                            "669979d0c73060411f04d2d8"
                         ]
                     }
                 ]
@@ -747,14 +747,14 @@
         },
         {
             "_name": "mod_mount_118",
-            "_id": "binder_binder_bulbasaur_slot_119",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_119",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_119"
+                            "669979d0c73060411f04d2d9"
                         ]
                     }
                 ]
@@ -765,14 +765,14 @@
         },
         {
             "_name": "mod_mount_119",
-            "_id": "binder_binder_bulbasaur_slot_120",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_120",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_120"
+                            "669979d0c73060411f04d2da"
                         ]
                     }
                 ]
@@ -783,14 +783,14 @@
         },
         {
             "_name": "mod_mount_126",
-            "_id": "binder_binder_bulbasaur_slot_127",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_127",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_127"
+                            "669979d0c73060411f04d2e1"
                         ]
                     }
                 ]
@@ -801,14 +801,14 @@
         },
         {
             "_name": "mod_mount_127",
-            "_id": "binder_binder_bulbasaur_slot_128",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_128",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_128"
+                            "669979d0c73060411f04d2e2"
                         ]
                     }
                 ]
@@ -819,14 +819,14 @@
         },
         {
             "_name": "mod_mount_128",
-            "_id": "binder_binder_bulbasaur_slot_129",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_129",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_129"
+                            "669979d0c73060411f04d2e3"
                         ]
                     }
                 ]
@@ -837,14 +837,14 @@
         },
         {
             "_name": "mod_mount_135",
-            "_id": "binder_binder_bulbasaur_slot_136",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_136",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_136"
+                            "669979d0c73060411f04d2ea"
                         ]
                     }
                 ]
@@ -855,14 +855,14 @@
         },
         {
             "_name": "mod_mount_136",
-            "_id": "binder_binder_bulbasaur_slot_137",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_137",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_137"
+                            "669979d0c73060411f04d2eb"
                         ]
                     }
                 ]
@@ -873,14 +873,14 @@
         },
         {
             "_name": "mod_mount_137",
-            "_id": "binder_binder_bulbasaur_slot_138",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_138",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_138"
+                            "669979d0c73060411f04d2ec"
                         ]
                     }
                 ]
@@ -891,14 +891,14 @@
         },
         {
             "_name": "mod_mount_144",
-            "_id": "binder_binder_bulbasaur_slot_145",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_145",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_145"
+                            "669979d0c73060411f04d2f3"
                         ]
                     }
                 ]
@@ -909,14 +909,14 @@
         },
         {
             "_name": "mod_mount_145",
-            "_id": "binder_binder_bulbasaur_slot_146",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_146",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_146"
+                            "669979d0c73060411f04d2f4"
                         ]
                     }
                 ]
@@ -927,14 +927,14 @@
         },
         {
             "_name": "mod_mount_146",
-            "_id": "binder_binder_bulbasaur_slot_147",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_147",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_147"
+                            "669979d0c73060411f04d2f5"
                         ]
                     }
                 ]
@@ -945,14 +945,14 @@
         },
         {
             "_name": "mod_mount_153",
-            "_id": "binder_binder_bulbasaur_slot_154",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_154",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_154"
+                            "669979d0c73060411f04d2fc"
                         ]
                     }
                 ]
@@ -963,14 +963,14 @@
         },
         {
             "_name": "mod_mount_154",
-            "_id": "binder_binder_bulbasaur_slot_155",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_155",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_155"
+                            "669979d0c73060411f04d2fd"
                         ]
                     }
                 ]
@@ -981,14 +981,14 @@
         },
         {
             "_name": "mod_mount_155",
-            "_id": "binder_binder_bulbasaur_slot_156",
-            "_parent": "binder_binder_bulbasaur",
+            "_id": "669997e1c73060411f04d2ff_slot_156",
+            "_parent": "669997e1c73060411f04d2ff",
             "_props": {
                 "filters": [
                     {
                         "Shift": 0,
                         "Filter": [
-                            "card_156"
+                            "669979d0c73060411f04d2fe"
                         ]
                     }
                 ]

@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_100",
+    "id": "669979d0c73060411f04d265",
     "item_name": "Drowzee [\u25cf]",
     "item_short_name": "Drowzee",
     "item_description": "Puts enemies to sleep, then easts their dreams, Occasionally gets sick from eating bad dreams.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 9192,
+    "price": 6378,
     "weight": 0.01,
     "rarity": "common",
-    "map": "factory4_night",
-    "container": "5d6d2b5486f774785c2ba8ea",
+    "loot_locations": {
+        "laboratory": [
+            "5909d5ef86f77467974efbd8",
+            "5909d24f86f77466f56e6855",
+            "5c052cea86f7746b2101e8d8"
+        ],
+        "lighthouse": [
+            "59139c2186f77411564f8e42",
+            "5d6d2b5486f774785c2ba8ea",
+            "5909d45286f77465a8136dc6"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_22",
+    "id": "669979d0c73060411f04d2aa",
     "item_name": "Fearow [\u25c6]",
     "item_short_name": "Fearow",
     "item_description": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 24524,
+    "price": 25684,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "rezervbase",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "tarkovstreets": [
+            "578f879c24597735401e6bc6",
+            "578f87a3245977356274f2cb",
+            "578f8778245977358849a9b5"
+        ],
+        "woods": [
+            "5909d7cf86f77470ee57d75a",
+            "5d6fd45b86f774317075ed43",
+            "5d6d2b5486f774785c2ba8ea"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

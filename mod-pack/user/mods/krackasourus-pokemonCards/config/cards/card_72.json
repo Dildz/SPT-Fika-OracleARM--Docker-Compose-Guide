@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_72",
+    "id": "669979d0c73060411f04d2e1",
     "item_name": "Weepinbell [\u25c6]",
     "item_short_name": "Weepinbell",
     "item_description": "It spits out poison powder to immobilize the enemy, ",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 22832,
+    "price": 32144,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "shoreline",
-    "container": "578f8782245977354405a1e3",
+    "loot_locations": {
+        "bigmap": [
+            "578f87a3245977356274f2cb",
+            "5d6fd13186f77424ad2a8c69",
+            "578f879c24597735401e6bc6"
+        ],
+        "factory4_day": [
+            "5d6fe50986f77449d97f7463",
+            "578f8782245977354405a1e3",
+            "5909e4b686f7747f5b744fa4"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

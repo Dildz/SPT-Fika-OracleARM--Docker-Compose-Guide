@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_143",
+    "id": "669979d0c73060411f04d294",
     "item_name": "Porygon [\u25c6]",
     "item_short_name": "Porygon",
     "item_description": "A Pok\u00e9mon that consists entierly of programming code. Capable of moving freely in cyberspace.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 34467,
+    "price": 26122,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "shoreline",
-    "container": "578f8782245977354405a1e3",
+    "loot_locations": {
+        "factory4_night": [
+            "578f8782245977354405a1e3",
+            "5909d5ef86f77467974efbd8",
+            "5909d24f86f77466f56e6855"
+        ],
+        "interchange": [
+            "5c052cea86f7746b2101e8d8",
+            "5d6d2bb386f774785b07a77a",
+            "5909e4b686f7747f5b744fa4"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

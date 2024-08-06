@@ -25,21 +25,25 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const item_configs_1 = require("./item_configs");
 const modConfig = __importStar(require("../config/mod_config.json"));
+const newIdMap = __importStar(require("../config/new_card_ids.json"));
 const relativeProbabilities = __importStar(require("../config/probabilities.json"));
 class Mod {
     logger;
     modName;
     container;
+    profileHelper;
     constructor() {
         this.modName = "Pokemon Cards";
     }
-    async postsptLoad(container) {
+    preSptLoad(container) {
         this.container = container;
+        this.fixStupidMongoIds();
     }
     postDBLoad(container) {
         this.container = container;
         this.logger = container.resolve("WinstonLogger");
         this.logger.log(`[${this.modName}] : Initializing`, "green");
+        this.profileHelper = container.resolve("ProfileHelper");
         const jsonUtil = container.resolve("JsonUtil");
         const databaseServer = container.resolve("DatabaseServer");
         const configServer = container.resolve("ConfigServer");
@@ -176,21 +180,38 @@ class Mod {
         }
     }
     addToLootableContainers(tables, config) {
-        if (config.lootable && modConfig.enable_container_spawns) {
-            const defaultContainerID = '5909d50c86f774659e6aaebe';
-            this.debug_to_console(`Default container: ${defaultContainerID}`, "blue");
-            const map = tables.locations[config.map];
-            this.debug_to_console(`Map: ${config.map}`, "blue");
-            const containerID = map.staticLoot[config.container] ? config.container : (map.staticLoot[defaultContainerID] ? defaultContainerID : null);
-            this.debug_to_console(`selected containerDI: ${containerID}`, "blue");
-            let probability = {
-                "tpl": config.id,
-                "relativeProbability": Math.ceil(relativeProbabilities[config.map][containerID]["max_found"] * modConfig[config.rarity])
-            };
-            const container = map.staticLoot[containerID];
-            if (container.itemDistribution) {
-                container.itemDistribution.push(probability);
+        this.debug_to_console(`Item: ${config.item_short_name} : ${config.id}`, "green");
+        const defaultContainerID = '5909d50c86f774659e6aaebe';
+        if (!config.lootable || !modConfig.enable_container_spawns) {
+            return;
+        }
+        for (const map_name in config.loot_locations) {
+            if (!config.loot_locations.hasOwnProperty(map_name)) {
+                continue;
             }
+            this.debug_to_console(`Map: ${map_name}`, "yellow");
+            const map = tables.locations[map_name];
+            if (!map) {
+                this.debug_to_console(`Map not found: ${map_name}`, "red");
+                continue;
+            }
+            config.loot_locations[map_name].forEach(containerID => {
+                const selectedContainerID = map.staticLoot[containerID] ? containerID : (map.staticLoot[defaultContainerID] ? defaultContainerID : null);
+                this.debug_to_console(`Container ID: ${selectedContainerID}`, "blue");
+                if (selectedContainerID) {
+                    let probability = {
+                        "tpl": config.id,
+                        "relativeProbability": Math.ceil(relativeProbabilities[map_name][selectedContainerID]["max_found"] * modConfig[config.rarity])
+                    };
+                    const container = map.staticLoot[selectedContainerID];
+                    if (container.itemDistribution) {
+                        container.itemDistribution.push(probability);
+                    }
+                    else {
+                        container.itemDistribution = [probability];
+                    }
+                }
+            });
         }
     }
     addToRandomLootContainers(configInventory, config) {
@@ -275,6 +296,67 @@ class Mod {
         if (modConfig.debug) {
             this.logger.log(`[${this.modName}] : ${string}`, color);
         }
+    }
+    fixStupidMongoIds() {
+        // On game start, see if we need to fix issues from previous versions
+        // Note: We do this as a method replacement so we can run _before_ SPT's gameStart
+        this.container.afterResolution("GameController", (_, result) => {
+            const originalGameStart = result.gameStart;
+            result.gameStart = (url, info, sessionID, startTimeStampMS) => {
+                // If there's a profile ID passed in, call our fixer method
+                if (sessionID) {
+                    console.log("Starting game for " + sessionID);
+                    this.fixProfile(sessionID);
+                }
+                // Call the original
+                originalGameStart.apply(result, [url, info, sessionID, startTimeStampMS]);
+            };
+        });
+    }
+    // Handle updating the user profile between versions:
+    // - Update the container IDs to the new MongoID format
+    // - Look for any key cases in the user's inventory, and properly update the child key locations if we've moved them
+    fixProfile(sessionId) {
+        const pmcProfile = this.profileHelper.getFullProfile(sessionId)?.characters?.pmc;
+        console.log("Checking for profile");
+        // Do nothing if the profile isn't initialized
+        if (!pmcProfile?.Inventory?.items)
+            return;
+        console.log("Invetory found");
+        // Update the container IDs to the new MongoID format for inventory items
+        pmcProfile.Inventory.items.forEach(item => {
+            if (newIdMap[item._tpl]) {
+                item._tpl = newIdMap[item._tpl];
+                console.log("Updated profile item to " + item._tpl);
+            }
+        });
+        // Helper function to update rewards for quests
+        const updateQuestRewards = (quests) => {
+            if (!quests)
+                return;
+            quests.forEach(quest => {
+                if (quest.rewards?.Success) {
+                    quest.rewards.Success.forEach(reward => {
+                        if (newIdMap[reward._tpl]) {
+                            reward._tpl = newIdMap[reward._tpl];
+                        }
+                        if (Array.isArray(reward.items)) {
+                            reward.items.forEach(item => {
+                                if (newIdMap[item._tpl]) {
+                                    item._tpl = newIdMap[item._tpl];
+                                    //console.log("Updated reward item to " + item._tpl);
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        };
+        // Update rewards for Repeatable Quests
+        pmcProfile.RepeatableQuests.forEach(questType => {
+            updateQuestRewards(questType.activeQuests);
+            updateQuestRewards(questType.inactiveQuests);
+        });
     }
 }
 module.exports = { mod: new Mod() };

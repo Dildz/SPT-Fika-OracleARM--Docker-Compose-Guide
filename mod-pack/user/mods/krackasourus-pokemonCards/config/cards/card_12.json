@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_12",
+    "id": "669979d0c73060411f04d27a",
     "item_name": "Butterfree [\u25c6]",
     "item_short_name": "Butterfree",
     "item_description": "In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 21226,
+    "price": 27377,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "shoreline",
-    "container": "5d6d2b5486f774785c2ba8ea",
+    "loot_locations": {
+        "tarkovstreets": [
+            "5d6fd45b86f774317075ed43",
+            "5909d76c86f77471e53d2adf",
+            "5909d36d86f774660f0bb900"
+        ],
+        "woods": [
+            "578f8778245977358849a9b5",
+            "578f87ad245977356274f2cc",
+            "5909d5ef86f77467974efbd8"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

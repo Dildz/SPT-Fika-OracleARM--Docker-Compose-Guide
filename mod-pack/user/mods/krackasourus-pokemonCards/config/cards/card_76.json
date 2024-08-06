@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_76",
+    "id": "669979d0c73060411f04d2e5",
     "item_name": "Geodude [\u25cf]",
     "item_short_name": "Geodude",
     "item_description": "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 6869,
+    "price": 9906,
     "weight": 0.01,
     "rarity": "common",
-    "map": "bigmap",
-    "container": "5909d50c86f774659e6aaebe",
+    "loot_locations": {
+        "sandbox_high": [
+            "578f87b7245977356274f2cd",
+            "5909d36d86f774660f0bb900",
+            "5d6fe50986f77449d97f7463"
+        ],
+        "shoreline": [
+            "5909d76c86f77471e53d2adf",
+            "5909d24f86f77466f56e6855",
+            "578f879c24597735401e6bc6"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

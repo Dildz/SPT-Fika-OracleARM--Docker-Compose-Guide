@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_64",
+    "id": "669979d0c73060411f04d2d8",
     "item_name": "Poliwrath [H\u2605]",
     "item_short_name": "Poliwrath",
     "item_description": "An adept swimmer at both the front crawl and breaststroke. Easily overtakes the best human swimmers.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 320567,
+    "price": 415288,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "bigmap",
-    "container": "578f87b7245977356274f2cd",
+    "loot_locations": {
+        "rezervbase": [
+            "5909d4c186f7746ad34e805a",
+            "578f87b7245977356274f2cd",
+            "578f87a3245977356274f2cb"
+        ],
+        "sandbox": [
+            "5909d36d86f774660f0bb900",
+            "6582e6d7b14c3f72eb071420",
+            "578f87a3245977356274f2cb"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

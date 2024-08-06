@@ -1,0 +1,44 @@
+{
+	"manifest": [
+        {
+			"key": "assets/content/heavy.bundle",
+			"dependencyKeys": [
+                "shaders",
+                "cubemaps",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+		{
+			"key": "assets/content/heavytan.bundle",
+			"dependencyKeys": [
+                "shaders",
+                "cubemaps",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+		{
+			"key": "assets/content/heavyblack.bundle",
+			"dependencyKeys": [
+                "shaders",
+                "cubemaps",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+		{
+			"key": "assets/content/heavycult.bundle",
+			"dependencyKeys": [
+                "shaders",
+                "cubemaps",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+		{
+			"key": "assets/content/heavycoyote.bundle",
+			"dependencyKeys": [
+                "shaders",
+                "cubemaps",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        }
+    ]
+}

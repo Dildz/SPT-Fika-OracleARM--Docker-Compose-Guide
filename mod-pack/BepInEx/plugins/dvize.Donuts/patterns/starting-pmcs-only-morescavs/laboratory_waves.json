@@ -13,6 +13,7 @@
           "MinGroupSize": 1,
           "MaxGroupSize": 3,
           "Zones": [
+            "start",
             "all"
           ]
         }

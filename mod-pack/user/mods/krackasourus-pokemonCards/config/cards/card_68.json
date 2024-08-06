@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_68",
+    "id": "669979d0c73060411f04d2dc",
     "item_name": "Machop [\u25cf]",
     "item_short_name": "Machop",
     "item_description": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 6507,
+    "price": 9924,
     "weight": 0.01,
     "rarity": "common",
-    "map": "laboratory",
-    "container": "5d6d2b5486f774785c2ba8ea",
+    "loot_locations": {
+        "factory4_night": [
+            "5909d76c86f77471e53d2adf",
+            "5909d36d86f774660f0bb900",
+            "578f87b7245977356274f2cd"
+        ],
+        "interchange": [
+            "59139c2186f77411564f8e42",
+            "5909d50c86f774659e6aaebe",
+            "578f87ad245977356274f2cc"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

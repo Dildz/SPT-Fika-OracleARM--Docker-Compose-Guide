@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_133",
+    "id": "669979d0c73060411f04d289",
     "item_name": "Pinsir [H\u2605]",
     "item_short_name": "Pinsir",
     "item_description": "If it fails to crush the victim in its pincers, it will swing its victim around and toss it hard.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 305120,
+    "price": 306589,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "woods",
-    "container": "5909e4b686f7747f5b744fa4",
+    "loot_locations": {
+        "laboratory": [
+            "578f87b7245977356274f2cd",
+            "578f8782245977354405a1e3",
+            "5909d7cf86f77470ee57d75a"
+        ],
+        "lighthouse": [
+            "59139c2186f77411564f8e42",
+            "5d6d2b5486f774785c2ba8ea",
+            "5909d45286f77465a8136dc6"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

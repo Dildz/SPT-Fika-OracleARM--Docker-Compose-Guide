@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_77",
+    "id": "669979d0c73060411f04d2e6",
     "item_name": "Graveler [\u25c6]",
     "item_short_name": "Graveler",
     "item_description": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 30069,
+    "price": 25525,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "factory4_day",
-    "container": "578f87b7245977356274f2cd",
+    "loot_locations": {
+        "tarkovstreets": [
+            "578f8782245977354405a1e3",
+            "5909d89086f77472591234a0",
+            "5d6fd45b86f774317075ed43"
+        ],
+        "woods": [
+            "5909d7cf86f77470ee57d75a",
+            "5d6fd45b86f774317075ed43",
+            "5d6d2b5486f774785c2ba8ea"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

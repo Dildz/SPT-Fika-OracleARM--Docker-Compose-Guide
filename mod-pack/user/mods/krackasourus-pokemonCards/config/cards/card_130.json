@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_130",
+    "id": "669979d0c73060411f04d286",
     "item_name": "Electabuzz [\u2605]",
     "item_short_name": "Electabuzz",
     "item_description": "Normally found near power plants, it can wander away and cause major blackouts in cities.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 50887,
+    "price": 71618,
     "weight": 0.01,
     "rarity": "rare",
-    "map": "shoreline",
-    "container": "578f8782245977354405a1e3",
+    "loot_locations": {
+        "tarkovstreets": [
+            "5909d4c186f7746ad34e805a",
+            "578f8782245977354405a1e3",
+            "5909d89086f77472591234a0"
+        ],
+        "woods": [
+            "5909d76c86f77471e53d2adf",
+            "5909d89086f77472591234a0",
+            "5d6fd13186f77424ad2a8c69"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

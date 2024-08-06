@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_84",
+    "id": "669979d0c73060411f04d2ee",
     "item_name": "Magneton [H\u2605]",
     "item_short_name": "Magneton",
     "item_description": "Formed by several Magnemite linked together. It frequently appears when sunspots flare up.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 422792,
+    "price": 370489,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "shoreline",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "factory4_night": [
+            "578f8778245977358849a9b5",
+            "5d6fd45b86f774317075ed43",
+            "5909d50c86f774659e6aaebe"
+        ],
+        "interchange": [
+            "5c052cea86f7746b2101e8d8",
+            "5d6d2bb386f774785b07a77a",
+            "5909e4b686f7747f5b744fa4"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

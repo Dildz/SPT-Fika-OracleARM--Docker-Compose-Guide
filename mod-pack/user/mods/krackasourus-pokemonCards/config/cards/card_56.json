@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_56",
+    "id": "669979d0c73060411f04d2cf",
     "item_name": "Psyduck [\u25cf]",
     "item_short_name": "Psyduck",
     "item_description": "While lulling its enemies with its vacant look, this willy Pok\u00e9mon will use psychokinetic powers.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 7148,
+    "price": 6848,
     "weight": 0.01,
     "rarity": "common",
-    "map": "laboratory",
-    "container": "5909e4b686f7747f5b744fa4",
+    "loot_locations": {
+        "bigmap": [
+            "6582e6d7b14c3f72eb071420",
+            "5914944186f774189e5e76c2",
+            "5909d7cf86f77470ee57d75a"
+        ],
+        "factory4_day": [
+            "578f87b7245977356274f2cd",
+            "578f8778245977358849a9b5",
+            "578f87a3245977356274f2cb"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

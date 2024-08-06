@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_99",
+    "id": "669979d0c73060411f04d2fe",
     "item_name": "Onix [\u25cf]",
     "item_short_name": "Onix",
     "item_description": "As it grows, the stone portions of its body harden to become similar to a diamond, though colored black.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 5168,
+    "price": 8919,
     "weight": 0.01,
     "rarity": "common",
-    "map": "woods",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "tarkovstreets": [
+            "5909e4b686f7747f5b744fa4",
+            "5909d50c86f774659e6aaebe",
+            "59139c2186f77411564f8e42"
+        ],
+        "woods": [
+            "5909d76c86f77471e53d2adf",
+            "5909d89086f77472591234a0",
+            "5d6fd13186f77424ad2a8c69"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

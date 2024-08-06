@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_53",
+    "id": "669979d0c73060411f04d2cc",
     "item_name": "Dugtrio [\u2605]",
     "item_short_name": "Dugtrio",
     "item_description": "A team of Diglett triplets. It triggers huge earthquakes by burrowing 60 miles underground.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 69828,
+    "price": 73348,
     "weight": 0.01,
     "rarity": "rare",
-    "map": "factory4_day",
-    "container": "578f8782245977354405a1e3",
+    "loot_locations": {
+        "rezervbase": [
+            "5909e4b686f7747f5b744fa4",
+            "5d6fd13186f77424ad2a8c69",
+            "59139c2186f77411564f8e42"
+        ],
+        "sandbox": [
+            "578f879c24597735401e6bc6",
+            "578f8782245977354405a1e3",
+            "5909d89086f77472591234a0"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_58",
+    "id": "669979d0c73060411f04d2d1",
     "item_name": "Mankey [\u25cf]",
     "item_short_name": "Mankey",
     "item_description": "Extremely quick to anger. It could be docile one moment, then thrashing away the next.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 6599,
+    "price": 5311,
     "weight": 0.01,
     "rarity": "common",
-    "map": "rezervbase",
-    "container": "578f87b7245977356274f2cd",
+    "loot_locations": {
+        "laboratory": [
+            "59139c2186f77411564f8e42",
+            "578f87a3245977356274f2cb",
+            "578f8778245977358849a9b5"
+        ],
+        "lighthouse": [
+            "59139c2186f77411564f8e42",
+            "5d6d2b5486f774785c2ba8ea",
+            "5909d45286f77465a8136dc6"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

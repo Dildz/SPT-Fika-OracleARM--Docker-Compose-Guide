@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_155",
+    "id": "669979d0c73060411f04d2a1",
     "item_name": "Dragonite [H\u2605]",
     "item_short_name": "Dragonite",
     "item_description": "An extremely rarely seen marine Pok\u00e9mon. Its intelligence is said to match that of humans.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 433117,
+    "price": 341402,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "shoreline",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "laboratory": [
+            "5909d5ef86f77467974efbd8",
+            "5909d24f86f77466f56e6855",
+            "5c052cea86f7746b2101e8d8"
+        ],
+        "lighthouse": [
+            "59139c2186f77411564f8e42",
+            "5d6d2b5486f774785c2ba8ea",
+            "5909d45286f77465a8136dc6"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

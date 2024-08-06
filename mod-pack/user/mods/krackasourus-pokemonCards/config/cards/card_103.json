@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_103",
+    "id": "669979d0c73060411f04d268",
     "item_name": "Kingler [\u25c6]",
     "item_short_name": "Kingler",
     "item_description": "The large pincer has 10,000 horsepower of crushing power. However, its huge size makes it unwieldy to use.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 24641,
+    "price": 28402,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "lighthouse",
-    "container": "578f87b7245977356274f2cd",
+    "loot_locations": {
+        "tarkovstreets": [
+            "5909e4b686f7747f5b744fa4",
+            "5909d50c86f774659e6aaebe",
+            "59139c2186f77411564f8e42"
+        ],
+        "woods": [
+            "5909d76c86f77471e53d2adf",
+            "5909d89086f77472591234a0",
+            "5d6fd13186f77424ad2a8c69"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

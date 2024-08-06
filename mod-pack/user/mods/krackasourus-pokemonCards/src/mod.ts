@@ -1,31 +1,37 @@
 import { DependencyContainer } from "tsyringe";
-import { IPostsptLoadMod } from "@spt/models/external/IPostsptLoadMod";
 import { IPostDBLoadMod } from "@spt/models/external/IPostDBLoadMod";
+import { IPreSptLoadMod } from "@spt/models/external/IPreSptLoadMod";
 import { ILogger } from "@spt/models/spt/utils/ILogger";
 import { DatabaseServer } from "@spt/servers/DatabaseServer";
 import { ConfigServer } from "@spt/servers/ConfigServer";
 import { JsonUtil } from "@spt/utils/JsonUtil";
 import { HashUtil } from "@spt/utils/HashUtil";
 import { customItemConfigs } from "./item_configs";
+import { ProfileHelper } from "@spt/helpers/ProfileHelper";
+import type { GameController } from "@spt/controllers/GameController";
+import type { IEmptyRequestData } from "@spt/models/eft/common/IEmptyRequestData";
 import * as modConfig from "../config/mod_config.json";
 import * as gift from "../config/gift/gift_config.json";
+import * as newIdMap from "../config/new_card_ids.json"
 import * as relativeProbabilities from "../config/probabilities.json"
 
 
-class Mod implements IPostsptLoadMod, IPostDBLoadMod 
+class Mod implements IPreSptLoadMod, IPostDBLoadMod 
 {
     private logger: ILogger;
     private modName;
     private container: DependencyContainer;
+    private profileHelper: ProfileHelper;
 
     constructor() 
     {
         this.modName = "Pokemon Cards";
     }
 
-    public async postsptLoad(container: DependencyContainer): Promise<void> 
+    public preSptLoad(container: DependencyContainer): void
     {
-        this.container = container;
+        this.container = container
+        this.fixStupidMongoIds();
     }
 
     public postDBLoad(container: DependencyContainer): void 
@@ -33,6 +39,8 @@ class Mod implements IPostsptLoadMod, IPostDBLoadMod
         this.container = container;
         this.logger = container.resolve<ILogger>("WinstonLogger");
         this.logger.log(`[${this.modName}] : Initializing`, "green");
+        this.profileHelper = container.resolve<ProfileHelper>("ProfileHelper");
+        
 
         const jsonUtil = container.resolve<JsonUtil>("JsonUtil");
         const databaseServer = container.resolve<DatabaseServer>("DatabaseServer");
@@ -201,27 +209,45 @@ class Mod implements IPostsptLoadMod, IPostDBLoadMod
         }
     }
 
+
     private addToLootableContainers(tables, config): void 
     {   
+        this.debug_to_console(`Item: ${config.item_short_name} : ${config.id}`, "green");
+        const defaultContainerID = '5909d50c86f774659e6aaebe';
+        if (!config.lootable || !modConfig.enable_container_spawns) { return }
 
-        if (config.lootable && modConfig.enable_container_spawns) {
-            const defaultContainerID = '5909d50c86f774659e6aaebe';
-            this.debug_to_console(`Default container: ${defaultContainerID}`, "blue")
-            const map = tables.locations[config.map];
-            this.debug_to_console(`Map: ${config.map}`, "blue")
-            const containerID = map.staticLoot[config.container] ? config.container : (map.staticLoot[defaultContainerID] ? defaultContainerID : null);
-            this.debug_to_console(`selected containerDI: ${containerID}`, "blue")
+        for (const map_name in config.loot_locations) {
+            if (!config.loot_locations.hasOwnProperty(map_name)) { continue }
 
-            let probability = {
-                "tpl": config.id,
-                "relativeProbability": Math.ceil(relativeProbabilities[config.map][containerID]["max_found"] * modConfig[config.rarity])
+            this.debug_to_console(`Map: ${map_name}`, "yellow");
+            const map = tables.locations[map_name];
+            if (!map) {
+                this.debug_to_console(`Map not found: ${map_name}`, "red");
+                continue;
             }
-            const container = map.staticLoot[containerID];
-            if (container.itemDistribution) {
-                container.itemDistribution.push(probability);
-            }
+
+            config.loot_locations[map_name].forEach(containerID => {
+                const selectedContainerID = map.staticLoot[containerID] ? containerID : (map.staticLoot[defaultContainerID] ? defaultContainerID : null);
+                this.debug_to_console(`Container ID: ${selectedContainerID}`, "blue");
+
+                if (selectedContainerID) {
+                    let probability = {
+                        "tpl": config.id,
+                        "relativeProbability": Math.ceil(relativeProbabilities[map_name][selectedContainerID]["max_found"] * modConfig[config.rarity])
+                    };
+
+                    const container = map.staticLoot[selectedContainerID];
+                    if (container.itemDistribution) {
+                        container.itemDistribution.push(probability);
+                    } else {
+                        container.itemDistribution = [probability];
+                    }
+                }
+            });
+            
         }
     }
+    
 
     private addToRandomLootContainers(configInventory, config): void 
     {
@@ -325,6 +351,76 @@ class Mod implements IPostsptLoadMod, IPostDBLoadMod
         {
             this.logger.log(`[${this.modName}] : ${string}`, color);
         }
+    }
+
+    public fixStupidMongoIds(): void {
+        // On game start, see if we need to fix issues from previous versions
+        // Note: We do this as a method replacement so we can run _before_ SPT's gameStart
+        this.container.afterResolution("GameController", (_, result: GameController) => {
+            const originalGameStart = result.gameStart;
+
+            result.gameStart = (url: string, info: IEmptyRequestData, sessionID: string, startTimeStampMS: number) => {
+                // If there's a profile ID passed in, call our fixer method
+                if (sessionID) {
+                    console.log("Starting game for " + sessionID);
+                    this.fixProfile(sessionID);
+                }
+
+                // Call the original
+                originalGameStart.apply(result, [url, info, sessionID, startTimeStampMS]);
+            }
+        });
+    }
+
+    // Handle updating the user profile between versions:
+    // - Update the container IDs to the new MongoID format
+    // - Look for any key cases in the user's inventory, and properly update the child key locations if we've moved them
+    public fixProfile(sessionId: string) {
+        const pmcProfile = this.profileHelper.getFullProfile(sessionId)?.characters?.pmc;
+    
+        console.log("Checking for profile");
+        // Do nothing if the profile isn't initialized
+        if (!pmcProfile?.Inventory?.items) return;
+        console.log("Invetory found");
+    
+        // Update the container IDs to the new MongoID format for inventory items
+        pmcProfile.Inventory.items.forEach(item => {
+            if (newIdMap[item._tpl]) {
+                item._tpl = newIdMap[item._tpl];
+                console.log("Updated profile item to " + item._tpl);
+            }
+        });
+
+
+    
+        // Helper function to update rewards for quests
+        const updateQuestRewards = (quests: any[]) => {
+            if (!quests) return;
+            
+            quests.forEach(quest => {
+                if (quest.rewards?.Success) {
+                    quest.rewards.Success.forEach(reward => {
+                        if (newIdMap[reward._tpl]) {
+                            reward._tpl = newIdMap[reward._tpl];
+                        }
+                        if (Array.isArray(reward.items)) {
+                            reward.items.forEach(item => {
+                                if (newIdMap[item._tpl]) {
+                                    item._tpl = newIdMap[item._tpl];
+                                    //console.log("Updated reward item to " + item._tpl);
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        };
+
+        // Update rewards for Repeatable Quests
+        pmcProfile.RepeatableQuests.forEach(questType => {
+            updateQuestRewards(questType.activeQuests);
+            updateQuestRewards(questType.inactiveQuests);
+        });
     }
 }
 

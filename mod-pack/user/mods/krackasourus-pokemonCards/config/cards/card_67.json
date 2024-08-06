@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_67",
+    "id": "669979d0c73060411f04d2db",
     "item_name": "Alakazam [H\u2605]",
     "item_short_name": "Alakazam",
     "item_description": "Its brain can outperform a supercomputer. Its intelligence quotient is said to be 5000",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 345128,
+    "price": 403629,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "interchange",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "bigmap": [
+            "5d6d2bb386f774785b07a77a",
+            "5d6fe50986f77449d97f7463",
+            "5937ef2b86f77408a47244b3"
+        ],
+        "factory4_day": [
+            "5909d76c86f77471e53d2adf",
+            "5909d5ef86f77467974efbd8",
+            "578f87ad245977356274f2cc"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

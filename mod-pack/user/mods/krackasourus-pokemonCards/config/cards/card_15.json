@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_15",
+    "id": "669979d0c73060411f04d29b",
     "item_name": "Beedrill [\u2605]",
     "item_short_name": "Beedrill",
     "item_description": "Flies at high speed and attacks using the large, venomous stingers on its forelegs and tail.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 53745,
+    "price": 47602,
     "weight": 0.01,
     "rarity": "rare",
-    "map": "laboratory",
-    "container": "578f8782245977354405a1e3",
+    "loot_locations": {
+        "laboratory": [
+            "578f879c24597735401e6bc6",
+            "5909d76c86f77471e53d2adf",
+            "5909d36d86f774660f0bb900"
+        ],
+        "lighthouse": [
+            "5909d4c186f7746ad34e805a",
+            "5909e4b686f7747f5b744fa4",
+            "5909d5ef86f77467974efbd8"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

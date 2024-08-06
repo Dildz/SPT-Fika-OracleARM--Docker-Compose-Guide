@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_44",
+    "id": "669979d0c73060411f04d2c2",
     "item_name": "Golbat [\u25c6]",
     "item_short_name": "Golbat",
     "item_description": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 29418,
+    "price": 27827,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "laboratory",
-    "container": "5909d50c86f774659e6aaebe",
+    "loot_locations": {
+        "tarkovstreets": [
+            "5d6fd13186f77424ad2a8c69",
+            "5d6fe50986f77449d97f7463",
+            "5ad74cf586f774391278f6f0"
+        ],
+        "woods": [
+            "5909d76c86f77471e53d2adf",
+            "5909d89086f77472591234a0",
+            "5d6fd13186f77424ad2a8c69"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

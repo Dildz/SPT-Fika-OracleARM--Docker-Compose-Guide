@@ -1,0 +1,1 @@
+This mod is a reupload of the original mod "Wolfiks Heavy Trooper" by SerWolfik updated to work on SPT 3.9.x

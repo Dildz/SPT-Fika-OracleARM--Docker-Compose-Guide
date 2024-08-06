@@ -7,10 +7,8 @@
         "MinGroupSize": 1,
         "MaxGroupSize": 5,
         "Zones": [
-          "hotspot",
-          "Zone_Orange",
-          "Zone_Black",
-          "Zone_Yellow"
+          "start",
+          "all"
         ]
       },
       "SCAV": {
@@ -19,6 +17,7 @@
         "MinGroupSize": 1,
         "MaxGroupSize": 2,
         "Zones": [
+          "start",
           "all"
         ]
       }

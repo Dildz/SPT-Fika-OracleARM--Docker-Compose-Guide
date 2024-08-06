@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_140",
+    "id": "669979d0c73060411f04d291",
     "item_name": "Vaporeon [H\u2605]",
     "item_short_name": "Vaporeon",
     "item_description": "Lives close to wate. Its long rail is ridged with a fin that is often mistaken for a mermaid's",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 314331,
+    "price": 394718,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "sandbox",
-    "container": "5909d50c86f774659e6aaebe",
+    "loot_locations": {
+        "sandbox_high": [
+            "5909e4b686f7747f5b744fa4",
+            "578f87a3245977356274f2cb",
+            "59139c2186f77411564f8e42"
+        ],
+        "shoreline": [
+            "578f879c24597735401e6bc6",
+            "5c052cea86f7746b2101e8d8",
+            "5909d7cf86f77470ee57d75a"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

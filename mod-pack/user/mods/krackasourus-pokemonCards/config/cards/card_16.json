@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_16",
+    "id": "669979d0c73060411f04d2a3",
     "item_name": "Pidgey [\u25cf]",
     "item_short_name": "Pidgey",
     "item_description": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 7928,
+    "price": 7838,
     "weight": 0.01,
     "rarity": "common",
-    "map": "woods",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "sandbox_high": [
+            "578f87ad245977356274f2cc",
+            "658420d8085fea07e674cdb6",
+            "5c052cea86f7746b2101e8d8"
+        ],
+        "shoreline": [
+            "5909d76c86f77471e53d2adf",
+            "5909d24f86f77466f56e6855",
+            "578f879c24597735401e6bc6"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

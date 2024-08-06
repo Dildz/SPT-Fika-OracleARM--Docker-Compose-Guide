@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_31",
+    "id": "669979d0c73060411f04d2b4",
     "item_name": "Nidoran \u2640 [\u25cf]",
     "item_short_name": "Nidoran \u2640",
     "item_description": "Although small, its venomous barbs make this Pok\u00e9mon dangerous. The female has smaller horns.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 5771,
+    "price": 5460,
     "weight": 0.01,
     "rarity": "common",
-    "map": "interchange",
-    "container": "5909d50c86f774659e6aaebe",
+    "loot_locations": {
+        "rezervbase": [
+            "578f8782245977354405a1e3",
+            "5d6fd45b86f774317075ed43",
+            "5909d76c86f77471e53d2adf"
+        ],
+        "sandbox": [
+            "6582e6bb0c3b9823fe6d1840",
+            "5909d7cf86f77470ee57d75a",
+            "5c052cea86f7746b2101e8d8"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

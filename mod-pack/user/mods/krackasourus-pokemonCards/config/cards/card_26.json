@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_26",
+    "id": "669979d0c73060411f04d2ae",
     "item_name": "Pikachu [\u25cf]",
     "item_short_name": "Pikachu",
     "item_description": "When several of these Pok\u00e9mon gather, their electricity can build and cause lightning storms.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 9881,
+    "price": 6756,
     "weight": 0.01,
     "rarity": "common",
-    "map": "shoreline",
-    "container": "578f87b7245977356274f2cd",
+    "loot_locations": {
+        "rezervbase": [
+            "5909d76c86f77471e53d2adf",
+            "5d6fe50986f77449d97f7463",
+            "5909d89086f77472591234a0"
+        ],
+        "sandbox": [
+            "5d6fd45b86f774317075ed43",
+            "578f87b7245977356274f2cd",
+            "5909d36d86f774660f0bb900"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

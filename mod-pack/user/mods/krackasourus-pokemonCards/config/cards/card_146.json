@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_146",
+    "id": "669979d0c73060411f04d297",
     "item_name": "Kabuto [\u25cf]",
     "item_short_name": "Kabuto",
     "item_description": "A Pok\u00e9mon that was resurrected from a fossil found in what was once the ocean floor eons ago.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 7112,
+    "price": 9612,
     "weight": 0.01,
     "rarity": "common",
-    "map": "bigmap",
-    "container": "5909e4b686f7747f5b744fa4",
+    "loot_locations": {
+        "sandbox_high": [
+            "5909d50c86f774659e6aaebe",
+            "578f8778245977358849a9b5",
+            "578f8782245977354405a1e3"
+        ],
+        "shoreline": [
+            "5909d45286f77465a8136dc6",
+            "578f87a3245977356274f2cb",
+            "578f87ad245977356274f2cc"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

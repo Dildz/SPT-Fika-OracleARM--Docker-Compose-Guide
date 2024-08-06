@@ -1,0 +1,29 @@
+{
+    "Items": [
+        {
+            "Id": "heavy",
+            "ParentId": "5b47574386f77428ca22b32f",
+            "Price": 600000
+        },
+		{
+            "Id": "heavytan",
+            "ParentId": "5b47574386f77428ca22b32f",
+            "Price": 265000
+        },
+		{
+            "Id": "heavyblack",
+            "ParentId": "5b47574386f77428ca22b32f",
+            "Price": 265000
+        },
+		{
+            "Id": "heavycult",
+            "ParentId": "5b47574386f77428ca22b32f",
+            "Price": 666666
+        },
+		{
+            "Id": "heavycoyote",
+            "ParentId": "5b47574386f77428ca22b32f",
+            "Price": 265000
+        }
+    ]
+}

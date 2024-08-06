@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_88",
+    "id": "669979d0c73060411f04d2f2",
     "item_name": "Seel [\u25c6]",
     "item_short_name": "Seel",
     "item_description": "The protruding horn on its head is very hard. This horn is used for bashing through thick ice.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 32100,
+    "price": 33657,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "bigmap",
-    "container": "5909e4b686f7747f5b744fa4",
+    "loot_locations": {
+        "tarkovstreets": [
+            "5d6d2bb386f774785b07a77a",
+            "5909d5ef86f77467974efbd8",
+            "5909d4c186f7746ad34e805a"
+        ],
+        "woods": [
+            "578f8778245977358849a9b5",
+            "578f87ad245977356274f2cc",
+            "5909d5ef86f77467974efbd8"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

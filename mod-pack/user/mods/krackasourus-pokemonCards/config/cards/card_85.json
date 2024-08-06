@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_85",
+    "id": "669979d0c73060411f04d2ef",
     "item_name": "Farfetch'd [\u25c6]",
     "item_short_name": "Farfetch'd",
     "item_description": "The sprig of green onions it holds is its weapon. This sprig is used much like a metal sword.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 26463,
+    "price": 28632,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "shoreline",
-    "container": "578f8782245977354405a1e3",
+    "loot_locations": {
+        "laboratory": [
+            "59139c2186f77411564f8e42",
+            "578f87a3245977356274f2cb",
+            "578f8778245977358849a9b5"
+        ],
+        "lighthouse": [
+            "5909d4c186f7746ad34e805a",
+            "5909e4b686f7747f5b744fa4",
+            "5909d5ef86f77467974efbd8"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

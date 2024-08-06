@@ -1,13 +1,16 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 
 import { InstanceManager } from "./InstanceManager";
-import * as SkillsConfig from "../config/SkillsConfig.json";
+
+import path from "node:path";
+import JSON5 from "json5";
 
 import type { DependencyContainer } from "tsyringe";
 import type { IPostDBLoadMod } from "@spt/models/external/IPostDBLoadMod";
 import type { IPreSptLoadMod } from "@spt/models/external/IPreSptLoadMod";
 import type { CustomItemService } from "@spt/services/mod/CustomItemService";
 import type { NewItemFromCloneDetails } from "@spt/models/spt/mod/NewItemDetails";
+import type { VFS } from "@spt/utils/VFS";
 import type { IKeys } from "./Models/IKeys";
 
 import { Money } from "@spt/models/enums/Money";
@@ -19,15 +22,22 @@ enum ItemIDS {
     Pda = "662400eb756ca8948fe64fe8"
 }
 
-class SkillsPlus implements IPreSptLoadMod, IPostDBLoadMod
+class SkillsExtended implements IPreSptLoadMod, IPostDBLoadMod
 {
     private Instance: InstanceManager = new InstanceManager();
     private locale: Record<string, Record<string, string>>; 
     private customItemService: CustomItemService;
+    private vfs: VFS;
+    private SkillsConfigRaw;
+    private SkillsConfig;
 
     public preSptLoad(container: DependencyContainer): void 
     {
         this.Instance.preSptLoad(container, "Skills Extended");
+        this.vfs = container.resolve<VFS>("VFS");
+        this.SkillsConfigRaw = this.vfs.readFile(path.join(__dirname, "../config/SkillsConfig.json5"));
+        this.SkillsConfig = JSON5.parse(this.SkillsConfigRaw);
+
         this.registerRoutes();
     }
 
@@ -36,9 +46,24 @@ class SkillsPlus implements IPreSptLoadMod, IPostDBLoadMod
         this.Instance.postDBLoad(container);
         this.customItemService = container.resolve<CustomItemService>("CustomItemService");
 
+        this.setLocales();
         this.CreateItems();
         this.addCraftsToDatabase();
         this.locale = this.Instance.database.locales.global;
+    }
+
+    private setLocales(): void
+    {
+        const global = this.Instance.database.locales.global[this.SkillsConfig.Locale];
+
+        const modPath = this.Instance.modPath;
+
+        const locales = this.Instance.loadStringDictionarySync(`${modPath}/locale/${this.SkillsConfig.Locale}.json`);
+
+        for (const entry in locales)
+        {
+            global[entry] = locales[entry];
+        }
     }
 
     private getKeys(): string
@@ -69,11 +94,11 @@ class SkillsPlus implements IPreSptLoadMod, IPostDBLoadMod
             "GetSkillsConfig",
             [
                 {
-                    url: "/skillsExtended/GetSkillsConfig",
+                    url: "/skillsExtended/GetSkillsConfig", 
                     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                    action: (url, info, sessionId, output) => 
+                    action: async (url, info, sessionId, output) => 
                     {                     
-                        return JSON.stringify(SkillsConfig);
+                        return this.SkillsConfigRaw;
                     }
                 }
             ],
@@ -86,7 +111,7 @@ class SkillsPlus implements IPreSptLoadMod, IPostDBLoadMod
                 {
                     url: "/skillsExtended/GetKeys",
                     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                    action: (url, info, sessionId, output) => 
+                    action: async (url, info, sessionId, output) => 
                     {                     
                         return this.getKeys();
                     }
@@ -99,7 +124,7 @@ class SkillsPlus implements IPreSptLoadMod, IPostDBLoadMod
     private CreateItems(): void
     {
         this.CreateLockpick();
-        //this.CreatePDA();
+        this.CreatePDA();
     }
 
     // Clones factory key to be used as a blank for bump lock picking
@@ -110,6 +135,13 @@ class SkillsPlus implements IPreSptLoadMod, IPostDBLoadMod
             overrideProperties: {
                 CanSellOnRagfair: false,
                 MaximumNumberOfUsage: 5,
+                Unlootable: true,
+                UnlootableFromSlot: "SpecialSlot",
+                UnlootableFromSide: [
+                    "Bear",
+                    "Usec",
+                    "Savage"
+                ],
                 Prefab: {
                     path: "lockpick.bundle",
                     rcid: ""
@@ -159,6 +191,8 @@ class SkillsPlus implements IPreSptLoadMod, IPostDBLoadMod
         ];
         
         mechanic.assort.loyal_level_items[ItemIDS.Lockpick] = 2;
+
+        this.addItemToSpecSlots(ItemIDS.Lockpick);
     }
 
     private CreatePDA(): void
@@ -167,6 +201,13 @@ class SkillsPlus implements IPreSptLoadMod, IPostDBLoadMod
             itemTplToClone: "5bc9b720d4351e450201234b",
             overrideProperties: {
                 CanSellOnRagfair: false,
+                Unlootable: true,
+                UnlootableFromSlot: "SpecialSlot",
+                UnlootableFromSide: [
+                    "Bear",
+                    "Usec",
+                    "Savage"
+                ],
                 Prefab: {
                     path: "pda.bundle",
                     rcid: ""
@@ -176,14 +217,14 @@ class SkillsPlus implements IPreSptLoadMod, IPostDBLoadMod
             parentId: "5c164d2286f774194c5e69fa",
             newId: ItemIDS.Pda,
             fleaPriceRoubles: 3650000,
-            handbookPriceRoubles: 75000,
+            handbookPriceRoubles: 7560000,
             handbookParentId: "5c164d2286f774194c5e69fa",
 
             locales: {
                 en: {
                     name: "Flipper zero",
                     shortName: "Flipper",
-                    description: "A hacking device used for gaining access to key card doors. Requires Lockpicking level 20 to use."
+                    description: "A hacking device used for gaining access to key card doors. Requires Lockpicking level 25 to use."
                 }
             }
         }
@@ -207,23 +248,42 @@ class SkillsPlus implements IPreSptLoadMod, IPostDBLoadMod
         peaceKeeper.assort.barter_scheme[ItemIDS.Pda] = [
             [
                 {
-                    count: 12500,
+                    count: 12600,
                     _tpl: Money.DOLLARS
                 }
             ]
         ];
         
         peaceKeeper.assort.loyal_level_items[ItemIDS.Pda] = 3;
+
+        this.addItemToSpecSlots(ItemIDS.Pda);
     }
 
     private addCraftsToDatabase(): void
     {
-        const crafts = SkillsConfig.LockPickingSkill.CRAFTING_RECIPES;
+        const crafts = this.SkillsConfig.LockPickingSkill.CRAFTING_RECIPES;
 
         crafts.forEach((craft) => {
             this.Instance.database.hideout.production.push(craft);
         })
     }
+
+    private addItemToSpecSlots(itemId: string): void
+    {
+        // Allow in spec slot
+        const items = this.Instance.database.templates.items;
+
+        for (const item in items)
+        {
+            const id = items[item]._id;
+            
+            if (id !== "627a4e6b255f7527fb05a0f6" && id !== "65e080be269cbd5c5005e529") continue;
+
+            items[item]._props.Slots[0]._props.filters[0].Filter.push(itemId);
+            items[item]._props.Slots[1]._props.filters[0].Filter.push(itemId);
+            items[item]._props.Slots[2]._props.filters[0].Filter.push(itemId);
+        }
+    }
 }
 
-module.exports = { mod: new SkillsPlus() }
+module.exports = { mod: new SkillsExtended() }

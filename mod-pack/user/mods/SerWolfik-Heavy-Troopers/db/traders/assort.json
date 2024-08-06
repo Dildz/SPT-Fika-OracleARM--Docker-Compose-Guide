@@ -1,0 +1,87 @@
+{
+	"traderId": "5935c25fb3acc3127c3d8cd9",
+	"assorts": {
+		"items": [
+			{
+				"_id": "heavy",
+				"_tpl": "heavy",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+					"UnlimitedCount": true,
+					"StackObjectsCount": 999999
+				}
+			},
+			{
+				"_id": "heavytan",
+				"_tpl": "heavytan",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+					"UnlimitedCount": true,
+					"StackObjectsCount": 999999
+				}
+			},
+			{
+				"_id": "heavyblack",
+				"_tpl": "heavyblack",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+					"UnlimitedCount": true,
+					"StackObjectsCount": 999999
+				}
+			},
+			{
+				"_id": "heavycoyote",
+				"_tpl": "heavycoyote",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+					"UnlimitedCount": true,
+					"StackObjectsCount": 999999
+				}
+			}
+		],
+		"barter_scheme": {
+			"heavy": [
+				[
+					{
+						"count": 4000,
+						"_tpl": "5696686a4bdc2da3298b456a"
+					}
+				]
+			],
+			"heavytan": [
+				[
+					{
+						"count": 1500,
+						"_tpl": "5696686a4bdc2da3298b456a"
+					}
+				]
+			],
+			"heavyblack": [
+				[
+					{
+						"count": 1500,
+						"_tpl": "5696686a4bdc2da3298b456a"
+					}
+				]
+			],
+			"heavycoyote": [
+				[
+					{
+						"count": 1700,
+						"_tpl": "5696686a4bdc2da3298b456a"
+					}
+				]
+			]
+		},
+		"loyal_level_items": {
+			"heavy": 1,
+			"heavytan": 1,
+			"heavyblack": 1,
+			"heavycoyote": 1
+		}
+	}
+}

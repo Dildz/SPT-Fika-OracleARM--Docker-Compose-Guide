@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_28",
+    "id": "669979d0c73060411f04d2b0",
     "item_name": "Raichu [H\u2605]",
     "item_short_name": "Raichu",
     "item_description": "Its long tail servers as a ground to protect itself from its own high-voltage power.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 344603,
+    "price": 412920,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "woods",
-    "container": "578f8782245977354405a1e3",
+    "loot_locations": {
+        "tarkovstreets": [
+            "5909d89086f77472591234a0",
+            "5d6fd45b86f774317075ed43",
+            "5909d76c86f77471e53d2adf"
+        ],
+        "woods": [
+            "5d6d2bb386f774785b07a77a",
+            "5909d50c86f774659e6aaebe",
+            "5d07b91b86f7745a077a9432"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

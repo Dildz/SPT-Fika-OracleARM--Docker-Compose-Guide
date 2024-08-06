@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_123",
+    "id": "669979d0c73060411f04d27e",
     "item_name": "Goldeen [\u25cf]",
     "item_short_name": "Goldeen",
     "item_description": "Its tail fin billows like an elegant ballroom dress, giving it the nickname \"Water Queen.\"",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 6228,
+    "price": 8925,
     "weight": 0.01,
     "rarity": "common",
-    "map": "factory4_day",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "rezervbase": [
+            "5909d50c86f774659e6aaebe",
+            "578f8782245977354405a1e3",
+            "5d6fd45b86f774317075ed43"
+        ],
+        "sandbox": [
+            "5909d7cf86f77470ee57d75a",
+            "5c052cea86f7746b2101e8d8",
+            "578f8778245977358849a9b5"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

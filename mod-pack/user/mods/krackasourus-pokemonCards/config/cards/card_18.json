@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_18",
+    "id": "669979d0c73060411f04d2a5",
     "item_name": "Pidgeot [H\u2605]",
     "item_short_name": "Pidgeot",
     "item_description": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as Magikarp.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 448334,
+    "price": 413371,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "factory4_day",
-    "container": "5909e4b686f7747f5b744fa4",
+    "loot_locations": {
+        "bigmap": [
+            "59139c2186f77411564f8e42",
+            "578f87ad245977356274f2cc",
+            "578f87b7245977356274f2cd"
+        ],
+        "factory4_day": [
+            "5909d5ef86f77467974efbd8",
+            "578f87ad245977356274f2cc",
+            "5909d50c86f774659e6aaebe"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

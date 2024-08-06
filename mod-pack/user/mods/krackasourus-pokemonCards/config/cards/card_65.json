@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_65",
+    "id": "669979d0c73060411f04d2d9",
     "item_name": "Abra [\u25cf]",
     "item_short_name": "Abra",
     "item_description": "Using its ability to read minds, it will identify impending danger and teleport to safety.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 7557,
+    "price": 7477,
     "weight": 0.01,
     "rarity": "common",
-    "map": "factory4_day",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "sandbox_high": [
+            "5909d5ef86f77467974efbd8",
+            "578f87ad245977356274f2cc",
+            "658420d8085fea07e674cdb6"
+        ],
+        "shoreline": [
+            "5909d45286f77465a8136dc6",
+            "578f87a3245977356274f2cb",
+            "578f87ad245977356274f2cc"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_69",
+    "id": "669979d0c73060411f04d2dd",
     "item_name": "Machoke [\u25c6]",
     "item_short_name": "Machoke",
     "item_description": "Its muscular body is so powerful that it must wear a power-save belt to help regulate its motions.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 28809,
+    "price": 31859,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "lighthouse",
-    "container": "5909e4b686f7747f5b744fa4",
+    "loot_locations": {
+        "laboratory": [
+            "5909d5ef86f77467974efbd8",
+            "5909d24f86f77466f56e6855",
+            "5c052cea86f7746b2101e8d8"
+        ],
+        "lighthouse": [
+            "59139c2186f77411564f8e42",
+            "5d6d2b5486f774785c2ba8ea",
+            "5909d45286f77465a8136dc6"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

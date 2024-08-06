@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_150",
+    "id": "669979d0c73060411f04d29c",
     "item_name": "Articuno [H\u2605]",
     "item_short_name": "Articuno",
     "item_description": "A legendary bird Pok\u00e9mon that is said appear to doomed people who are lost in icy mountains.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 344799,
+    "price": 344011,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "lighthouse",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "rezervbase": [
+            "578f87b7245977356274f2cd",
+            "578f87a3245977356274f2cb",
+            "5909d5ef86f77467974efbd8"
+        ],
+        "sandbox": [
+            "5909d24f86f77466f56e6855",
+            "5909d5ef86f77467974efbd8",
+            "5909d76c86f77471e53d2adf"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

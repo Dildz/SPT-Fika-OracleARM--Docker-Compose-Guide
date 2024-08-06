@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_109",
+    "id": "669979d0c73060411f04d26e",
     "item_name": "Cubone [\u25cf]",
     "item_short_name": "Cubone",
     "item_description": "Because it never removes its skull helmet, no one has ever seens this Pok\u00e9mon's real face.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 7503,
+    "price": 6333,
     "weight": 0.01,
     "rarity": "common",
-    "map": "tarkovstreets",
-    "container": "5909d50c86f774659e6aaebe",
+    "loot_locations": {
+        "tarkovstreets": [
+            "5909d24f86f77466f56e6855",
+            "5909d7cf86f77470ee57d75a",
+            "5c052cea86f7746b2101e8d8"
+        ],
+        "woods": [
+            "5909d7cf86f77470ee57d75a",
+            "5d6fd45b86f774317075ed43",
+            "5d6d2b5486f774785c2ba8ea"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

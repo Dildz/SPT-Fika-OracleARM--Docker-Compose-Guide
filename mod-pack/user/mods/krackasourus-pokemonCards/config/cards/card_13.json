@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_13",
+    "id": "669979d0c73060411f04d285",
     "item_name": "Weedle [\u25cf]",
     "item_short_name": "Weedle",
     "item_description": "Often found in forests, eating leaves. It has a sharp, venomous stinger on its head.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 8555,
+    "price": 8009,
     "weight": 0.01,
     "rarity": "common",
-    "map": "sandbox_high",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "sandbox_high": [
+            "6582e6d7b14c3f72eb071420",
+            "578f87b7245977356274f2cd",
+            "5909d36d86f774660f0bb900"
+        ],
+        "shoreline": [
+            "578f87ad245977356274f2cc",
+            "5909d36d86f774660f0bb900",
+            "5d6fe50986f77449d97f7463"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

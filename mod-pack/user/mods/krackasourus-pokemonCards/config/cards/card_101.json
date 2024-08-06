@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_101",
+    "id": "669979d0c73060411f04d266",
     "item_name": "Hypno [\u2605]",
     "item_short_name": "Hypno",
     "item_description": "When it locks eyes with an enemy, it will use a mix of psi moves such as Hypnosis and Confusion.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 53306,
+    "price": 64078,
     "weight": 0.01,
     "rarity": "rare",
-    "map": "interchange",
-    "container": "5909e4b686f7747f5b744fa4",
+    "loot_locations": {
+        "rezervbase": [
+            "5909d4c186f7746ad34e805a",
+            "578f87b7245977356274f2cd",
+            "578f87a3245977356274f2cb"
+        ],
+        "sandbox": [
+            "5909d5ef86f77467974efbd8",
+            "5909d76c86f77471e53d2adf",
+            "5d6fd13186f77424ad2a8c69"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_71",
+    "id": "669979d0c73060411f04d2e0",
     "item_name": "Bellsprout [\u25cf]",
     "item_short_name": "Bellsprout",
     "item_description": "A carnivorous Pok\u00e9mon that traps and eats bugs. It uses its root feet to soak up needed moisture.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 7880,
+    "price": 5595,
     "weight": 0.01,
     "rarity": "common",
-    "map": "sandbox_high",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "tarkovstreets": [
+            "578f87b7245977356274f2cd",
+            "578f879c24597735401e6bc6",
+            "578f87a3245977356274f2cb"
+        ],
+        "woods": [
+            "5909d76c86f77471e53d2adf",
+            "5909d89086f77472591234a0",
+            "5d6fd13186f77424ad2a8c69"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_145",
+    "id": "669979d0c73060411f04d296",
     "item_name": "Omastar [\u25c6]",
     "item_short_name": "Omastar",
     "item_description": "A prehistoric Pok\u00e9mon that died out when its heavy shell moade it impossible for it to catch prey.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 24560,
+    "price": 30930,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "woods",
-    "container": "5d6d2b5486f774785c2ba8ea",
+    "loot_locations": {
+        "rezervbase": [
+            "5909d5ef86f77467974efbd8",
+            "5909e4b686f7747f5b744fa4",
+            "5d6fd13186f77424ad2a8c69"
+        ],
+        "sandbox": [
+            "578f8782245977354405a1e3",
+            "5909d89086f77472591234a0",
+            "5909d45286f77465a8136dc6"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

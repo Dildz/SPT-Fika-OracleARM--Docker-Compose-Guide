@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_40",
+    "id": "669979d0c73060411f04d2be",
     "item_name": "Ninetales [H\u2605]",
     "item_short_name": "Ninetales",
     "item_description": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1,000-year curse.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 386365,
+    "price": 363378,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "bigmap",
-    "container": "578f8782245977354405a1e3",
+    "loot_locations": {
+        "factory4_night": [
+            "578f87b7245977356274f2cd",
+            "578f87a3245977356274f2cb",
+            "578f8778245977358849a9b5"
+        ],
+        "interchange": [
+            "59139c2186f77411564f8e42",
+            "5909d50c86f774659e6aaebe",
+            "578f87ad245977356274f2cc"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

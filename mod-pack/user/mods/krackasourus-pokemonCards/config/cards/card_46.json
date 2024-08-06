@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_46",
+    "id": "669979d0c73060411f04d2c4",
     "item_name": "Gloom [\u25c6]",
     "item_short_name": "Gloom",
     "item_description": "The fluid that oozes from its mouth isn't drool; it is a nectar that is used to attract prey.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 33987,
+    "price": 29124,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "rezervbase",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "factory4_night": [
+            "5909d24f86f77466f56e6855",
+            "5909d76c86f77471e53d2adf",
+            "5909d36d86f774660f0bb900"
+        ],
+        "interchange": [
+            "578f87a3245977356274f2cb",
+            "5909d76c86f77471e53d2adf",
+            "578f87b7245977356274f2cd"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

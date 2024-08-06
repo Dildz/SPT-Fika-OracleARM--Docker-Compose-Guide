@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_35",
+    "id": "669979d0c73060411f04d2b8",
     "item_name": "Nidorino [\u25c6]",
     "item_short_name": "Nidorino",
     "item_description": "An aggressive Pok\u00e9mon that is quick to attack. The horn on its head secretes a powerful venom.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 21892,
+    "price": 33941,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "sandbox",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "factory4_night": [
+            "5d6fd45b86f774317075ed43",
+            "5909d50c86f774659e6aaebe",
+            "578f87ad245977356274f2cc"
+        ],
+        "interchange": [
+            "5909d45286f77465a8136dc6",
+            "5d6d2b5486f774785c2ba8ea",
+            "5909d4c186f7746ad34e805a"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

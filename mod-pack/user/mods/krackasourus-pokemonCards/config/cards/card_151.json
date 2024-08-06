@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_151",
+    "id": "669979d0c73060411f04d29d",
     "item_name": "Zapdos [H\u2605]",
     "item_short_name": "Zapdos",
     "item_description": "A legenday bird Pok\u00e9mon said to appear from clouds while wielding enormous lightning bolts.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 426660,
+    "price": 407779,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "rezervbase",
-    "container": "5d6d2b5486f774785c2ba8ea",
+    "loot_locations": {
+        "sandbox_high": [
+            "5d6fd13186f77424ad2a8c69",
+            "5909d45286f77465a8136dc6",
+            "5d6fd45b86f774317075ed43"
+        ],
+        "shoreline": [
+            "5909d4c186f7746ad34e805a",
+            "5909d50c86f774659e6aaebe",
+            "5909d5ef86f77467974efbd8"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

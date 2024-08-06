@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_23",
+    "id": "669979d0c73060411f04d2ab",
     "item_name": "Ekans [\u25cf]",
     "item_short_name": "Ekans",
     "item_description": "Moves silently and stealthily. Eats eggs of birds such as Pidgey and Spearow whole.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 7097,
+    "price": 9758,
     "weight": 0.01,
     "rarity": "common",
-    "map": "sandbox",
-    "container": "5d6d2b5486f774785c2ba8ea",
+    "loot_locations": {
+        "bigmap": [
+            "5909d45286f77465a8136dc6",
+            "5909d5ef86f77467974efbd8",
+            "5d6d2bb386f774785b07a77a"
+        ],
+        "factory4_day": [
+            "578f8782245977354405a1e3",
+            "5909e4b686f7747f5b744fa4",
+            "5909d76c86f77471e53d2adf"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

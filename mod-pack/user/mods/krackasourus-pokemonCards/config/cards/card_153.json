@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_153",
+    "id": "669979d0c73060411f04d29f",
     "item_name": "Dratini [\u25c6]",
     "item_short_name": "Dratini",
     "item_description": "Long considered a mythincal Pok\u00e9mon until recently, when a small colont was found living underwater.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 25961,
+    "price": 34031,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "sandbox_high",
-    "container": "5909d50c86f774659e6aaebe",
+    "loot_locations": {
+        "bigmap": [
+            "59387ac686f77401442ddd61",
+            "5909d36d86f774660f0bb900",
+            "6582e6d7b14c3f72eb071420"
+        ],
+        "factory4_day": [
+            "5909d36d86f774660f0bb900",
+            "5909d24f86f77466f56e6855",
+            "578f87b7245977356274f2cd"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_87",
+    "id": "669979d0c73060411f04d2f1",
     "item_name": "Dodrio [\u25c6]",
     "item_short_name": "Dodrio",
     "item_description": "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 23595,
+    "price": 30585,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "woods",
-    "container": "5d6d2b5486f774785c2ba8ea",
+    "loot_locations": {
+        "sandbox_high": [
+            "578f87a3245977356274f2cb",
+            "59139c2186f77411564f8e42",
+            "6582e6d7b14c3f72eb071420"
+        ],
+        "shoreline": [
+            "578f8782245977354405a1e3",
+            "5909d89086f77472591234a0",
+            "5909d4c186f7746ad34e805a"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

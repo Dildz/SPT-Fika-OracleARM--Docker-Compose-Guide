@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_95",
+    "id": "669979d0c73060411f04d2fa",
     "item_name": "Gastly [\u25c6]",
     "item_short_name": "Gastly",
     "item_description": "A mysterious Pok\u00e9mon. Some say it is a life form from another dimension, while other believe it is formed from smog.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 31828,
+    "price": 22809,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "sandbox_high",
-    "container": "5909d50c86f774659e6aaebe",
+    "loot_locations": {
+        "factory4_night": [
+            "5909d5ef86f77467974efbd8",
+            "5909d24f86f77466f56e6855",
+            "5909d76c86f77471e53d2adf"
+        ],
+        "interchange": [
+            "59139c2186f77411564f8e42",
+            "5909d50c86f774659e6aaebe",
+            "578f87ad245977356274f2cc"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_59",
+    "id": "669979d0c73060411f04d2d2",
     "item_name": "Primeape [\u25c6]",
     "item_short_name": "Primeape",
     "item_description": "Always furious and tenacious to boot. It will not abandon chasing its quarry until its quarry is caught.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 32748,
+    "price": 33373,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "sandbox",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "rezervbase": [
+            "578f87a3245977356274f2cb",
+            "5909d5ef86f77467974efbd8",
+            "5909e4b686f7747f5b744fa4"
+        ],
+        "sandbox": [
+            "5d6fe50986f77449d97f7463",
+            "5909d24f86f77466f56e6855",
+            "5909d5ef86f77467974efbd8"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

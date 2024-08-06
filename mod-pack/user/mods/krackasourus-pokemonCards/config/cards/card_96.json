@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_96",
+    "id": "669979d0c73060411f04d2fb",
     "item_name": "Haunter [\u25c6]",
     "item_short_name": "Haunter",
     "item_description": "Because of its ability to slip through black walls, it is said to be from another dimension.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 34287,
+    "price": 32633,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "shoreline",
-    "container": "578f87b7245977356274f2cd",
+    "loot_locations": {
+        "laboratory": [
+            "5909d5ef86f77467974efbd8",
+            "5909d24f86f77466f56e6855",
+            "5c052cea86f7746b2101e8d8"
+        ],
+        "lighthouse": [
+            "5909d4c186f7746ad34e805a",
+            "5909e4b686f7747f5b744fa4",
+            "5909d5ef86f77467974efbd8"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_14",
+    "id": "669979d0c73060411f04d290",
     "item_name": "Kakuna [\u25c6]",
     "item_short_name": "Kakuna",
     "item_description": "Almost incapable of moving, this Pok\u00e9mon can only harden its shell to protect itself from predators.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 34942,
+    "price": 28497,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "rezervbase",
-    "container": "5909e4b686f7747f5b744fa4",
+    "loot_locations": {
+        "rezervbase": [
+            "5d6fd13186f77424ad2a8c69",
+            "59139c2186f77411564f8e42",
+            "578f87ad245977356274f2cc"
+        ],
+        "sandbox": [
+            "5d6fd13186f77424ad2a8c69",
+            "5909d4c186f7746ad34e805a",
+            "658420d8085fea07e674cdb6"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

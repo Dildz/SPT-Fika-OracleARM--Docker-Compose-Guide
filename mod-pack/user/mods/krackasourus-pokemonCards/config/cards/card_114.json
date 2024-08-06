@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_114",
+    "id": "669979d0c73060411f04d274",
     "item_name": "Koffing [\u25cf]",
     "item_short_name": "Koffing",
     "item_description": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 8878,
+    "price": 8550,
     "weight": 0.01,
     "rarity": "common",
-    "map": "laboratory",
-    "container": "5909e4b686f7747f5b744fa4",
+    "loot_locations": {
+        "tarkovstreets": [
+            "578f87a3245977356274f2cb",
+            "578f8778245977358849a9b5",
+            "578f87ad245977356274f2cc"
+        ],
+        "woods": [
+            "5d6d2bb386f774785b07a77a",
+            "5909d50c86f774659e6aaebe",
+            "5d07b91b86f7745a077a9432"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

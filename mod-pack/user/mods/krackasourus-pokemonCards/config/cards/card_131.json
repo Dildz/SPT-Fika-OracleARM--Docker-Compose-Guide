@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_131",
+    "id": "669979d0c73060411f04d287",
     "item_name": "Magmar [\u25c6]",
     "item_short_name": "Magmar",
     "item_description": "Its body always burns with an orange glow that enables it to hide perfectly among flames.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 28045,
+    "price": 34086,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "shoreline",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "bigmap": [
+            "578f87b7245977356274f2cd",
+            "578f8782245977354405a1e3",
+            "5909d89086f77472591234a0"
+        ],
+        "factory4_day": [
+            "5909d50c86f774659e6aaebe",
+            "5909d36d86f774660f0bb900",
+            "5909d24f86f77466f56e6855"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

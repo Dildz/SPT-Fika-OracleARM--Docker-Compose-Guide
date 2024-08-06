@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_24",
+    "id": "669979d0c73060411f04d2ac",
     "item_name": "Arbok [\u25c6]",
     "item_short_name": "Arbok",
     "item_description": "It is rumored that the ferocious warning marking on its belly differ from area to area",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 33953,
+    "price": 22725,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "sandbox_high",
-    "container": "5909e4b686f7747f5b744fa4",
+    "loot_locations": {
+        "factory4_night": [
+            "5909d5ef86f77467974efbd8",
+            "5909d24f86f77466f56e6855",
+            "5909d76c86f77471e53d2adf"
+        ],
+        "interchange": [
+            "5ad74cf586f774391278f6f0",
+            "578f879c24597735401e6bc6",
+            "578f8778245977358849a9b5"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

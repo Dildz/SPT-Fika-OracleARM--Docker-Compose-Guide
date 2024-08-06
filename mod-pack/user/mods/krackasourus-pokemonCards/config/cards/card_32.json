@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_32",
+    "id": "669979d0c73060411f04d2b5",
     "item_name": "Nidorina [\u25c6]",
     "item_short_name": "Nidorina",
     "item_description": "The female's horn develops slowly. Prefer physical attacks such as clawing and biting.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 21869,
+    "price": 30488,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "laboratory",
-    "container": "578f87b7245977356274f2cd",
+    "loot_locations": {
+        "sandbox_high": [
+            "5909d24f86f77466f56e6855",
+            "5909d7cf86f77470ee57d75a",
+            "5909d4c186f7746ad34e805a"
+        ],
+        "shoreline": [
+            "5d6fe50986f77449d97f7463",
+            "578f8778245977358849a9b5",
+            "5909d76c86f77471e53d2adf"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

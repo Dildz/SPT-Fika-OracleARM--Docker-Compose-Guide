@@ -12,6 +12,7 @@
           "MinGroupSize": 1,
           "MaxGroupSize": 5,
           "Zones": [
+            "start",
             "all"
           ]
         },
@@ -25,7 +26,9 @@
           "MinGroupSize": 1,
           "MaxGroupSize": 5,
           "Zones": [
-            "hotspot"
+            "hotspot",
+            "start",
+            "all"
           ]
         },
         {
@@ -38,6 +41,7 @@
           "MinGroupSize": 1,
           "MaxGroupSize": 5,
           "Zones": [
+            "start",
             "all"
           ]
         }
@@ -53,6 +57,7 @@
           "MinGroupSize": 1,
           "MaxGroupSize": 3,
           "Zones": [
+            "start",
             "all"
           ]
         },
@@ -66,6 +71,7 @@
           "MinGroupSize": 1,
           "MaxGroupSize": 3,
           "Zones": [
+            "start",
             "all"
           ]
         },
@@ -79,9 +85,8 @@
           "MinGroupSize": 1,
           "MaxGroupSize": 3,
           "Zones": [
-            "Zone_Pink",
-            "Zone_Blue",
-            "Zone_Orange"
+            "start",
+            "all"
           ]
         },
         {
@@ -94,7 +99,8 @@
           "MinGroupSize": 1,
           "MaxGroupSize": 3,
           "Zones": [
-            "hotspot"
+            "start",
+            "all"
           ]
         },
         {
@@ -107,6 +113,7 @@
           "MinGroupSize": 1,
           "MaxGroupSize": 3,
           "Zones": [
+            "start",
             "all"
           ]
         }

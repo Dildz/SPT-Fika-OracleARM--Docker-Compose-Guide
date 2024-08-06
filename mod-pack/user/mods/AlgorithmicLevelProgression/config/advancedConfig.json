@@ -1,0 +1,622 @@
+{
+  "DO NOT CHANGE ANYTHING HERE": "DON't ASK FOR HELP IF YOU DO!",
+  "forceStock": true,
+  "daytimeSilencerCutoff": -22,
+  "forbiddenBullets": {
+    "3": [],
+    "4": [
+      "5d6e68a8a4b9360b6c0d54e2",
+      "5efb0da7a29a85116f6ea05f",
+      "5efb0cabfb3e451d70735af5",
+      "5a26ac0ec4a28200741e1e18",
+      "5cc80f38e4a949001152b560",
+      "5ba26835d4351e0035628ff5",
+      "61962d879bb3d20b0946d385",
+      "5c0d688c86f77413ae3407b2",
+      "61962b617c6c7b169525f168",
+      "56dff026d2720bb8668b4567",
+      "5c0d5e4486f77478390952fe",
+      "59e690b686f7746c9f75e848",
+      "601949593ae8f707c4608daa",
+      "59e0d99486f7744a32234762",
+      "601aa3d2b2bcb34913271e6d",
+      "5fd20ff893a8961fc660a954",
+      "5a6086ea4f39f99cd479502f",
+      "5efb0c1bd79ff02a1f5e68d9",
+      "560d61e84bdc2da74d8b4571",
+      "5e023d48186a883be655e551",
+      "5cadf6eeae921500134b2799",
+      "5fc382a9d724d907e2077dab"
+    ],
+    "5": []
+  },
+  "locations": {
+    "bigmap": {
+      "sightConfiguration": {
+        "SniperRifle": ["OpticScope", "AssaultScope"],
+        "MarksmanRifle": ["OpticScope", "AssaultScope", "Collimator"],
+        "AssaultCarbine": ["AssaultScope", "Collimator", "CompactCollimator"],
+        "AssaultRifle": ["AssaultScope", "Collimator", "CompactCollimator"],
+        "MachineGun": ["Collimator", "CompactCollimator"],
+        "Smg": ["Collimator", "CompactCollimator"],
+        "SpecialWeapon": ["Collimator", "CompactCollimator"],
+        "Shotgun": ["Collimator", "CompactCollimator"],
+        "Pistol": ["Collimator", "CompactCollimator"],
+        "Revolver": ["Collimator", "CompactCollimator"],
+        "GrenadeLauncher": ["Collimator", "CompactCollimator"]
+      },
+      "weightingAdjustments": {
+        "FirstPrimaryWeapon": {
+          "AssaultCarbine": 1.2,
+          "AssaultRifle": 1.3,
+          "GrenadeLauncher": 1,
+          "MachineGun": 1.2,
+          "MarksmanRifle": 0.7,
+          "Revolver": 1.2,
+          "Shotgun": 1.2,
+          "Smg": 1.3,
+          "SniperRifle": 0.7
+        }
+      }
+    },
+    "factory4_day": {
+      "sightConfiguration": {
+        "SniperRifle": ["Collimator", "CompactCollimator"],
+        "MarksmanRifle": ["Collimator", "CompactCollimator"],
+        "AssaultCarbine": ["Collimator", "CompactCollimator"],
+        "AssaultRifle": ["Collimator", "CompactCollimator"],
+        "MachineGun": ["Collimator", "CompactCollimator"],
+        "Smg": ["Collimator", "CompactCollimator"],
+        "SpecialWeapon": ["Collimator", "CompactCollimator"],
+        "Shotgun": ["Collimator", "CompactCollimator"],
+        "Pistol": ["Collimator", "CompactCollimator"],
+        "Revolver": ["Collimator", "CompactCollimator"],
+        "GrenadeLauncher": ["Collimator", "CompactCollimator"]
+      },
+      "weightingAdjustments": {
+        "FirstPrimaryWeapon": {
+          "AssaultCarbine": 0.8,
+          "AssaultRifle": 1.2,
+          "GrenadeLauncher": 1.5,
+          "MachineGun": 1.2,
+          "MarksmanRifle": 0.3,
+          "Revolver": 1.5,
+          "Shotgun": 1.2,
+          "Smg": 1.5,
+          "SniperRifle": 0.3
+        }
+      }
+    },
+    "factory4_night": {
+      "sightConfiguration": {
+        "SniperRifle": ["Collimator", "CompactCollimator"],
+        "MarksmanRifle": ["Collimator", "CompactCollimator"],
+        "AssaultCarbine": ["Collimator", "CompactCollimator"],
+        "AssaultRifle": ["Collimator", "CompactCollimator"],
+        "MachineGun": ["Collimator", "CompactCollimator"],
+        "Smg": ["Collimator", "CompactCollimator"],
+        "SpecialWeapon": ["Collimator", "CompactCollimator"],
+        "Shotgun": ["Collimator", "CompactCollimator"],
+        "Pistol": ["Collimator", "CompactCollimator"],
+        "Revolver": ["Collimator", "CompactCollimator"],
+        "GrenadeLauncher": ["Collimator", "CompactCollimator"]
+      },
+      "weightingAdjustments": {
+        "FirstPrimaryWeapon": {
+          "AssaultCarbine": 0.8,
+          "AssaultRifle": 1.2,
+          "GrenadeLauncher": 1.5,
+          "MachineGun": 1.2,
+          "MarksmanRifle": 0.3,
+          "Revolver": 1.5,
+          "Shotgun": 1.2,
+          "Smg": 1.5,
+          "SniperRifle": 0.3
+        }
+      }
+    },
+    "interchange": {
+      "sightConfiguration": {
+        "SniperRifle": ["OpticScope", "AssaultScope"],
+        "MarksmanRifle": ["OpticScope", "AssaultScope", "Collimator"],
+        "AssaultCarbine": ["AssaultScope", "Collimator"],
+        "AssaultRifle": ["AssaultScope", "Collimator", "CompactCollimator"],
+        "MachineGun": ["Collimator", "CompactCollimator"],
+        "Smg": ["Collimator", "CompactCollimator"],
+        "SpecialWeapon": ["Collimator", "CompactCollimator"],
+        "Shotgun": ["Collimator", "CompactCollimator"],
+        "Pistol": ["Collimator", "CompactCollimator"],
+        "Revolver": ["Collimator", "CompactCollimator"],
+        "GrenadeLauncher": ["Collimator", "CompactCollimator"]
+      },
+      "weightingAdjustments": {
+        "FirstPrimaryWeapon": {
+          "AssaultCarbine": 1.1,
+          "AssaultRifle": 1.2,
+          "GrenadeLauncher": 1,
+          "MachineGun": 1,
+          "MarksmanRifle": 1.2,
+          "Revolver": 0.6,
+          "Shotgun": 0.6,
+          "Smg": 0.6,
+          "SniperRifle": 1.1
+        }
+      }
+    },
+    "laboratory": {
+      "sightConfiguration": {
+        "SniperRifle": [
+          "AssaultScope",
+          "Collimator",
+          "CompactCollimator",
+          "ThermalVision"
+        ],
+        "MarksmanRifle": [
+          "AssaultScope",
+          "Collimator",
+          "CompactCollimator",
+          "ThermalVision"
+        ],
+        "AssaultCarbine": [
+          "AssaultScope",
+          "Collimator",
+          "CompactCollimator",
+          "ThermalVision"
+        ],
+        "AssaultRifle": [
+          "AssaultScope",
+          "Collimator",
+          "CompactCollimator",
+          "ThermalVision"
+        ],
+        "MachineGun": ["Collimator", "CompactCollimator", "ThermalVision"],
+        "Smg": ["Collimator", "CompactCollimator"],
+        "SpecialWeapon": ["Collimator", "CompactCollimator"],
+        "Shotgun": ["Collimator", "CompactCollimator"],
+        "Pistol": ["Collimator", "CompactCollimator"],
+        "Revolver": ["Collimator", "CompactCollimator"],
+        "GrenadeLauncher": ["Collimator", "CompactCollimator"]
+      },
+      "weightingAdjustments": {
+        "FirstPrimaryWeapon": {
+          "AssaultCarbine": 0.8,
+          "AssaultRifle": 1.3,
+          "GrenadeLauncher": 1.3,
+          "MachineGun": 1.2,
+          "MarksmanRifle": 0.3,
+          "Revolver": 1.2,
+          "Shotgun": 1.2,
+          "Smg": 1.3,
+          "SniperRifle": 0.3
+        }
+      }
+    },
+    "lighthouse": {
+      "sightConfiguration": {
+        "SniperRifle": ["OpticScope", "AssaultScope"],
+        "MarksmanRifle": ["OpticScope", "AssaultScope"],
+        "AssaultCarbine": ["AssaultScope"],
+        "AssaultRifle": ["AssaultScope", "Collimator"],
+        "MachineGun": ["Collimator", "CompactCollimator"],
+        "Smg": ["Collimator", "CompactCollimator"],
+        "SpecialWeapon": ["Collimator", "CompactCollimator"],
+        "Shotgun": ["Collimator", "CompactCollimator"],
+        "Pistol": ["Collimator", "CompactCollimator"],
+        "Revolver": ["Collimator", "CompactCollimator"],
+        "GrenadeLauncher": ["Collimator", "CompactCollimator"]
+      },
+      "weightingAdjustments": {
+        "FirstPrimaryWeapon": {
+          "AssaultCarbine": 1.5,
+          "AssaultRifle": 1,
+          "GrenadeLauncher": 0.8,
+          "MachineGun": 0.7,
+          "MarksmanRifle": 2,
+          "Revolver": 0.2,
+          "Shotgun": 0.2,
+          "Smg": 0.2,
+          "SniperRifle": 2
+        }
+      }
+    },
+    "rezervbase": {
+      "sightConfiguration": {
+        "SniperRifle": ["OpticScope", "AssaultScope"],
+        "MarksmanRifle": ["OpticScope", "AssaultScope"],
+        "AssaultCarbine": ["AssaultScope", "Collimator", "CompactCollimator"],
+        "AssaultRifle": ["AssaultScope", "Collimator", "CompactCollimator"],
+        "MachineGun": ["Collimator", "CompactCollimator"],
+        "Smg": ["Collimator", "CompactCollimator"],
+        "SpecialWeapon": ["Collimator", "CompactCollimator"],
+        "Shotgun": ["Collimator", "CompactCollimator"],
+        "Pistol": ["Collimator", "CompactCollimator"],
+        "Revolver": ["Collimator", "CompactCollimator"],
+        "GrenadeLauncher": ["Collimator", "CompactCollimator"]
+      },
+      "weightingAdjustments": {
+        "FirstPrimaryWeapon": {
+          "AssaultCarbine": 1.3,
+          "AssaultRifle": 1,
+          "GrenadeLauncher": 0.8,
+          "MachineGun": 0.8,
+          "MarksmanRifle": 1.6,
+          "Revolver": 0.3,
+          "Shotgun": 0.3,
+          "Smg": 0.5,
+          "SniperRifle": 1.6
+        }
+      }
+    },
+    "shoreline": {
+      "sightConfiguration": {
+        "SniperRifle": ["OpticScope", "AssaultScope"],
+        "MarksmanRifle": ["OpticScope", "AssaultScope"],
+        "AssaultCarbine": ["AssaultScope"],
+        "AssaultRifle": ["AssaultScope", "Collimator"],
+        "MachineGun": ["Collimator", "CompactCollimator"],
+        "Smg": ["Collimator", "CompactCollimator"],
+        "SpecialWeapon": ["Collimator", "CompactCollimator"],
+        "Shotgun": ["Collimator", "CompactCollimator"],
+        "Pistol": ["Collimator", "CompactCollimator"],
+        "Revolver": ["Collimator", "CompactCollimator"],
+        "GrenadeLauncher": ["Collimator", "CompactCollimator"]
+      },
+      "weightingAdjustments": {
+        "FirstPrimaryWeapon": {
+          "AssaultCarbine": 1.5,
+          "AssaultRifle": 1,
+          "GrenadeLauncher": 0.8,
+          "MachineGun": 0.7,
+          "MarksmanRifle": 2,
+          "Revolver": 0.2,
+          "Shotgun": 0.2,
+          "Smg": 0.2,
+          "SniperRifle": 2
+        }
+      }
+    },
+    "tarkovstreets": {
+      "sightConfiguration": {
+        "SniperRifle": ["OpticScope", "AssaultScope"],
+        "MarksmanRifle": ["OpticScope", "AssaultScope"],
+        "AssaultCarbine": ["AssaultScope", "Collimator", "CompactCollimator"],
+        "AssaultRifle": ["AssaultScope", "Collimator", "CompactCollimator"],
+        "MachineGun": ["Collimator", "CompactCollimator"],
+        "Smg": ["Collimator", "CompactCollimator"],
+        "SpecialWeapon": ["Collimator", "CompactCollimator"],
+        "Shotgun": ["Collimator", "CompactCollimator"],
+        "Pistol": ["Collimator", "CompactCollimator"],
+        "Revolver": ["Collimator", "CompactCollimator"],
+        "GrenadeLauncher": ["Collimator", "CompactCollimator"]
+      },
+      "weightingAdjustments": {
+        "FirstPrimaryWeapon": {
+          "AssaultCarbine": 1.2,
+          "AssaultRifle": 1.2,
+          "GrenadeLauncher": 1,
+          "MachineGun": 1,
+          "MarksmanRifle": 1,
+          "Revolver": 1,
+          "Shotgun": 1,
+          "Smg": 1.3,
+          "SniperRifle": 0.8
+        }
+      }
+    },
+    "sandbox": {
+      "sightConfiguration": {
+        "SniperRifle": ["OpticScope", "AssaultScope"],
+        "MarksmanRifle": ["OpticScope", "AssaultScope"],
+        "AssaultCarbine": ["AssaultScope", "Collimator", "CompactCollimator"],
+        "AssaultRifle": ["AssaultScope", "Collimator", "CompactCollimator"],
+        "MachineGun": ["Collimator", "CompactCollimator"],
+        "Smg": ["Collimator", "CompactCollimator"],
+        "SpecialWeapon": ["Collimator", "CompactCollimator"],
+        "Shotgun": ["Collimator", "CompactCollimator"],
+        "Pistol": ["Collimator", "CompactCollimator"],
+        "Revolver": ["Collimator", "CompactCollimator"],
+        "GrenadeLauncher": ["Collimator", "CompactCollimator"]
+      },
+      "weightingAdjustments": {
+        "FirstPrimaryWeapon": {
+          "AssaultCarbine": 1.2,
+          "AssaultRifle": 1.2,
+          "GrenadeLauncher": 1,
+          "MachineGun": 1,
+          "MarksmanRifle": 1,
+          "Revolver": 1,
+          "Shotgun": 1,
+          "Smg": 1.3,
+          "SniperRifle": 0.8
+        }
+      }
+    },
+    "woods": {
+      "sightConfiguration": {
+        "SniperRifle": ["OpticScope", "AssaultScope"],
+        "MarksmanRifle": ["OpticScope", "AssaultScope"],
+        "AssaultCarbine": ["OpticScope", "AssaultScope"],
+        "AssaultRifle": ["AssaultScope", "Collimator"],
+        "MachineGun": ["Collimator", "CompactCollimator"],
+        "Smg": ["Collimator", "CompactCollimator"],
+        "SpecialWeapon": ["Collimator", "CompactCollimator"],
+        "Shotgun": ["Collimator", "CompactCollimator"],
+        "Pistol": ["Collimator", "CompactCollimator"],
+        "Revolver": ["Collimator", "CompactCollimator"],
+        "GrenadeLauncher": ["Collimator", "CompactCollimator"]
+      },
+      "weightingAdjustments": {
+        "FirstPrimaryWeapon": {
+          "AssaultCarbine": 1.5,
+          "AssaultRifle": 1,
+          "GrenadeLauncher": 0.8,
+          "MachineGun": 0.7,
+          "MarksmanRifle": 2,
+          "Revolver": 0.2,
+          "Shotgun": 0.2,
+          "Smg": 0.2,
+          "SniperRifle": 2
+        }
+      }
+    }
+  },
+  "otherBotTypes": {
+    "assault": {
+      "weaponSlotIdsToMakeRequired": ["mod_muzzle"],
+      "randomisation": [
+        {
+          "levelRange": {
+            "min": 1,
+            "max": 100
+          },
+          "generation": {
+            "specialItems": {
+              "weights": {
+                "0": 1
+              },
+              "whitelist": {}
+            },
+            "healing": {
+              "weights": {
+                "0": 5,
+                "1": 2,
+                "2": 1
+              },
+              "whitelist": {}
+            },
+            "drugs": {
+              "weights": {
+                "0": 5,
+                "1": 2
+              },
+              "whitelist": {}
+            },
+            "stims": {
+              "weights": {
+                "0": 20,
+                "1": 1
+              },
+              "whitelist": {}
+            },
+            "backpackLoot": {
+              "weights": {
+                "0": 4,
+                "1": 5,
+                "2": 5,
+                "3": 4,
+                "4": 4,
+                "5": 2,
+                "6": 2,
+                "8": 1
+              },
+              "whitelist": {}
+            },
+            "pocketLoot": {
+              "weights": {
+                "0": 1,
+                "1": 3,
+                "2": 1
+              },
+              "whitelist": {}
+            },
+            "vestLoot": {
+              "weights": {
+                "0": 1,
+                "1": 3,
+                "2": 2,
+                "3": 1,
+                "6": 1
+              },
+              "whitelist": {}
+            },
+            "magazines": {
+              "weights": {
+                "0": 1,
+                "1": 5,
+                "2": 5,
+                "3": 1
+              },
+              "whitelist": {}
+            },
+            "grenades": {
+              "weights": {
+                "0": 3,
+                "1": 1
+              },
+              "whitelist": {
+                "5710c24ad2720bc3458b45a3": 1,
+                "5a0c27731526d80618476ac4": 1,
+                "619256e5f8af2c1a4e1f5d92": 1,
+                "5e32f56fcb6d5863cc5e5ee4": 1,
+                "5e340dcdcb6d5863cc5e5efb": 1
+              }
+            }
+          },
+          "equipment": {
+            "ArmBand": 0,
+            "ArmorVest": 50,
+            "Backpack": 44,
+            "Earpiece": 0,
+            "Eyewear": 26,
+            "FaceCover": 47,
+            "FirstPrimaryWeapon": 92,
+            "Headwear": 74,
+            "Holster": 7,
+            "Pockets": 100,
+            "Scabbard": 80,
+            "SecondPrimaryWeapon": 0,
+            "SecuredContainer": 100,
+            "TacticalVest": 100
+          },
+          "equipmentMods": {
+            "front_plate": 60,
+            "back_plate": 60,
+            "left_side_plate": 15,
+            "right_side_plate": 15,
+            "mod_equipment": 10,
+            "mod_equipment_000": 0,
+            "mod_equipment_001": 0,
+            "mod_equipment_002": 0,
+            "mod_mount": 0,
+            "mod_nvg": 0
+          },
+          "weaponMods": {
+            "mod_reciever": 99,
+            "mod_stock_akms": 90,
+            "mod_stock": 90,
+            "mod_sight_front": 50,
+            "mod_sight_rear": 50,
+            "mod_flashlight": 50,
+            "mod_muzzle": 5,
+            "mod_tactical": 10,
+            "mod_handguard": 0,
+            "mod_charge": 0,
+            "mod_equipment": 0,
+            "mod_equipment_000": 0,
+            "mod_equipment_001": 0,
+            "mod_equipment_002": 0,
+            "mod_foregrip": 0,
+            "mod_launcher": 0,
+            "mod_magazine": 0,
+            "mod_mount": 0,
+            "mod_mount_000": 0,
+            "mod_mount_001": 0,
+            "mod_nvg": 0,
+            "mod_pistol_grip": 0,
+            "mod_scope": 0,
+            "mod_scope_000": 0,
+            "mod_scope_001": 0,
+            "mod_scope_002": 0,
+            "mod_scope_003": 0,
+            "mod_tactical_000": 0,
+            "mod_tactical_001": 0,
+            "mod_tactical_002": 0,
+            "mod_tactical_003": 0,
+            "mod_stock_000": 0,
+            "mod_stock_001": 0,
+            "mod_barrel": 0,
+            "mod_bipod": 0,
+            "mod_mount_002": 0,
+            "mod_mount_003": 0,
+            "mod_mount_004": 0,
+            "mod_mount_005": 0,
+            "mod_mount_006": 0,
+            "mod_muzzle_000": 5,
+            "mod_muzzle_001": 1,
+            "mod_pistol_grip_akms": 0,
+            "mod_tactical001": 0,
+            "mod_tactical002": 0,
+            "mod_tactical_2": 0,
+            "mod_gas_block": 0,
+            "mod_pistolgrip": 0,
+            "mod_trigger": 0,
+            "mod_hammer": 0,
+            "mod_catch": 0
+          }
+        }
+      ],
+      "armorPlateWeighting": [
+        {
+          "levelRange": {
+            "min": 1,
+            "max": 99
+          },
+          "front_plate": {
+            "2": 25,
+            "3": 5,
+            "4": 1,
+            "5": 1,
+            "6": 1
+          },
+          "back_plate": {
+            "2": 25,
+            "3": 5,
+            "4": 1,
+            "5": 1,
+            "6": 1
+          },
+          "side_plate": {
+            "2": 25,
+            "3": 5,
+            "4": 1,
+            "5": 1,
+            "6": 1
+          },
+          "left_side_plate": {
+            "2": 25,
+            "3": 5,
+            "4": 1,
+            "5": 1,
+            "6": 1
+          },
+          "right_side_plate": {
+            "2": 25,
+            "3": 5,
+            "4": 1,
+            "5": 1,
+            "6": 1
+          }
+        }
+      ],
+      "blacklist": [
+        {
+          "levelRange": {
+            "min": 1,
+            "max": 99
+          },
+          "equipment": {
+            "mod_magazine": [
+              "5b1fb3e15acfc4001637f068",
+              "59e5f5a486f7746c530b3ce2"
+            ],
+            "mod_stock_akms": ["5a0c59791526d8dba737bba7"],
+            "mod_stock": [
+              "5a0c59791526d8dba737bba7",
+              "59ecc28286f7746d7a68aa8c",
+              "5b222d335acfc4771e1be099",
+              "5ac78eaf5acfc4001926317a",
+              "626a8ae89e664a2e2a75f409",
+              "5649b2314bdc2d79388b4576"
+            ],
+            "mod_handguard": [
+              "5648ae314bdc2d3d1c8b457f",
+              "5827272a24597748c74bdeea",
+              "5648b4534bdc2d3d1c8b4580"
+            ]
+          },
+          "cartridge": {}
+        }
+      ],
+      "whitelist": [
+        {
+          "levelRange": {
+            "min": 1,
+            "max": 99
+          },
+          "equipment": {},
+          "cartridge": {}
+        }
+      ]
+    }
+  }
+}

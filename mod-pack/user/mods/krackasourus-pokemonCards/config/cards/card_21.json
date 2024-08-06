@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_21",
+    "id": "669979d0c73060411f04d2a9",
     "item_name": "Spearow [\u25cf]",
     "item_short_name": "Spearow",
     "item_description": "Eats bugs in grassy areas. It has to slap its  short wings at high speed to stay airborne.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 5023,
+    "price": 9015,
     "weight": 0.01,
     "rarity": "common",
-    "map": "lighthouse",
-    "container": "578f8782245977354405a1e3",
+    "loot_locations": {
+        "sandbox_high": [
+            "6582e6c6edf14c4c6023adf2",
+            "6582e6bb0c3b9823fe6d1840",
+            "5909d89086f77472591234a0"
+        ],
+        "shoreline": [
+            "5909e4b686f7747f5b744fa4",
+            "5d6fd13186f77424ad2a8c69",
+            "5909d45286f77465a8136dc6"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

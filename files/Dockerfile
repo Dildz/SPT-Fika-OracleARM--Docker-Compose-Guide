@@ -3,11 +3,12 @@
 ## MODDED FIKA LINUX Container
 ##
 
+# Change the FIKA & SPT tags to the latest versions found in the SPT and FIKA discords
 FROM ubuntu:latest AS builder
 ARG FIKA=HEAD^
-ARG FIKA_BRANCH=main
+ARG FIKA_TAG=v2.2.7
 ARG SPT=HEAD^
-ARG SPT_BRANCH=master
+ARG SPT_TAG=3.9.5
 ARG NODE=20.11.1
 
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
@@ -21,10 +22,10 @@ RUN git config --global http.postBuffer 524288000
 
 # Install Node Version Manager and NodeJS
 RUN git clone https://github.com/nvm-sh/nvm.git $HOME/.nvm || true
-RUN \. $HOME/.nvm/nvm.sh && nvm install $NODE
+RUN . $HOME/.nvm/nvm.sh && nvm install $NODE
 
-# Clone the SPT repo or continue if it exist
-RUN git clone --branch $SPT_BRANCH https://dev.sp-tarkov.com/SPT/Server.git srv || true
+# Clone the SPT repo or continue if it exists
+RUN git clone --branch $SPT_TAG https://dev.sp-tarkov.com/SPT/Server.git srv || true
 
 ## Check out and git-lfs (specific commit --build-arg SPT=xxxx)
 WORKDIR /opt/srv/project
@@ -35,17 +36,17 @@ RUN git-lfs pull
 RUN sed -i '/setEncoding/d' /opt/srv/project/src/Program.ts || true
 
 ## Install npm dependencies and run build
-RUN \. $HOME/.nvm/nvm.sh && npm install && npm run build:release -- --arch=$([ "$(uname -m)" = "aarch64" ] && echo arm64 || echo x64) --platform=linux
+RUN . $HOME/.nvm/nvm.sh && npm install && npm run build:release -- --arch=$([ "$(uname -m)" = "aarch64" ] && echo arm64 || echo x64) --platform=linux
 
 ## Move the built server and clean up the source
 RUN mv build/ /opt/server/
 WORKDIR /opt
 RUN rm -rf srv/
 
-## Grab FIKA Server Mod or continue if it exist
-RUN git clone --branch $FIKA_BRANCH https://github.com/project-fika/Fika-Server.git ./server/user/mods/fika-server
-RUN \. $HOME/.nvm/nvm.sh && cd ./server/user/mods/fika-server && git checkout $FIKA && npm install
-RUN rm -rf ./server/user/mods/FIKA/.git
+## Grab FIKA Server Mod or continue if it exists
+RUN git clone --branch $FIKA_TAG https://github.com/project-fika/Fika-Server.git ./server/user/mods/fika-server
+RUN . $HOME/.nvm/nvm.sh && cd ./server/user/mods/fika-server && git checkout $FIKA && npm install
+RUN rm -rf ./server/user/mods/fika-server/.git
 
 FROM ubuntu:latest
 WORKDIR /opt/
@@ -56,13 +57,11 @@ COPY fcpy.sh /opt/fcpy.sh
 # Fix for Windows
 RUN dos2unix /opt/fcpy.sh
 
-# Set permissions and change ownership to ubuntu user
+# Set permissions and change ownership to ubuntu user (change to your user)
 RUN chmod -R 775 /opt && chown -R ubuntu:ubuntu /opt
 
-# Exposing FIKA ports (+10 up from standard installation)
+# Exposing FIKA ports
 EXPOSE 6969
-EXPOSE 6970
-EXPOSE 6971
 
 # Specify the default command to run when the container starts
 CMD bash ./fcpy.sh

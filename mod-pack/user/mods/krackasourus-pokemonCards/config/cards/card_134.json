@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_134",
+    "id": "669979d0c73060411f04d28a",
     "item_name": "Tauros [\u25c6]",
     "item_short_name": "Tauros",
     "item_description": "When it targets an enemy, it charges furiously while whipping its body with its long tails.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 26910,
+    "price": 26275,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "bigmap",
-    "container": "5909d50c86f774659e6aaebe",
+    "loot_locations": {
+        "rezervbase": [
+            "578f87ad245977356274f2cc",
+            "5909d36d86f774660f0bb900",
+            "578f8778245977358849a9b5"
+        ],
+        "sandbox": [
+            "5909d50c86f774659e6aaebe",
+            "578f87ad245977356274f2cc",
+            "6582e6bb0c3b9823fe6d1840"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

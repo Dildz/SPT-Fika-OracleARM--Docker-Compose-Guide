@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_112",
+    "id": "669979d0c73060411f04d272",
     "item_name": "Hitmonchan [H\u2605]",
     "item_short_name": "Hitmonchan",
     "item_description": "While seeming to do nothing, it fires punches in lighting-fast volleys that are impossible to see.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 355864,
+    "price": 443035,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "factory4_night",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "rezervbase": [
+            "5d6fe50986f77449d97f7463",
+            "5909d89086f77472591234a0",
+            "5909d24f86f77466f56e6855"
+        ],
+        "sandbox": [
+            "6582e6c6edf14c4c6023adf2",
+            "5d6fe50986f77449d97f7463",
+            "5909d24f86f77466f56e6855"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

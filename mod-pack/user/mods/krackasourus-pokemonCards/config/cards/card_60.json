@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_60",
+    "id": "669979d0c73060411f04d2d4",
     "item_name": "Growlithe [\u25c6]",
     "item_short_name": "Growlithe",
     "item_description": "Very protective of its territory. It will bark and bite to repel intruders from its space.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 30686,
+    "price": 24929,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "shoreline",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "tarkovstreets": [
+            "578f8778245977358849a9b5",
+            "578f87ad245977356274f2cc",
+            "5909e4b686f7747f5b744fa4"
+        ],
+        "woods": [
+            "578f8778245977358849a9b5",
+            "578f87ad245977356274f2cc",
+            "5909d5ef86f77467974efbd8"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

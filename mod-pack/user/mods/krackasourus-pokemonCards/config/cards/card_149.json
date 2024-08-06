@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_149",
+    "id": "669979d0c73060411f04d29a",
     "item_name": "Snorlax [H\u2605]",
     "item_short_name": "Snorlax",
     "item_description": "Very lazy. Just eats and sleeps. As its rotund bulk build, it becomes steadily more slothful.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 391557,
+    "price": 443106,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "interchange",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "factory4_night": [
+            "578f87ad245977356274f2cc",
+            "5d6fe50986f77449d97f7463",
+            "5909e4b686f7747f5b744fa4"
+        ],
+        "interchange": [
+            "5909d45286f77465a8136dc6",
+            "5d6d2b5486f774785c2ba8ea",
+            "5909d4c186f7746ad34e805a"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

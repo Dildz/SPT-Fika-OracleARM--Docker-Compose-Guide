@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_7",
+    "id": "669979d0c73060411f04d2de",
     "item_name": "Squirtle [\u25cf]",
     "item_short_name": "Squirtle",
     "item_description": "After birth, its back swells and hardens into a shell. It powerfully sprays from from its mouth.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 8864,
+    "price": 9658,
     "weight": 0.01,
     "rarity": "common",
-    "map": "rezervbase",
-    "container": "5909d50c86f774659e6aaebe",
+    "loot_locations": {
+        "rezervbase": [
+            "5909d24f86f77466f56e6855",
+            "5909d45286f77465a8136dc6",
+            "5909d4c186f7746ad34e805a"
+        ],
+        "sandbox": [
+            "5c052cea86f7746b2101e8d8",
+            "578f8778245977358849a9b5",
+            "6582e6c6edf14c4c6023adf2"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

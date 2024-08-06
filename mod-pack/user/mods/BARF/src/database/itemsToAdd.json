@@ -1,0 +1,80 @@
+{
+  "items": [
+
+
+    {
+      "_id": "Arena_jewelrycrate_blue_closed",
+      "_tpl": "66572bb3ac60f009f270d1df",
+      "openID": "66573310a1657263d816a139",
+      "price": 50,
+      "buyRestrictionMax": 1,
+      "loyaltyLevel": 1
+    },
+
+    {
+      "_id": "Arena_junkcrate_blue_closed",
+      "_tpl": "66572b88ac60f009f270d1dc",
+      "openID": "665732f4464c4b4ba4670fa9",
+      "price": 10,
+      "buyRestrictionMax": 1,
+      "loyaltyLevel": 1
+    },
+
+    {
+      "_id": "Arena_weaponcrate_blue_closed",
+      "_tpl": "66572b3f6a723f7f005a066c",
+      "price": 25,
+      "buyRestrictionMax": 1,
+      "loyaltyLevel": 1
+    },
+
+
+    {
+      "_id": "Arena_woods_key1",
+      "_tpl": "664d3db6db5dea2bad286955",
+      "price": 50,
+      "buyRestrictionMax": 1,
+      "loyaltyLevel": 1
+    },
+
+    {
+      "_id": "Arena_interchange_key2",
+      "_tpl": "664d3dd590294949fe2d81b7",
+      "price": 50,
+      "buyRestrictionMax": 1,
+      "loyaltyLevel": 1
+    },
+
+    {
+      "_id": "Arena_shoreline_key3",
+      "_tpl": "664d3ddfdda2e85aca370d75",
+      "price": 50,
+      "buyRestrictionMax": 1,
+      "loyaltyLevel": 1
+    },
+
+    {
+      "_id": "Arena_lighthouse_key4",
+      "_tpl": "664d3de85f2355673b09aed5",
+      "price": 50,
+      "buyRestrictionMax": 1,
+      "loyaltyLevel": 1
+    },
+
+    {
+      "_id": "weapon_tactikal_gladius",
+      "_tpl": "664a5428d5e33a713b622379",
+      "price": 500,
+      "buyRestrictionMax": 1,
+      "loyaltyLevel": 1
+    },
+
+    {
+      "_id": "Tetta_container",
+      "_tpl": "664a55d84a90fc2c8a6305c9",
+      "price": 1000,
+      "buyRestrictionMax": 1,
+      "loyaltyLevel": 1
+    }
+  ]
+}

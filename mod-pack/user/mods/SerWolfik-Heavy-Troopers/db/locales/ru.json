@@ -1,0 +1,29 @@
+{
+	"templates": {
+		"heavy": {
+			"Name": "WOLF Heavy Trooper Mask",
+			"ShortName": "WLFHTP",
+			"Description": "Селф мейд забрало созданное из баллистической маски Heavy Trooper."
+		},
+		"heavytan": {
+			"Name": "TAN Heavy Trooper Mask",
+			"ShortName": "TNHTP",
+			"Description": "Желтая баллистическая маска, сделанна компанией KMCompany для шлемов Ops-Core."
+		},
+		"heavyblack": {
+			"Name": "BLACK Heavy Trooper Mask",
+			"ShortName": "BLKHTP",
+			"Description": "Черная баллистическая маска, сделанна компанией KMCompany для шлемов Ops-Core."
+		},
+		"heavycult": {
+			"Name": "CULTIST Heavy Trooper Mask",
+			"ShortName": "CULTHTP",
+			"Description": "Странно задекорированная баллистическая маска."
+		},
+		"heavycoyote": {
+			"Name": "COYOTE Heavy Trooper Mask",
+			"ShortName": "CYTHTP",
+			"Description": "Койотовая баллистическая маска, сделанна компанией KMCompany для шлемов Team Wendy EXFIL."
+		}
+	}
+}

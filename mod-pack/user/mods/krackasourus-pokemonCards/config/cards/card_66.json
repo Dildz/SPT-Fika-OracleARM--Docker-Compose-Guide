@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_66",
+    "id": "669979d0c73060411f04d2da",
     "item_name": "Kadabra [\u25c6]",
     "item_short_name": "Kadabra",
     "item_description": "It emits special alpha waves from its body that induce headaches even to those just nearby.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 33898,
+    "price": 26053,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "factory4_night",
-    "container": "578f8782245977354405a1e3",
+    "loot_locations": {
+        "tarkovstreets": [
+            "5909d76c86f77471e53d2adf",
+            "5909d36d86f774660f0bb900",
+            "5909d24f86f77466f56e6855"
+        ],
+        "woods": [
+            "5909d36d86f774660f0bb900",
+            "5909d24f86f77466f56e6855",
+            "578f8782245977354405a1e3"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_82",
+    "id": "669979d0c73060411f04d2ec",
     "item_name": "Slowbro [\u25c6]",
     "item_short_name": "Slowbro",
     "item_description": "The Shellder that is latched onto Slowpoke's tail is said to feed on the host's left-over scraps.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 32170,
+    "price": 23157,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "sandbox",
-    "container": "5909d50c86f774659e6aaebe",
+    "loot_locations": {
+        "tarkovstreets": [
+            "5ad74cf586f774391278f6f0",
+            "64d116f41a9c6143a956127d",
+            "64d11702dd0cd96ab82c3280"
+        ],
+        "woods": [
+            "5d6d2bb386f774785b07a77a",
+            "5909d50c86f774659e6aaebe",
+            "5d07b91b86f7745a077a9432"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

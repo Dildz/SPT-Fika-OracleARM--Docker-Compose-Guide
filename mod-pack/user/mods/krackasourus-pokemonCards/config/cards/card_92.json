@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_92",
+    "id": "669979d0c73060411f04d2f7",
     "item_name": "Shellder [\u25cf]",
     "item_short_name": "Shellder",
     "item_description": "Its hard shell repels any kind of attack. It is vulnerable only when its shell is open.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 8984,
+    "price": 5150,
     "weight": 0.01,
     "rarity": "common",
-    "map": "lighthouse",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "sandbox_high": [
+            "578f8778245977358849a9b5",
+            "578f8782245977354405a1e3",
+            "578f879c24597735401e6bc6"
+        ],
+        "shoreline": [
+            "5d6fe50986f77449d97f7463",
+            "578f8778245977358849a9b5",
+            "5909d76c86f77471e53d2adf"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_141",
+    "id": "669979d0c73060411f04d292",
     "item_name": "Jolteon [H\u2605]",
     "item_short_name": "Jolteon",
     "item_description": "It accumulates negative Ions from the atmosphere to blast out 10,000-volt lightning bolts.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 416554,
+    "price": 307293,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "sandbox_high",
-    "container": "578f87b7245977356274f2cd",
+    "loot_locations": {
+        "tarkovstreets": [
+            "59139c2186f77411564f8e42",
+            "5d6d2bb386f774785b07a77a",
+            "5909d5ef86f77467974efbd8"
+        ],
+        "woods": [
+            "5d6d2bb386f774785b07a77a",
+            "5909d50c86f774659e6aaebe",
+            "5d07b91b86f7745a077a9432"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

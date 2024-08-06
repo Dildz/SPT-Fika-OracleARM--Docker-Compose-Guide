@@ -1,31 +1,12 @@
 "use strict";
 /* eslint-disable @typescript-eslint/naming-convention */
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const InstanceManager_1 = require("./InstanceManager");
-const SkillsConfig = __importStar(require("../config/SkillsConfig.json"));
+const node_path_1 = __importDefault(require("node:path"));
+const json5_1 = __importDefault(require("/snapshot/project/node_modules/json5"));
 const Money_1 = require("/snapshot/project/obj/models/enums/Money");
 const Traders_1 = require("/snapshot/project/obj/models/enums/Traders");
 const BaseClasses_1 = require("/snapshot/project/obj/models/enums/BaseClasses");
@@ -34,20 +15,35 @@ var ItemIDS;
     ItemIDS["Lockpick"] = "6622c28aed7e3bc72e301e22";
     ItemIDS["Pda"] = "662400eb756ca8948fe64fe8";
 })(ItemIDS || (ItemIDS = {}));
-class SkillsPlus {
+class SkillsExtended {
     Instance = new InstanceManager_1.InstanceManager();
     locale;
     customItemService;
+    vfs;
+    SkillsConfigRaw;
+    SkillsConfig;
     preSptLoad(container) {
         this.Instance.preSptLoad(container, "Skills Extended");
+        this.vfs = container.resolve("VFS");
+        this.SkillsConfigRaw = this.vfs.readFile(node_path_1.default.join(__dirname, "../config/SkillsConfig.json5"));
+        this.SkillsConfig = json5_1.default.parse(this.SkillsConfigRaw);
         this.registerRoutes();
     }
     postDBLoad(container) {
         this.Instance.postDBLoad(container);
         this.customItemService = container.resolve("CustomItemService");
+        this.setLocales();
         this.CreateItems();
         this.addCraftsToDatabase();
         this.locale = this.Instance.database.locales.global;
+    }
+    setLocales() {
+        const global = this.Instance.database.locales.global[this.SkillsConfig.Locale];
+        const modPath = this.Instance.modPath;
+        const locales = this.Instance.loadStringDictionarySync(`${modPath}/locale/${this.SkillsConfig.Locale}.json`);
+        for (const entry in locales) {
+            global[entry] = locales[entry];
+        }
     }
     getKeys() {
         const items = Object.values(this.Instance.database.templates.items);
@@ -67,8 +63,8 @@ class SkillsPlus {
             {
                 url: "/skillsExtended/GetSkillsConfig",
                 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                action: (url, info, sessionId, output) => {
-                    return JSON.stringify(SkillsConfig);
+                action: async (url, info, sessionId, output) => {
+                    return this.SkillsConfigRaw;
                 }
             }
         ], "");
@@ -76,7 +72,7 @@ class SkillsPlus {
             {
                 url: "/skillsExtended/GetKeys",
                 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                action: (url, info, sessionId, output) => {
+                action: async (url, info, sessionId, output) => {
                     return this.getKeys();
                 }
             }
@@ -84,7 +80,7 @@ class SkillsPlus {
     }
     CreateItems() {
         this.CreateLockpick();
-        //this.CreatePDA();
+        this.CreatePDA();
     }
     // Clones factory key to be used as a blank for bump lock picking
     CreateLockpick() {
@@ -93,6 +89,13 @@ class SkillsPlus {
             overrideProperties: {
                 CanSellOnRagfair: false,
                 MaximumNumberOfUsage: 5,
+                Unlootable: true,
+                UnlootableFromSlot: "SpecialSlot",
+                UnlootableFromSide: [
+                    "Bear",
+                    "Usec",
+                    "Savage"
+                ],
                 Prefab: {
                     path: "lockpick.bundle",
                     rcid: ""
@@ -133,12 +136,20 @@ class SkillsPlus {
             ]
         ];
         mechanic.assort.loyal_level_items[ItemIDS.Lockpick] = 2;
+        this.addItemToSpecSlots(ItemIDS.Lockpick);
     }
     CreatePDA() {
         const Pda = {
             itemTplToClone: "5bc9b720d4351e450201234b",
             overrideProperties: {
                 CanSellOnRagfair: false,
+                Unlootable: true,
+                UnlootableFromSlot: "SpecialSlot",
+                UnlootableFromSide: [
+                    "Bear",
+                    "Usec",
+                    "Savage"
+                ],
                 Prefab: {
                     path: "pda.bundle",
                     rcid: ""
@@ -147,13 +158,13 @@ class SkillsPlus {
             parentId: "5c164d2286f774194c5e69fa",
             newId: ItemIDS.Pda,
             fleaPriceRoubles: 3650000,
-            handbookPriceRoubles: 75000,
+            handbookPriceRoubles: 7560000,
             handbookParentId: "5c164d2286f774194c5e69fa",
             locales: {
                 en: {
                     name: "Flipper zero",
                     shortName: "Flipper",
-                    description: "A hacking device used for gaining access to key card doors. Requires Lockpicking level 20 to use."
+                    description: "A hacking device used for gaining access to key card doors. Requires Lockpicking level 25 to use."
                 }
             }
         };
@@ -172,19 +183,32 @@ class SkillsPlus {
         peaceKeeper.assort.barter_scheme[ItemIDS.Pda] = [
             [
                 {
-                    count: 12500,
+                    count: 12600,
                     _tpl: Money_1.Money.DOLLARS
                 }
             ]
         ];
         peaceKeeper.assort.loyal_level_items[ItemIDS.Pda] = 3;
+        this.addItemToSpecSlots(ItemIDS.Pda);
     }
     addCraftsToDatabase() {
-        const crafts = SkillsConfig.LockPickingSkill.CRAFTING_RECIPES;
+        const crafts = this.SkillsConfig.LockPickingSkill.CRAFTING_RECIPES;
         crafts.forEach((craft) => {
             this.Instance.database.hideout.production.push(craft);
         });
     }
+    addItemToSpecSlots(itemId) {
+        // Allow in spec slot
+        const items = this.Instance.database.templates.items;
+        for (const item in items) {
+            const id = items[item]._id;
+            if (id !== "627a4e6b255f7527fb05a0f6" && id !== "65e080be269cbd5c5005e529")
+                continue;
+            items[item]._props.Slots[0]._props.filters[0].Filter.push(itemId);
+            items[item]._props.Slots[1]._props.filters[0].Filter.push(itemId);
+            items[item]._props.Slots[2]._props.filters[0].Filter.push(itemId);
+        }
+    }
 }
-module.exports = { mod: new SkillsPlus() };
+module.exports = { mod: new SkillsExtended() };
 //# sourceMappingURL=mod.js.map

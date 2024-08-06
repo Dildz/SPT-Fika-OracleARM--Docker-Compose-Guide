@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.mod = void 0;
 const RagfairLinkedSlotItemService_1 = require("./RagfairLinkedSlotItemService");
 const config_json_1 = __importDefault(require("../config/config.json"));
 class UIFixes {
@@ -28,6 +29,20 @@ class UIFixes {
                         pmcData.Inventory.fastPanel[index] = fastPanel[index];
                     }
                 }
+            };
+        }, { frequency: "Always" });
+        // Trader offers with dogtag barter - fixed in next SPT release *after* 3.9.3
+        container.afterResolution("RagfairOfferGenerator", (_, ragfairOfferGenerator) => {
+            const original = ragfairOfferGenerator["createOffer"]; // By name because protected
+            ragfairOfferGenerator["createOffer"] = (userID, time, items, barterScheme, loyalLevel, isPackOffer) => {
+                const offer = original.call(ragfairOfferGenerator, userID, time, items, barterScheme, loyalLevel, isPackOffer);
+                for (let i = 0; i < offer.requirements.length; i++) {
+                    if (barterScheme[i]["level"] !== undefined) {
+                        offer.requirements[i]["level"] = barterScheme[i]["level"];
+                        offer.requirements[i]["side"] = barterScheme[i]["side"];
+                    }
+                }
+                return offer;
             };
         }, { frequency: "Always" });
         // Better tool return - starting production
@@ -118,5 +133,5 @@ class UIFixes {
         return result;
     }
 }
-module.exports = { mod: new UIFixes() };
+exports.mod = new UIFixes();
 //# sourceMappingURL=mod.js.map

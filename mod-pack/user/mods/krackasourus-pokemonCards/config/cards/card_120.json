@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_120",
+    "id": "669979d0c73060411f04d27b",
     "item_name": "Kangaskhan [H\u2605]",
     "item_short_name": "Kangaskhan",
     "item_description": "The infant rarely ventures out of its mother's protective pouch until it is three years old.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 313699,
+    "price": 406660,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "tarkovstreets",
-    "container": "5909e4b686f7747f5b744fa4",
+    "loot_locations": {
+        "bigmap": [
+            "5909d50c86f774659e6aaebe",
+            "5d6d2b5486f774785c2ba8ea",
+            "5909d45286f77465a8136dc6"
+        ],
+        "factory4_day": [
+            "5d6fd45b86f774317075ed43",
+            "5d6fe50986f77449d97f7463",
+            "578f8782245977354405a1e3"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

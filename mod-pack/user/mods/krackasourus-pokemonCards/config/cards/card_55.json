@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_55",
+    "id": "669979d0c73060411f04d2ce",
     "item_name": "Persian [\u25c6]",
     "item_short_name": "Persian",
     "item_description": "Although its gur has many admirers, it is tough to raise as a pet because of its fickle meanness.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 29031,
+    "price": 21841,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "interchange",
-    "container": "5d6d2b5486f774785c2ba8ea",
+    "loot_locations": {
+        "tarkovstreets": [
+            "5909d7cf86f77470ee57d75a",
+            "5c052cea86f7746b2101e8d8",
+            "5909d45286f77465a8136dc6"
+        ],
+        "woods": [
+            "5d6d2bb386f774785b07a77a",
+            "5909d50c86f774659e6aaebe",
+            "5d07b91b86f7745a077a9432"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

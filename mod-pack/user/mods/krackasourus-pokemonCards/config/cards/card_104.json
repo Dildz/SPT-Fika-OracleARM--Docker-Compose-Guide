@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_104",
+    "id": "669979d0c73060411f04d269",
     "item_name": "Voltorb [\u25cf]",
     "item_short_name": "Voltorb",
     "item_description": "Usually found in power plants. Easily mistaken for a Pok\u00e9 Ball, it has zapped many people.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 8192,
+    "price": 5981,
     "weight": 0.01,
     "rarity": "common",
-    "map": "rezervbase",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "bigmap": [
+            "5909d89086f77472591234a0",
+            "5d6fd45b86f774317075ed43",
+            "5909d24f86f77466f56e6855"
+        ],
+        "factory4_day": [
+            "5909d24f86f77466f56e6855",
+            "578f87b7245977356274f2cd",
+            "578f8778245977358849a9b5"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

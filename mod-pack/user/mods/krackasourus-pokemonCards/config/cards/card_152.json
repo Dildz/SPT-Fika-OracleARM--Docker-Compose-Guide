@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_152",
+    "id": "669979d0c73060411f04d29e",
     "item_name": "Moltres [H\u2605]",
     "item_short_name": "Moltres",
     "item_description": "Known as the legenday bird of fire. Every flap of its wings creates a dazzling flash of flames.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 422787,
+    "price": 390661,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "sandbox",
-    "container": "5909e4b686f7747f5b744fa4",
+    "loot_locations": {
+        "tarkovstreets": [
+            "578f87ad245977356274f2cc",
+            "5909e4b686f7747f5b744fa4",
+            "5909d50c86f774659e6aaebe"
+        ],
+        "woods": [
+            "5909d36d86f774660f0bb900",
+            "5909d24f86f77466f56e6855",
+            "578f8782245977354405a1e3"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

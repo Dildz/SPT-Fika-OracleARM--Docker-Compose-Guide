@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_29",
+    "id": "669979d0c73060411f04d2b1",
     "item_name": "Sandshrew [\u25cf]",
     "item_short_name": "Sandshrew",
     "item_description": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 6140,
+    "price": 9456,
     "weight": 0.01,
     "rarity": "common",
-    "map": "bigmap",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "bigmap": [
+            "5909d7cf86f77470ee57d75a",
+            "578f8778245977358849a9b5",
+            "578f87a3245977356274f2cb"
+        ],
+        "factory4_day": [
+            "578f87a3245977356274f2cb",
+            "5d6fd45b86f774317075ed43",
+            "5d6fe50986f77449d97f7463"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_43",
+    "id": "669979d0c73060411f04d2c1",
     "item_name": "Zubat [\u25cf]",
     "item_short_name": "Zubat",
     "item_description": "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 5575,
+    "price": 5514,
     "weight": 0.01,
     "rarity": "common",
-    "map": "interchange",
-    "container": "5909e4b686f7747f5b744fa4",
+    "loot_locations": {
+        "sandbox_high": [
+            "578f8782245977354405a1e3",
+            "578f879c24597735401e6bc6",
+            "5909d76c86f77471e53d2adf"
+        ],
+        "shoreline": [
+            "5909d7cf86f77470ee57d75a",
+            "5d6d2bb386f774785b07a77a",
+            "578f8782245977354405a1e3"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

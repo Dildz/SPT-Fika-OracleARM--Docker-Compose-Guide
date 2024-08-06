@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_105",
+    "id": "669979d0c73060411f04d26a",
     "item_name": "Electrode [\u2605]",
     "item_short_name": "Electrode",
     "item_description": "It stores electrical energy under very high pressure. It often explodes with little or no provocation.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 49439,
+    "price": 51949,
     "weight": 0.01,
     "rarity": "rare",
-    "map": "sandbox",
-    "container": "578f8782245977354405a1e3",
+    "loot_locations": {
+        "factory4_night": [
+            "5d6fd45b86f774317075ed43",
+            "5909d50c86f774659e6aaebe",
+            "578f87ad245977356274f2cc"
+        ],
+        "interchange": [
+            "578f87a3245977356274f2cb",
+            "5909d76c86f77471e53d2adf",
+            "578f87b7245977356274f2cd"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

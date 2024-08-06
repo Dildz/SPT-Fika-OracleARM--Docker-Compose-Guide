@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_6",
+    "id": "669979d0c73060411f04d2d3",
     "item_name": "Charizard [H\u2605]",
     "item_short_name": "Charizard",
     "item_description": "Spits fire that is hot enough to melt boulders. Known to unintentionally cause forest fires.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 388492,
+    "price": 426786,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "sandbox_high",
-    "container": "578f8782245977354405a1e3",
+    "loot_locations": {
+        "sandbox_high": [
+            "5909d89086f77472591234a0",
+            "5d6fd13186f77424ad2a8c69",
+            "5909d45286f77465a8136dc6"
+        ],
+        "shoreline": [
+            "578f879c24597735401e6bc6",
+            "5c052cea86f7746b2101e8d8",
+            "5909d7cf86f77470ee57d75a"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

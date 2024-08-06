@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_110",
+    "id": "669979d0c73060411f04d270",
     "item_name": "Marowak [\u25c6]",
     "item_short_name": "Marowak",
     "item_description": "The cone it holds is its key weapon. It throws the bone skillfully like a boomerang to K.O. targets.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 32787,
+    "price": 22403,
     "weight": 0.01,
     "rarity": "uncommon",
-    "map": "bigmap",
-    "container": "578f87ad245977356274f2cc",
+    "loot_locations": {
+        "factory4_night": [
+            "578f87b7245977356274f2cd",
+            "578f87a3245977356274f2cb",
+            "578f8778245977358849a9b5"
+        ],
+        "interchange": [
+            "5ad74cf586f774391278f6f0",
+            "578f879c24597735401e6bc6",
+            "578f8778245977358849a9b5"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

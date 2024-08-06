@@ -138,7 +138,7 @@ exports.reverseMapNames = {
     laboratory: "laboratory",
     tarkovstreets: "streets",
     sandbox: "groundzero",
-    sandbox_high: "groundzero"
+    sandbox_high: "groundzero_high"
 };
 exports.diffProper = {
     easy: "easy",

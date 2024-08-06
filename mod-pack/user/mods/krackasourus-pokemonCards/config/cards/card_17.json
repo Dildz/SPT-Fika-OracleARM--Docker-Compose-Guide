@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_17",
+    "id": "669979d0c73060411f04d2a4",
     "item_name": "Pidgeotto [\u2605]",
     "item_short_name": "Pidgeotto",
     "item_description": "Very protective of its sprawling territory, this Pok\u00e9mon will fiercely peck at any intruder.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 57054,
+    "price": 51255,
     "weight": 0.01,
     "rarity": "rare",
-    "map": "bigmap",
-    "container": "5d6d2b5486f774785c2ba8ea",
+    "loot_locations": {
+        "tarkovstreets": [
+            "5909d36d86f774660f0bb900",
+            "5909d24f86f77466f56e6855",
+            "5909d7cf86f77470ee57d75a"
+        ],
+        "woods": [
+            "5909d76c86f77471e53d2adf",
+            "5909d89086f77472591234a0",
+            "5d6fd13186f77424ad2a8c69"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

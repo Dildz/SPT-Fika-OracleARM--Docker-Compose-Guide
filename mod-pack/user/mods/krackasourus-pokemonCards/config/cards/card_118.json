@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_118",
+    "id": "669979d0c73060411f04d278",
     "item_name": "Chansey [H\u2605]",
     "item_short_name": "Chansey",
     "item_description": "A rare and elusive Pok\u00e9mon that is said to bring happiness to those who manage to catch it.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 302798,
+    "price": 324487,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "sandbox_high",
-    "container": "578f8782245977354405a1e3",
+    "loot_locations": {
+        "rezervbase": [
+            "5d6fd45b86f774317075ed43",
+            "5909d76c86f77471e53d2adf",
+            "5d6fe50986f77449d97f7463"
+        ],
+        "sandbox": [
+            "578f87b7245977356274f2cd",
+            "5909d36d86f774660f0bb900",
+            "6582e6d7b14c3f72eb071420"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

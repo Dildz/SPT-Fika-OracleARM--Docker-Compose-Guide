@@ -13,6 +13,7 @@
           "MinGroupSize": 1,
           "MaxGroupSize": 3,
           "Zones": [
+            "start",
             "all"
           ]
         },
@@ -21,11 +22,12 @@
           "TriggerTimer": 130,
           "TriggerDistance": 800,
           "SpawnChance": 100,
-          "MaxTriggersBeforeCooldown": 11,
+          "MaxTriggersBeforeCooldown": 12,
           "IgnoreTimerFirstSpawn": false,
           "MinGroupSize": 1,
           "MaxGroupSize": 3,
           "Zones": [
+            "start",
             "all"
           ]
         },
@@ -34,32 +36,18 @@
           "TriggerTimer": 180,
           "TriggerDistance": 800,
           "SpawnChance": 100,
-          "MaxTriggersBeforeCooldown": 13,
-          "IgnoreTimerFirstSpawn": false,
-          "MinGroupSize": 1,
-          "MaxGroupSize": 3,
-          "Zones": [
-            "Zone_Orange",
-            "Zone_Black",
-            "Zone_Yellow"
-          ]
-        },
-        {
-          "GroupNum": 53,
-          "TriggerTimer": 90,
-          "TriggerDistance": 800,
-          "SpawnChance": 100,
           "MaxTriggersBeforeCooldown": 14,
           "IgnoreTimerFirstSpawn": false,
           "MinGroupSize": 1,
           "MaxGroupSize": 3,
           "Zones": [
-            "hotspot"
+            "start",
+            "all"
           ]
         },
         {
-          "GroupNum": 54,
-          "TriggerTimer": 240,
+          "GroupNum": 53,
+          "TriggerTimer": 250,
           "TriggerDistance": 800,
           "SpawnChance": 100,
           "MaxTriggersBeforeCooldown": 15,
@@ -67,6 +55,21 @@
           "MinGroupSize": 1,
           "MaxGroupSize": 3,
           "Zones": [
+            "start",
+            "all"
+          ]
+        },
+        {
+          "GroupNum": 54,
+          "TriggerTimer": 300,
+          "TriggerDistance": 800,
+          "SpawnChance": 100,
+          "MaxTriggersBeforeCooldown": 16,
+          "IgnoreTimerFirstSpawn": false,
+          "MinGroupSize": 1,
+          "MaxGroupSize": 3,
+          "Zones": [
+            "start",
             "all"
           ]
         }

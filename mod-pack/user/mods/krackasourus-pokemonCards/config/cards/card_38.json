@@ -1,6 +1,6 @@
 {
     "clone_item": "573474f924597738002c6174",
-    "id": "card_38",
+    "id": "669979d0c73060411f04d2bb",
     "item_name": "Clefable [H\u2605]",
     "item_short_name": "Clefable",
     "item_description": "A timid Fairy Pok\u00e9mon that is rarely. it will run and hide the moment it senses people.",
@@ -15,11 +15,21 @@
     "trader_loyalty_level": 1,
     "can_sell_on_ragfair": false,
     "currency": "roubles",
-    "price": 343619,
+    "price": 373920,
     "weight": 0.01,
     "rarity": "epic",
-    "map": "shoreline",
-    "container": "5909d50c86f774659e6aaebe",
+    "loot_locations": {
+        "sandbox_high": [
+            "59139c2186f77411564f8e42",
+            "6582e6d7b14c3f72eb071420",
+            "578f87b7245977356274f2cd"
+        ],
+        "shoreline": [
+            "5d6d2b5486f774785c2ba8ea",
+            "59139c2186f77411564f8e42",
+            "5909e4b686f7747f5b744fa4"
+        ]
+    },
     "unlimited_stock": true,
     "item_sound": "item_book",
     "stock_amount": 999999,

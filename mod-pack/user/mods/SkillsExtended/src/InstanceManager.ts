@@ -23,9 +23,8 @@ export class InstanceManager
     public modName: string;
     public debug: boolean;
     // Useful Paths
-    public modPath: string = path.join(process.cwd(), "\\user\\mods\\TarkovTools\\");
-    public dbPath: string = path.join(process.cwd(), "\\user\\mods\\TarkovTools\\database");
-    public profilePath: string = path.join(process.cwd(), "\\user\\profiles");
+    public modPath: string = path.join(process.cwd(), "user/mods/SkillsExtended");
+    public profilePath: string = path.join(process.cwd(), "user/profiles");
 
     // Instances
     public container: DependencyContainer;
@@ -70,5 +69,22 @@ export class InstanceManager
         this.profileHelper = container.resolve<ProfileHelper>("ProfileHelper");
         this.ragfairPriceService = container.resolve<RagfairPriceService>("RagfairPriceService");
         this.importerUtil = container.resolve<ImporterUtil>("ImporterUtil");
+    }
+    
+
+    public loadStringDictionarySync(filePath: string): Record<string, string> 
+    {
+        try 
+        {
+            const data = fs.readFileSync(filePath, 'utf-8');
+            const jsonData = JSON.parse(data) as Record<string, string>; // Cast to desired type
+            return jsonData;
+        } 
+        catch (error) 
+        {
+            console.error(`Error reading file ${filePath}: ${error}`);
+            // Consider throwing a custom error here for better handling
+            throw new Error('Failed to load dictionary');
+        }
     }
 }
