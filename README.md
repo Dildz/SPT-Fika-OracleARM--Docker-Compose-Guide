@@ -404,7 +404,10 @@ Direct connection with port forwarding.
 [More info over here](https://github.com/project-fika/Fika-Documentation?tab=readme-ov-file#installation)
 
 I prefer using ZeroTier One, I've found this to be the most "hassle-free" experience for players.
-ZeroTier doesn't require players to have to force bind IP's or do any port forwarding as a host - as long as the ZT network is set a private network and the client is set to run at startup - "it just works"
+ZeroTier doesn't require players to have to force bind IP's or do any port forwarding as a host - as long as the ZT network is set a private network and the client is set to run at startup - "it just works".
+
+ZeroTier can be installed as a client on the Oracle VPS directly or run as a docker container.
+[ZeroTier One Linux install can be found here](https://www.zerotier.com/download/#entry-5)
 
 [Making automatic backups with cron](https://unix.stackexchange.com/a/16954)
 
