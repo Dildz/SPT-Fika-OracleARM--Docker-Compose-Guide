@@ -192,9 +192,8 @@ This creates a task to reboot the modded-fika server every day at 2am according 
 
 ## Starting mods for new players
 Any new players to the modded-fika server will need to have a fresh SPT install with the following mods pre-installed before connecting:
-[(FIKA client only)](https://github.com/project-fika/Fika-Plugin/releases)
-
-[(Corter-ModSync client only)](https://github.com/c-orter/modsync)
+1: [(FIKA client only)](https://github.com/project-fika/Fika-Plugin/releases)
+2: [(Corter-ModSync client only)](https://github.com/c-orter/modsync)
 
 ## Editing player profiles
 You will find the new profiles that get created when players join will be permission locked to the root user and you won't be able to save changes.
