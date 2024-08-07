@@ -191,7 +191,7 @@ To have the modded-fika server auto-reboot daily, we will create a new cron-job:
 cd ~
 ```
 ```
-contab -e
+crontab-e
 ```
 
 Add the following to the end of the file:
@@ -206,22 +206,32 @@ Press **Ctrl + O** (you will be prompted to save the file-name)
 Press **Enter** to save
 Press **Ctrl + X** to exit
 
+Confirm cron entry:
+```
+crontab -l
+```
+
 This creates a task to reboot the modded-fika server every day at 2am according to the system time - change the "2" value to an hour that suits your needs.
 
 ## Starting mods for new players
-Any new players to the modded-fika server will need to have a fresh SPT install with the following mods pre-installed before connecting:
+Any new players to the modded-fika server will need to have a fresh SPT v3.9.5 install with the ONLY following mods installed before connecting:
 
 1: [(FIKA client only)](https://github.com/project-fika/Fika-Plugin/releases)
 
 2: [(Corter-ModSync client only)](https://github.com/c-orter/modsync)
 
+Once players have connected to the FIKA server & after launching the game, they will 1st download bundle files, then Corter-Modsync will prompt them to update - they will then download all the required client mods from the server.
+
 ## Editing player profiles
-You will find the new profiles that get created when players join will be permission locked to the root user and you won't be able to save changes.
-To make changes to player HP / Energy / Hydration for example we need to run the following commands:
+You may find that new player profiles will be permission locked to the root user and you won't be able to save changes even as the sudo user.
+
+Note - ALWAYS BACKUP PROFILES **BEFORE MAKING CHANGES**
+
+To make changes to player profile we need to run the following commands:
 **Change [PROFILE_ID] to the ID of the profile you want to edit**
 **Change [USERNAME] to your system username**
 
-First stop the modded-fika server:
+First stop the container:
 ```
 docker stop modded-fika
 ```
@@ -393,25 +403,28 @@ sudo $HOME/docker/containers/spt-fika-modded/fika/restart_fika.sh
 Now your server is updated.
 
 [To update your client you can follow the instructions here.](https://dev.sp-tarkov.com/SPT/Stable-releases/releases)
+
 [Or follow the ReadMe file in the G-Drive folder to do a fresh client install.](https://drive.google.com/drive/folders/15wUVnloywf1qb9tNZQtZlkXKX_GSR87t?usp=sharing)
+
 [You will also need to download the newest Fika plugin from here.](https://github.com/project-fika/Fika-Plugin/releases)
 
 ## Other possibly helpful info
-To play with friends you have several options:
-ZeroTier One / 
-RADMIN VPN / 
-Direct connection with port forwarding.
+To open up the server to friends or the public:
+- ZeroTier One
+- RADMIN VPN
+- Open connection with port forwarding.
+
 [More info over here](https://github.com/project-fika/Fika-Documentation?tab=readme-ov-file#installation)
 
 I prefer using ZeroTier One, I've found this to be the most "hassle-free" experience for players.
 ZeroTier doesn't require players to have to force bind IP's or do any port forwarding as a host - as long as the ZT network is set a private network and the client is set to run at startup - "it just works".
 
 ZeroTier can be installed as a client on the Oracle VPS directly or run as a docker container.
+
 [ZeroTier One Linux install can be found here](https://www.zerotier.com/download/#entry-5)
 
 [Making automatic backups with cron](https://unix.stackexchange.com/a/16954)
 
-## Updating or adding user & client mods
 To update or add mods, you have to put them in the server's "server/user/mods" and "server/BepInEx" directories respectively.
 Since Corter-Modsync is used in this "mod-pack" - any new or updated mods & configs will get synced to the clients when they connect to the server.
 
@@ -439,7 +452,7 @@ To run the script on a schedule, add the following lines to the cron file (as we
 cd ~
 ```
 ```
-contab -e
+crontab -e
 ```
 
 Add the following to the end of the file:
@@ -449,7 +462,7 @@ Add the following to the end of the file:
 0 0 * * * /home/ubuntu/docker/containers/spt-fika-modded/fika/randomize_bg.sh
 ```
 
-The complete contab file contents should be:
+The complete crontab file contents should be:
 ```
 # Edit this file to introduce tasks to be run by cron.
 # 
