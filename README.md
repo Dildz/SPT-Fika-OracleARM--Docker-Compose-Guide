@@ -206,7 +206,7 @@ Press **Ctrl + O** (you will be prompted to save the file-name)
 Press **Enter** to save
 Press **Ctrl + X** to exit
 
-This creates a task to reboot the modded-fika server every day at 2am according to the system time - change the "2" value to an hour that suits your needs in the 24hr format.
+This creates a task to reboot the modded-fika server every day at 2am according to the system time - change the "2" value to an hour that suits your needs.
 
 ## Starting mods for new players
 Any new players to the modded-fika server will need to have a fresh SPT install with the following mods pre-installed before connecting:
@@ -429,18 +429,81 @@ For new/updated server (user) mods:
 
 Existing players don't need to re-install SPT - they just need to download the latest SPT files from the Direct Download link on the [SPT Update page](https://dev.sp-tarkov.com/SPT/Stable-releases/releases) and replace the files in their SPTarkov install folder.
 
+## Changing SPT launcher backgrounds
+In the "files" directory there is a randomize_bg.sh script & a folder called "SPT launcher images".
+The script will select a random image to use, check the file sizes & replace the bg.png file is they not the same.
+To run the script on a schedule, add the following lines to the cron file (as we did before for the reboot task):
+```
+cd ~
+```
+```
+contab -e
+```
+
+Add the following to the end of the file:
+**make sure to replace [USERNAME] with your username**
+```
+# STP launcher background image change - midnight daily
+0 0 * * * /home/ubuntu/docker/containers/spt-fika-3.9.5/fika/randomize_bg.sh
+```
+
+The complete contab file contents should be:
+```
+# Edit this file to introduce tasks to be run by cron.
+# 
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+# 
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+# 
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+# 
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+# 
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+
+
+# FIKA docker server reboot - 2am daily
+0 2 * * * /home/ubuntu/docker/containers/spt-fika-modded/fika/restart_fika.sh
+
+# STP launcher background image change - midnight daily
+0 0 * * * /home/ubuntu/docker/containers/spt-fika-3.9.5/fika/randomize_bg.sh
+```
+
+If using nano editor:
+Press **Ctrl + O** (you will be prompted to save the file-name)
+Press **Enter** to save
+Press **Ctrl + X** to exit
+
+This creates a task to change the launcher background every day at midnight according to the system time - change the "0" value to an hour that suits your needs.
+
 ## Errors/Issues
 Some errors are fixed by deleting all the files in the "cache" directory.
 
 A lot of the issues can be fixed by just searching the Fika Discord server for the error.
 Try to find an answer before asking one - someone has probably had your error before.
 
-If players are spawning apart from each other with the spawn together setting ON in the game settings when starting raids - someone has an mismatched FIKA version or the server isn't on the correct version.
+If players are spawning apart from each other with the spawn together setting ON in the game settings when starting raids - someone has a mismatched FIKA version or the server isn't on the correct version.
 Make sure the server's FIKA client & server mod-files are on the latest version by replacing user & client files, reboot server & have all players reconnect.
 Corter-Modsync will push the update when players re-join.
 
-If you have added new mods & players are not loading or any other new issues - check the logs and see which mod/s are causing problems & remove them.
-Remember to restart the server each time.
+The most common issue I have when updating or adding a new server mod is FIKA compatibility.
+Players will sometimes get stuck loading with just the spinning wheel in the lower left after rebooting the server for new or updated server mods.
+If this happens, try the following:
+- either revert to a previous working version of an updated mod and reboot the server,
+- create a new folder in user\mods\ called "mods-removed" and move any offending mods into this folder, remove the mod from the order.json file, then reboot the server.
+99% of the time issues are related to mod updates or mods that don't play nice with FIKA.
 
 ## Credits
 [Special thanks to k2rlxyz for making the original Dockerfile.](https://hub.docker.com/r/k2rlxyz/fika). It can also be found in the [Discord](https://discord.gg/project-fika).

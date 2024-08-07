@@ -3,12 +3,12 @@
 #!/bin/bash
 echo "MODDED FIKA Docker (SPT 3.9.5)"
 
-LOGFILE="/home/ubuntu/docker/logs/modded-fika.log"
+LOGFILE="$HOME/docker/logs/modded-fika.log"
 
 # Ensure the log directory exists and set permissions
-mkdir -p /home/ubuntu/docker/logs
-chmod 775 /home/ubuntu/docker/logs
-chown ubuntu:ubuntu /home/ubuntu/docker/logs
+mkdir -p "$HOME/docker/logs"
+chmod 775 "$HOME/docker/logs"
+chown ubuntu:ubuntu "$HOME/docker/logs"
 
 # Clear the log file if it exists, or create it if it doesn't
 > $LOGFILE
@@ -43,7 +43,7 @@ fi
 cd /opt/server
 
 # Start the server and log output to both stdout and the log file
-./SPT.Server.exe 2>&1 | tee -a $LOGFILE &
+./SPT.Server.exe 2>&1 | tee -a "$LOGFILE" &
 SPT_SERVER_PID=$!
 
 # Wait for the server process to end
@@ -51,3 +51,4 @@ wait $SPT_SERVER_PID
 
 echo "Exiting."
 exit 0
+
