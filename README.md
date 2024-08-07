@@ -430,8 +430,10 @@ For new/updated server (user) mods:
 Existing players don't need to re-install SPT - they just need to download the latest SPT files from the Direct Download link on the [SPT Update page](https://dev.sp-tarkov.com/SPT/Stable-releases/releases) and replace the files in their SPTarkov install folder.
 
 ## Changing SPT launcher backgrounds
-In the "files" directory there is a randomize_bg.sh script & a folder called "SPT launcher images".
-The script will select a random image to use, check the file sizes & replace the bg.png file is they not the same.
+In the "fika" directory there is a randomize_bg.sh script & a folder called "SPT launcher images".
+The script will select a random image to use from "SPT launcher images", compare the file size to the current bg.png file & replace it if the size is different - if the file sizes are the same it will choose a new random image & check again.
+If you would like to change the launcher background - do the following:
+
 To run the script on a schedule, add the following lines to the cron file (as we did before for the reboot task):
 ```
 cd ~
@@ -444,7 +446,7 @@ Add the following to the end of the file:
 **make sure to replace [USERNAME] with your username**
 ```
 # STP launcher background image change - midnight daily
-0 0 * * * /home/ubuntu/docker/containers/spt-fika-3.9.5/fika/randomize_bg.sh
+0 0 * * * /home/ubuntu/docker/containers/spt-fika-modded/fika/randomize_bg.sh
 ```
 
 The complete contab file contents should be:
@@ -478,7 +480,7 @@ The complete contab file contents should be:
 0 2 * * * /home/ubuntu/docker/containers/spt-fika-modded/fika/restart_fika.sh
 
 # STP launcher background image change - midnight daily
-0 0 * * * /home/ubuntu/docker/containers/spt-fika-3.9.5/fika/randomize_bg.sh
+0 0 * * * /home/ubuntu/docker/containers/spt-fika-modded/fika/randomize_bg.sh
 ```
 
 If using nano editor:
@@ -487,6 +489,8 @@ Press **Enter** to save
 Press **Ctrl + X** to exit
 
 This creates a task to change the launcher background every day at midnight according to the system time - change the "0" value to an hour that suits your needs.
+
+As an alternative - you can incorporate the randomize_bg.sh into the restart_fika.sh file so that the script stops the server, changes the bg.png image, then starts the server. The background change cron task & the randomize_bg.sh file could then be removed. I left this as 2 scripts as this makes it an optional (fun) but non-essential addition.
 
 ## Errors/Issues
 Some errors are fixed by deleting all the files in the "cache" directory.
