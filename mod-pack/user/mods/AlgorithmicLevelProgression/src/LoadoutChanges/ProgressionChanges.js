@@ -22,8 +22,8 @@ function ProgressionChanges(container) {
     const Logger = container.resolve("WinstonLogger");
     const items = tables.templates.items;
     const traders = tables.traders;
-    const usecInventory = tables.bots.types.pmcusec.inventory;
-    const bearInventory = tables.bots.types.pmcbear.inventory;
+    const usecInventory = tables.bots.types.usec.inventory;
+    const bearInventory = tables.bots.types.bear.inventory;
     const prices = tables.templates.prices;
     const handbook = tables.templates.handbook;
     let loot = {};
@@ -115,16 +115,16 @@ function ProgressionChanges(container) {
                                     ...(bearInventory.Ammo[calibre] || {}),
                                     [_tpl]: 1,
                                 };
-                                usecInventory.items.SecuredContainer[_tpl] = 1;
-                                bearInventory.items.SecuredContainer[_tpl] = 1;
+                                // usecInventory.items.SecuredContainer[_tpl] = 1;
+                                // bearInventory.items.SecuredContainer[_tpl] = 1;
                             }
                             else {
                                 console.log(item._name, " likely has the incorrect calibre: ", calibre);
                             }
                             break;
                         case (0, utils_1.checkParentRecursive)(parent, items, [utils_1.magParent]):
-                            usecInventory.items.SecuredContainer[_tpl] = 1;
-                            bearInventory.items.SecuredContainer[_tpl] = 1;
+                            // usecInventory.items.SecuredContainer[_tpl] = 1;
+                            // bearInventory.items.SecuredContainer[_tpl] = 1;
                             break;
                         // case equipmentType === "mod_scope":
                         //     break;
@@ -318,14 +318,16 @@ function ProgressionChanges(container) {
             // Esmarch5e831507ea0a7c419c2f9bd9
             usecInventory.items.SecuredContainer["5e831507ea0a7c419c2f9bd9"] = 1;
             bearInventory.items.SecuredContainer["5e831507ea0a7c419c2f9bd9"] = 1;
-            (0, utils_1.ensureAllAmmoInSecuredContainer)(usecInventory);
-            (0, utils_1.ensureAllAmmoInSecuredContainer)(bearInventory);
+            // ensureAllAmmoInSecuredContainer(usecInventory);
+            // ensureAllAmmoInSecuredContainer(bearInventory);
             (0, utils_1.addBossSecuredContainer)(usecInventory);
             (0, utils_1.addBossSecuredContainer)(bearInventory);
             // addAllMedsToInventory(combinedNumWith5List, usecInventory, items);
             (0, utils_1.fixEmptyChancePlates)(botConfig);
             (0, FixSpecificScopeIssues_1.fixSpecificItemIssues)(usecInventory);
             (0, FixSpecificScopeIssues_1.fixSpecificItemIssues)(bearInventory);
+            tables.bots.types.usec.inventory = usecInventory;
+            tables.bots.types.bear.inventory = bearInventory;
         }
         catch (error) {
             config_json_1.default.forceCached = true;
@@ -335,8 +337,8 @@ function ProgressionChanges(container) {
     }
     else {
         botConfig.equipment.pmc = botConfigequipmentpmc_json_1.default;
-        tables.bots.types.pmcusec = tablesbotstypesusec_json_1.default;
-        tables.bots.types.pmcbear = tablesbotstypesusec_json_1.default;
+        tables.bots.types.usec = tablesbotstypesusec_json_1.default;
+        tables.bots.types.bear = tablesbotstypesusec_json_1.default;
     }
     if (config_json_1.default.strictEquipmentTiering === false) {
         (0, utils_1.combineWhitelist)(botConfig.equipment.pmc);
@@ -372,9 +374,9 @@ function ProgressionChanges(container) {
     // saveToFile(pmcConfig, "pmcConfig1.json");
     GlobalValues_1.globalValues.originalBotTypes = (0, utils_1.cloneDeep)(tables.bots.types);
     GlobalValues_1.globalValues.originalWeighting = (0, utils_1.cloneDeep)(botConfig.equipment.pmc);
-    // tables.bots.types.pmcusec
+    // tables.bots.types.usec
     // botConfig.equipment.pmc
-    // saveToFile(tables.bots.types.pmcusec, `Cache/tablesbotstypesusec.json`);
+    // saveToFile(tables.bots.types.usec, `Cache/tablesbotstypesusec.json`);
     // saveToFile(botConfig.equipment.pmc, `Cache/botConfigequipmentpmc.json`);
     config_json_1.default.debug ||
         (config_json_1.default.forceCached &&

@@ -7,7 +7,11 @@
       "BossEscortAmount": "0",
       "BossEscortType": "marksman",
       "BossZone": [
-        "ZoneSnipeTower"
+        "ZoneSnipeBrige",
+        "ZoneSnipeTower",
+        "ZoneSnipeFactory",
+        "ZoneBlockPostSniper",
+        "ZoneBlockPostSniper3"
       ]
     },
     {
@@ -17,7 +21,11 @@
       "BossEscortAmount": "0",
       "BossEscortType": "marksman",
       "BossZone": [
-        "ZoneSnipeFactory"
+        "ZoneSnipeBrige",
+        "ZoneSnipeTower",
+        "ZoneSnipeFactory",
+        "ZoneBlockPostSniper",
+        "ZoneBlockPostSniper3"
       ]
     },
     {
@@ -27,7 +35,11 @@
       "BossEscortAmount": "0",
       "BossEscortType": "marksman",
       "BossZone": [
-        "ZoneBlockPostSniper"
+        "ZoneSnipeBrige",
+        "ZoneSnipeTower",
+        "ZoneSnipeFactory",
+        "ZoneBlockPostSniper",
+        "ZoneBlockPostSniper3"
       ]
     },
     {
@@ -37,7 +49,11 @@
       "BossEscortAmount": "0",
       "BossEscortType": "marksman",
       "BossZone": [
-        "ZoneSnipeBrige"
+        "ZoneSnipeBrige",
+        "ZoneSnipeTower",
+        "ZoneSnipeFactory",
+        "ZoneBlockPostSniper",
+        "ZoneBlockPostSniper3"
       ]
     }
   ],
@@ -135,7 +151,8 @@
       "BossEscortAmount": "0",
       "Time": -1,
       "BossZone": [
-        "ZonePowerStationSniper"
+        "ZonePowerStationSniper",
+        "ZoneBunkeSniper"
       ]
     },
     {
@@ -145,6 +162,7 @@
       "BossEscortAmount": "0",
       "Time": -1,
       "BossZone": [
+        "ZonePowerStationSniper",
         "ZoneBunkeSniper"
       ]
     }
@@ -157,7 +175,10 @@
       "BossEscortAmount": "0",
       "BossEscortType": "marksman",
       "BossZone": [
-        "ZoneSnipeCinema"
+        "ZoneSnipeCarShowroom",
+        "ZoneSnipeCinema",
+        "ZoneSnipeBuilding",
+        "ZoneSnipeSW01"
       ]
     },
     {
@@ -167,7 +188,10 @@
       "BossEscortAmount": "0",
       "BossEscortType": "marksman",
       "BossZone": [
-        "ZoneSnipeCarShowroom"
+        "ZoneSnipeCarShowroom",
+        "ZoneSnipeCinema",
+        "ZoneSnipeBuilding",
+        "ZoneSnipeSW01"
       ]
     },
     {
@@ -177,7 +201,10 @@
       "BossEscortAmount": "0",
       "BossEscortType": "marksman",
       "BossZone": [
-        "ZoneSnipeBuilding"
+        "ZoneSnipeCarShowroom",
+        "ZoneSnipeCinema",
+        "ZoneSnipeBuilding",
+        "ZoneSnipeSW01"
       ]
     },
     {
@@ -187,6 +214,9 @@
       "BossEscortAmount": "0",
       "BossEscortType": "marksman",
       "BossZone": [
+        "ZoneSnipeCarShowroom",
+        "ZoneSnipeCinema",
+        "ZoneSnipeBuilding",
         "ZoneSnipeSW01"
       ]
     }

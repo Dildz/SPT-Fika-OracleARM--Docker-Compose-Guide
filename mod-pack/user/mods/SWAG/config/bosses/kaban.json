@@ -5,7 +5,15 @@
       "BossEscortAmount": "6",
       "BossEscortType": "followerboar",
       "BossName": "bossboar",
-      "BossZone": null,
+      "BossZone": [
+        "ZoneOldAZS",
+        "ZoneWade",
+        "ZoneBrige",
+        "ZoneFactoryCenter",
+        "ZoneDormitory",
+        "ZoneCustoms",
+        "ZoneFactorySide"
+      ],
       "Supports": [
         {
           "BossEscortAmount": "4",
@@ -125,7 +133,16 @@
       "BossEscortAmount": "6",
       "BossEscortType": "followerboar",
       "BossName": "bossboar",
-      "BossZone": null,
+      "BossZone": [
+        "ZoneCenter",
+        "ZoneCenterBot",
+        "ZoneGoshan",
+        "ZoneOLI",
+        "ZonePowerStation",
+        "ZoneIDEA",
+        "ZoneIDEAPark",
+        "ZoneOLIPark"
+      ],
       "Supports": [
         {
           "BossEscortAmount": "4",
@@ -149,7 +166,13 @@
       "BossEscortAmount": "6",
       "BossEscortType": "followerboar",
       "BossName": "bossboar",
-      "BossZone": null,
+      "BossZone": [
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
+      ],
       "Supports": [
         {
           "BossEscortAmount": "4",
@@ -173,7 +196,16 @@
       "BossEscortAmount": "6",
       "BossEscortType": "followerboar",
       "BossName": "bossboar",
-      "BossZone": null,
+      "BossZone": [
+        "Zone_Chalet",
+        "Zone_Village",
+        "Zone_Containers",
+        "Zone_TreatmentBeach",
+        "Zone_TreatmentRocks",
+        "Zone_Bridge",
+        "Zone_Blockpost",
+        "Zone_Hellicopter"
+      ],
       "Supports": [
         {
           "BossEscortAmount": "4",
@@ -197,7 +229,14 @@
       "BossEscortAmount": "6",
       "BossEscortType": "followerboar",
       "BossName": "bossboar",
-      "BossZone": null,
+      "BossZone": [
+        "ZoneRailStrorage",
+        "ZoneBarrack",
+        "ZoneSubStorage",
+        "ZoneSubCommand",
+        "ZonePTOR2",
+        "ZonePTOR1"
+      ],
       "Supports": [
         {
           "BossEscortAmount": "4",
@@ -221,7 +260,18 @@
       "BossEscortAmount": "6",
       "BossEscortType": "followerboar",
       "BossName": "bossboar",
-      "BossZone": null,
+      "BossZone": [
+        "ZoneIsland",
+        "ZonePowerStation",
+        "ZoneBusStation",
+        "ZonePort",
+        "ZoneRailWays",
+        "ZoneSanatorium1",
+        "ZoneSanatorium2",
+        "ZoneMateoStation",
+        "ZoneGasStation",
+        "ZoneGreenHouses"
+      ],
       "Supports": [
         {
           "BossEscortAmount": "4",
@@ -283,7 +333,12 @@
       "BossEscortAmount": "6",
       "BossEscortType": "followerboar",
       "BossName": "bossboar",
-      "BossZone": null,
+      "BossZone": [
+        "ZoneWoodCutter",
+        "ZoneScavBase2",
+        "ZoneRoad",
+        "ZoneMiniHouse"
+      ],
       "Supports": [
         {
           "BossEscortAmount": "4",

@@ -390,12 +390,12 @@
   },
   "otherBotTypes": {
     "assault": {
-      "weaponSlotIdsToMakeRequired": ["mod_muzzle"],
+      "weaponSlotIdsToMakeRequired": [],
       "randomisation": [
         {
           "levelRange": {
             "min": 1,
-            "max": 100
+            "max": 79
           },
           "generation": {
             "specialItems": {

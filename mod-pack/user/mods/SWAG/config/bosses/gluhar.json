@@ -5,7 +5,15 @@
       "BossEscortAmount": "0",
       "BossEscortType": "followergluharassault",
       "BossName": "bossgluhar",
-      "BossZone": null,
+      "BossZone": [
+        "ZoneOldAZS",
+        "ZoneWade",
+        "ZoneBrige",
+        "ZoneFactoryCenter",
+        "ZoneDormitory",
+        "ZoneCustoms",
+        "ZoneFactorySide"
+      ],
       "Supports": [
         {
           "BossEscortAmount": "2",
@@ -125,7 +133,16 @@
       "BossEscortAmount": "0",
       "BossEscortType": "followergluharassault",
       "BossName": "bossgluhar",
-      "BossZone": null,
+      "BossZone": [
+        "ZoneCenter",
+        "ZoneCenterBot",
+        "ZoneGoshan",
+        "ZoneOLI",
+        "ZonePowerStation",
+        "ZoneIDEA",
+        "ZoneIDEAPark",
+        "ZoneOLIPark"
+      ],
       "Supports": [
         {
           "BossEscortAmount": "2",
@@ -149,7 +166,13 @@
       "BossEscortAmount": "0",
       "BossEscortType": "followergluharassault",
       "BossName": "bossgluhar",
-      "BossZone": null,
+      "BossZone": [
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
+      ],
       "Supports": [
         {
           "BossEscortAmount": "2",
@@ -173,7 +196,16 @@
       "BossEscortAmount": "0",
       "BossEscortType": "followergluharassault",
       "BossName": "bossgluhar",
-      "BossZone": null,
+      "BossZone": [
+        "Zone_Chalet",
+        "Zone_Village",
+        "Zone_Containers",
+        "Zone_TreatmentBeach",
+        "Zone_TreatmentRocks",
+        "Zone_Bridge",
+        "Zone_Blockpost",
+        "Zone_Hellicopter"
+      ],
       "Supports": [
         {
           "BossEscortAmount": "2",
@@ -199,8 +231,11 @@
       "BossName": "bossgluhar",
       "BossZone": [
         "ZoneRailStrorage",
+        "ZoneBarrack",
+        "ZoneSubStorage",
+        "ZoneSubCommand",
         "ZonePTOR2",
-        "ZoneBarrack"
+        "ZonePTOR1"
       ],
       "Supports": [
         {
@@ -225,7 +260,18 @@
       "BossEscortAmount": "0",
       "BossEscortType": "followergluharassault",
       "BossName": "bossgluhar",
-      "BossZone": null,
+      "BossZone": [
+        "ZoneIsland",
+        "ZonePowerStation",
+        "ZoneBusStation",
+        "ZonePort",
+        "ZoneRailWays",
+        "ZoneSanatorium1",
+        "ZoneSanatorium2",
+        "ZoneMateoStation",
+        "ZoneGasStation",
+        "ZoneGreenHouses"
+      ],
       "Supports": [
         {
           "BossEscortAmount": "2",
@@ -249,7 +295,17 @@
       "BossEscortAmount": "0",
       "BossEscortType": "followergluharassault",
       "BossName": "bossgluhar",
-      "BossZone": null,
+      "BossZone": [
+        "ZoneSW01",
+        "ZoneConstruction",
+        "ZoneCarShowroom",
+        "ZoneCinema",
+        "ZoneFactory",
+        "ZoneHotel_1",
+        "ZoneHotel_2",
+        "ZoneConcordia_1",
+        "ZoneColumn"
+      ],
       "Supports": [
         {
           "BossEscortAmount": "2",
@@ -273,7 +329,12 @@
       "BossEscortAmount": "0",
       "BossEscortType": "followergluharassault",
       "BossName": "bossgluhar",
-      "BossZone": null,
+      "BossZone": [
+        "ZoneWoodCutter",
+        "ZoneScavBase2",
+        "ZoneRoad",
+        "ZoneMiniHouse"
+      ],
       "Supports": [
         {
           "BossEscortAmount": "2",

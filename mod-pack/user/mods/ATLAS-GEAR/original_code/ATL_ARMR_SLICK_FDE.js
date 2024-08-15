@@ -1,0 +1,99 @@
+class ATL_ARMR_SLICK_FDE
+{
+    constructor()
+    {
+        this.modname = "ATLAS_ARMOR_SLICK_FDE";
+        Logger.info(`Loading: ${this.modname}`);
+        ModLoader.onLoad[this.modname] = this.load.bind(this);
+    }
+    load()
+    {
+        const data_base = DatabaseServer.tables;
+        const data_Items = data_base.templates.items;
+        const data_handbook = data_base.templates.handbook.Items;
+        const data_global = data_base.locales.global;
+        const data_traders = data_base.traders;
+
+        const itemId = "010521_ARMR_SLICK_FDE000";
+        const itemPrefabPath = "ATL_ARMR_SLICK_FDE.bundle";
+        const itemClone = "5e4abb5086f77406975c9342";
+        const itemCategory = "5b5f701386f774093f2ecf0f";
+        const itemLongName = "LBT 6094A Slick Plate Carrier FDE";
+        const itemShortName = "Slick";
+        const itemDescription = "Simple FDE (Flat Dark Earth) plate carrier by LBT company. The most minimalistic design intended for use with chest rigs.";
+        const itemFleaPrice = 374500;
+        const itemTrader = "5ac3b934156ae10c4430e83c";
+        const itemTraderLV = 4;
+
+        this.createItemHandbookEntry(data_handbook, data_global, itemId, itemCategory, itemFleaPrice, itemLongName, itemShortName, itemDescription);
+        this.createItem(data_Items, itemId, itemClone);
+        this.createItemOffer(data_traders, itemId, itemTrader, itemTraderLV);
+
+        data_Items[itemId]._props.Prefab.path = itemPrefabPath;
+    }
+    createItemHandbookEntry(db_handbook, db_global, i_id, i_category, i_fprice, i_lname, i_sname, i_desc)
+    {
+        db_handbook.push(
+        {
+            "Id": i_id,
+            "ParentId": i_category,
+            "Price": i_fprice,
+        });
+        for (const localeID in db_global)
+        {
+            db_global[localeID].templates[i_id] = {
+                "Name": i_lname,
+                "ShortName": i_sname,
+                "Description": i_desc
+            };
+        }
+    }
+    createItem(db_items, i_id, i_clone)
+    {
+        let item = JsonUtil.clone(db_items[i_clone]);
+        item._id = i_id;
+        db_items[i_id] = item;
+    }
+    createItemOffer(db_traders, i_id, i_trader, i_loyalty)
+    {
+        db_traders[i_trader].assort.items.push(
+        {
+            "_id": i_id,
+            "_tpl": i_id,
+            "parentId": "hideout",
+            "slotId": "hideout",
+            "upd":
+            {
+                "UnlimitedCount": true,
+                "StackObjectCount": 999999,
+            }
+        });
+        db_traders[i_trader].assort.barter_scheme[i_id] = [
+            [
+            {
+                "count": 1,
+                "_tpl": "5c0e655586f774045612eeb2"
+            },
+            {
+                "count": 6,
+                "_tpl": "5e2af41e86f774755a234b67"
+            }]
+        ]
+        db_traders[i_trader].assort.loyal_level_items[i_id] = i_loyalty;
+
+        db_traders.ragfair.assort.items.push(
+        {
+            "_id": i_id,
+            "_tpl": i_id,
+            "parentId": "hideout",
+            "slotId": "hideout",
+            "upd":
+            {
+                "UnlimitedCount": true,
+                "StackObjectCount": 999999
+            }
+        });
+        db_traders.ragfair.assort.loyal_level_items[i_id] = 1;
+    }
+}
+module.exports.ATL_ARMR_SLICK_FDE = ATL_ARMR_SLICK_FDE;

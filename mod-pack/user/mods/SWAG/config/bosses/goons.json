@@ -17,7 +17,13 @@
         }
       ],
       "BossZone": [
-        "ZoneScavBase"
+        "ZoneOldAZS",
+        "ZoneWade",
+        "ZoneBrige",
+        "ZoneFactoryCenter",
+        "ZoneDormitory",
+        "ZoneCustoms",
+        "ZoneFactorySide"
       ]
     }
   ],
@@ -118,7 +124,16 @@
           "BossEscortType": "followerbirdeye"
         }
       ],
-      "BossZone": null
+      "BossZone": [
+        "ZoneCenter",
+        "ZoneCenterBot",
+        "ZoneGoshan",
+        "ZoneOLI",
+        "ZonePowerStation",
+        "ZoneIDEA",
+        "ZoneIDEAPark",
+        "ZoneOLIPark"
+      ]
     }
   ],
   "laboratory": [
@@ -138,7 +153,13 @@
           "BossEscortType": "followerbirdeye"
         }
       ],
-      "BossZone": null
+      "BossZone": [
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
+      ]
     }
   ],
   "lighthouse": [
@@ -160,7 +181,13 @@
       ],
       "BossZone": [
         "Zone_Chalet",
-        "Zone_TreatmentContainers"
+        "Zone_Village",
+        "Zone_Containers",
+        "Zone_TreatmentBeach",
+        "Zone_TreatmentRocks",
+        "Zone_Bridge",
+        "Zone_Blockpost",
+        "Zone_Hellicopter"
       ]
     }
   ],
@@ -181,7 +208,14 @@
           "BossEscortType": "followerbirdeye"
         }
       ],
-      "BossZone": null
+      "BossZone": [
+        "ZoneRailStrorage",
+        "ZoneBarrack",
+        "ZoneSubStorage",
+        "ZoneSubCommand",
+        "ZonePTOR2",
+        "ZonePTOR1"
+      ]
     }
   ],
   "shoreline": [
@@ -202,7 +236,16 @@
         }
       ],
       "BossZone": [
-        "ZoneMeteoStation"
+        "ZoneIsland",
+        "ZonePowerStation",
+        "ZoneBusStation",
+        "ZonePort",
+        "ZoneRailWays",
+        "ZoneSanatorium1",
+        "ZoneSanatorium2",
+        "ZoneMateoStation",
+        "ZoneGasStation",
+        "ZoneGreenHouses"
       ]
     }
   ],
@@ -223,7 +266,17 @@
           "BossEscortType": "followerbirdeye"
         }
       ],
-      "BossZone": null
+      "BossZone": [
+        "ZoneSW01",
+        "ZoneConstruction",
+        "ZoneCarShowroom",
+        "ZoneCinema",
+        "ZoneFactory",
+        "ZoneHotel_1",
+        "ZoneHotel_2",
+        "ZoneConcordia_1",
+        "ZoneColumn"
+      ]
     }
   ],
   "woods": [
@@ -244,7 +297,10 @@
         }
       ],
       "BossZone": [
-        "ZoneScavBase2"
+        "ZoneWoodCutter",
+        "ZoneScavBase2",
+        "ZoneRoad",
+        "ZoneMiniHouse"
       ]
     }
   ]

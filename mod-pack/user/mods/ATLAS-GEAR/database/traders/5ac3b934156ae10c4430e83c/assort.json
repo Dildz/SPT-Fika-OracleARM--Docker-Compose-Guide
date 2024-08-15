@@ -1,0 +1,246 @@
+{
+	"items": [
+		{
+			"_id": "4D4341544C41534745415200",
+			"_tpl": "4D4341544C41534745415200",
+			"parentId": "hideout",
+			"slotId": "hideout",
+			"upd": {
+				"UnlimitedCount": true,
+				"StackObjectsCount": 999999
+			}
+		},
+
+		{
+			"_id": "4D4341544C41534745415201",
+			"_tpl": "4D4341544C41534745415201",
+			"parentId": "hideout",
+			"slotId": "hideout",
+			"upd": {
+				"UnlimitedCount": true,
+				"StackObjectsCount": 999999
+			}
+		},
+		{
+			"_id": "4D4341544C415347454152B1",
+			"_tpl": "6575e71760703324250610c3",
+			"parentId": "4D4341544C41534745415201",
+			"slotId": "Soft_armor_front"
+		  },
+		  {
+			"_id": "4D4341544C415347454152B2",
+			"_tpl": "6575e72660703324250610c7",
+			"parentId": "4D4341544C41534745415201",
+			"slotId": "Soft_armor_back"
+		  },
+		{
+			"_id": "4D4341544C415347454152B3",
+			"_tpl": "656fa76500d62bcd2e024080",
+			"parentId": "4D4341544C41534745415201",
+			"slotId": "Front_plate"
+		},
+		{
+			"_id": "4D4341544C415347454152B4",
+			"_tpl": "656fa76500d62bcd2e024080",
+			"parentId": "4D4341544C41534745415201",
+			"slotId": "Back_plate"
+		},
+
+		{
+			"_id": "4D4341544C41534745415202",
+			"_tpl": "4D4341544C41534745415202",
+			"parentId": "hideout",
+			"slotId": "hideout",
+			"upd": {
+				"UnlimitedCount": true,
+				"StackObjectsCount": 999999
+			}
+		},
+		{
+			"_id": "4D4341544C415347454152B5",
+			"_tpl": "6575e71760703324250610c3",
+			"parentId": "4D4341544C41534745415202",
+			"slotId": "Soft_armor_front"
+		  },
+		  {
+			"_id": "4D4341544C415347454152B6",
+			"_tpl": "6575e72660703324250610c7",
+			"parentId": "4D4341544C41534745415202",
+			"slotId": "Soft_armor_back"
+		  },
+		{
+			"_id": "4D4341544C415347454152B7",
+			"_tpl": "656fa76500d62bcd2e024080",
+			"parentId": "4D4341544C41534745415202",
+			"slotId": "Front_plate"
+		},
+		{
+			"_id": "4D4341544C415347454152B8",
+			"_tpl": "656fa76500d62bcd2e024080",
+			"parentId": "4D4341544C41534745415202",
+			"slotId": "Back_plate"
+		},
+		{
+			"_id": "4D4341544C41534745415205",
+			"_tpl": "4D4341544C41534745415205",
+			"parentId": "hideout",
+			"slotId": "hideout",
+			"upd": {
+				"UnlimitedCount": true,
+				"StackObjectsCount": 999999
+			}
+		},
+		{
+			"_id": "4D4341544C41534745415207",
+			"_tpl": "4D4341544C41534745415207",
+			"parentId": "hideout",
+			"slotId": "hideout",
+			"upd": {
+				"UnlimitedCount": true,
+				"StackObjectsCount": 999999
+			}
+		},
+		{
+			"_id": "4D4341544C41534745415208",
+			"_tpl": "65731b46cea9255e2102360a",
+			"parentId": "4D4341544C41534745415207",
+			"slotId": "Soft_armor_front"
+		},
+		{
+			"_id": "4D4341544C41534745415209",
+			"_tpl": "65731b4fcea9255e2102360e",
+			"parentId": "4D4341544C41534745415207",
+			"slotId": "Soft_armor_back"
+		},
+		{
+			"_id": "4D4341544C415347454152A0",
+			"_tpl": "65731b576e709cddd001ec3f",
+			"parentId": "4D4341544C41534745415207",
+			"slotId": "Soft_armor_left"
+		},
+		{
+			"_id": "4D4341544C4153474541520B",
+			"_tpl": "65731b60ff6dc44a7d068c4a",
+			"parentId": "4D4341544C41534745415207",
+			"slotId": "soft_armor_right"
+		},
+		{
+			"_id": "4D4341544C4153474541520C",
+			"_tpl": "65731b666e709cddd001ec43",
+			"parentId": "4D4341544C41534745415207",
+			"slotId": "Collar"
+		},
+		{
+			"_id": "4D4341544C4153474541520D",
+			"_tpl": "65731b716e709cddd001ec47",
+			"parentId": "4D4341544C41534745415207",
+			"slotId": "Groin"
+		},
+		{
+			"_id": "4D4341544C4153474541520E",
+			"_tpl": "65731b6b6042b0f210020ef6",
+			"parentId": "4D4341544C41534745415207",
+			"slotId": "Groin_back"
+		},
+		{
+			"_id": "4D4341544C4153474541520F",
+			"_tpl": "656f664200d62bcd2e024077",
+			"parentId": "4D4341544C41534745415207",
+			"slotId": "Front_plate"
+		},
+		{
+			"_id": "4D4341544C41534745415210",
+			"_tpl": "654a4f8bc721968a4404ef18",
+			"parentId": "4D4341544C41534745415207",
+			"slotId": "Left_side_plate"
+		},
+		{
+			"_id": "4D4341544C41534745415211",
+			"_tpl": "654a4f8bc721968a4404ef18",
+			"parentId": "4D4341544C41534745415207",
+			"slotId": "Right_side_plate"
+		},
+		{
+			"_id": "4D4341544C41534745415212",
+			"_tpl": "657b2797c3dbcb01d60c35ea",
+			"parentId": "4D4341544C41534745415207",
+			"slotId": "Back_plate"
+		},
+		{
+			"_id": "4D4341544C4153474541520A",
+			"_tpl": "4D4341544C4153474541520A",
+			"parentId": "hideout",
+			"slotId": "hideout",
+			"upd": {
+				"UnlimitedCount": true,
+				"StackObjectsCount": 999999
+			}
+		}
+	],
+	"barter_scheme": {
+		"4D4341544C41534745415200": [
+			[
+				{
+					"count": 2987,
+					"_tpl": "5449016a4bdc2d6f028b456f"
+				}
+			]
+		],
+		"4D4341544C41534745415201": [
+			[
+				{
+					"count": 1,
+					"_tpl": "5c0e655586f774045612eeb2"
+				},
+				{
+					"count": 6,
+					"_tpl": "5e2af41e86f774755a234b67"
+				}
+			]
+		],
+		"4D4341544C41534745415202": [
+			[
+				{
+					"count": 1,
+					"_tpl": "5c0e655586f774045612eeb2"
+				},
+				{
+					"count": 6,
+					"_tpl": "5e2af41e86f774755a234b67"
+				}
+			]
+		],
+		"4D4341544C41534745415205": [
+			[
+				{
+					"count": 25891,
+					"_tpl": "5449016a4bdc2d6f028b456f"
+				}
+			]
+		],
+		"4D4341544C41534745415207": [
+			[
+				{
+					"count": 245678,
+					"_tpl": "5449016a4bdc2d6f028b456f"
+				}
+			]
+		],
+		"4D4341544C4153474541520A": [
+			[
+				{
+					"count": 48876,
+					"_tpl": "5449016a4bdc2d6f028b456f"
+				}
+			]
+		]
+	},
+	"loyal_level_items": {
+		"4D4341544C41534745415200": 3,
+		"4D4341544C41534745415201": 4,
+		"4D4341544C41534745415202": 4,
+		"4D4341544C41534745415205": 3,
+		"4D4341544C41534745415207": 3,
+		"4D4341544C4153474541520A": 3
+	}
+}

@@ -1,0 +1,21 @@
+{
+  "manifest": [
+    {
+      "key": "assets/content/items/mods/scopes/scope_30mm_eotech_vudu_1_6x24_updated_reticles.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "assets/content/items/mods/scopes/scope_30mm_eotech_vudu_1_6x24_overhaul.bundle",
+      "dependencyKeys": [
+        "shaders",
+        "cubemaps",
+        "packages/com.unity.postprocessing/postprocessing/postprocessresources.bundle",
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "assets/content/textures/holemanager/round_spec_mask.bundle",
+        "assets/systems/effects/opticsight/opticsightsmasks.bundle",
+        "assets/content/items/mods/scopes/scope_30mm_eotech_vudu_1_6x24.bundle",
+        "assets/content/items/mods/scopes/scope_30mm_eotech_vudu_1_6x24_updated_reticles.bundle"
+      ]
+    }
+  ]
+}

@@ -47,7 +47,7 @@
 			"heavy": [
 				[
 					{
-						"count": 4000,
+						"count": 3250,
 						"_tpl": "5696686a4bdc2da3298b456a"
 					}
 				]
@@ -78,10 +78,10 @@
 			]
 		},
 		"loyal_level_items": {
-			"heavy": 1,
-			"heavytan": 1,
-			"heavyblack": 1,
-			"heavycoyote": 1
+			"heavy": 4,
+			"heavytan": 3,
+			"heavyblack": 3,
+			"heavycoyote": 3
 		}
 	}
 }

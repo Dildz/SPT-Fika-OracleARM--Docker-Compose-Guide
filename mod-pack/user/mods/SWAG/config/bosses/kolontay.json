@@ -20,7 +20,15 @@
           "BossEscortType": "followergluharscout"
         }
       ],
-      "BossZone": null
+      "BossZone": [
+        "ZoneOldAZS",
+        "ZoneWade",
+        "ZoneBrige",
+        "ZoneFactoryCenter",
+        "ZoneDormitory",
+        "ZoneCustoms",
+        "ZoneFactorySide"
+      ]
     }
   ],
   "factory": [
@@ -140,7 +148,16 @@
           "BossEscortType": "followergluharscout"
         }
       ],
-      "BossZone": null
+      "BossZone": [
+        "ZoneCenter",
+        "ZoneCenterBot",
+        "ZoneGoshan",
+        "ZoneOLI",
+        "ZonePowerStation",
+        "ZoneIDEA",
+        "ZoneIDEAPark",
+        "ZoneOLIPark"
+      ]
     }
   ],
   "laboratory": [
@@ -164,7 +181,13 @@
           "BossEscortType": "followergluharscout"
         }
       ],
-      "BossZone": null
+      "BossZone": [
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
+      ]
     }
   ],
   "lighthouse": [
@@ -188,7 +211,16 @@
           "BossEscortType": "followergluharscout"
         }
       ],
-      "BossZone": null
+      "BossZone": [
+        "Zone_Chalet",
+        "Zone_Village",
+        "Zone_Containers",
+        "Zone_TreatmentBeach",
+        "Zone_TreatmentRocks",
+        "Zone_Bridge",
+        "Zone_Blockpost",
+        "Zone_Hellicopter"
+      ]
     }
   ],
   "reserve": [
@@ -212,7 +244,14 @@
           "BossEscortType": "followergluharscout"
         }
       ],
-      "BossZone": null
+      "BossZone": [
+        "ZoneRailStrorage",
+        "ZoneBarrack",
+        "ZoneSubStorage",
+        "ZoneSubCommand",
+        "ZonePTOR2",
+        "ZonePTOR1"
+      ]
     }
   ],
   "shoreline": [
@@ -236,7 +275,18 @@
           "BossEscortType": "followergluharscout"
         }
       ],
-      "BossZone": null
+      "BossZone": [
+        "ZoneIsland",
+        "ZonePowerStation",
+        "ZoneBusStation",
+        "ZonePort",
+        "ZoneRailWays",
+        "ZoneSanatorium1",
+        "ZoneSanatorium2",
+        "ZoneMateoStation",
+        "ZoneGasStation",
+        "ZoneGreenHouses"
+      ]
     }
   ],
   "streets": [
@@ -261,8 +311,15 @@
         }
       ],
       "BossZone": [
-        "ZoneClimova",
-        "ZoneMvd"
+        "ZoneSW01",
+        "ZoneConstruction",
+        "ZoneCarShowroom",
+        "ZoneCinema",
+        "ZoneFactory",
+        "ZoneHotel_1",
+        "ZoneHotel_2",
+        "ZoneConcordia_1",
+        "ZoneColumn"
       ]
     }
   ],
@@ -287,7 +344,12 @@
           "BossEscortType": "followergluharscout"
         }
       ],
-      "BossZone": null
+      "BossZone": [
+        "ZoneWoodCutter",
+        "ZoneScavBase2",
+        "ZoneRoad",
+        "ZoneMiniHouse"
+      ]
     }
   ]
 }

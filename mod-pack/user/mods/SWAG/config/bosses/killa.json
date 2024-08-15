@@ -1,12 +1,20 @@
 {
   "customs": [
     {
-      "BossChance": 30,
+      "BossChance": 35,
+      "Time": 0,
       "BossEscortAmount": "0",
       "BossEscortType": "followertagilla",
       "BossName": "bosskilla",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneOldAZS",
+        "ZoneWade",
+        "ZoneBrige",
+        "ZoneFactoryCenter",
+        "ZoneDormitory",
+        "ZoneCustoms",
+        "ZoneFactorySide"
+      ]
     }
   ],
   "factory": [
@@ -15,7 +23,7 @@
       "BossEscortAmount": "0",
       "BossEscortType": "followertagilla",
       "BossName": "bosskilla",
-      "BossZone": null,
+      "BossZone": "BotZone",
       "Time": -1
     }
   ],
@@ -25,7 +33,7 @@
       "BossEscortAmount": "0",
       "BossEscortType": "followertagilla",
       "BossName": "bosskilla",
-      "BossZone": null,
+      "BossZone": "BotZone",
       "Time": -1
     }
   ],
@@ -52,77 +60,128 @@
   "interchange": [
     {
       "BossChance": 30,
+      "Time": -1,
       "BossEscortAmount": "0",
       "BossEscortType": "followertagilla",
       "BossName": "bosskilla",
       "BossZone": [
-        "ZoneCenterBot",
         "ZoneCenter",
+        "ZoneCenterBot",
+        "ZoneGoshan",
         "ZoneOLI",
+        "ZonePowerStation",
         "ZoneIDEA",
-        "ZoneGoshan"
-      ],
-      "Time": -1
+        "ZoneIDEAPark",
+        "ZoneOLIPark"
+      ]
     }
   ],
   "laboratory": [
     {
       "BossChance": 30,
+      "Time": -1,
       "BossEscortAmount": "0",
       "BossEscortType": "followertagilla",
       "BossName": "bosskilla",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
+      ]
     }
   ],
   "lighthouse": [
     {
       "BossChance": 30,
+      "Time": -1,
       "BossEscortAmount": "0",
       "BossEscortType": "followertagilla",
       "BossName": "bosskilla",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "Zone_Chalet",
+        "Zone_Village",
+        "Zone_Containers",
+        "Zone_TreatmentBeach",
+        "Zone_TreatmentRocks",
+        "Zone_Bridge",
+        "Zone_Blockpost",
+        "Zone_Hellicopter"
+      ]
     }
   ],
   "reserve": [
     {
       "BossChance": 30,
+      "Time": -1,
       "BossEscortAmount": "0",
       "BossEscortType": "followertagilla",
       "BossName": "bosskilla",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneRailStrorage",
+        "ZoneBarrack",
+        "ZoneSubStorage",
+        "ZoneSubCommand",
+        "ZonePTOR2",
+        "ZonePTOR1"
+      ]
     }
   ],
   "shoreline": [
     {
       "BossChance": 30,
+      "Time": -1,
       "BossEscortAmount": "0",
       "BossEscortType": "followertagilla",
       "BossName": "bosskilla",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneIsland",
+        "ZonePowerStation",
+        "ZoneBusStation",
+        "ZonePort",
+        "ZoneRailWays",
+        "ZoneSanatorium1",
+        "ZoneSanatorium2",
+        "ZoneMateoStation",
+        "ZoneGasStation",
+        "ZoneGreenHouses"
+      ]
     }
   ],
   "streets": [
     {
       "BossChance": 30,
+      "Time": -1,
       "BossEscortAmount": "0",
       "BossEscortType": "followertagilla",
       "BossName": "bosskilla",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneSW01",
+        "ZoneConstruction",
+        "ZoneCarShowroom",
+        "ZoneCinema",
+        "ZoneFactory",
+        "ZoneHotel_1",
+        "ZoneHotel_2",
+        "ZoneConcordia_1",
+        "ZoneColumn"
+      ]
     }
   ],
   "woods": [
     {
       "BossChance": 30,
+      "Time": -1,
       "BossEscortAmount": "0",
       "BossEscortType": "followertagilla",
       "BossName": "bosskilla",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneWoodCutter",
+        "ZoneScavBase2",
+        "ZoneRoad",
+        "ZoneMiniHouse"
+      ]
     }
   ]
 }

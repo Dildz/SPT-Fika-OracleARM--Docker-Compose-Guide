@@ -1,0 +1,31 @@
+{
+    "name": "ATLAS-GEAR",
+    "version": "1.2.0",
+    "sptVersion": "3.9.X",
+    "loadBefore": [],
+    "loadAfter": [],
+    "incompatibilities": [],
+    "isBundleMod": true,
+    "main": "src/mod.js",
+    "scripts": {
+        "setup": "npm i",
+        "build": "node ./build.mjs",
+        "buildinfo": "node ./build.mjs --verbose",
+        "buildcopy": "node ./buildcopy.mjs"
+    },
+    "devDependencies": {
+        "@types/node": "20.11",
+        "@typescript-eslint/eslint-plugin": "7.2",
+        "@typescript-eslint/parser": "7.2",
+        "archiver": "^6.0",
+        "eslint": "8.57",
+        "fs-extra": "11.2",
+        "ignore": "^5.2",
+        "tsyringe": "4.8.0",
+        "typescript": "5.4",
+        "winston": "3.12"
+    },
+    "author": "Mighty_Condor",
+    "contributors": ["ATLAS", "Nomad_420", "PETTAN"],
+    "license": "University of Illinois/NCSA Open Source License"
+}

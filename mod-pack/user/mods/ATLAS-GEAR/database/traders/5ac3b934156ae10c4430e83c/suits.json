@@ -1,0 +1,97 @@
+[
+    {
+        "_id": "4D43434C4F544845530002",
+        "tid": "5ac3b934156ae10c4430e83c",
+        "suiteId": "4D43434C4F544845530002",
+        "isActive": true,
+        "requirements": {
+            "loyaltyLevel": 1,
+            "profileLevel": 8,
+            "standing": 0,
+            "skillRequirements": [],
+            "questRequirements": [],
+            "itemRequirements": [
+                {
+                    "count": 69,
+                    "_tpl": "5696686a4bdc2da3298b456a"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "4D43434C4F544845530004",
+        "tid": "5ac3b934156ae10c4430e83c",
+        "suiteId": "4D43434C4F544845530004",
+        "isActive": true,
+        "requirements": {
+            "loyaltyLevel": 1,
+            "profileLevel": 8,
+            "standing": 0,
+            "skillRequirements": [],
+            "questRequirements": [],
+            "itemRequirements": [
+                {
+                    "count": 69,
+                    "_tpl": "5696686a4bdc2da3298b456a"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "4D43434C4F544845530007",
+        "tid": "5ac3b934156ae10c4430e83c",
+        "suiteId": "4D43434C4F544845530007",
+        "isActive": true,
+        "requirements": {
+            "loyaltyLevel": 1,
+            "profileLevel": 8,
+            "standing": 0,
+            "skillRequirements": [],
+            "questRequirements": [],
+            "itemRequirements": [
+                {
+                    "count": 88,
+                    "_tpl": "5449016a4bdc2d6f028b456f"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "4D43434C4F544845530009",
+        "tid": "5ac3b934156ae10c4430e83c",
+        "suiteId": "4D43434C4F544845530009",
+        "isActive": true,
+        "requirements": {
+            "loyaltyLevel": 1,
+            "profileLevel": 8,
+            "standing": 0,
+            "skillRequirements": [],
+            "questRequirements": [],
+            "itemRequirements": [
+                {
+                    "count": 88,
+                    "_tpl": "5449016a4bdc2d6f028b456f"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "4D43434C4F54484553000C",
+        "tid": "5ac3b934156ae10c4430e83c",
+        "suiteId": "4D43434C4F54484553000C",
+        "isActive": true,
+        "requirements": {
+            "loyaltyLevel": 1,
+            "profileLevel": 1,
+            "standing": 0,
+            "skillRequirements": [],
+            "questRequirements": [],
+            "itemRequirements": [
+                {
+                    "count": 1800,
+                    "_tpl": "5696686a4bdc2da3298b456a"
+                }
+            ]
+        }
+    }
+]

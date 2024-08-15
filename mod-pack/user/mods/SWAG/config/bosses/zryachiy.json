@@ -2,123 +2,144 @@
   "customs": [
     {
       "BossChance": 0,
+      "Time": -1,
       "BossEscortAmount": "2",
       "BossEscortType": "followerzryachiy",
       "BossName": "bosszryachiy",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneSnipeBrige",
+        "ZoneSnipeTower",
+        "ZoneSnipeFactory",
+        "ZoneBlockPostSniper",
+        "ZoneBlockPostSniper3"
+      ]
     }
   ],
   "factory": [
     {
       "BossChance": 0,
+      "Time": -1,
       "BossEscortAmount": "2",
       "BossEscortType": "followerzryachiy",
       "BossName": "bosszryachiy",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": null
     }
   ],
   "factory_night": [
     {
       "BossChance": 0,
+      "Time": -1,
       "BossEscortAmount": "2",
       "BossEscortType": "followerzryachiy",
       "BossName": "bosszryachiy",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": null
     }
   ],
   "groundzero": [
     {
       "BossChance": 0,
+      "Time": -1,
       "BossEscortAmount": "2",
       "BossEscortType": "followerzryachiy",
       "BossName": "bosszryachiy",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneSandSnipeCenter"
+      ]
     }
   ],
   "groundzero_high": [
     {
       "BossChance": 0,
+      "Time": -1,
       "BossEscortAmount": "2",
       "BossEscortType": "followerzryachiy",
       "BossName": "bosszryachiy",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneSandSnipeCenter"
+      ]
     }
   ],
   "interchange": [
     {
       "BossChance": 0,
+      "Time": -1,
       "BossEscortAmount": "2",
       "BossEscortType": "followerzryachiy",
       "BossName": "bosszryachiy",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": null
     }
   ],
   "laboratory": [
     {
       "BossChance": 0,
+      "Time": -1,
       "BossEscortAmount": "2",
       "BossEscortType": "followerzryachiy",
       "BossName": "bosszryachiy",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": null
     }
   ],
   "lighthouse": [
     {
       "BossChance": 100,
+      "Time": -1,
       "BossEscortAmount": "2",
       "BossEscortType": "followerzryachiy",
       "BossName": "bosszryachiy",
       "BossZone": [
-        "Zone_Island"
-      ],
-      "Time": -1
+        "Zone_Island",
+        "Zone_SniperPeak"
+      ]
     }
   ],
   "reserve": [
     {
       "BossChance": 0,
+      "Time": -1,
       "BossEscortAmount": "2",
       "BossEscortType": "followerzryachiy",
       "BossName": "bosszryachiy",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": null
     }
   ],
   "shoreline": [
     {
       "BossChance": 0,
+      "Time": -1,
       "BossEscortAmount": "2",
       "BossEscortType": "followerzryachiy",
       "BossName": "bosszryachiy",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZonePowerStationSniper",
+        "ZoneBunkeSniper"
+      ]
     }
   ],
   "streets": [
     {
       "BossChance": 0,
+      "Time": -1,
       "BossEscortAmount": "2",
       "BossEscortType": "followerzryachiy",
       "BossName": "bosszryachiy",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneSnipeCarShowroom",
+        "ZoneSnipeCinema",
+        "ZoneSnipeBuilding",
+        "ZoneSnipeSW01"
+      ]
     }
   ],
   "woods": [
     {
       "BossChance": 0,
+      "Time": -1,
       "BossEscortAmount": "2",
       "BossEscortType": "followerzryachiy",
       "BossName": "bosszryachiy",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneHighRocks"
+      ]
     }
   ]
 }

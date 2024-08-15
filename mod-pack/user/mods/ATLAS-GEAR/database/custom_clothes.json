@@ -1,0 +1,191 @@
+{
+    "ATLAS X69 Upper": {
+        "clone": "5f5e401747344c2e4f6c42c5",
+        "sptID": "4D43434C4F544845530000",
+        "customization": {
+            "_props": {
+                "Side": [ "Bear", "Usec" ],
+                "Prefab": {
+                    "path": "ATL_X69_UPPER.bundle"
+                }
+            }
+        }
+    },
+    "ATLAS X69 Hands": {
+        "clone": "5f5f3fa30bc58666c37e782e",
+        "sptID": "4D43434C4F544845530001",
+        "customization": {
+            "_props": {
+                "Side": [ "Bear", "Usec" ],
+                "Prefab": {
+                    "path": "ATL_X69_HANDS.bundle"
+                }
+            }
+        }
+    },
+    "ATLAS X69 Upper Suit": {
+        "clone": "5f5f45df0bc58666c37e7832",
+        "sptID": "4D43434C4F544845530002",
+        "enable": true,
+        "customization": {
+            "_props": {
+                "Side": [ "Bear", "Usec" ],
+                "Body": "4D43434C4F544845530000",
+                "Hands": "4D43434C4F544845530001"
+            }
+        },
+        "locales": {
+            "en": {
+                "Name": "ATLAS X69 Upper",
+                "ShortName": "",
+                "Description": ""
+            }
+        }
+    },
+    "ATLAS X69 Lower": {
+        "clone": "5f5e40a06760b4138443b341",
+        "sptID": "4D43434C4F544845530003",
+        "customization": {
+            "_props": {
+                "Side": [ "Bear", "Usec" ],
+                "Prefab": {
+                    "path": "ATL_X69_LOWER.bundle"
+                }
+            }
+        }
+    },
+    "ATLAS X69 Lower Suit": {
+        "clone": "5f5f471bdf4f3100376a815e",
+        "sptID": "4D43434C4F544845530004",
+        "enable": true,
+        "customization": {
+            "_props": {
+                "Side": [ "Bear", "Usec" ],
+                "Feet": "4D43434C4F544845530003"
+            }
+        },
+        "locales": {
+            "en": {
+                "Name": "ATLAS X69 Lower",
+                "ShortName": "",
+                "Description": ""
+            }
+        }
+    },
+    "ATLAS X88 Upper": {
+        "clone": "5f5e401747344c2e4f6c42c5",
+        "sptID": "4D43434C4F544845530005",
+        "customization": {
+            "_props": {
+                "Side": [ "Bear", "Usec" ],
+                "Prefab": {
+                    "path": "ATL_X88_UPPER.bundle"
+                }
+            }
+        }
+    },
+    "ATLAS X88 Hands": {
+        "clone": "5f5f3fa30bc58666c37e782e",
+        "sptID": "4D43434C4F544845530006",
+        "customization": {
+            "_props": {
+                "Side": [ "Bear", "Usec" ],
+                "Prefab": {
+                    "path": "ATL_X88_HANDS.bundle"
+                }
+            }
+        }
+    },
+    "ATLAS X88 Upper Suit": {
+        "clone": "5f5f45df0bc58666c37e7832",
+        "sptID": "4D43434C4F544845530007",
+        "enable": true,
+        "customization": {
+            "_props": {
+                "Side": [ "Bear", "Usec" ],
+                "Body": "4D43434C4F544845530005",
+                "Hands": "4D43434C4F544845530006"
+            }
+        },
+        "locales": {
+            "en": {
+                "Name": "ATLAS X88 Upper",
+                "ShortName": "",
+                "Description": ""
+            }
+        }
+    },
+    "ATLAS X88 Lower": {
+        "clone": "5f5e40a06760b4138443b341",
+        "sptID": "4D43434C4F544845530008",
+        "customization": {
+            "_props": {
+                "Side": [ "Bear", "Usec" ],
+                "Prefab": {
+                    "path": "ATL_X88_LOWER.bundle"
+                }
+            }
+        }
+    },
+    "ATLAS X88 Lower Suit": {
+        "clone": "5f5f471bdf4f3100376a815e",
+        "sptID": "4D43434C4F544845530009",
+        "enable": true,
+        "customization": {
+            "_props": {
+                "Side": [ "Bear", "Usec" ],
+                "Feet": "4D43434C4F544845530008"
+            }
+        },
+        "locales": {
+            "en": {
+                "Name": "ATLAS X88 Lower",
+                "ShortName": "",
+                "Description": ""
+            }
+        }
+    },
+    "ATLAS X99 Upper": {
+        "clone": "5f5e401747344c2e4f6c42c5",
+        "sptID": "4D43434C4F54484553000A",
+        "customization": {
+            "_props": {
+                "Side": [ "Bear", "Usec" ],
+                "Prefab": {
+                    "path": "ATL_SUIT_X99_UPPER.bundle"
+                }
+            }
+        }
+    },
+    "ATLAS X99 Hands": {
+        "clone": "5f5f3fa30bc58666c37e782e",
+        "sptID": "4D43434C4F54484553000B",
+        "customization": {
+            "_props": {
+                "Side": [ "Bear", "Usec" ],
+                "Prefab": {
+                    "path": "ATL_SUIT_X99_HANDS.bundle"
+                }
+            }
+        }
+    },
+    "ATLAS X99 Upper Suit": {
+        "clone": "5f5f45df0bc58666c37e7832",
+        "sptID": "4D43434C4F54484553000C",
+        "enable": true,
+        "customization": {
+            "_props": {
+                "Side": [ "Bear", "Usec" ],
+                "Body": "4D43434C4F54484553000A",
+                "Hands": "4D43434C4F54484553000B"
+            }
+        },
+        "locales": {
+            "en": {
+                "Name": "ATLAS X99 Upper",
+                "ShortName": "",
+                "Description": ""
+            }
+        }
+    }
+}

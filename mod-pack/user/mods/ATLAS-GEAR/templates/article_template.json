@@ -1,0 +1,37 @@
+{
+    "_id": "string",
+    "_name": "string",
+    "_parent": "string",
+    "_type": "string",
+    "_props": {
+        "Name": "string",
+        "ShortName": "string",
+        "Description": "string",
+        "Side": "string[]",
+        "BodyPart": "string",
+        "AvailableAsDefault?": "boolean",
+        "Body": "string",
+        "Hands": "string",
+        "Feet": "string",
+        "Prefab": {
+            "path": "string",
+            "rcid": "string"
+        },
+        "WatchPrefab": {
+            "path": "string",
+            "rcid": "string"
+        },
+        "IntegratedArmorVest": "boolean",
+        "WatchPosition": {
+            "x": "number",
+            "y": "number",
+            "z": "number"
+        },
+        "WatchRotation": {
+            "x": "number",
+            "y": "number",
+            "z": "number"
+        }
+    },
+    "_proto": "string"
+}

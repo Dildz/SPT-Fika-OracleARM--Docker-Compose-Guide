@@ -61,8 +61,8 @@ export default function ProgressionChanges(
 
   const traders = tables.traders;
 
-  const usecInventory = tables.bots.types.pmcusec.inventory;
-  const bearInventory = tables.bots.types.pmcbear.inventory;
+  const usecInventory = tables.bots.types.usec.inventory;
+  const bearInventory = tables.bots.types.bear.inventory;
   const prices = tables.templates.prices;
   const handbook = tables.templates.handbook;
 
@@ -204,8 +204,8 @@ export default function ProgressionChanges(
                     [_tpl]: 1,
                   };
 
-                  usecInventory.items.SecuredContainer[_tpl] = 1;
-                  bearInventory.items.SecuredContainer[_tpl] = 1;
+                  // usecInventory.items.SecuredContainer[_tpl] = 1;
+                  // bearInventory.items.SecuredContainer[_tpl] = 1;
                 } else {
                   console.log(
                     item._name,
@@ -215,8 +215,8 @@ export default function ProgressionChanges(
                 }
                 break;
               case checkParentRecursive(parent, items, [magParent]):
-                usecInventory.items.SecuredContainer[_tpl] = 1;
-                bearInventory.items.SecuredContainer[_tpl] = 1;
+                // usecInventory.items.SecuredContainer[_tpl] = 1;
+                // bearInventory.items.SecuredContainer[_tpl] = 1;
                 break;
               // case equipmentType === "mod_scope":
               //     break;
@@ -472,8 +472,8 @@ export default function ProgressionChanges(
       usecInventory.items.SecuredContainer["5e831507ea0a7c419c2f9bd9"] = 1;
       bearInventory.items.SecuredContainer["5e831507ea0a7c419c2f9bd9"] = 1;
 
-      ensureAllAmmoInSecuredContainer(usecInventory);
-      ensureAllAmmoInSecuredContainer(bearInventory);
+      // ensureAllAmmoInSecuredContainer(usecInventory);
+      // ensureAllAmmoInSecuredContainer(bearInventory);
 
       addBossSecuredContainer(usecInventory);
       addBossSecuredContainer(bearInventory);
@@ -484,6 +484,9 @@ export default function ProgressionChanges(
 
       fixSpecificItemIssues(usecInventory);
       fixSpecificItemIssues(bearInventory);
+
+      tables.bots.types.usec.inventory = usecInventory;
+      tables.bots.types.bear.inventory = bearInventory;
     } catch (error) {
       config.forceCached = true;
       throw Error(
@@ -493,8 +496,8 @@ export default function ProgressionChanges(
     }
   } else {
     botConfig.equipment.pmc = botConfigequipmentpmc as any;
-    tables.bots.types.pmcusec = tablesbotstypesusec as any;
-    tables.bots.types.pmcbear = tablesbotstypesusec as any;
+    tables.bots.types.usec = tablesbotstypesusec as any;
+    tables.bots.types.bear = tablesbotstypesusec as any;
   }
 
   if (config.strictEquipmentTiering === false) {
@@ -543,9 +546,9 @@ export default function ProgressionChanges(
 
   globalValues.originalBotTypes = cloneDeep(tables.bots.types);
   globalValues.originalWeighting = cloneDeep(botConfig.equipment.pmc);
-  // tables.bots.types.pmcusec
+  // tables.bots.types.usec
   // botConfig.equipment.pmc
-  // saveToFile(tables.bots.types.pmcusec, `Cache/tablesbotstypesusec.json`);
+  // saveToFile(tables.bots.types.usec, `Cache/tablesbotstypesusec.json`);
   // saveToFile(botConfig.equipment.pmc, `Cache/botConfigequipmentpmc.json`);
 
   config.debug ||

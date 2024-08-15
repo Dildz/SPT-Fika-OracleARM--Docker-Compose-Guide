@@ -1,0 +1,97 @@
+[
+    {
+        "_id": "010421_CLOTHING_X69UPPR0",
+        "tid": "5a7c2eca46aef81a7ca2145d",
+        "suiteId": "010421_SUIT_UPPR_X69SUIT",
+        "isActive": true,
+        "requirements": {
+            "loyaltyLevel": 1,
+            "profileLevel": 8,
+            "standing": 0,
+            "skillRequirements": [],
+            "questRequirements": [],
+            "itemRequirements": [
+                {
+                    "count": 69,
+                    "_tpl": "5696686a4bdc2da3298b456a"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "010421_CLOTHING_X69LOWR0",
+        "tid": "5a7c2eca46aef81a7ca2145d",
+        "suiteId": "010421_SUIT_LOWR_X69SUIT",
+        "isActive": true,
+        "requirements": {
+            "loyaltyLevel": 1,
+            "profileLevel": 8,
+            "standing": 0,
+            "skillRequirements": [],
+            "questRequirements": [],
+            "itemRequirements": [
+                {
+                    "count": 69,
+                    "_tpl": "5696686a4bdc2da3298b456a"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "010421_CLOTHING_X88UPPR0",
+        "tid": "5a7c2eca46aef81a7ca2145d",
+        "suiteId": "010421_SUIT_UPPR_X88SUIT",
+        "isActive": true,
+        "requirements": {
+            "loyaltyLevel": 1,
+            "profileLevel": 8,
+            "standing": 0,
+            "skillRequirements": [],
+            "questRequirements": [],
+            "itemRequirements": [
+                {
+                    "count": 88,
+                    "_tpl": "5449016a4bdc2d6f028b456f"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "010421_CLOTHING_X88LOWR0",
+        "tid": "5a7c2eca46aef81a7ca2145d",
+        "suiteId": "010421_SUIT_LOWR_X88SUIT",
+        "isActive": true,
+        "requirements": {
+            "loyaltyLevel": 1,
+            "profileLevel": 8,
+            "standing": 0,
+            "skillRequirements": [],
+            "questRequirements": [],
+            "itemRequirements": [
+                {
+                    "count": 88,
+                    "_tpl": "5449016a4bdc2d6f028b456f"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "011021_ATL_SUIT_X99_UPPER",
+        "tid": "5a7c2eca46aef81a7ca2145d",
+        "suiteId": "011021_SUIT_UPPR_ATL_SUIT_X99",
+        "isActive": true,
+        "requirements": {
+            "loyaltyLevel": 1,
+            "profileLevel": 1,
+            "standing": 0,
+            "skillRequirements": [],
+            "questRequirements": [],
+            "itemRequirements": [
+                {
+                    "count": 1800,
+                    "_tpl": "5696686a4bdc2da3298b456a"
+                }
+            ]
+        }
+    }
+]

@@ -2,11 +2,19 @@
   "customs": [
     {
       "BossChance": 100,
+      "Time": -1,
       "BossEscortAmount": "1,2",
       "BossEscortType": "exusec",
       "BossName": "exusec",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneOldAZS",
+        "ZoneWade",
+        "ZoneBrige",
+        "ZoneFactoryCenter",
+        "ZoneDormitory",
+        "ZoneCustoms",
+        "ZoneFactorySide"
+      ]
     }
   ],
   "factory": [
@@ -52,21 +60,36 @@
   "interchange": [
     {
       "BossChance": 100,
+      "Time": -1,
       "BossEscortAmount": "1,2",
       "BossEscortType": "exusec",
       "BossName": "exusec",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneCenter",
+        "ZoneCenterBot",
+        "ZoneGoshan",
+        "ZoneOLI",
+        "ZonePowerStation",
+        "ZoneIDEA",
+        "ZoneIDEAPark",
+        "ZoneOLIPark"
+      ]
     }
   ],
   "laboratory": [
     {
       "BossChance": 100,
+      "Time": -1,
       "BossEscortAmount": "1,2",
       "BossEscortType": "exusec",
       "BossName": "exusec",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
+      ]
     }
   ],
   "lighthouse": [
@@ -76,7 +99,14 @@
       "BossEscortType": "exusec",
       "BossName": "exusec",
       "BossZone": [
-        "Zone_Blockpost"
+        "Zone_Chalet",
+        "Zone_Village",
+        "Zone_Containers",
+        "Zone_TreatmentBeach",
+        "Zone_TreatmentRocks",
+        "Zone_Bridge",
+        "Zone_Blockpost",
+        "Zone_Hellicopter"
       ],
       "Time": -1
     },
@@ -86,7 +116,14 @@
       "BossEscortType": "exusec",
       "BossName": "exusec",
       "BossZone": [
-        "Zone_RoofContainers"
+        "Zone_Chalet",
+        "Zone_Village",
+        "Zone_Containers",
+        "Zone_TreatmentBeach",
+        "Zone_TreatmentRocks",
+        "Zone_Bridge",
+        "Zone_Blockpost",
+        "Zone_Hellicopter"
       ],
       "Time": -1
     },
@@ -96,7 +133,14 @@
       "BossEscortType": "exusec",
       "BossName": "exusec",
       "BossZone": [
-        "Zone_TreatmentRocks"
+        "Zone_Chalet",
+        "Zone_Village",
+        "Zone_Containers",
+        "Zone_TreatmentBeach",
+        "Zone_TreatmentRocks",
+        "Zone_Bridge",
+        "Zone_Blockpost",
+        "Zone_Hellicopter"
       ],
       "Time": -1
     },
@@ -106,7 +150,14 @@
       "BossEscortType": "exusec",
       "BossName": "exusec",
       "BossZone": [
-        "Zone_TreatmentBeach"
+        "Zone_Chalet",
+        "Zone_Village",
+        "Zone_Containers",
+        "Zone_TreatmentBeach",
+        "Zone_TreatmentRocks",
+        "Zone_Bridge",
+        "Zone_Blockpost",
+        "Zone_Hellicopter"
       ],
       "Time": -1
     },
@@ -116,7 +167,14 @@
       "BossEscortType": "exusec",
       "BossName": "exusec",
       "BossZone": [
-        "Zone_RoofRocks"
+        "Zone_Chalet",
+        "Zone_Village",
+        "Zone_Containers",
+        "Zone_TreatmentBeach",
+        "Zone_TreatmentRocks",
+        "Zone_Bridge",
+        "Zone_Blockpost",
+        "Zone_Hellicopter"
       ],
       "Time": -1
     },
@@ -126,7 +184,14 @@
       "BossEscortType": "exusec",
       "BossName": "exusec",
       "BossZone": [
-        "Zone_RoofBeach"
+        "Zone_Chalet",
+        "Zone_Village",
+        "Zone_Containers",
+        "Zone_TreatmentBeach",
+        "Zone_TreatmentRocks",
+        "Zone_Bridge",
+        "Zone_Blockpost",
+        "Zone_Hellicopter"
       ],
       "Time": -1
     },
@@ -136,6 +201,13 @@
       "BossEscortType": "exusec",
       "BossName": "exusec",
       "BossZone": [
+        "Zone_Chalet",
+        "Zone_Village",
+        "Zone_Containers",
+        "Zone_TreatmentBeach",
+        "Zone_TreatmentRocks",
+        "Zone_Bridge",
+        "Zone_Blockpost",
         "Zone_Hellicopter"
       ],
       "Time": -1
@@ -144,41 +216,74 @@
   "reserve": [
     {
       "BossChance": 100,
+      "Time": -1,
       "BossEscortAmount": "1,2",
       "BossEscortType": "exusec",
       "BossName": "exusec",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneRailStrorage",
+        "ZoneBarrack",
+        "ZoneSubStorage",
+        "ZoneSubCommand",
+        "ZonePTOR2",
+        "ZonePTOR1"
+      ]
     }
   ],
   "shoreline": [
     {
       "BossChance": 100,
+      "Time": -1,
       "BossEscortAmount": "1,2",
       "BossEscortType": "exusec",
       "BossName": "exusec",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneIsland",
+        "ZonePowerStation",
+        "ZoneBusStation",
+        "ZonePort",
+        "ZoneRailWays",
+        "ZoneSanatorium1",
+        "ZoneSanatorium2",
+        "ZoneMateoStation",
+        "ZoneGasStation",
+        "ZoneGreenHouses"
+      ]
     }
   ],
   "streets": [
     {
       "BossChance": 100,
+      "Time" : -1,
       "BossEscortAmount": "1,2",
       "BossEscortType": "exusec",
       "BossName": "exusec",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneSW01",
+        "ZoneConstruction",
+        "ZoneCarShowroom",
+        "ZoneCinema",
+        "ZoneFactory",
+        "ZoneHotel_1",
+        "ZoneHotel_2",
+        "ZoneConcordia_1",
+        "ZoneColumn"
+      ]
     }
   ],
   "woods": [
     {
       "BossChance": 100,
+      "Time": -1,
       "BossEscortAmount": "1,2",
       "BossEscortType": "exusec",
       "BossName": "exusec",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneWoodCutter",
+        "ZoneScavBase2",
+        "ZoneRoad",
+        "ZoneMiniHouse"
+      ]
     }
   ]
 }

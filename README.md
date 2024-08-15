@@ -15,121 +15,66 @@ Last updated: 06/08/2024 | Dildz
 ## Free VPS
 [A good free VPS from Oracle. It offers 24gb ram, 4 cores and 200gb of storage. It's ARM but works with this setup.](https://www.oracle.com/cloud/free/)
 
+If you decide to create & use an Oracle ARM VPS - I recommend installing/setting up [ZeroTier One](https://www.zerotier.com/download/) on the server, & in the Oracle Dashboard - remove all existing firewall rules & create one rule that allows all traffic from **ONLY** the ZeroTier One IP range that you would have created.
+
+In my opinion this is a secure & easy way for you to SSH into your server and for players to connect to the FIKA server while blocking any unwanted public traffic.
+
+Install the ZeroTier One client on a SSH client, join the ZT network & use the server's ZT IP & your SSH key to connect to the server.
+
+If you are using a different VPS host - either use your providers dashboard to allow all traffic from ZT or use something like UFW to add a firewall rule for the ZT network.
+
 ## Recommended tools
-SSH:
-[Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+SSH: [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
-File Explorer:
-[WinSCP](https://winscp.net/eng/download.php)
+File Explorer: [WinSCP](https://winscp.net/eng/download.php)
 
-My personal recommendation - SSH & File Explorer:
-[VSCode](https://code.visualstudio.com/download) with the Remote Explorer extension installed.
+My personal recommendation: [VSCode](https://code.visualstudio.com/download) with the Remote Explorer extension installed.
+
+VSCode Oracle SSH config file example:
+```
+Host OracleVM-ubuntu
+  HostName 10.147.18.XXX
+  User ubuntu
+  IdentityFile "PATH\TO\YOUR\SSH-KEY"
+```
+Where Hostname is your server's assigned ZT IP & IdentityFile is the SSH key file-path you would have saved to when creating the server.
+
+**DON"T LOOSE YOUR SSH KEY FILE!!!** Without this you won't be able to connect to your Oracle server - keep it somewhere **SAFE**
 
 ## Installing Docker
 First of all you need Docker. [You can download it by following this guide here.](https://docs.docker.com/engine/install/ubuntu/)
+
 This guide is for ubuntu but you can find guides for other operating systems/distributions on their website.
 
 You can verify your Docker installation by running `docker --version`
 
-## Creating a working folder for docker
-Create a new docker folder in the ubuntu home folder.
+## Pre-Setup
+Use the pre_FIKA_setup.sh file found in [Releases](https://github.com/Dildz/SPT-Fika-modded--Docker-Guide) to create the docker folders, clone the Github repository & copy the required files into the fika directory.
+
+Download & place the pre_setup.sh file in your home folder & run with:
 ```
 cd ~
 ```
 ```
-mkdir docker
-```
-```
-cd docker
+./pre_FIKA_setup.sh
 ```
 
-## Setting up the directories
-After you've got docker installed you can start by creating a new directory for your project and navigate to it in your terminal.
-
-We're going to go ahead and create a new directory called "containers" and navigate to it.
-You can do this with:
-```
-mkdir containers
-```
-```
-cd containers
-```
-
-We're going to go ahead and create a new directory called "spt-fika-modded" and navigate to it.
-You can do this with
-```
-mkdir spt-fika-modded
-```
-```
-cd spt-fika-modded
-```
-
-We're going to create a new directories for our Fika Dockerfile and Fika SPT server and navigate to the Dockerfile directory.
-You can do this with:
-```
-mkdir fika
-```
-```
-mkdir server
-```
-```
-cd fika
-```
-
-The file structure looks like this:
-
-![file structure](images/fileStructure.png)
-
-## Cloning the GitHub repository
-Now we're going to clone the SPT-Fika-modded--Docker-Guide [(This is a fork, original from OnniSaarni Docker Guide)](https://github.com/OnniSaarni/SPT-Fika-Docker-Guide)
-First we create a github-repos directory.
-
-You can do this with:
-```
-cd ~
-```
-```
-mkdir github-repos
-```
-
-Then we clone the repository inside the github-repos folder.
-
-You can do this with:
-```
-cd github-repos
-```
-```
-git clone https://github.com/Dildz/SPT-Fika-modded--Docker-Guide.git
-```
-
-## Copying the files
-Now we're going to copy the files from github-repos/SPT-Fika-modded--Docker-Guide folder to the docker container location.
-
-You can do this with:
-```
-cp $HOME/github-repos/SPT-Fika-modded--Docker-Guide/files/Dockerfile $HOME/docker/containers/spt-fika-modded/fika/
-```
-```
-cp $HOME/github-repos/SPT-Fika-modded--Docker-Guide/files/fcpy.sh $HOME/docker/containers/spt-fika-modded/fika/
-```
-```
-cp $HOME/github-repos/SPT-Fika-modded--Docker-Guide/files/restart_fika.sh $HOME/docker/containers/spt-fika-modded/fika/
-```
-
-You should now have the Dockerfile, fcpy.sh and restart_fika.sh copied to the spt-fika-modded/fika/ folder ready for the setup.
+You can safely remove this file once it has finished running as you will now have all the files you need to continue the setup.
 
 ## Setting up the Docker container
-First off, we're going to run this in the "fika" directory to build the container:
+First off, we're going to move into the "fika" directory:
 ```
 cd $HOME/docker/containers/spt-fika-modded/fika
 ```
+
+Then we are going to build the container:
 ```
 docker build --no-cache --label modded-fika -t modded-fika .
 ```
 
-It will take a while but once it is finished we are going to move on to the next command. 
+It will take a while but once it is finished we are going to move on to the next step.
 
-**In the next command need to change to the server directory path.**
+**For the next commands - change to the server directory path.**
 You can navigate to the "server" directory by running:
 ```
 cd ..
@@ -154,14 +99,13 @@ docker start modded-fika
 ```
 docker logs modded-fika -f
 ```
-Once the server has started we can set restart behavior & stop the server using:
-**Ctrl + C** to exit the logs when server is ready:
+Once the server has started we can set restart behavior. Use **Ctrl + C** to exit the logs when server is ready:
 ```
 docker update --restart unless-stopped modded-fika
 ```
 (This makes sure that the container will restart if stopped unexpectedly)
-Now stop the server using:
-**Ctrl + C** to exit the live logs
+
+Stop the server using :
 ```
 docker stop modded-fika
 ```
@@ -169,24 +113,33 @@ docker stop modded-fika
 ## Copying the "mod-pack"
 List of mods used in this "mod-pack" [(Google Doc Link)](https://docs.google.com/document/d/1eBul9mYMUJPAPbLsmKR8M5sK6DMl647HM87JrKmG2Vg/edit)
 
-Now we can run the modscpy.sh script **as sudo** to copy the mod-pack:
+Now we can run the modscpy.sh script **as sudo** to copy the mod-pack files:
 ```
 sudo $HOME/github-repos/SPT-Fika-modded--Docker-Guide/files/modscpy.sh
 ```
-With the mods & configs copied we can now start the server using the restart script:
+With the mods, configs & HD trader images copied - we can now start the server using the restart script:
 ```
 $HOME/docker/containers/spt-fika-modded/fika/restart_fika.sh
 ```
-(This restart script will stop/start the server, clear modded-fika.log & display the logs in real-time)
+The restart script will stop/start the server (or just start if already stopped), clear modded-fika.log & display the logs in real-time.
 
+To exit live logs - press **Ctrl + C**
+
+## FIKA logs
 You can see the logs again at any time with the `docker logs modded-fika -f` command.
 
-Logs can also be accessed in the $HOME/docker/logs folder for further processing with a discord bot, which can also be hosted on the same Oracle VPS.
-(for example - I wrote a bot for my discord that updates an embed message every 10sec showing the server status / players online / active raid map & time / time to next reboot in hours, this way other players can quickly see if the fika server is online, who is online & if a raid is active).
+Logs are also parsed to a file in the $HOME/docker/logs folder for further processing with a discord bot (which can also be hosted on the same Oracle VPS),by using webhooks or other methods.
+
+For example - I have a bot for my discord server that updates an embed message every 10sec showing FIKA server information.
+
+![FIKA status embed](images/embedFIKAstatuse.png)
+
+This way other players can quickly see if the fika server is online, who is online, if a raid is active & when the server is going to restart.
+
 Note - The modded-fika container logs are cleared each time the restart_fika.sh script runs.
 
-## Creating a cron reboot job
-To have the modded-fika server auto-reboot daily, we will create a new cron-job:
+## Creating a restart schedule
+To have the modded-fika server auto-reboot daily, we will add a new cron-job:
 ```
 cd ~
 ```
@@ -203,7 +156,9 @@ Add the following to the end of the file:
 
 If using nano editor:
 Press **Ctrl + O** (you will be prompted to save the file-name)
+
 Press **Enter** to save
+
 Press **Ctrl + X** to exit
 
 Confirm cron entry:
@@ -220,10 +175,12 @@ Any new players to the modded-fika server will need to have a fresh SPT v3.9.5 i
 
 2: [(Corter-ModSync client only)](https://github.com/c-orter/modsync)
 
-Once players have connected to the FIKA server & after launching the game, they will 1st download bundle files, then Corter-Modsync will prompt them to update - they will then download all the required client mods from the server.
+Once players have connected to the FIKA server in the launcher & after launching the game, they will 1st download bundle files, then Corter-Modsync will prompt them to update - they will then download all the required client mods from the server. When done, exit & relaunch the game.
+
+If either the bundle download or the mods download fail - alt F4 tarkov & relaunch the game to try again. It will complete eventually.
 
 ## Editing player profiles
-You may find that new player profiles will be permission locked to the root user and you won't be able to save changes even as the sudo user.
+You may find that new player profiles will be permission locked at root level and you won't be able to save changes as the sudo user (you don't have root level access on oracle servers, only the ubuntu sudo user - this may not apply if you use a different provider or are self hosting & do have root level access).
 
 Note - ALWAYS BACKUP PROFILES **BEFORE MAKING CHANGES**
 
@@ -245,7 +202,7 @@ sudo chmod 775 $HOME/docker/containers/spt-fika-modded-new/server/user/profiles/
 sudo chown USERNAME:USERNAME $HOME/docker/containers/spt-fika-modded-new/server/user/profiles/PROFILE_ID.json
 ```
 
-Using something like WinSCP or (my personal fav) VSCode with Remote Explorer plugin - Browse to & open the profile / Make changes & save / Start the modded-fika server
+Browse to & open the profile / Make changes & save / Start the modded-fika server
 
 ## Helpful Docker commands
 View container logs:
@@ -253,6 +210,7 @@ View container logs:
 docker logs modded-fika -f
 ```
 Press **Ctrl + C** to exit the logs.
+
 Stop the container:
 ```
 docker stop modded-fika
@@ -301,7 +259,8 @@ rm -rf $HOME/docker/backups/spt-fika-modded-backup/user/mods/fika-server
 ```
 (the latest FIKA will be installed when we rebuild the container)
 
-Next we need to delete the container and the image. We can do that by running these commands one at a time:
+Next we need to delete the container and the image. We can do that by running these commands one at a time.
+
 List containers:
 ```
 docker ps -a

@@ -2,11 +2,19 @@
   "customs": [
     {
       "BossChance": 35,
+      "Time": -1,
       "BossEscortAmount": "2,2,2,2,3",
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneOldAZS",
+        "ZoneWade",
+        "ZoneBrige",
+        "ZoneFactoryCenter",
+        "ZoneDormitory",
+        "ZoneCustoms",
+        "ZoneFactorySide"
+      ]
     }
   ],
   "factory": [
@@ -52,11 +60,20 @@
   "interchange": [
     {
       "BossChance": 35,
+      "Time": -1,
       "BossEscortAmount": "2,2,2,2,3",
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneCenter",
+        "ZoneCenterBot",
+        "ZoneGoshan",
+        "ZoneOLI",
+        "ZonePowerStation",
+        "ZoneIDEA",
+        "ZoneIDEAPark",
+        "ZoneOLIPark"
+      ]
     }
   ],
   "laboratory": [
@@ -66,7 +83,11 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "BotZoneFloor1"
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
       ],
       "Time": 900
     },
@@ -76,7 +97,11 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "BotZoneFloor2"
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
       ],
       "Time": 300
     },
@@ -86,7 +111,11 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "BotZoneBasement"
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
       ],
       "Time": 450,
       "TriggerId": "autoId_00008_EXFIL",
@@ -98,7 +127,11 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "BotZoneBasement"
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
       ],
       "Time": 800,
       "TriggerId": "autoId_00010_EXFIL",
@@ -110,7 +143,11 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "BotZoneBasement"
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
       ],
       "Time": -1,
       "TriggerId": "autoId_00007_EXFIL",
@@ -122,7 +159,11 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "BotZoneFloor2"
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
       ],
       "Time": -1,
       "TriggerId": "autoId_00007_EXFIL",
@@ -134,7 +175,11 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "BotZoneFloor1"
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
       ],
       "Time": 600,
       "TriggerId": "autoId_00632_EXFIL",
@@ -146,7 +191,11 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "BotZoneFloor2"
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
       ],
       "Time": 600,
       "TriggerId": "autoId_00632_EXFIL",
@@ -158,7 +207,11 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "BotZoneFloor1"
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
       ],
       "Time": -1,
       "TriggerId": "autoId_00012_EXFIL",
@@ -170,7 +223,11 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "BotZoneFloor2"
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
       ],
       "Time": -1,
       "TriggerId": "autoId_00012_EXFIL",
@@ -182,7 +239,11 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "BotZoneFloor1"
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
       ],
       "Time": 1200,
       "TriggerId": "autoId_00014_EXFIL",
@@ -194,7 +255,11 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "BotZoneFloor2"
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
       ],
       "Time": 1200,
       "TriggerId": "autoId_00014_EXFIL",
@@ -206,7 +271,11 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "BotZoneFloor1"
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
       ],
       "Time": -1,
       "TriggerId": "autoId_00009_EXFIL",
@@ -218,7 +287,11 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "BotZoneFloor2"
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
       ],
       "Time": -1,
       "TriggerId": "autoId_00009_EXFIL",
@@ -230,7 +303,11 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "BotZoneGate2"
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
       ],
       "Time": -1,
       "TriggerId": "autoId_00014_EXFIL",
@@ -242,6 +319,10 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
         "BotZoneGate1"
       ],
       "Time": -1,
@@ -252,11 +333,20 @@
   "lighthouse": [
     {
       "BossChance": 35,
+      "Time": -1,
       "BossEscortAmount": "2,2,2,2,3",
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "Zone_Chalet",
+        "Zone_Village",
+        "Zone_Containers",
+        "Zone_TreatmentBeach",
+        "Zone_TreatmentRocks",
+        "Zone_Bridge",
+        "Zone_Blockpost",
+        "Zone_Hellicopter"
+      ]
     }
   ],
   "reserve": [
@@ -266,7 +356,12 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "ZoneRailStrorage"
+        "ZoneRailStrorage",
+        "ZoneBarrack",
+        "ZoneSubStorage",
+        "ZoneSubCommand",
+        "ZonePTOR2",
+        "ZonePTOR1"
       ],
       "Time": 1470
     },
@@ -276,7 +371,12 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "ZoneRailStrorage"
+        "ZoneRailStrorage",
+        "ZoneBarrack",
+        "ZoneSubStorage",
+        "ZoneSubCommand",
+        "ZonePTOR2",
+        "ZonePTOR1"
       ],
       "Time": -1,
       "TriggerId": "autoId_00632_EXFIL",
@@ -288,7 +388,12 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "ZoneSubCommand"
+        "ZoneRailStrorage",
+        "ZoneBarrack",
+        "ZoneSubStorage",
+        "ZoneSubCommand",
+        "ZonePTOR2",
+        "ZonePTOR1"
       ],
       "Time": -1,
       "TriggerId": "autoId_00000_D2_LEVER",
@@ -300,7 +405,12 @@
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
       "BossZone": [
-        "ZoneSubCommand"
+        "ZoneRailStrorage",
+        "ZoneBarrack",
+        "ZoneSubStorage",
+        "ZoneSubCommand",
+        "ZonePTOR2",
+        "ZonePTOR1"
       ],
       "Time": 3,
       "TriggerId": "raider_simple_patroling",
@@ -310,31 +420,57 @@
   "shoreline": [
     {
       "BossChance": 35,
+      "Time": -1,
       "BossEscortAmount": "2,2,2,2,3",
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneIsland",
+        "ZonePowerStation",
+        "ZoneBusStation",
+        "ZonePort",
+        "ZoneRailWays",
+        "ZoneSanatorium1",
+        "ZoneSanatorium2",
+        "ZoneMateoStation",
+        "ZoneGasStation",
+        "ZoneGreenHouses"
+      ]
     }
   ],
   "streets": [
     {
       "BossChance": 35,
+      "Time": -1,
       "BossEscortAmount": "2,2,2,2,3",
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneSW01",
+        "ZoneConstruction",
+        "ZoneCarShowroom",
+        "ZoneCinema",
+        "ZoneFactory",
+        "ZoneHotel_1",
+        "ZoneHotel_2",
+        "ZoneConcordia_1",
+        "ZoneColumn"
+      ]
     }
   ],
   "woods": [
     {
       "BossChance": 35,
+      "Time": -1,
       "BossEscortAmount": "2,2,2,2,3",
       "BossEscortType": "pmcbot",
       "BossName": "pmcbot",
-      "BossZone": null,
-      "Time": -1
+      "BossZone": [
+        "ZoneWoodCutter",
+        "ZoneScavBase2",
+        "ZoneRoad",
+        "ZoneMiniHouse"
+      ]
     }
   ]
 }

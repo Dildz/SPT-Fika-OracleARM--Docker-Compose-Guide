@@ -1,0 +1,426 @@
+{
+  "manifest": [
+    {
+      "key": "ATL15_BLK/textures/client_assets.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "ATL15_BLK/client_assets.bundle",
+      "dependencyKeys": [
+        "ATL15_BLK/textures/client_assets.bundle",
+        "cubemaps",
+        "shaders"
+      ]
+    },
+    {
+      "key": "ATL15_BLK/weapon_lone_star_tx15_designated_marksman_556x45_container.bundle",
+      "dependencyKeys": [
+        "ATL15_BLK/textures/client_assets.bundle",
+        "cubemaps",
+        "assets/systems/effects/muzzleflash/muzzleflash.bundle",
+        "shaders",
+        "assets/content/weapons/animations/spirit_animations.bundle",
+        "assets/content/weapons/animations/simple_animations.bundle",
+        "assets/content/weapons/weapon_root_anim_fix.bundle",
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "assets/content/weapons/additional_hands/client_assets.bundle",
+        "assets/content/weapons/m4a1/client_assets.bundle",
+        "ATL15_BLK/client_assets.bundle",
+        "assets/content/audio/banks/m4a1.bundle",
+        "assets/content/audio/weapons/ak74.bundle",
+        "assets/content/audio/weapons/generic",
+        "assets/content/weapons/wip/kibas tuning prefabs/muzzlejets_templates/default_assets.bundle",
+        "assets/systems/effects/heathaze/defaultheathaze.bundle",
+        "assets/content/audio/blendoptions/assets.bundle",
+        "assets/systems/effects/smoke.bundle"
+      ]
+    },
+    {
+      "key": "ATL15_FDE/textures/client_assets.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "ATL15_FDE/client_assets.bundle",
+      "dependencyKeys": [
+        "ATL15_FDE/textures/client_assets.bundle",
+        "cubemaps",
+        "shaders"
+      ]
+    },
+    {
+      "key": "ATL15_FDE/weapon_lone_star_tx15_designated_marksman_556x45_container.bundle",
+      "dependencyKeys": [
+        "ATL15_FDE/textures/client_assets.bundle",
+        "cubemaps",
+        "assets/systems/effects/muzzleflash/muzzleflash.bundle",
+        "shaders",
+        "assets/content/weapons/animations/spirit_animations.bundle",
+        "assets/content/weapons/animations/simple_animations.bundle",
+        "assets/content/weapons/weapon_root_anim_fix.bundle",
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "assets/content/weapons/additional_hands/client_assets.bundle",
+        "assets/content/weapons/m4a1/client_assets.bundle",
+        "ATL15_FDE/client_assets.bundle",
+        "assets/content/audio/banks/m4a1.bundle",
+        "assets/content/audio/weapons/ak74.bundle",
+        "assets/content/audio/weapons/generic",
+        "assets/content/weapons/wip/kibas tuning prefabs/muzzlejets_templates/default_assets.bundle",
+        "assets/systems/effects/heathaze/defaultheathaze.bundle",
+        "assets/content/audio/blendoptions/assets.bundle",
+        "assets/systems/effects/smoke.bundle"
+      ]
+    },
+    {
+      "key": "ATL15_REC.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL15_UPPER_FDE.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL15_MIAD.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL15_SMR13.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL15_SMR95.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL15_BLUE.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "assets/systems/effects/smoke.bundle",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL15_RC2.bundle",
+      "dependencyKeys": [
+        "shaders",
+        "cubemaps",
+        "assets/systems/effects/smoke.bundle",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL15_BAR_TEX.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "ATL15_BAR_277.bundle",
+      "dependencyKeys": [
+        "shaders",
+        "cubemaps",
+        "ATL15_BAR_TEX.bundle",
+        "assets/systems/effects/smoke.bundle",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL15_BAR_379.bundle",
+      "dependencyKeys": [
+        "shaders",
+        "cubemaps",
+        "ATL15_BAR_TEX.bundle",
+        "assets/systems/effects/smoke.bundle",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL15_BAR_180.bundle",
+      "dependencyKeys": [
+        "shaders",
+        "cubemaps",
+        "ATL15_BAR_TEX.bundle",
+        "assets/systems/effects/smoke.bundle",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL15_RED_RAPTOR.bundle",
+      "dependencyKeys": [
+        "shaders",
+        "cubemaps",
+        "assets/content/items/mods/charges/charge_ar15_radian_raptor_ambidextrous_charging_handle_lod0_gloss_nrm",
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "assets/content/items/mods/charges/charge_ar15_radian_raptor_ambidextrous_charging_handle_mesh"
+      ]
+    },
+    {
+      "key": "ATL15_APXT.bundle",
+      "dependencyKeys": [
+        "shaders",
+        "cubemaps",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL15_M7A1.bundle",
+      "dependencyKeys": [
+        "shaders",
+        "cubemaps",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL15_HYPER.bundle",
+      "dependencyKeys": [
+        "shaders",
+        "cubemaps",
+        "assets/systems/effects/smoke.bundle",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL15_OPT_RAZOR_FDE.bundle",
+      "dependencyKeys": [
+        "shaders",
+        "cubemaps",
+        "assets/content/textures/holemanager/eotech_spec_mask.bundle",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL15_PEQ.bundle",
+      "dependencyKeys": [
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "assets/content/textures/holemanager/glow_particle_bright.bundle",
+        "assets/standard assets/effects/lightcookies/textures/flashlightcookie.bundle",
+        "assets/systems/effects/collimator.bundle",
+        "assets/systems/effects/laserbeam/laser.bundle",
+        "assets/systems/effects/multiflare/multiflare.bundle",
+        "assets/systems/effects/nightvision.bundle",
+        "cubemaps",
+        "shaders"
+      ]
+    },
+    {
+      "key": "ATL_SR25_HAND_FDE.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL_SR25_UPPER_FDE.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "SR25/textures/client_assets.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "SR25/client_assets.bundle",
+      "dependencyKeys": [
+        "shaders",
+        "cubemaps",
+        "SR25/textures/client_assets.bundle"
+      ]
+    },
+    {
+      "key": "SR25/weapon_container.bundle",
+      "dependencyKeys": [
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "assets/content/audio/blendoptions/assets.bundle",
+        "assets/content/audio/weapons/ak74.bundle",
+        "assets/content/audio/weapons/generic",
+        "assets/content/weapons/additional_hands/client_assets.bundle",
+        "assets/content/weapons/animations/simple_animations.bundle",
+        "assets/content/weapons/animations/spirit_animations.bundle",
+        "SR25/client_assets.bundle",
+        "SR25/textures/client_assets.bundle",
+        "assets/content/weapons/weapon_root_anim_fix.bundle",
+        "assets/content/weapons/wip/kibas tuning prefabs/muzzlejets_templates/default_assets.bundle",
+        "assets/systems/effects/heathaze/defaultheathaze.bundle",
+        "assets/systems/effects/muzzleflash/muzzleflash.bundle",
+        "assets/systems/effects/smoke.bundle",
+        "cubemaps",
+        "shaders"
+      ]
+    },
+    {
+      "key": "ATL_REC_G17_FADE.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL_X88_HANDS.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL_X88_LOWER.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL_X88_UPPER.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL_X69_HANDS.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "assets/content/hands/usec/materials/watch_usec_textures",
+        "assets/content/textures/holemanager/round_spec_mask.bundle",
+        "assets/content/hands/bear/bear_watch.bundle",
+        "shaders"
+      ]
+    },
+    {
+      "key": "ATL_X69_LOWER.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders"
+      ]
+    },
+    {
+      "key": "ATL_X69_UPPER.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/content/characters/character/skeleton.bundle"
+      ]
+    },
+    {
+      "key": "ATL_SUIT_X99_UPPER.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/content/characters/character/skeleton.bundle"
+      ]
+    },
+    {
+      "key": "ATL_SUIT_X99_HANDS.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "assets/content/hands/usec/materials/watch_usec_textures",
+        "assets/content/hands/bear/bear_watch.bundle",
+        "shaders"
+      ]
+    },
+    {
+      "key": "ATL_RAC.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL_NVG.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "assets/content/items/equipment/glasses_6b34/glasses_6b34_glass_textures"
+      ]
+    },
+    {
+      "key": "ATL_VISOR_GLASS.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "ATL_VISOR.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "ATL_VISOR_GLASS.bundle"
+      ]
+    },
+    {
+      "key": "ATL_RIG.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL_KNIGHT.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL_ARMOR.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "assets/content/characters/character/skeleton.bundle"
+      ]
+    },
+    {
+      "key": "ATL_SLAAP.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL_ARMR_SLICK_ODG.bundle",
+      "dependencyKeys": [
+        "shaders",
+        "cubemaps",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    },
+    {
+      "key": "ATL_ARMR_SLICK_FDE.bundle",
+      "dependencyKeys": [
+        "shaders",
+        "cubemaps",
+        "assets/commonassets/physics/physicsmaterials.bundle"
+      ]
+    }
+  ]
+}

@@ -8,6 +8,9 @@ import { DatabaseServer } from "@spt/servers/DatabaseServer";
 import { ImporterUtil } from "@spt/utils/ImporterUtil";
 import { ConfigsModelBase } from "./model/ConfigsModel";
 
+import { VFS } from "@spt/utils/VFS";
+import { jsonc } from "jsonc";
+
 class Mod implements IPostDBLoadMod
 {
     private mod: string;
@@ -26,7 +29,7 @@ class Mod implements IPostDBLoadMod
         // Get a logger
         this.logger = container.resolve<ILogger>("WinstonLogger");
         this.logger.debug(`[${this.mod}] postDb Loading... `);
-
+        
         // Resolve SPT classes we'll use
         const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
         const importerUtil = container.resolve<ImporterUtil>("ImporterUtil");
@@ -34,7 +37,11 @@ class Mod implements IPostDBLoadMod
         const path = modImporter.getModPath("SerWolfik-Heavy-Troopers");
         const configPath = `${path}db/`;
         const mydb = importerUtil.loadRecursive<ConfigsModelBase>(configPath);
-        
+
+        // Config setup
+        const vfs = container.resolve<VFS>("VFS")
+        let config = jsonc.parse(vfs.readFile(path + "/config/config.jsonc"))
+
         // Get a reference to the database tables
         const tables = databaseServer.getTables();
         const locales = tables.locales.global;
@@ -76,6 +83,42 @@ class Mod implements IPostDBLoadMod
             }
         }
 
+        const maps = [
+            "bigmap",     // customs
+            "factory4_day",
+            "factory4_night",
+            "woods",
+            "rezervbase",
+            "shoreline",
+            "interchange",
+            "tarkovstreets",
+            "lighthouse",
+            "laboratory",
+            "sandbox",    // groundzero
+            "sandbox_high"
+        ];
+
+        for (const item in config.probabilities) {
+            //console.log(config.probabilities[item])
+            for(const map of maps){
+                const mapStaticLoot = tables.locations[map].staticLoot;
+                const staticLootProbabilities = config.probabilities[item];
+                for(const [lootContainer, probability] of Object.entries(staticLootProbabilities)){
+
+                    try{
+                        mapStaticLoot[lootContainer].itemDistribution.push({
+                            "tpl": item,
+                            "relativeProbability": probability
+                        });
+                    } catch (e){
+                        this.logger.debug("Could not add " + item + " to container " + lootContainer + " on map " + map)
+                    }
+
+                }
+            }
+                
+
+        }
         this.logger.debug(`[${this.mod}] postDb Loaded`);
     }
 }

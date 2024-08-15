@@ -7,8 +7,13 @@
       "BossEscortAmount": "3,4",
       "BossEscortType": "arenafighterevent",
       "BossZone": [
+        "ZoneOldAZS",
+        "ZoneWade",
         "ZoneBrige",
-        "ZoneBlockPost"
+        "ZoneFactoryCenter",
+        "ZoneDormitory",
+        "ZoneCustoms",
+        "ZoneFactorySide"
       ]
     }
   ],
@@ -59,7 +64,16 @@
       "Time": -1,
       "BossEscortAmount": "3,4",
       "BossEscortType": "arenafighterevent",
-      "BossZone": null
+      "BossZone": [
+        "ZoneCenter",
+        "ZoneCenterBot",
+        "ZoneGoshan",
+        "ZoneOLI",
+        "ZonePowerStation",
+        "ZoneIDEA",
+        "ZoneIDEAPark",
+        "ZoneOLIPark"
+      ]
     }
   ],
   "laboratory": [
@@ -69,7 +83,13 @@
       "Time": -1,
       "BossEscortAmount": "3,4",
       "BossEscortType": "arenafighterevent",
-      "BossZone": null
+      "BossZone": [
+        "BotZoneFloor1",
+        "BotZoneFloor2",
+        "BotZoneBasement",
+        "BotZoneGate2",
+        "BotZoneGate1"
+      ]
     }
   ],
   "lighthouse": [
@@ -79,7 +99,16 @@
       "Time": -1,
       "BossEscortAmount": "3,4",
       "BossEscortType": "arenafighterevent",
-      "BossZone": null
+      "BossZone": [
+        "Zone_Chalet",
+        "Zone_Village",
+        "Zone_Containers",
+        "Zone_TreatmentBeach",
+        "Zone_TreatmentRocks",
+        "Zone_Bridge",
+        "Zone_Blockpost",
+        "Zone_Hellicopter"
+      ]
     }
   ],
   "reserve": [
@@ -89,7 +118,14 @@
       "Time": -1,
       "BossEscortAmount": "3,4",
       "BossEscortType": "arenafighterevent",
-      "BossZone": null
+      "BossZone": [
+        "ZoneRailStrorage",
+        "ZoneBarrack",
+        "ZoneSubStorage",
+        "ZoneSubCommand",
+        "ZonePTOR2",
+        "ZonePTOR1"
+      ]
     }
   ],
   "shoreline": [
@@ -100,9 +136,16 @@
       "BossEscortAmount": "3,4",
       "Time": -1,
       "BossZone": [
-        "ZoneStartVillage",
+        "ZoneIsland",
+        "ZonePowerStation",
+        "ZoneBusStation",
+        "ZonePort",
+        "ZoneRailWays",
+        "ZoneSanatorium1",
+        "ZoneSanatorium2",
+        "ZoneMateoStation",
         "ZoneGasStation",
-        "ZonePowerStation"
+        "ZoneGreenHouses"
       ]
     }
   ],
@@ -113,7 +156,17 @@
       "Time": -1,
       "BossEscortAmount": "3,4",
       "BossEscortType": "arenafighterevent",
-      "BossZone": null
+      "BossZone": [
+        "ZoneSW01",
+        "ZoneConstruction",
+        "ZoneCarShowroom",
+        "ZoneCinema",
+        "ZoneFactory",
+        "ZoneHotel_1",
+        "ZoneHotel_2",
+        "ZoneConcordia_1",
+        "ZoneColumn"
+      ]
     }
   ],
   "woods": [
@@ -124,10 +177,10 @@
       "BossEscortAmount": "3,4",
       "Time": -1,
       "BossZone": [
-        "ZoneClearVill",
+        "ZoneWoodCutter",
+        "ZoneScavBase2",
         "ZoneRoad",
-        "ZoneHouse",
-        "ZoneBigRocks"
+        "ZoneMiniHouse"
       ]
     }
   ]

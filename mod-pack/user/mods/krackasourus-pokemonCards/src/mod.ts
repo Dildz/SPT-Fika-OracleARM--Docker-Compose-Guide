@@ -219,7 +219,7 @@ class Mod implements IPreSptLoadMod, IPostDBLoadMod
         for (const map_name in config.loot_locations) {
             if (!config.loot_locations.hasOwnProperty(map_name)) { continue }
 
-            this.debug_to_console(`Map: ${map_name}`, "yellow");
+            //this.debug_to_console(`Map: ${map_name}`, "yellow");
             const map = tables.locations[map_name];
             if (!map) {
                 this.debug_to_console(`Map not found: ${map_name}`, "red");
@@ -228,7 +228,7 @@ class Mod implements IPreSptLoadMod, IPostDBLoadMod
 
             config.loot_locations[map_name].forEach(containerID => {
                 const selectedContainerID = map.staticLoot[containerID] ? containerID : (map.staticLoot[defaultContainerID] ? defaultContainerID : null);
-                this.debug_to_console(`Container ID: ${selectedContainerID}`, "blue");
+                //this.debug_to_console(`Container ID: ${selectedContainerID}`, "blue");
 
                 if (selectedContainerID) {
                     let probability = {

@@ -250,7 +250,8 @@ export default [
   "618ba92152ecee1505530bd3", //Reptilia ROF-90 RMR mount for Geissele scope mounts ddc
   "6601546f86889319850bd566",
   "66015072e9f84d5680039678",
-  "66015dc4aaad2f54cb04c56a"
+  "66015dc4aaad2f54cb04c56a",
+  "5d70e500a4b9364de70d38ce",
 ];
 
 //5d0a29fed7ad1a002769ad08

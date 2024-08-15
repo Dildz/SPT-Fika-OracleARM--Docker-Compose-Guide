@@ -1,0 +1,138 @@
+{
+  "addRandomizedKeysToScavs": true,
+  "lootDisparityMultiplier": 1,
+  "percentageOfKeysInSpawnPool": 0.5,
+  "scavLootBlacklist": [],
+  "additionalScavLoot": ["5c94bbff86f7747ee735c08f"],
+  "botAmmoRandomness": 0.1,
+  "botEquipmentRandomness": 0.1,
+  "nonPmcBots": {
+    "assault": {
+      "tiers": [
+        [1, 14],
+        [15, 30],
+        [31, 45],
+        [46, 100]
+      ],
+      "Backpack": [0, 0.3],
+      "Ammo": [0, 0.4],
+      "BasePlateChance": 60,
+      "PlateWeightings": [
+        { "2": 25, "3": 5, "4": 1, "5": 1, "6": 1 },
+        { "2": 20, "3": 10, "4": 3, "5": 2, "6": 1 },
+        { "2": 20, "3": 20, "4": 5, "5": 3, "6": 2 },
+        { "2": 5, "3": 10, "4": 20, "5": 5, "6": 4 }
+      ]
+    },
+    "marksman": {
+      "tiers": [
+        [1, 14],
+        [15, 34],
+        [35, 100]
+      ],
+      "Backpack": [0, 0.4],
+      "Ammo": [0, 0.7],
+      "BasePlateChance": 60,
+      "PlateWeightings": [
+        { "2": 25, "3": 5, "4": 1, "5": 1, "6": 1 },
+        { "2": 20, "3": 10, "4": 3, "5": 2, "6": 1 },
+        { "2": 20, "3": 20, "4": 5, "5": 3, "6": 2 },
+        { "2": 5, "3": 10, "4": 20, "5": 5, "6": 4 }
+      ]
+    },
+    "arenafighterevent": {
+      "tiers": [
+        [1, 14],
+        [15, 30],
+        [31, 45],
+        [46, 100]
+      ],
+      "Backpack": [0.2, 0.5],
+      "Ammo": [0, 0.5]
+    },
+    "arenafighter": {
+      "tiers": [
+        [1, 14],
+        [15, 30],
+        [31, 45],
+        [46, 100]
+      ],
+      "Backpack": [0.2, 0.5],
+      "Ammo": [0, 0.5]
+    },
+    "pmcbot": {
+      "tiers": [
+        [1, 14],
+        [15, 30],
+        [31, 45],
+        [46, 100]
+      ],
+      "Backpack": [0.3, 0.8],
+      "Ammo": [0.2, 0.8]
+    },
+    "exusec": {
+      "tiers": [
+        [1, 14],
+        [15, 30],
+        [31, 45],
+        [46, 100]
+      ],
+      "Backpack": [0.3, 0.8],
+      "Ammo": [0.2, 0.8]
+    },
+    "allBossFollowers": {
+      "tiers": [
+        [1, 14],
+        [15, 30],
+        [31, 45],
+        [46, 100]
+      ],
+      "Backpack": [0.3, 0.5],
+      "Ammo": [0.2, 0.7]
+    },
+    "allBosses": {
+      "tiers": [
+        [1, 14],
+        [15, 30],
+        [31, 45],
+        [46, 100]
+      ],
+      "Backpack": [0, 0],
+      "Ammo": [0.3, 0.8]
+    },
+    "bossbully": {
+      "tiers": [
+        [1, 14],
+        [15, 30],
+        [31, 45],
+        [46, 100]
+      ],
+      "Backpack": [0, 0],
+      "Ammo": [0.3, 0.8]
+    }
+  },
+  "allBossFollowers": [
+    "followerbully",
+    "followergluharassault",
+    "followergluharscout",
+    "followergluharsecurity",
+    "followerboar",
+    "followerkojaniy",
+    "followersanitar",
+    "followertest",
+    "followerzryachiy"
+  ],
+  "allBosses": [
+    "bossgluhar",
+    "bossboar",
+    "bosskilla",
+    "bosskojaniy",
+    "bosssanitar",
+    "bosstagilla",
+    "bossknight",
+    "bosszryachiy",
+    "followerbirdeye",
+    "followerbigpipe",
+    "bossboarsniper"
+  ]
+}

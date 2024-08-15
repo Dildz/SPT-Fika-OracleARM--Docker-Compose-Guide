@@ -1,11 +1,14 @@
 {
   "order": [
-    "Corter-ModSync",
-    "ACOG4Life-OpticRework-SPT-390",
-    "acidphantasm-bosseshavelegamedals",
-    "acidphantasm-brightlasers",
+    "Virtual's Custom Quest Loader",
     "acidphantasm-refsptfriendlyquests",
+    "acidphantasm-bosseshavelegamedals",
     "BARF",
+
+    "ACOG4Life-OpticRework-SPT-390",
+    "acidphantasm-brightlasers",
+    "acidphantasm-defaultfiremode",
+    "ATLAS-GEAR",
     "DrakiaXYZ-LiveFleaPrices",
     "ExpandedTaskText",
     "goldenheartbell-achievementspercentagelive",
@@ -18,16 +21,20 @@
     "Realistic-Thermals",
     "SerWolfik-Heavy-Troopers",
     "tyfon-uifixes",
-    "Virtual's Custom Quest Loader",
-    "SPT-Realism",
+    "zzSamSWAT-EOTechVuduOverhaul",
+    
+    "AlgorithmicLevelProgression",
+    "SouthernHemisphereSeasons",
+    "SPT-ConfigurableStepsVolume-1.1.1",
+    "zzMusicManiac-KeysInLoot",
+    
+    "PreyToLive-AllOpenZones",
     "Skwizzy-LootingBots-ServerMod",
     "DanW-SPTQuestingBots",
-    "zSolarint-SAIN-ServerMod",
+    "SPT-Realism",
     "SWAG",
-    "AlgorithmicLevelProgression",
-    "zzMusicManiac-KeysInLoot",
-    "acidphantasm-defaultfiremode",
+
+    "Corter-ModSync",
     "fika-server"
   ]
 }
-

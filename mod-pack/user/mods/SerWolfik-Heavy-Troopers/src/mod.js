@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.mod = void 0;
+const jsonc_1 = require("/snapshot/project/node_modules/jsonc");
 class Mod {
     mod;
     logger;
@@ -22,6 +23,9 @@ class Mod {
         const path = modImporter.getModPath("SerWolfik-Heavy-Troopers");
         const configPath = `${path}db/`;
         const mydb = importerUtil.loadRecursive(configPath);
+        // Config setup
+        const vfs = container.resolve("VFS");
+        let config = jsonc_1.jsonc.parse(vfs.readFile(path + "/config/config.jsonc"));
         // Get a reference to the database tables
         const tables = databaseServer.getTables();
         const locales = tables.locales.global;
@@ -51,6 +55,38 @@ class Mod {
             for (const [itemId, template] of Object.entries(mydb.locales.en.templates)) {
                 for (const [key, value] of Object.entries(template)) {
                     locale[`${itemId} ${key}`] = value;
+                }
+            }
+        }
+        const maps = [
+            "bigmap", // customs
+            "factory4_day",
+            "factory4_night",
+            "woods",
+            "rezervbase",
+            "shoreline",
+            "interchange",
+            "tarkovstreets",
+            "lighthouse",
+            "laboratory",
+            "sandbox", // groundzero
+            "sandbox_high"
+        ];
+        for (const item in config.probabilities) {
+            //console.log(config.probabilities[item])
+            for (const map of maps) {
+                const mapStaticLoot = tables.locations[map].staticLoot;
+                const staticLootProbabilities = config.probabilities[item];
+                for (const [lootContainer, probability] of Object.entries(staticLootProbabilities)) {
+                    try {
+                        mapStaticLoot[lootContainer].itemDistribution.push({
+                            "tpl": item,
+                            "relativeProbability": probability
+                        });
+                    }
+                    catch (e) {
+                        this.logger.debug("Could not add " + item + " to container " + lootContainer + " on map " + map);
+                    }
                 }
             }
         }

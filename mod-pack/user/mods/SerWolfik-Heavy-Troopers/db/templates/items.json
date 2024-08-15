@@ -133,6 +133,16 @@
       "ArmorType": "Heavy",
       "armorColliders": [ "HeadCommon", "ParietalHead", "Eyes", "Jaw", "NeckFront" ]
     },
+    "addToStaticLoot": {
+      "5909d89086f77472591234a0": 80,
+      "5909d7cf86f77470ee57d75a": 80,
+      "5909d76c86f77471e53d2adf": 80,
+      "5909d5ef86f77467974efbd8": 80,
+      "5d6d2b5486f774785c2ba8ea": 80,
+      "578f87ad245977356274f2cc": 80, 
+      "578f87a3245977356274f2cb": 80, 
+      "5909e4b686f7747f5b744fa4": 80
+    },
     "_proto": "5645bc214bdc2d363b8b4571"
   },
    "heavycult": {
@@ -268,6 +278,16 @@
       "BlindnessProtection": 0.2,
       "ArmorType": "Heavy",
       "armorColliders": [ "HeadCommon", "ParietalHead", "Eyes", "Jaw", "NeckFront" ]
+    },
+    "addToStaticLoot": {
+      "5909d89086f77472591234a0": 40,
+      "5909d7cf86f77470ee57d75a": 40,
+      "5909d76c86f77471e53d2adf": 40,
+      "5909d5ef86f77467974efbd8": 40,
+      "5d6d2b5486f774785c2ba8ea": 40,
+      "578f87ad245977356274f2cc": 40, 
+      "578f87a3245977356274f2cb": 40, 
+      "5909e4b686f7747f5b744fa4": 40
     },
     "_proto": "5645bc214bdc2d363b8b4571"
   },
@@ -405,6 +425,16 @@
       "ArmorType": "Heavy",
       "armorColliders": [ "HeadCommon", "ParietalHead", "Eyes", "Jaw", "NeckFront" ]
     },
+    "addToStaticLoot": {
+      "5909d89086f77472591234a0": 130,
+      "5909d7cf86f77470ee57d75a": 130,
+      "5909d76c86f77471e53d2adf": 130,
+      "5909d5ef86f77467974efbd8": 130,
+      "5d6d2b5486f774785c2ba8ea": 130,
+      "578f87ad245977356274f2cc": 130, 
+      "578f87a3245977356274f2cb": 130, 
+      "5909e4b686f7747f5b744fa4": 130
+    },
     "_proto": "5645bc214bdc2d363b8b4571"
   },
   "heavyblack": {
@@ -541,6 +571,16 @@
       "ArmorType": "Heavy",
       "armorColliders": [ "HeadCommon", "ParietalHead", "Eyes", "Jaw", "NeckFront" ]
     },
+    "addToStaticLoot": {
+      "5909d89086f77472591234a0": 110,
+      "5909d7cf86f77470ee57d75a": 110,
+      "5909d76c86f77471e53d2adf": 110,
+      "5909d5ef86f77467974efbd8": 110,
+      "5d6d2b5486f774785c2ba8ea": 110,
+      "578f87ad245977356274f2cc": 110, 
+      "578f87a3245977356274f2cb": 110, 
+      "5909e4b686f7747f5b744fa4": 110
+    },
     "_proto": "5645bc214bdc2d363b8b4571"
   },
   "heavycoyote": {
@@ -676,6 +716,16 @@
       "BlindnessProtection": 0.2,
       "ArmorType": "Heavy",
       "armorColliders": [ "HeadCommon", "ParietalHead", "Eyes", "Jaw", "NeckFront" ]
+    },
+    "addToStaticLoot": {
+      "5909d89086f77472591234a0": 130,
+      "5909d7cf86f77470ee57d75a": 130,
+      "5909d76c86f77471e53d2adf": 130,
+      "5909d5ef86f77467974efbd8": 130,
+      "5d6d2b5486f774785c2ba8ea": 130,
+      "578f87ad245977356274f2cc": 130, 
+      "578f87a3245977356274f2cb": 130, 
+      "5909e4b686f7747f5b744fa4": 130
     },
     "_proto": "5645bc214bdc2d363b8b4571"
   }
