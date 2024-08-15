@@ -1,5 +1,5 @@
 # Setting up Fika SPT server with docker for Ubuntu on Oracle Cloud ARM instance
-Last updated: 06/08/2024 | Dildz
+Last updated: 15/08/2024 | Dildz
 
 **Make sure your oracle instance is 64-bit! Arm64 works too!**
 
@@ -13,15 +13,15 @@ Last updated: 06/08/2024 | Dildz
 [Other Possibly Helpful Info](https://github.com/Dildz/SPT-Fika-modded--Docker-Guide#modding-and-other-possibly-helpful-info)
 
 ## Free VPS
-[A good free VPS from Oracle. It offers 24gb ram, 4 cores and 200gb of storage. It's ARM but works with this setup.](https://www.oracle.com/cloud/free/)
+[A good free VPS from Oracle. It offers 24GB RAM, 4 CPU cores and 200GB of storage. It's ARM but works with this setup.](https://www.oracle.com/cloud/free/)
 
 If you decide to create & use an Oracle ARM VPS - I recommend installing/setting up [ZeroTier One](https://www.zerotier.com/download/) on the server, & in the Oracle Dashboard - remove all existing firewall rules & create one rule that allows all traffic from **ONLY** the ZeroTier One IP range that you would have created.
 
-In my opinion this is a secure & easy way for you to SSH into your server and for players to connect to the FIKA server while blocking any unwanted public traffic.
+In my opinion this is a secure & easy way for you to SSH into your server and for players to connect to the FIKA server while blocking any unwanted public traffic. Only people that you approve & assign an IP to on the ZeroTier dashboard will be able to connect.
 
-Install the ZeroTier One client on a SSH client, join the ZT network & use the server's ZT IP & your SSH key to connect to the server.
+Install the ZeroTier client on a SSH client, join the ZT network & use the server's ZT IP & your Oracle SSH key to connect to the server.
 
-If you are using a different VPS host - either use your providers dashboard to allow all traffic from ZT or use something like UFW to add a firewall rule for the ZT network.
+If you are using a different VPS host or are self-hosting - either use your providers dashboard to allow all traffic from ZT or use something like UFW to add an allow all firewall rule for the ZT network.
 
 ## Recommended tools
 SSH: [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
