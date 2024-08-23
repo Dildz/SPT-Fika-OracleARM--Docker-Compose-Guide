@@ -2,15 +2,15 @@
 
 # Define the source directories and target file
 source_dirs=(
-  "$HOME/docker/containers/spt-fika-3.9.5/fika/SPT-launcher-images/alt1/bg.png"
-  "$HOME/docker/containers/spt-fika-3.9.5/fika/SPT-launcher-images/alt2/bg.png"
-  "$HOME/docker/containers/spt-fika-3.9.5/fika/SPT-launcher-images/alt3/bg.png"
-  "$HOME/docker/containers/spt-fika-3.9.5/fika/SPT-launcher-images/alt4/bg.png"
-  "$HOME/docker/containers/spt-fika-3.9.5/fika/SPT-launcher-images/alt5/bg.png"
-  "$HOME/docker/containers/spt-fika-3.9.5/fika/SPT-launcher-images/alt6/bg.png"
-  "$HOME/docker/containers/spt-fika-3.9.5/fika/SPT-launcher-images/original/bg.png"
+  "/home/ubuntu/docker/containers/spt-fika-3.9.5/fika/SPT-launcher-images/alt1/bg.png"
+  "/home/ubuntu/docker/containers/spt-fika-3.9.5/fika/SPT-launcher-images/alt2/bg.png"
+  "/home/ubuntu/docker/containers/spt-fika-3.9.5/fika/SPT-launcher-images/alt3/bg.png"
+  "/home/ubuntu/docker/containers/spt-fika-3.9.5/fika/SPT-launcher-images/alt4/bg.png"
+  "/home/ubuntu/docker/containers/spt-fika-3.9.5/fika/SPT-launcher-images/alt5/bg.png"
+  "/home/ubuntu/docker/containers/spt-fika-3.9.5/fika/SPT-launcher-images/alt6/bg.png"
+  "/home/ubuntu/docker/containers/spt-fika-3.9.5/fika/SPT-launcher-images/original/bg.png"
 )
-target_file="$HOME/docker/containers/spt-fika-3.9.5/server/user/mods/fika-server/assets/images/launcher/bg.png"
+target_file="/home/ubuntu/docker/containers/spt-fika-3.9.5/server/user/mods/fika-server/assets/images/launcher/bg.png"
 
 # Get the size of the current target file
 if [ -f "$target_file" ]; then
