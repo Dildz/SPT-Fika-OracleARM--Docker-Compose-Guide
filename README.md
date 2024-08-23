@@ -222,9 +222,9 @@ This creates a task to reboot the modded-fika server every day at 2am according 
 ## Starting mods for new players
 Any new players to the modded-fika server will need to have a fresh SPT v3.9.5 install with the ONLY following mods installed before connecting:
 
-1: [(FIKA client only)](https://github.com/project-fika/Fika-Plugin/releases)
+1: [(FIKA client release & instructions)](https://github.com/project-fika/Fika-Plugin/releases)
 
-2: [(Corter-ModSync client only)](https://github.com/c-orter/modsync)
+2: [(Corter-ModSync release & instructions)](https://github.com/c-orter/modsync)
 
 Once players have connected to the FIKA server in the launcher & after launching the game, they will 1st download bundle files, then Corter-Modsync will prompt them to update - they will then download all the required client mods from the server. When done, exit & relaunch the game.
 
@@ -236,8 +236,6 @@ You may find that new player profiles will be permission locked at root level an
 Note - ALWAYS BACKUP PROFILES **BEFORE MAKING CHANGES**
 
 To make changes to player profile we need to run the following commands:
-**Change [PROFILE_ID] to the ID of the profile you want to edit**
-**Change [USERNAME] to your system username**
 
 First stop the container:
 ```
@@ -245,6 +243,8 @@ docker stop modded-fika
 ```
 
 Then we will change the profile permissions:
+
+**Change [PROFILE_ID] to the ID of the profile you want to edit**
 ```
 sudo chmod 775 $HOME/docker/containers/spt-fika-modded-new/server/user/profiles/PROFILE_ID.json
 ```
@@ -272,7 +272,7 @@ To start/restart the container:
 $HOME/docker/containers/spt-fika-modded/fika/restart_fika.sh
 ```
 
-See the commands.txt file for a full list of commands used.
+See the included commands.txt file for a full list of commands used.
 
 ## Updating to newer versions
 First you will have to stop the server:
@@ -280,11 +280,12 @@ First you will have to stop the server:
 docker stop modded-fika
 ```
 
-[Creating a backup script](https://gist.github.com/OnniSaarni/a3f840cef63335212ae085a3c6c10d5c#setting-up-the-docker-container)
+[Creating a backup script example](https://gist.github.com/OnniSaarni/a3f840cef63335212ae085a3c6c10d5c#setting-up-the-docker-container)
 -- see ahandleman's comment re: bash script to backup mods/profiles & updating
 
 It is recommended to backup your players profiles and the BepInEx / user mods folders.
-You can copy them to your container backup directory with these commands:
+
+First we create the backup folders:
 ```
 mkdir -p $HOME/docker/backups/spt-fika-modded-backup/user/profiles
 ```
@@ -294,6 +295,8 @@ mkdir -p $HOME/docker/backups/spt-fika-modded-backup/user/mods
 ```
 mkdir -p $HOME/docker/backups/spt-fika-modded-backup/BepInEx
 ```
+
+Now we can backup the file with:
 ```
 cp -r $HOME/docker/containers/spt-fika-modded/server/BepInEx/* $HOME/docker/backups/spt-fika-modded-backup/BepInEx
 ```
@@ -332,11 +335,23 @@ Prune images:
 ```
 docker image prune
 ```
-Remove contents of server directory:
+
+Now we need to remove the contents of server directory:
 ```
 sudo rm -rf $HOME/docker/containers/spt-fika-modded/server/*
 ```
-**!!Before rebuilding the server - you MUST update the version numbers for FIKA & SPT to the latest versions in the dockerfile!!**
+
+**!!Before rebuilding the server - you MUST update the version numbers for FIKA & SPT to the latest versions in the Dockerfile!!**
+```
+# Change the FIKA & SPT tags to the latest versions found in the SPT and FIKA discords
+FROM ubuntu:latest AS builder
+ARG FIKA=HEAD^
+ARG FIKA_TAG=v2.2.8   << CHANGE TO NEW VERSION
+ARG SPT=HEAD^
+ARG SPT_TAG=3.9.8     << CHANGE TO NEW VERSION
+ARG NODE=20.11.1
+```
+
 Now we can rebuild the container:
 ```
 cd $HOME/docker/containers/spt-fika-modded/fika
@@ -374,6 +389,7 @@ docker stop modded-fika
 ```
 
 Then run the following command to change the permissions for the profiles and mods folders.
+
 **Change [USERNAME] to your system username**
 ```
 sudo chmod -R 775 $HOME/docker/containers/spt-fika-modded/server/user/profiles
@@ -389,6 +405,7 @@ sudo chown -R USERNAME:USERNAME $HOME/docker/containers/spt-fika-modded/server/u
 ```
 
 Now you can restore the backed up profiles and server mods.
+
 To do that run the following commands:
 ```
 cp -r $HOME/docker/backups/spt-fika-modded-backup/server/user/profiles/* $HOME/docker/containers/spt-fika-modded/server/user/profiles/
@@ -455,6 +472,7 @@ Existing players don't need to re-install SPT - they just need to download the l
 ## Changing SPT launcher backgrounds
 In the "fika" directory there is a randomize_bg.sh script & a folder called "SPT launcher images".
 The script will select a random image to use from "SPT launcher images", compare the file size to the current bg.png file & replace it if the size is different - if the file sizes are the same it will choose a new random image & check again.
+
 If you would like to change the launcher background - do the following:
 
 To run the script on a schedule, add the following lines to the cron file (as we did before for the reboot task):
@@ -507,8 +525,11 @@ The complete crontab file contents should be:
 ```
 
 If using nano editor:
+
 Press **Ctrl + O** (you will be prompted to save the file-name)
+
 Press **Enter** to save
+
 Press **Ctrl + X** to exit
 
 This creates a task to change the launcher background every day at midnight according to the system time - change the "0" value to an hour that suits your needs.
@@ -519,17 +540,21 @@ As an alternative - you can incorporate the randomize_bg.sh into the restart_fik
 Some errors are fixed by deleting all the files in the "cache" directory.
 
 A lot of the issues can be fixed by just searching the Fika Discord server for the error.
+
 Try to find an answer before asking one - someone has probably had your error before.
 
 If players are spawning apart from each other with the spawn together setting ON in the game settings when starting raids - someone has a mismatched FIKA version or the server isn't on the correct version.
+
 Make sure the server's FIKA client & server mod-files are on the latest version by replacing user & client files, reboot server & have all players reconnect.
 Corter-Modsync will push the update when players re-join.
 
 The most common issue I have when updating or adding a new server mod is FIKA compatibility.
 Players will sometimes get stuck loading with just the spinning wheel in the lower left after rebooting the server for new or updated server mods.
+
 If this happens, try the following:
 - either revert to a previous working version of an updated mod and reboot the server,
 - create a new folder in user\mods\ called "mods-removed" and move any offending mods into this folder, remove the mod from the order.json file, then reboot the server.
+
 99% of the time issues are related to mod updates or mods that don't play nice with FIKA.
 
 ## Credits
