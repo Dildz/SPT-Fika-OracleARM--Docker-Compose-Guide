@@ -33,15 +33,15 @@ echo "Captured current timestamp: $timestamp"
 
 # Clear the log file
 echo "Clearing the log file..."
-sudo : > "$LOG_FILE"
-
-# Truncate the existing Docker logs
-echo "Truncating the Docker logs for $CONTAINER_NAME..."
-sudo truncate -s 0 $(docker inspect --format='{{.LogPath}}' $CONTAINER_NAME)
+> "$LOG_FILE"
 
 # Start the Docker container
 echo "Starting the $CONTAINER_NAME Docker container..."
 docker start $CONTAINER_NAME
+
+# Parse the existing Docker logs and continue logging in real-time
+echo "Parsing and tailing the Docker logs for $CONTAINER_NAME..."
+docker logs -f $CONTAINER_NAME > "$LOG_FILE" 2>&1 &
 
 echo "Logs are being written to $LOG_FILE"
 echo "Tailing $CONTAINER_NAME logs in:"
@@ -52,5 +52,6 @@ echo "2"
 sleep 1
 echo "1"
 sleep 1
+
 docker logs $CONTAINER_NAME -f
 
