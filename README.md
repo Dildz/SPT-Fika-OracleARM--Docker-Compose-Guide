@@ -1,5 +1,5 @@
 # Setting up Fika SPT server with docker for Ubuntu on Oracle Cloud ARM instance
-Last updated: 15/08/2024 | Dildz
+Last updated: 23/08/2024 | Dildz
 
 **Make sure your oracle instance is 64-bit! Arm64 works too!**
 
