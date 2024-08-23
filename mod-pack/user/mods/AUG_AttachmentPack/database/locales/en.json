@@ -1,0 +1,24 @@
+{
+	"templates": {
+		"handguard_fb20": {
+			"Name": "AUG RAS Handguard",
+			"ShortName": "AUG",
+			"Description": "ARMY Metal AUG RAS Handguard For AUG A3 AEG Bullpup Rifle"
+		},
+		"handguard_guerilla": {
+			"Name": "AUG Cantilever Handguard",
+			"ShortName": "AUG",
+			"Description": "The AUG Cantilever Forend combines a top rail, side rail, and M-LOK forend into a compact, light, and incredibly versatile package."
+		},
+		"handguard_turaco": {
+			"Name": "AUG Turaco handguard",
+			"ShortName": "AUG",
+			"Description": "A CNC made handguard with an M-LOK interface."
+		},
+		"mag_aug_60": {
+			"Name": "AUG A3 556x45 60-round drum magazine",
+			"ShortName": "AUG",
+			"Description": "A modified PMAG-D60 made to fit Steyr AUG A3"
+		}
+	}
+}

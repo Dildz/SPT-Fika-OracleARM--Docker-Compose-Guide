@@ -1,0 +1,1413 @@
+{
+	"weapon_molot_vepr12": {
+		"itemTplToClone": "576165642459773c7a400233",
+		"parentId": "5447b6094bdc2dc3278b4567",
+		"handbookParentId": "5b5f794b86f77409407a7f92",
+		"overrideProperties": {
+			"Weight": 1.822,
+			"Width": 3,
+			"Height": 1,
+			"SingleFireRate": 450,
+			"Ergonomics": 35,
+			"RecoilForceBack": 650,
+			"RecoilForceUp": 390,
+			"IronSightRange": 30,
+			"ShotgunDispersion": 1.3,
+			"CenterOfImpact": 0.6,
+			"ExaminedByDefault": true,
+			"AllowJam": false,
+			"AllowFeed": false,
+			"AllowMisfire": false,
+			"AllowSlide": false,
+			"Prefab": {
+				"path": "assets/content/weapons/vepr12/weapon_molot_vepr12_12g_container.bundle",
+				"rcid": ""
+			},
+			"weapFireType": [
+				"semiauto"
+			],
+			"defAmmo": "560d5e524bdc2d25448b4571",
+			"defMagType": "mag_vepr12_molot_5",
+			"Slots": [
+				{
+					"_id": "576166c92459773ccd7031c7",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_mount_000",
+					"_parent": "weapon_molot_vepr12",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"5947db3f86f77447880cf76f",
+									"57486e672459770abd687134",
+									"5c82342f2e221644f31c060e",
+									"576fd4ec2459777f0b518431",
+									"5c82343a2e221644f31c0611",
+									"5cf638cbd7f00c06595bc936",
+									"5a7c74b3e899ef0014332c29",
+									"591ee00d86f774592f7b841e",
+									"5d0a29ead7ad1a0026013f27",
+									"57acb6222459771ec34b5cb0",
+									"5c61a40d2e2216001403158d",
+									"5c90c3622e221601da359851"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": false
+				},
+				{
+					"_id": "57616dbd2459773c7a400236",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_muzzle",
+					"_parent": "weapon_molot_vepr12",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"barrel_vepr12_molot_305mm",
+									"barrel_vepr12_molot_430mm"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": true
+				},
+				{
+					"_id": "57616dcf2459773ccd7031ca",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_pistol_grip",
+					"_parent": "weapon_molot_vepr12",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"5f6341043ada5942720e2dc5",
+									"6087e663132d4d12c81fd96b",
+									"5beec8ea0db834001a6f9dbf",
+									"5649ad3f4bdc2df8348b4585",
+									"5649ade84bdc2d1b2b8b4587",
+									"59e62cc886f77440d40b52a1",
+									"5a0071d486f77404e23a12b2",
+									"57e3dba62459770f0c32322b",
+									"5cf54404d7f00c108840b2ef",
+									"5e2192a498a36665e8337386",
+									"5b30ac585acfc433000eb79c",
+									"59e6318286f77444dd62c4cc",
+									"5cf50850d7f00c056e24104c",
+									"5cf508bfd7f00c056e24104e",
+									"5947f92f86f77427344a76b1",
+									"5947fa2486f77425b47c1a9b",
+									"5c6bf4aa2e2216001219b0ae",
+									"5649ae4a4bdc2d1b2b8b4588",
+									"5998517986f7746017232f7e",
+									"pistolgrip_vepr12_molot"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": true
+				},
+				{
+					"_id": "57616ddc2459773c687dcdc3",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_reciever",
+					"_parent": "weapon_molot_vepr12",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"receiver_vepr12_molot"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": false
+				},
+				{
+					"_id": "57616ded2459773cce774d67",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_sight_rear",
+					"_parent": "weapon_molot_vepr12",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"58272b842459774abc128d50",
+									"sight_rear_molot_vepr12"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": false
+				},
+				{
+					"_id": "57616e062459773c7a400237",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_stock",
+					"_parent": "weapon_molot_vepr12",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"5cf50fc5d7f00c056c53f83c",
+									"5beec8b20db834001961942a",
+									"stock_vepr12_molot"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": false
+				},
+				{
+					"_id": "57616e1f2459773cae04eae5",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_magazine",
+					"_parent": "weapon_molot_vepr12",
+					"_props": {
+						"filters": [
+							{
+								"AnimationIndex": -1,
+								"Filter": [
+									"mag_vepr12_molot_5",
+									"5cf8f3b0d7f00c00217872ef",
+									"5a966f51a2750c00156aacf6",
+									"mag_vepr12_molot_5",
+									"mag_vepr12_molot_8"
+								]
+							}
+						]
+					},
+					"_proto": "55d30c394bdc2dae468b4577",
+					"_required": false
+				},
+				{
+					"_id": "57616f1e2459775d4d100241",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_charge",
+					"_parent": "weapon_molot_vepr12",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"5648ac824bdc2ded0b8b457d"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": false
+				},
+				{
+					"_id": "weapon_molot_vepr12_hg",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_handguard",
+					"_parent": "weapon_molot_vepr12",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"5648ae314bdc2d3d1c8b457f",
+									"5d2c829448f0353a5c7d6674",
+									"5b800e9286f7747a8b04f3ff",
+									"5b80242286f77429445e0b47",
+									"5cbda392ae92155f3c17c39f",
+									"5cbda9f4ae9215000e5b9bfc",
+									"5648b0744bdc2d363b8b4578",
+									"5648b1504bdc2d9d488b4584",
+									"59d64f2f86f77417193ef8b3",
+									"57cff947245977638e6f2a19",
+									"57cffd8224597763b03fc609",
+									"57cffddc24597763133760c6",
+									"57cffe0024597763b03fc60b",
+									"57cffe20245977632f391a9d",
+									"5c9a07572e221644f31c4b32",
+									"5c9a1c3a2e2216000e69fb6a",
+									"5c9a1c422e221600106f69f0",
+									"59e6284f86f77440d569536f",
+									"59e898ee86f77427614bd225",
+									"5a9d56c8a2750c0032157146",
+									"5d1b198cd7ad1a604869ad72",
+									"5d4aaa73a4b9365392071175",
+									"5d4aaa54a4b9365392071170",
+									"5c617a5f2e2216000f1e81b3",
+									"5648b4534bdc2d3d1c8b4580",
+									"handguard_vepr12_molot"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": true
+				}
+			]
+		},
+		"locales": {
+			"en": {
+				"name": "Vepr-12 \"Molot\" semi-automatic shotgun",
+				"shortName": "Vepr-12",
+				"description": "The Vepr-12 is a multipurpose semi-automatic shotgun, produced by Molot-Oruzhie Ltd. It is patterned after the upgradedinal Kalashnikov rifle and built on the heavier RPK light machine gun receiver. The Vepr-12 is intended to be a direct competitor to the widely popular Saiga-12 shotgun already produced by Izhmash"
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [
+			"55d729c64bdc2d89028b4570",
+			"55d729d14bdc2d86028b456e"
+		],
+		"addtoModSlots": false,
+		"modSlot": [
+			"mod_magazine"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 32770,
+		"handbookPriceRoubles": 15531,
+		"addtoTraders": false,
+		"traderId": "SKIER",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 1,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtoStaticLootContainers": false,
+		"StaticLootContainers": [
+			{
+				"ContainerName": "LOOTCONTAINER_WEAPON_BOX_4X4",
+				"Probability": 250
+			},
+			{
+				"ContainerName": "LOOTCONTAINER_DEAD_SCAV",
+				"Probability": 150
+			}
+		],
+		"masteries": true,
+		"masterySections": [
+			{
+				"Level2": 1500,
+        		"Level3": 2200,
+				"Name": "Vepr-12",
+				"Templates": [
+					"weapon_molot_vepr12"
+				]
+			}
+		],
+		"addweaponpreset": true,
+		"weaponpresets": [
+			{
+				"_changeWeaponName": false,
+				"_encyclopedia": "weapon_molot_vepr12",
+				"_id": "vepr12_std_presetid",
+				"_items": [
+					{
+						"_id": "66c2ac4f8702ca13ae7ae9bb",
+						"_tpl": "weapon_molot_vepr12",
+						"upd": {
+							"Repairable": {
+								"MaxDurability": 100,
+								"Durability": 100
+							},
+							"FireMode": {
+								"FireMode": "semiauto"
+							}
+						}
+					},
+					{
+						"_id": "66c2ad1d60939fca3c14f134",
+						"_tpl": "barrel_vepr12_molot_305mm",
+						"parentId": "66c2ac4f8702ca13ae7ae9bb",
+						"slotId": "mod_muzzle"
+					},
+					{
+						"_id": "66c2ad381b8025a508b69560",
+						"_tpl": "muzzle_vepr12_molot",
+						"parentId": "66c2ad1d60939fca3c14f134",
+						"slotId": "mod_muzzle"
+					},
+					{
+						"_id": "66c2ad509ce0df80f125a361",
+						"_tpl": "receiver_vepr12_molot",
+						"parentId": "66c2ac4f8702ca13ae7ae9bb",
+						"slotId": "mod_reciever"
+					},
+					{
+						"_id": "66c2ad5e6d89541b1ab989d8",
+						"_tpl": "handguard_vepr12_molot",
+						"parentId": "66c2ac4f8702ca13ae7ae9bb",
+						"slotId": "mod_handguard"
+					},
+					{
+						"_id": "66c2ad6e4faa544acf3f33d7",
+						"_tpl": "pistolgrip_vepr12_molot",
+						"parentId": "66c2ac4f8702ca13ae7ae9bb",
+						"slotId": "mod_pistol_grip"
+					},
+					{
+						"_id": "66c2ad7e0ac7b4653f5f3215",
+						"_tpl": "mag_vepr12_molot_5",
+						"parentId": "66c2ac4f8702ca13ae7ae9bb",
+						"slotId": "mod_magazine"
+					},
+					{
+						"_id": "66c2ad8b4fc8b08be32f0aac",
+						"_tpl": "stock_vepr12_molot",
+						"parentId": "66c2ac4f8702ca13ae7ae9bb",
+						"slotId": "mod_stock"
+					},
+					{
+						"_id": "66c2ada1bd47327ca9356e27",
+						"_tpl": "cheekriser_vepr12_molot",
+						"parentId": "66c2ad8b4fc8b08be32f0aac",
+						"slotId": "mod_tactical_001"
+					},
+					{
+						"_id": "66c2adb1dbd1464356f61df9",
+						"_tpl": "sight_rear_molot_vepr12",
+						"parentId": "66c2ac4f8702ca13ae7ae9bb",
+						"slotId": "mod_sight_rear"
+					},
+					{
+						"_id": "66c2adbf0bf65ece01bb0604",
+						"_tpl": "magwell_vepr12_molot",
+						"parentId": "66c2ad1d60939fca3c14f134",
+						"slotId": "mod_tactical_001"
+					}
+				],
+				"_name": "Veper12",
+				"_parent": "66c2ac4f8702ca13ae7ae9bb",
+				"_type": "Preset"
+			}
+		]
+	},
+	"stock_vepr12_molot": {
+		"itemTplToClone": "57dc347d245977596754e7a1",
+		"parentId": "55818a594bdc2db9688b456a",
+		"handbookParentId": "5b5f757486f774093e6cb507",
+		"overrideProperties": {
+			"ExaminedByDefault": true,
+			"Prefab": {
+				"path": "assets/content/items/mods/vepr12/stock_vepr12_molot.bundle",
+				"rcid": ""
+			},
+			"Weight": 0.280,
+			"Width": 2,
+			"Height": 1,
+			"Ergonomics": 7,
+			"Recoil": -34
+		},
+		"locales": {
+			"en": {
+				"name": "Vepr-12 metal skeletonized stock",
+				"shortName": "Vepr-12 stock",
+				"description": "Metal skeletonized stock for Vepr-12 shotgun manufactured by Molot."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 4625,
+		"handbookPriceRoubles": 2000,
+		"addtoTraders": false,
+		"traderId": "SKIER",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 1,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtoStaticLootContainers": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	},
+	"handguard_vepr12_molot": {
+		"itemTplToClone": "57ffa9f4245977728561e844",
+		"parentId": "55818a104bdc2db9688b4569",
+		"handbookParentId": "5b5f75e486f77447ec5d7712",
+		"overrideProperties": {
+			"Weight": 0.26,
+			"Recoil": -2,
+			"Ergonomics": 9,
+			"Prefab": {
+				"path": "assets/content/items/mods/vepr12/handguard_vepr12_molot.bundle",
+				"rcid": ""
+			},
+			"Slots": [
+				{
+					"_name": "mod_foregrip",
+					"_id": "5649d6c24bdc2d1b2b8b458d",
+					"_parent": "5648b4534bdc2d3d1c8b4580",
+					"_props": {
+						"filters": [
+							{
+								"Shift": 0,
+								"Filter": [
+									"5c7fc87d2e221644f31c0298",
+									"5cda9bcfd7f00c0c0b53e900",
+									"59f8a37386f7747af3328f06",
+									"619386379fb0c665d5490dbe",
+									"5c87ca002e221600114cb150",
+									"588226d124597767ad33f787",
+									"588226dd24597767ad33f789",
+									"588226e62459776e3e094af7",
+									"588226ef24597767af46e39c",
+									"59fc48e086f77463b1118392",
+									"5fce0cf655375d18a253eff0",
+									"5cf4fb76d7f00c065703d3ac",
+									"5b057b4f5acfc4771e1bd3e9",
+									"5c791e872e2216001219c40a",
+									"558032614bdc2de7118b4585",
+									"58c157be86f77403c74b2bb6",
+									"58c157c886f774032749fb06",
+									"5f6340d3ca442212f4047eb2",
+									"591af28e86f77414a27a9e1d",
+									"5c1cd46f2e22164bef5cfedb",
+									"5c1bc4812e22164bef5cfde7",
+									"5c1bc5612e221602b5429350",
+									"5c1bc5af2e221602b412949b",
+									"5c1bc5fb2e221602b1779b32",
+									"5c1bc7432e221602b412949d",
+									"5c1bc7752e221602b1779b34"
+								]
+							}
+						]
+					},
+					"_required": false,
+					"_mergeSlotWithChildren": false,
+					"_proto": "55d30c4c4bdc2db4468b457e"
+				},
+				{
+					"_name": "mod_tactical_001",
+					"_id": "5649d6ec4bdc2df8348b4588",
+					"_parent": "5648b4534bdc2d3d1c8b4580",
+					"_props": {
+						"filters": [
+							{
+								"Shift": 0,
+								"Filter": [
+									"5a800961159bd4315e3a1657",
+									"57fd23e32459772d0805bcf1",
+									"544909bb4bdc2d6f028b4577",
+									"5c06595c0db834001a66af6c",
+									"5cc9c20cd7f00c001336c65d",
+									"5d2369418abbc306c62e0c80",
+									"5b07dd285acfc4001754240d",
+									"56def37dd2720bec348b456a",
+									"5a7b483fe899ef0016170d15",
+									"61605d88ffa6e502ac5e7eeb",
+									"5a5f1ce64f39f90b401987bc",
+									"560d657b4bdc2da74d8b4572",
+									"5b3a337e5acfc4704b4a19a0",
+									"5c5952732e2216398b5abda2",
+									"57d17e212459775a1179a0f5"
+								]
+							}
+						]
+					},
+					"_required": false,
+					"_mergeSlotWithChildren": false,
+					"_proto": "55d30c4c4bdc2db4468b457e"
+				},
+				{
+					"_name": "mod_tactical_002",
+					"_id": "5649d6f84bdc2d9d198b456b",
+					"_parent": "5648b4534bdc2d3d1c8b4580",
+					"_props": {
+						"filters": [
+							{
+								"Shift": 0,
+								"Filter": [
+									"5a800961159bd4315e3a1657",
+									"57fd23e32459772d0805bcf1",
+									"544909bb4bdc2d6f028b4577",
+									"5d10b49bd7ad1a1a560708b0",
+									"5c06595c0db834001a66af6c",
+									"5cc9c20cd7f00c001336c65d",
+									"5d2369418abbc306c62e0c80",
+									"5b07dd285acfc4001754240d",
+									"56def37dd2720bec348b456a",
+									"5a7b483fe899ef0016170d15",
+									"61605d88ffa6e502ac5e7eeb",
+									"5a5f1ce64f39f90b401987bc",
+									"560d657b4bdc2da74d8b4572",
+									"5b3a337e5acfc4704b4a19a0",
+									"5c5952732e2216398b5abda2",
+									"57d17e212459775a1179a0f5"
+								]
+							}
+						]
+					},
+					"_required": false,
+					"_mergeSlotWithChildren": false,
+					"_proto": "55d30c4c4bdc2db4468b457e"
+				}
+			],
+			"Width": 1,
+			"ExaminedByDefault": true
+		},
+		"locales": {
+			"en": {
+				"name": "Vepr-12 polymer handguard",
+				"shortName": "Vepr-12",
+				"description": "Polymer handguard manufactured by Molot for Vepr-12 shotgun. Includes rails for installation of tactical foregrips, flashlights and other accessories."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 7895,
+		"handbookPriceRoubles": 3650,
+		"addtoTraders": false,
+		"traderId": "58330581ace78e27b8b10cee",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 5,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtoStaticLootContainers": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	},
+	"barrel_vepr12_molot_305mm": {
+		"itemTplToClone": "5a787f25c5856700186c4ab9",
+		"parentId": "555ef6e44bdc2de9068b457e",
+		"handbookParentId": "5b5f75c686f774094242f19f",
+		"overrideProperties": {
+			"Weight": 0.96,
+			"Recoil": -4,
+			"Ergonomics": 0,
+			"ExtraSizeLeft": 1,
+			"Prefab": {
+				"path": "assets/content/items/mods/vepr12/barrel_vepr12_molot_305mm.bundle",
+				"rcid": ""
+			},
+			"ExaminedByDefault": true,
+			"Slots": [
+				{
+					"_id": "barrel_vepr12_molot_305_muzzle",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_muzzle",
+					"_parent": "barrel_vepr12_molot_305mm",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"58272d7f2459774f6311ddfd",
+									"59fb137a86f7740adb646af1",
+									"576167ab2459773cad038c43",
+									"5b363e1b5acfc4771e1c5e80",
+									"59c0ec5b86f77435b128bfca",
+									"muzzle_vepr12_molot"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": false
+				},
+				{
+					"_id": "barrel_vepr12_molot_305tac0",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_tactical_000",
+					"_parent": "barrel_vepr12_molot_305mm",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"5a800961159bd4315e3a1657",
+									"5cc9c20cd7f00c001336c65d",
+									"5d2369418abbc306c62e0c80",
+									"5b07dd285acfc4001754240d",
+									"56def37dd2720bec348b456a",
+									"5a7b483fe899ef0016170d15",
+									"5a5f1ce64f39f90b401987bc",
+									"560d657b4bdc2da74d8b4572"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": false
+				},
+				{
+					"_id": "barrel_vepr12_molot_305tac1",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_tactical_001",
+					"_parent": "barrel_vepr12_molot_305mm",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"magwell_vepr12_molot"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": false
+				}
+			]
+		},
+		"locales": {
+			"en": {
+				"name": "Vepr-12 12ga 305mm barrel",
+				"shortName": "Vepr-12 305mm",
+				"description": "A 305mm long barrel for Vepr-12 shotgun chambered for 12ga shells."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 16863,
+		"handbookPriceRoubles": 7300,
+		"addtoTraders": false,
+		"traderId": "58330581ace78e27b8b10cee",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 5,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtoStaticLootContainers": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	},
+	"barrel_vepr12_molot_430mm": {
+		"itemTplToClone": "5a787f7ac5856700177af660",
+		"parentId": "555ef6e44bdc2de9068b457e",
+		"handbookParentId": "5b5f75c686f774094242f19f",
+		"overrideProperties": {
+			"Weight": 1.050,
+			"Width": 3,
+			"Height": 1,
+			"Ergonomics": -6,
+			"Recoil": -6,
+			"ExtraSizeLeft": 2,
+			"Prefab": {
+				"path": "assets/content/items/mods/vepr12/barrel_vepr12_molot_430mm.bundle",
+				"rcid": ""
+			},
+			"ExaminedByDefault": true,
+			"Slots": [
+				{
+					"_id": "669fcb19e9163ce1412068c2",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_tactical_001",
+					"_parent": "669fcbd899f4dc2f8ed7d113",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"609b9e31506cf869cf3eaf41",
+									"5dfe14f30b92095fd441edaf"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": false
+				},
+				{
+					"_id": "669fcb1f53b328b6c221057d",
+					"_mergeSlotWithChildren": false,
+					"_name": "mod_muzzle",
+					"_parent": "669fcbd899f4dc2f8ed7d113",
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"5c0111ab0db834001966914d",
+									"560838c94bdc2d77798b4569",
+									"5b363dea5acfc4771e1c5e7e"
+								],
+								"Shift": 0
+							}
+						]
+					},
+					"_proto": "55d30c4c4bdc2db4468b457e",
+					"_required": false
+				}
+			]
+		},
+		"locales": {
+			"en": {
+				"name": "Vepr-12 12ga 430mm barrel",
+				"shortName": "Vepr-12 430mm",
+				"description": "A 430mm long barrel for Vepr-12 shotgun chambered for 12ga shells."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 18172,
+		"handbookPriceRoubles": 7500,
+		"addtoTraders": false,
+		"traderId": "58330581ace78e27b8b10cee",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 5,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtoStaticLootContainers": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	},
+	"receiver_vepr12_molot": {
+	"itemTplToClone": "57616c112459773cce774d66",
+	"parentId": "55818a304bdc2db5418b457d",
+	"handbookParentId": "5b5f764186f77447ec5d7714",
+	"overrideProperties": {
+		"Prefab": {
+			"path": "assets/content/items/mods/vepr12/receiver_vepr12_molot.bundle",
+			"rcid": ""
+		},
+		"BackgroundColor": "blue",
+		"ExaminedByDefault": true,
+		"Width": 2,
+		"Height": 1,
+		"Weight": 0.202,
+		"Recoil": -1,
+		"Ergonomics": 4,
+		"ConflictingItems":[
+			"5947db3f86f77447880cf76f",
+			"57486e672459770abd687134",
+			"5649d9a14bdc2d79388b4580",
+			"5c82342f2e221644f31c060e",
+			"576fd4ec2459777f0b518431",
+			"5c82343a2e221644f31c0611",
+			"5cf638cbd7f00c06595bc936",
+			"5a7c74b3e899ef0014332c29",
+			"591ee00d86f774592f7b841e",
+			"5d0a29ead7ad1a0026013f27",
+			"57acb6222459771ec34b5cb0",
+			"5c61a40d2e2216001403158d",
+			"5c90c3622e221601da359851"
+		],
+		"HeatFactor": 1,
+		"CoolFactor": 1,
+		"DurabilityBurnModificator": 0.97,
+		"Slots": [
+			{
+				"_name": "mod_scope",
+				"_id": "5d2c770c48f0354b4a07c102",
+				"_parent": "receiver_vepr12_molot",
+				"_props": {
+					"filters": [
+						{
+							"Shift": 0,
+							"Filter": [
+								"57ac965c24597706be5f975c",
+								"57aca93d2459771f2c7e26db",
+								"544a3a774bdc2d3a388b4567",
+								"5d2dc3e548f035404a1a4798",
+								"57adff4f24597737f373b6e6",
+								"5c0517910db83400232ffee5",
+								"591c4efa86f7741030027726",
+								"570fd79bd2720bc7458b4583",
+								"570fd6c2d2720bc6458b457f",
+								"558022b54bdc2dac148b458d",
+								"5c07dd120db834001c39092d",
+								"5c0a2cec0db834001b7ce47d",
+								"58491f3324597764bc48fa02",
+								"584924ec24597768f12ae244",
+								"5b30b0dc5acfc400153b7124",
+								"6165ac8c290d254f5e6b2f6c",
+								"60a23797a37c940de7062d02",
+								"5d2da1e948f035477b1ce2ba",
+								"5c0505e00db834001b735073",
+								"609a63b6e2ff132951242d09",
+								"584984812459776a704a82a6",
+								"59f9d81586f7744c7506ee62",
+								"570fd721d2720bc5458b4596",
+								"57ae0171245977343c27bfcf",
+								"5dfe6104585a0c3e995c7b82",
+								"544a3d0a4bdc2d1b388b4567",
+								"5d1b5e94d7ad1a2b865a96b0",
+								"609bab8b455afd752b2e6138",
+								"58d39d3d86f77445bb794ae7",
+								"616554fe50224f204c1da2aa",
+								"5c7d55f52e221644f31bff6a",
+								"616584766ef05c2ce828ef57",
+								"5b3b6dc75acfc47a8773fb1e",
+								"615d8d878004cc50514c3233",
+								"5b2389515acfc4771e1be0c0",
+								"577d128124597739d65d0e56",
+								"618b9643526131765025ab35",
+								"618bab21526131765025ab3f",
+								"5c86592b2e2216000e69e77c",
+								"5a37ca54c4a282000d72296a",
+								"5d0a29fed7ad1a002769ad08",
+								"5c064c400db834001d23f468",
+								"58d2664f86f7747fec5834f6",
+								"57c69dd424597774c03b7bbc",
+								"5b3b99265acfc4704b4a1afb",
+								"5aa66a9be5b5b0214e506e89",
+								"5aa66c72e5b5b00016327c93",
+								"5c1cdd302e221602b3137250",
+								"61714b2467085e45ef140b2c",
+								"6171407e50224f204c1da3c5",
+								"61713cc4d8e3106d9806c109",
+								"5b31163c5acfc400153b71cb",
+								"5a33b652c4a28232996e407c",
+								"5a33b2c9c4a282000c5a9511",
+								"59db7eed86f77461f8380365",
+								"5a1ead28fcdbcb001912fa9f",
+								"5dff77c759400025ea5150cf"
+							]
+						}
+					]
+				},
+				"_required": false,
+				"_mergeSlotWithChildren": false,
+				"_proto": "55d30c4c4bdc2db4468b457e"
+			}
+		]
+	},
+	"locales": {
+		"en": {
+			"name": "Vepr-12 dust cover",
+			"shortName": "Vepr-12 dc",
+			"description": "Standard issue Molot-manufactured metal dust cover with an integrated Picatinny rail."
+		}
+	},
+	"clearClonedProps": false,
+	"addtoInventorySlots": [],
+	"addtoModSlots": false,
+	"modSlot": [
+		"mod_barrel"
+	],
+	"ModdableItemWhitelist": [],
+	"ModdableItemBlacklist": [],
+	"fleaPriceRoubles": 13890,
+	"handbookPriceRoubles": 6800,
+	"addtoTraders": false,
+	"traderId": "5a7c2eca46aef81a7ca2145d",
+	"traderItems": [
+		{
+			"unlimitedCount": true,
+			"stackObjectsCount": 99
+		}
+	],
+	"barterScheme": [
+		{
+			"count": 5,
+			"_tpl": "ROUBLES"
+		}
+	],
+	"loyallevelitems": 1,
+	"addtoBots": false,
+	"addtoStaticLootContainers": false,
+	"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+	"Probability": 250
+},
+	"mag_vepr12_molot_5": {
+		"itemTplToClone": "57616a9e2459773c7a400234",
+		"parentId": "5448bc234bdc2d3c308b4569",
+		"handbookParentId": "5b5f754a86f774094242f19b",
+		"overrideProperties": {
+			"ExaminedByDefault": true,
+			"Prefab": {
+				"path": "assets/content/items/mods/vepr12/mag_vepr12_molot_5.bundle",
+				"rcid": ""
+			},
+			"ItemSound": "mag_plastic",
+			"MagazineWithBelt": false,
+			"CheckOverride": 0,
+			"Cartridges": [
+				{
+					"_name": "cartridges",
+					"_id": "57616b2e2459773cae04eae4",
+					"_parent": "mag_vepr12_molot_5",
+					"_max_count": 5,
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"560d5e524bdc2d25448b4571",
+									"5d6e6772a4b936088465b17c",
+									"5d6e67fba4b9361bc73bc779",
+									"5d6e6806a4b936088465b17e",
+									"5d6e68dea4b9361bcc29e659",
+									"5d6e6911a4b9361bd5780d52",
+									"5c0d591486f7744c505b416f",
+									"58820d1224597753c90aeb13",
+									"5d6e68c4a4b9361b93413f79",
+									"5d6e68a8a4b9360b6c0d54e2",
+									"5d6e68e6a4b9361c140bcfe0",
+									"5d6e6869a4b9361c140bcfde",
+									"5d6e68b3a4b9361bca7e50b5",
+									"5d6e6891a4b9361bd473feea",
+									"5d6e689ca4b9361bc8618956",
+									"64b8ee384b75259c590fa89b",
+									"5d6e68d1a4b93622fe60e845"
+								]
+							}
+						]
+					},
+					"_proto": "5748538b2459770af276a261"
+				}
+			],
+			"CheckTimeModifier": 0,
+			"LoadUnloadModifier": 0,
+			"MalfunctionChance": 0.08,
+			"ReloadMagType": "ExternalMagazine",
+			"Ergonomics": -1
+		},
+		"locales": {
+			"en": {
+				"name": "Vepr-12 5-round magazine",
+				"shortName": "Vepr12 5",
+				"description": "A 5-round polymer plastic magazine by Molot for Vepr-12 and compatible weapons, intended for use with 12/76 or 12/70 shells."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [
+			"mod_magazine"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 1155,
+		"handbookPriceRoubles": 500,
+		"addtoTraders": false,
+		"traderId": "SKIER",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 1,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtoStaticLootContainers": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	},
+	"mag_vepr12_molot_8": {
+		"itemTplToClone": "57616a9e2459773c7a400234",
+		"parentId": "5448bc234bdc2d3c308b4569",
+		"handbookParentId": "5b5f754a86f774094242f19b",
+		"overrideProperties": {
+			"ExaminedByDefault": true,
+			"Prefab": {
+				"path": "assets/content/items/mods/vepr12/mag_vepr12_molot_8.bundle",
+				"rcid": ""
+			},
+			"ItemSound": "mag_plastic",
+			"MagazineWithBelt": false,
+			"CheckOverride": 0,
+			"Cartridges": [
+				{
+					"_name": "cartridges",
+					"_id": "5a966f51a2750c00156aacf8",
+					"_parent": "5a966f51a2750c00156aacf6",
+					"_max_count": 8,
+					"_props": {
+						"filters": [
+							{
+								"Filter": [
+									"560d5e524bdc2d25448b4571",
+									"5d6e6772a4b936088465b17c",
+									"5d6e67fba4b9361bc73bc779",
+									"5d6e6806a4b936088465b17e",
+									"5d6e68dea4b9361bcc29e659",
+									"5d6e6911a4b9361bd5780d52",
+									"5c0d591486f7744c505b416f",
+									"58820d1224597753c90aeb13",
+									"5d6e68c4a4b9361b93413f79",
+									"5d6e68a8a4b9360b6c0d54e2",
+									"5d6e68e6a4b9361c140bcfe0",
+									"5d6e6869a4b9361c140bcfde",
+									"5d6e68b3a4b9361bca7e50b5",
+									"5d6e6891a4b9361bd473feea",
+									"5d6e689ca4b9361bc8618956",
+									"64b8ee384b75259c590fa89b",
+									"5d6e68d1a4b93622fe60e845"
+								]
+							}
+						]
+					},
+					"_proto": "5748538b2459770af276a261"
+				}
+			],
+			"CheckTimeModifier": 0,
+			"LoadUnloadModifier": 0,
+			"MalfunctionChance": 0.08,
+			"Ergonomics": -4
+		},
+		"locales": {
+			"en": {
+				"name": "Vepr-12 8-round magazine",
+				"shortName": "Vepr12 8",
+				"description": "A 8-round polymer plastic extended magazine by Molot for Vepr-12 and compatible weapons, intended for use with 12/76 or 12/70 shells."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [
+			"mod_magazine"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 3689,
+		"handbookPriceRoubles": 1375,
+		"addtoTraders": false,
+		"traderId": "SKIER",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 1,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtoStaticLootContainers": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	},
+	"pistolgrip_vepr12_molot": {
+		"itemTplToClone": "5beec8ea0db834001a6f9dbf",
+		"parentId": "55818af64bdc2d5b648b4570",
+		"handbookParentId": "5b5f71de86f774093f2ecf13",
+		"overrideProperties": {
+			"Prefab": {
+				"path": "assets/content/items/mods/vepr12/pistolgrip_vepr12_molot.bundle",
+				"rcid": ""
+			},
+			"Ergonomics": 7,
+			"Recoil": -4,
+			"Weight": 0.65,
+			"Width": 1,
+			"ExaminedByDefault": true
+		},
+		"locales": {
+			"en": {
+				"name": "Vepr-12 polymer pistol grip",
+				"shortName": "Vepr-12 pg",
+				"description": "Polymer pistol grip manufactured by Molot for Vepr-12 shotgun."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [
+			"mod_foregrip"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 35640,
+		"handbookPriceRoubles": 8500,
+		"addtoTraders": false,
+		"traderId": "58330581ace78e27b8b10cee",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 5,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtoStaticLootContainers": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	},
+	"cheekriser_vepr12_molot": {
+		"itemTplToClone": "5a0c59791526d8dba737bba7",
+		"parentId": "55818a594bdc2db9688b456a",
+		"handbookParentId": "5b5f757486f774093e6cb507",
+		"overrideProperties": {
+			"Prefab": {
+				"path": "assets/content/items/mods/vepr12/cheekriser_vepr12_molot.bundle",
+				"rcid": ""
+			},
+			"ExaminedByDefault": true,
+			"Width": 1,
+			"Height": 1,
+			"Ergonomics": 2,
+			"Recoil": -5
+		},
+		"locales": {
+			"en": {
+				"name": "Vepr-12 adjustable cheek rest",
+				"shortName": "Vepr-12 cr",
+				"description": "Cheek rest for Vepr-12 shotgun manufactured by Molot."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [
+			"mod_barrel"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 25700,
+		"handbookPriceRoubles": 7000,
+		"addtoTraders": false,
+		"traderId": "58330581ace78e27b8b10cee",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 5,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtoStaticLootContainers": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	},
+	"muzzle_vepr12_molot": {
+		"itemTplToClone": "5ac72e945acfc43f3b691116",
+		"parentId": "550aa4bf4bdc2dd6348b456b",
+		"handbookParentId": "5b5f724c86f774093f2ecf15",
+		"overrideProperties": {
+			"Prefab": {
+				"path": "assets/content/items/mods/vepr12/muzzle_vepr12_molot.bundle",
+				"rcid": ""
+			},
+			"BackgroundColor": "blue",
+			"Recoil": -10,
+			"ExaminedByDefault": true
+		},
+		"locales": {
+			"en": {
+				"name": "Vepr-12 muzzle device",
+				"shortName": "Vepr-12 MD",
+				"description": "Standard Vepr-12 shotgun muzzle device, manufactured by Molot"
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": true,
+		"modSlot": [
+			"mod_muzzle"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 39800,
+		"handbookPriceRoubles": 7500,
+		"addtoTraders": false,
+		"traderId": "58330581ace78e27b8b10cee",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 5,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtoStaticLootContainers": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	},
+	"sight_rear_molot_vepr12": {
+		"itemTplToClone": "5649b0544bdc2d1b2b8b458a",
+		"parentId": "55818ac54bdc2d5b648b456e",
+		"handbookParentId": "5b5f746686f77447ec5d7708",
+		"overrideProperties": {
+			"Prefab": {
+				"path": "assets/content/items/mods/vepr12/sight_rear_molot_vepr12.bundle",
+				"rcid": ""
+			},
+			"BackgroundColor": "blue",
+			"Weight": 0.14,
+			"ExaminedByDefault": true
+		},
+		"locales": {
+			"en": {
+				"name": "Vepr-12 rear sight",
+				"shortName": "Vepr12 RS",
+				"description": "Standard-issue Molot-produced Vepr-12 rear sight."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [
+			"mod_sight_front"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 18890,
+		"handbookPriceRoubles": 13440,
+		"addtoTraders": false,
+		"traderId": "5a7c2eca46aef81a7ca2145d",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 5,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtoStaticLootContainers": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	},
+	"magwell_vepr12_molot": {
+		"itemTplToClone": "602f85fd9b513876d4338d9c",
+		"parentId": "5a74651486f7744e73386dd1",
+		"handbookParentId": "5b5f74cc86f77447ec5d770a",
+		"overrideProperties": {
+			"Prefab": {
+				"path": "assets/content/items/mods/vepr12/magwell_vepr12_molot.bundle",
+				"rcid": ""
+			},
+			"ExaminedByDefault": true,
+			"Width": 1,
+			"Height": 1,
+			"ConflictingItems":[
+				"5cf8f3b0d7f00c00217872ef"
+			],
+			"Weight": 0.05,
+			"Ergonomics": 2,
+			"Recoil": -5
+		},
+		"locales": {
+			"en": {
+				"name": "Vepr-12 magwell",
+				"shortName": "Vepr12 magwell",
+				"description": "Regular magwell for Vepr-12 shotgun."
+			}
+		},
+		"clearClonedProps": false,
+		"addtoInventorySlots": [],
+		"addtoModSlots": false,
+		"modSlot": [
+			"mod_barrel"
+		],
+		"ModdableItemWhitelist": [],
+		"ModdableItemBlacklist": [],
+		"fleaPriceRoubles": 25700,
+		"handbookPriceRoubles": 7000,
+		"addtoTraders": false,
+		"traderId": "58330581ace78e27b8b10cee",
+		"traderItems": [
+			{
+				"unlimitedCount": true,
+				"stackObjectsCount": 99
+			}
+		],
+		"barterScheme": [
+			{
+				"count": 5,
+				"_tpl": "ROUBLES"
+			}
+		],
+		"loyallevelitems": 1,
+		"addtoBots": false,
+		"addtoStaticLootContainers": false,
+		"StaticLootContainer": "LOOTCONTAINER_WEAPON_BOX_4X4",
+		"Probability": 250
+	}
+}

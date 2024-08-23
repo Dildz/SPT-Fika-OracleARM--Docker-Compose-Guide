@@ -8,7 +8,18 @@ import type { Config } from "./config";
 import { HttpError, winPath } from "./utility";
 import type { ILogger } from "@spt/models/spt/utils/ILogger";
 import type { PreSptModLoader } from "@spt/loaders/PreSptModLoader";
-import { statSync } from "node:fs";
+import type { HttpServerHelper } from "@spt/helpers/HttpServerHelper";
+
+const FALLBACK_SYNCPATHS: Record<string, object> = {
+	undefined: ["BepInEx\\plugins\\Corter-ModSync.dll", "ModSync.Updater.exe"],
+};
+
+const FALLBACK_HASHES: Record<string, object> = {
+	undefined: {
+		"BepInEx\\plugins\\Corter-ModSync.dll": { crc: 999999999 },
+		"ModSync.Updater.exe": { crc: 999999999 },
+	},
+};
 
 export class Router {
 	constructor(
@@ -16,6 +27,7 @@ export class Router {
 		private syncUtil: SyncUtil,
 		private vfs: VFS,
 		private httpFileUtil: HttpFileUtil,
+		private httpServerHelper: HttpServerHelper,
 		private modImporter: PreSptModLoader,
 		private logger: ILogger,
 	) {}
@@ -23,10 +35,19 @@ export class Router {
 	/**
 	 * @internal
 	 */
-	public getServerVersion(res: ServerResponse, _: RegExpMatchArray) {
+	public async getServerVersion(
+		req: IncomingMessage,
+		res: ServerResponse,
+		_: RegExpMatchArray,
+	) {
 		const modPath = this.modImporter.getModPath("Corter-ModSync");
 		const packageJson = JSON.parse(
-			this.vfs.readFile(path.join(modPath, "package.json")),
+			// @ts-expect-error readFile returns a string when given a valid encoding
+			await this.vfs
+				// @ts-expect-error readFile takes in an options object, including an encoding option
+				.readFilePromisify(path.join(modPath, "package.json"), {
+					encoding: "utf-8",
+				}),
 		);
 
 		res.setHeader("Content-Type", "application/json");
@@ -37,12 +58,27 @@ export class Router {
 	/**
 	 * @internal
 	 */
-	public getSyncPaths(res: ServerResponse, _: RegExpMatchArray) {
+	public async getSyncPaths(
+		req: IncomingMessage,
+		res: ServerResponse,
+		_: RegExpMatchArray,
+	) {
+		const version = req.headers["modsync-version"] as string;
+		if (version in FALLBACK_SYNCPATHS) {
+			res.setHeader("Content-Type", "application/json");
+			res.writeHead(200, "OK");
+			res.end(JSON.stringify(FALLBACK_SYNCPATHS[version]));
+			return;
+		}
+
 		res.setHeader("Content-Type", "application/json");
 		res.writeHead(200, "OK");
 		res.end(
 			JSON.stringify(
-				this.config.enabledSyncPaths.map(({ path }) => winPath(path)),
+				this.config.syncPaths.map(({ path, ...rest }) => ({
+					path: winPath(path),
+					...rest,
+				})),
 			),
 		);
 	}
@@ -50,23 +86,39 @@ export class Router {
 	/**
 	 * @internal
 	 */
-	public getHashes(res: ServerResponse, _: RegExpMatchArray) {
+	public async getHashes(
+		req: IncomingMessage,
+		res: ServerResponse,
+		_: RegExpMatchArray,
+	) {
+		const version = req.headers["modsync-version"] as string;
+		if (version in FALLBACK_HASHES) {
+			res.setHeader("Content-Type", "application/json");
+			res.writeHead(200, "OK");
+			res.end(JSON.stringify(FALLBACK_HASHES[version]));
+			return;
+		}
+
 		res.setHeader("Content-Type", "application/json");
 		res.writeHead(200, "OK");
 		res.end(
-			JSON.stringify(this.syncUtil.hashModFiles(this.config.enabledSyncPaths)),
+			JSON.stringify(await this.syncUtil.hashModFiles(this.config.syncPaths)),
 		);
 	}
 
 	/**
 	 * @internal
 	 */
-	public fetchModFile(res: ServerResponse, matches: RegExpMatchArray) {
+	public async fetchModFile(
+		_: IncomingMessage,
+		res: ServerResponse,
+		matches: RegExpMatchArray,
+	) {
 		const filePath = decodeURIComponent(matches[1]);
 
 		const sanitizedPath = this.syncUtil.sanitizeDownloadPath(
 			filePath,
-			this.config.enabledSyncPaths,
+			this.config.syncPaths,
 		);
 
 		if (!this.vfs.exists(sanitizedPath))
@@ -76,7 +128,12 @@ export class Router {
 			);
 
 		try {
-			const fileStats = statSync(sanitizedPath);
+			const fileStats = await this.vfs.statPromisify(sanitizedPath);
+			res.setHeader(
+				"Content-Type",
+				this.httpServerHelper.getMimeText(path.extname(filePath)) ||
+					"text/plain",
+			);
 			res.setHeader("Content-Length", fileStats.size);
 			this.httpFileUtil.sendFile(res, sanitizedPath);
 		} catch (e) {
@@ -110,14 +167,15 @@ export class Router {
 		try {
 			for (const { route, handler } of routeTable) {
 				const matches = route.exec(req.url || "");
-				if (matches) return handler(res, matches);
+				if (matches) return handler(req, res, matches);
 			}
 
 			throw new HttpError(404, "Corter-ModSync: Unknown route");
 		} catch (e) {
-			this.logger.error(
-				`Corter-ModSync: Error when handling [${req.method} ${req.url}]:\n${e}`,
-			);
+			if (e instanceof Error)
+				this.logger.error(
+					`Corter-ModSync: Error when handling [${req.method} ${req.url}]:\n${e.message}\n${e.stack}`,
+				);
 
 			if (e instanceof HttpError) {
 				res.writeHead(e.code, e.codeMessage);

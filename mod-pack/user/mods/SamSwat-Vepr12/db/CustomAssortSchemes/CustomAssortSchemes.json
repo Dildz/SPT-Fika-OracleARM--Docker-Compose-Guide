@@ -1,0 +1,202 @@
+{
+    "SKIER": {
+		"items": [
+			{
+				"_id": "66c2ac4f8702ca13ae7ae9bb",
+				"_tpl": "weapon_molot_vepr12",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+				  "StackObjectsCount": 1000
+				}
+			  }, 
+			  {
+				"_id": "mag_vepr12_molot_5",
+				"_tpl": "mag_vepr12_molot_5",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+				  "StackObjectsCount": 1000
+				}
+			  }, 
+			  {
+				"_id": "mag_vepr12_molot_8",
+				"_tpl": "mag_vepr12_molot_8",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+				  "StackObjectsCount": 1000
+				}
+			  }, 
+			{
+				"_id": "vepr12_upgraded_id",
+				"_tpl": "weapon_molot_vepr12",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+				  "StackObjectsCount": 1000
+				}
+			  }, 
+			  {
+				"_id": "66c2ad1d60939fca3c14f134",
+				"_tpl": "barrel_vepr12_molot_305mm",
+				"parentId": "66c2ac4f8702ca13ae7ae9bb",
+				"slotId": "mod_muzzle"
+			},
+			{
+				"_id": "66c2ad381b8025a508b69560",
+				"_tpl": "muzzle_vepr12_molot",
+				"parentId": "66c2ad1d60939fca3c14f134",
+				"slotId": "mod_muzzle"
+			},
+			{
+				"_id": "66c2ad509ce0df80f125a361",
+				"_tpl": "receiver_vepr12_molot",
+				"parentId": "66c2ac4f8702ca13ae7ae9bb",
+				"slotId": "mod_reciever"
+			},
+			{
+				"_id": "66c2ad5e6d89541b1ab989d8",
+				"_tpl": "handguard_vepr12_molot",
+				"parentId": "66c2ac4f8702ca13ae7ae9bb",
+				"slotId": "mod_handguard"
+			},
+			{
+				"_id": "66c2ad6e4faa544acf3f33d7",
+				"_tpl": "pistolgrip_vepr12_molot",
+				"parentId": "66c2ac4f8702ca13ae7ae9bb",
+				"slotId": "mod_pistol_grip"
+			},
+			{
+				"_id": "66c2ad7e0ac7b4653f5f3215",
+				"_tpl": "mag_vepr12_molot_5",
+				"parentId": "66c2ac4f8702ca13ae7ae9bb",
+				"slotId": "mod_magazine"
+			},
+			{
+				"_id": "66c2ad8b4fc8b08be32f0aac",
+				"_tpl": "stock_vepr12_molot",
+				"parentId": "66c2ac4f8702ca13ae7ae9bb",
+				"slotId": "mod_stock"
+			},
+			{
+				"_id": "66c2ada1bd47327ca9356e27",
+				"_tpl": "cheekriser_vepr12_molot",
+				"parentId": "66c2ad8b4fc8b08be32f0aac",
+				"slotId": "mod_tactical_001"
+			},
+			{
+				"_id": "66c2adb1dbd1464356f61df9",
+				"_tpl": "sight_rear_molot_vepr12",
+				"parentId": "66c2ac4f8702ca13ae7ae9bb",
+				"slotId": "mod_sight_rear"
+			},
+			{
+				"_id": "66c2adbf0bf65ece01bb0604",
+				"_tpl": "magwell_vepr12_molot",
+				"parentId": "66c2ad1d60939fca3c14f134",
+				"slotId": "mod_tactical_001"
+			},
+			{
+				"_id": "vepr12_upgraded_barrelID",
+				"_tpl": "barrel_vepr12_molot_430mm",
+				"parentId": "vepr12_upgraded_id",
+				"slotId": "mod_muzzle"
+			},
+			{
+				"_id": "vepr12_upgraded_muzzleID",
+				"_tpl": "58272d7f2459774f6311ddfd",
+				"parentId": "vepr12_upgraded_barrelID",
+				"slotId": "mod_muzzle"
+			},
+			{
+				"_id": "vepr12_upgraded_receiverID",
+				"_tpl": "receiver_vepr12_molot",
+				"parentId": "vepr12_upgraded_id",
+				"slotId": "mod_reciever"
+			},
+			{
+				"_id": "vepr12_upgraded_hgID",
+				"_tpl": "handguard_vepr12_molot",
+				"parentId": "vepr12_upgraded_id",
+				"slotId": "mod_handguard"
+			},
+			{
+				"_id": "vepr12_upgraded_pgID",
+				"_tpl": "5b30ac585acfc433000eb79c",
+				"parentId": "vepr12_upgraded_id",
+				"slotId": "mod_pistol_grip"
+			},
+			{
+				"_id": "vepr12_upgraded_magazineID",
+				"_tpl": "mag_vepr12_molot_8",
+				"parentId": "vepr12_upgraded_id",
+				"slotId": "mod_magazine"
+			},
+			{
+				"_id": "vepr12_upgraded_tubeID",
+				"_tpl": "5cf50fc5d7f00c056c53f83c",
+				"parentId": "vepr12_upgraded_id",
+				"slotId": "mod_stock"
+			},
+			{
+				"_id": "vepr12_upgraded_stockID",
+				"_tpl": "55d4ae6c4bdc2d8b2f8b456e",
+				"parentId": "vepr12_upgraded_tubeID",
+				"slotId": "mod_stock"
+			},
+			{
+				"_id": "vepr12_upgraded_rsID",
+				"_tpl": "sight_rear_molot_vepr12",
+				"parentId": "vepr12_upgraded_id",
+				"slotId": "mod_sight_rear"
+			},
+			{
+				"_id": "vepr12_upgraded_magwellID",
+				"_tpl": "magwell_vepr12_molot",
+				"parentId": "vepr12_upgraded_barrelID",
+				"slotId": "mod_tactical_001"
+			}
+        ],
+        "barter_scheme": {
+			"66c2ac4f8702ca13ae7ae9bb": [
+				[
+					{
+						"count": 47105,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				]
+			],
+			"vepr12_upgraded_id": [
+				[
+					{
+						"count": 63626,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				]
+			],
+			"mag_vepr12_molot_5": [
+				[
+					{
+						"count": 6850,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				]
+			],
+			"mag_vepr12_molot_8": [
+				[
+					{
+						"count": 2900,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				]
+			]
+		},
+		"loyal_level_items": {
+			"66c2ac4f8702ca13ae7ae9bb": 1,
+			"vepr12_upgraded_id": 1,
+			"mag_vepr12_molot_5": 1,
+			"mag_vepr12_molot_8": 1
+		}
+    }
+}

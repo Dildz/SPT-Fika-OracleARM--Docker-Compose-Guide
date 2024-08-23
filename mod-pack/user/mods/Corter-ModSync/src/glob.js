@@ -1,6 +1,7 @@
 "use strict";
-// Full Credit to https://github.com/aleclarson/glob-regex
-// Copyright (c) 2016 Alec Larson
+/**
+ * Shamelessly stolen from - https://github.com/aleclarson/glob-regex
+ */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.globNoEnd = exports.glob = void 0;
 const dotRE = /\./g;

@@ -1,0 +1,136 @@
+{
+	"manifest": [
+		{
+			"key": "assets/content/weapons/vepr12/weapon_molot_vepr12_textures.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps"
+			]
+		},
+		{
+			"key": "assets/content/weapons/vepr12/client_assets.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/content/weapons/vepr12/weapon_molot_vepr12_textures.bundle"
+			]
+		},
+		{
+			"key": "assets/content/weapons/vepr12/weapon_molot_vepr12_12g_container.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/content/weapons/vepr12/weapon_molot_vepr12_textures.bundle",
+				"assets/content/weapons/vepr12/client_assets.bundle",
+				"assets/systems/effects/muzzleflash/muzzleflash.bundle",
+				"assets/systems/effects/smoke.bundle",
+				"assets/content/weapons/animations/spirit_animations.bundle",
+				"assets/content/weapons/animations/simple_animations.bundle",
+				"assets/content/weapons/weapon_root_anim_fix.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/weapons/additional_hands/client_assets.bundle",
+				"assets/content/audio/banks/saiga12.bundle",
+				"assets/content/audio/weapons/ak74.bundle",
+				"assets/content/audio/weapons/generic",
+				"assets/content/audio/weapons/saiga12.bundle",
+				"assets/content/weapons/saiga12/weapon_izhmash_saiga12k_10_12g.animatorcontrollerdata.bundle",
+				"assets/content/weapons/wip/kibas tuning prefabs/muzzlejets_templates/default_assets.bundle",
+				"assets/systems/effects/heathaze/defaultheathaze.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/vepr12/barrel_vepr12_molot_305mm.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/weapons/vepr12/weapon_molot_vepr12_textures.bundle",
+				"assets/systems/effects/smoke.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/vepr12/barrel_vepr12_molot_430mm.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/weapons/vepr12/weapon_molot_vepr12_textures.bundle",
+				"assets/systems/effects/smoke.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/vepr12/cheekriser_vepr12_molot.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/weapons/vepr12/weapon_molot_vepr12_textures.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/vepr12/handguard_vepr12_molot.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/weapons/vepr12/weapon_molot_vepr12_textures.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/vepr12/mag_vepr12_molot_shared.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/vepr12/mag_vepr12_molot_5.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/items/mods/vepr12/mag_vepr12_molot_shared.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/vepr12/mag_vepr12_molot_8.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/items/mods/vepr12/mag_vepr12_molot_shared.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/vepr12/magwell_vepr12_molot.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/weapons/vepr12/weapon_molot_vepr12_textures.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/vepr12/muzzle_vepr12_molot.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/weapons/vepr12/weapon_molot_vepr12_textures.bundle",
+				"assets/systems/effects/smoke.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/vepr12/pistolgrip_vepr12_molot.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/weapons/vepr12/weapon_molot_vepr12_textures.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/vepr12/receiver_vepr12_molot.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/weapons/vepr12/weapon_molot_vepr12_textures.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/vepr12/sight_rear_molot_vepr12.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/weapons/vepr12/weapon_molot_vepr12_textures.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/vepr12/stock_vepr12_molot.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/weapons/vepr12/weapon_molot_vepr12_textures.bundle"
+			]
+		}
+	]
+}

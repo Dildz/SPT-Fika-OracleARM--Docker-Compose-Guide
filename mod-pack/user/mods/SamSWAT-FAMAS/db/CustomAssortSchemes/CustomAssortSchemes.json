@@ -1,0 +1,148 @@
+{
+    "PEACEKEEPER": {
+		"items": [
+			{
+				"_id": "66c56cb52973eb5f7f5b5c1f",
+				"_tpl": "weapon_famas_556x45",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+				  "StackObjectsCount": 1000
+				}
+			  }, 
+			  {
+				"_id": "famas_rails_id",
+				"_tpl": "weapon_famas_556x45",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+				  "StackObjectsCount": 1000
+				}
+			  },
+			  {
+				"_id": "mag_famas_556x45_25",
+				"_tpl": "mag_famas_556x45_25",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+				  "StackObjectsCount": 1000
+				}
+			  },
+			  {
+				"_id": "mag_famas_556x45_30",
+				"_tpl": "mag_famas_556x45_30",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+				  "StackObjectsCount": 1000
+				}
+			  },
+			  {
+				"_id": "66c56cd208982a82905444cc",
+				"_tpl": "barrel_famas_488mm",
+				"parentId": "66c56cb52973eb5f7f5b5c1f",
+				"slotId": "mod_muzzle"
+			},
+			{
+				"_id": "66c56ce865f913961d88762a",
+				"_tpl": "muzzle_famas_flash_hider",
+				"parentId": "66c56cd208982a82905444cc",
+				"slotId": "mod_muzzle"
+			},
+			{
+				"_id": "66c56cf301d4ddbcbc235756",
+				"_tpl": "upper_famas",
+				"parentId": "66c56cb52973eb5f7f5b5c1f",
+				"slotId": "mod_scope"
+			},
+			{
+				"_id": "66c56cff0e5c4fb9555a07bf",
+				"_tpl": "mag_famas_556x45_25",
+				"parentId": "66c56cb52973eb5f7f5b5c1f",
+				"slotId": "mod_magazine"
+			},
+			{
+				"_id": "famas_rails_upperID",
+				"_tpl": "upper_famas",
+				"parentId": "famas_rails_id",
+				"slotId": "mod_scope"
+			},
+			{
+				"_id": "famas_rails_toprailID",
+				"_tpl": "mount_famas_optic_rail",
+				"parentId": "famas_rails_upperID",
+				"slotId": "mod_mount"
+			},
+			{
+				"_id": "famas_rails_siderailID",
+				"_tpl": "mount_famas_side",
+				"parentId": "famas_rails_id",
+				"slotId": "mod_tactical_002"
+			},
+			{
+				"_id": "famas_rails_bottomrailID",
+				"_tpl": "mount_famas_bottom",
+				"parentId": "famas_rails_id",
+				"slotId": "mod_handguard"
+			},
+			{
+				"_id": "famas_rails_magazineID",
+				"_tpl": "mag_famas_556x45_30",
+				"parentId": "famas_rails_id",
+				"slotId": "mod_magazine"
+			},
+			{
+				"_id": "66c5ebe134e1f5815e47cc69",
+				"_tpl": "barrel_famas_488mm",
+				"parentId": "famas_rails_id",
+				"slotId": "mod_muzzle"
+			},
+			{
+				"_id": "66c5ebe83e364ef217615189",
+				"_tpl": "muzzle_famas_flash_hider",
+				"parentId": "66c5ebe134e1f5815e47cc69",
+				"slotId": "mod_muzzle"
+			}
+        ],
+        "barter_scheme": {
+			"66c56cb52973eb5f7f5b5c1f": [
+				[
+					{
+						"count": 783.8,
+						"_tpl": "5696686a4bdc2da3298b456a"
+					}
+				]
+			],
+			"famas_rails_id": [
+				[
+					{
+						"count": 891.9,
+						"_tpl": "5696686a4bdc2da3298b456a"
+					}
+				]
+			],
+			"mag_famas_556x45_25": [
+				[
+					{
+						"count": 27.8,
+						"_tpl": "5696686a4bdc2da3298b456a"
+					}
+				]
+			],
+			"mag_famas_556x45_30": [
+				[
+					{
+						"count": 37.5,
+						"_tpl": "5696686a4bdc2da3298b456a"
+					}
+				]
+			]
+		},
+		"loyal_level_items": {
+			"66c56cb52973eb5f7f5b5c1f": 1,
+			"famas_rails_id": 1,
+			"mag_famas_556x45_25": 1,
+			"mag_famas_556x45_30": 1
+		}
+    }
+}

@@ -1,0 +1,114 @@
+{
+	"manifest": [
+		{
+			"key": "assets/content/weapons/valmod3/textures/valmod3_textures.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps"
+			]
+		},
+		{
+			"key": "assets/content/audio/valmod3/valmod3.bundle",
+			"dependencyKeys": [
+				"assets/content/audio/blendoptions/assets.bundle",
+				"assets/content/audio/weapons/vss.bundle"
+			]
+		},
+		{
+			"key": "assets/content/weapons/valmod3/client_assets.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/content/weapons/valmod3/textures/valmod3_textures.bundle"
+			]
+		},
+		{
+			"key": "assets/content/weapons/valmod3/weapon_valmod3_9x39_container.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/content/weapons/valmod3/textures/valmod3_textures.bundle",
+				"assets/systems/effects/muzzleflash/muzzleflash.bundle",
+				"assets/systems/effects/smoke.bundle",
+				"assets/content/weapons/animations/spirit_animations.bundle",
+				"assets/content/weapons/animations/simple_animations.bundle",
+				"assets/content/weapons/weapon_root_anim_fix.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/weapons/additional_hands/client_assets.bundle",
+				"assets/content/weapons/valmod3/client_assets.bundle",
+				"assets/content/audio/banks/ak74.bundle",
+				"assets/content/audio/valmod3/valmod3.bundle",
+				"assets/content/audio/weapons/kedr.bundle",
+				"assets/content/audio/weapons/ak74.bundle",
+				"assets/content/audio/weapons/generic",
+				"assets/content/weapons/val/weapon_tochmash_val_9x39.animatorcontrollerdata.bundle",
+				"assets/content/weapons/wip/kibas tuning prefabs/muzzlejets_templates/default_assets.bundle",
+				"assets/systems/effects/heathaze/defaultheathaze.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/valmod3/valmod3_barrel.bundle",
+			"dependencyKeys": [
+				"assets/content/weapons/valmod3/textures/valmod3_textures.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/valmod3/valmod3_foregrip.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/valmod3/valmod3_sights_textures.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/valmod3/valmod3_front_sight.bundle",
+			"dependencyKeys": [
+				"assets/content/items/mods/valmod3/valmod3_sights_textures.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/valmod3/valmod3_magazine.bundle",
+			"dependencyKeys": [
+				"assets/content/weapons/valmod3/textures/valmod3_textures.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/valmod3/valmod3_rear_sight.bundle",
+			"dependencyKeys": [
+				"assets/content/items/mods/valmod3/valmod3_sights_textures.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/valmod3/valmod3_receiver.bundle",
+			"dependencyKeys": [
+				"assets/content/weapons/valmod3/textures/valmod3_textures.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/valmod3/valmod3_stock.bundle",
+			"dependencyKeys": [
+				"assets/content/weapons/valmod3/textures/valmod3_textures.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/valmod3/valmod3_tube_adapter.bundle",
+			"dependencyKeys": [
+				"assets/content/weapons/valmod3/textures/valmod3_textures.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		}
+	]
+}

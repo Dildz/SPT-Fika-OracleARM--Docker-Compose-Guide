@@ -1,7 +1,0 @@
-**/node_modules
-/tmp
-/dist
-**/package-lock.json
-**/pnpm-lock.yaml
-*.js
-*.map

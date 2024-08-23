@@ -1,0 +1,9 @@
+{
+  "name": "AUG Attachment Pack",
+  "author": "Dueleus",
+  "license": "CC BY-NC-SA 4.0",
+  "version": "1.0.0",
+  "sptVersion": "3.9.x",
+  "main": "mod.js",
+	"isBundleMod": true
+}

@@ -1,0 +1,116 @@
+{
+	"manifest": [
+		{
+			"key": "assets/content/weapons/l85a2/textures/l85a2_textures.bundle",
+			"dependencyKeys": []
+		},
+		{
+			"key": "assets/content/items/mods/l85a2/l85a2_materials.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/content/weapons/l85a2/textures/l85a2_textures.bundle"
+			]
+		},
+		{
+			"key": "assets/content/audio/l85a2.bundle",
+			"dependencyKeys": [
+				"assets/content/audio/blendoptions/assets.bundle",
+				"assets/content/audio/banks/m4a1.bundle"
+			]
+		},
+		{
+			"key": "assets/content/weapons/l85a2/client_assets.bundle",
+			"dependencyKeys": [
+				"cubemaps",
+				"shaders",
+				"assets/content/weapons/l85a2/textures/l85a2_textures.bundle"
+			]
+		},
+		{
+			"key": "assets/content/weapons/l85a2/weapon_l85a2_556x45_container.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/content/weapons/l85a2/textures/l85a2_textures.bundle",
+				"assets/systems/effects/muzzleflash/muzzleflash.bundle",
+				"assets/content/weapons/animations/spirit_animations.bundle",
+				"assets/content/weapons/animations/simple_animations.bundle",
+				"assets/content/weapons/weapon_root_anim_fix.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/weapons/additional_hands/client_assets.bundle",
+				"assets/content/weapons/l85a2/client_assets.bundle",
+				"assets/content/audio/l85a2.bundle",
+				"assets/content/audio/weapons/ak74.bundle",
+				"assets/content/audio/weapons/generic",
+				"assets/content/weapons/mdr/weapon_dt_mdr_556x45.animatorcontrollerdata.bundle",
+				"assets/content/weapons/wip/kibas tuning prefabs/muzzlejets_templates/default_assets.bundle",
+				"assets/systems/effects/heathaze/defaultheathaze.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/l85a2/barrel_l85a2_518mm.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/items/mods/l85a2/l85a2_materials.bundle",
+				"assets/systems/effects/smoke.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/l85a2/handguard_l85a2_std.bundle",
+			"dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/content/items/mods/l85a2/l85a2_materials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/l85a2/handguard_l85a2_daniel_defense_rail_textures.bundle",
+			"dependencyKeys": []
+		},
+		{
+			"key": "assets/content/items/mods/l85a2/handguard_l85a2_daniel_defense_rail.bundle",
+			"dependencyKeys": [
+				"shaders",
+				"cubemaps",
+				"assets/content/items/mods/l85a2/handguard_l85a2_daniel_defense_rail_textures.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/l85a2/mount_l85a2_rail.bundle",
+			"dependencyKeys": [
+				"assets/content/items/mods/l85a2/l85a2_materials.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/l85a2/muzzle_l85a2_556x45.bundle",
+			"dependencyKeys": [
+				"assets/content/items/mods/l85a2/l85a2_materials.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"assets/systems/effects/smoke.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/l85a2/pistolgrip_l85a2.bundle",
+			"dependencyKeys": [
+				"assets/content/items/mods/l85a2/l85a2_materials.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/l85a2/sight_front_l85a2.bundle",
+			"dependencyKeys": [
+				"assets/content/items/mods/l85a2/l85a2_materials.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		},
+		{
+			"key": "assets/content/items/mods/l85a2/sight_rear_l85a2.bundle",
+			"dependencyKeys": [
+				"assets/content/items/mods/l85a2/l85a2_materials.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+			]
+		}
+	]
+}

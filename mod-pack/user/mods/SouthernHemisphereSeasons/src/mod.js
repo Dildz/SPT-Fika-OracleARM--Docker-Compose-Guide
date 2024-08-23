@@ -39,7 +39,7 @@ const weatherConfigPath = path.resolve(__dirname, "../config/weatherConfigAdvanc
 let weatherBySeason;
 if (fs.existsSync(weatherConfigPath)) {
     const weatherConfig = require(weatherConfigPath);
-    weatherBySeason = weatherConfig.weatherBySeason; // Access the correct nested object
+    weatherBySeason = weatherConfig.weatherBySeason;
 }
 else {
     console.error(`Weather configuration file not found at: ${weatherConfigPath}`);

@@ -8,7 +8,7 @@ class Mod {
     static container;
     static loadFailed = false;
     static config;
-    preSptLoad(container) {
+    async preSptLoad(container) {
         Mod.container = container;
         const logger = container.resolve("WinstonLogger");
         const vfs = container.resolve("VFS");
@@ -18,7 +18,7 @@ class Mod {
         const httpListenerService = container.resolve("HttpListenerModService");
         httpListenerService.registerHttpListener("ModSyncListener", this.canHandleOverride, this.handleOverride);
         try {
-            Mod.config = configUtil.load();
+            Mod.config = await configUtil.load();
         }
         catch (e) {
             Mod.loadFailed = true;
@@ -33,9 +33,10 @@ class Mod {
         const logger = Mod.container.resolve("WinstonLogger");
         const vfs = Mod.container.resolve("VFS");
         const httpFileUtil = Mod.container.resolve("HttpFileUtil");
+        const httpServerHelper = Mod.container.resolve("HttpServerHelper");
         const modImporter = Mod.container.resolve("PreSptModLoader");
         const syncUtil = new sync_1.SyncUtil(vfs, Mod.config, logger);
-        const router = new router_1.Router(Mod.config, syncUtil, vfs, httpFileUtil, modImporter, logger);
+        const router = new router_1.Router(Mod.config, syncUtil, vfs, httpFileUtil, httpServerHelper, modImporter, logger);
         try {
             router.handleRequest(req, res);
         }

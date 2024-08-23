@@ -1,0 +1,190 @@
+{
+    "MECHANIC": {
+		"items": [
+			{
+				"_id": "66c269000c1333ca9765e6be",
+				"_tpl": "weapon_valmod3_9x39",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+				  "StackObjectsCount": 1000
+				}
+			  }, 
+			  {
+				"_id": "66c28b7c1351933c49c3ae4b",
+				"_tpl": "valmod3_magazine",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+				  "StackObjectsCount": 1000
+				}
+			  },
+			  {
+				"_id": "66c269d07ae40935c1d32ddc",
+				"_tpl": "valmod3_front_sight",
+				"parentId": "66c269917386e61de2e58bd7",
+				"slotId": "mod_sight_front"
+			  },
+			  {
+				"_id": "66c26a91cf08bd8e686e0545",
+				"_tpl": "valmod3_receiver",
+				"parentId": "66c269000c1333ca9765e6be",
+				"slotId": "mod_reciever"
+			},
+			  {
+				"_id": "66c289fae683c145575d06bf",
+				"_tpl": "valmod3_rear_sight",
+				"parentId": "66c26a91cf08bd8e686e0545",
+				"slotId": "mod_sight_rear"
+			  },
+			  {
+				"_id": "66c26a591bb0401d1324bab5",
+				"_tpl": "valmod3_tube_adapter",
+				"parentId": "66c269000c1333ca9765e6be",
+				"slotId": "mod_stock"
+			  },
+			  {
+				"_id": "66c26a7d8aaa5cdd0bac185d",
+				"_tpl": "valmod3_stock",
+				"parentId": "66c26a591bb0401d1324bab5",
+				"slotId": "mod_stock"
+			  },
+			  {
+				"_id": "66c269af544cb8a859884fc5",
+				"_tpl": "5649ae4a4bdc2d1b2b8b4588",
+				"parentId": "66c269000c1333ca9765e6be",
+				"slotId": "mod_pistol_grip"
+			  },
+			  {
+				"_id": "66c269ede6f3d35ba92e17fe",
+				"_tpl": "valmod3_magazine",
+				"parentId": "66c269000c1333ca9765e6be",
+				"slotId": "mod_magazine"
+			  },
+			  {
+				"_id": "66c269917386e61de2e58bd7",
+				"_tpl": "valmod3_barrel",
+				"parentId": "66c269000c1333ca9765e6be",
+				"slotId": "mod_muzzle"
+			  },
+			  {
+				"_id": "valmod3_orig_id",
+				"_tpl": "weapon_valmod3_9x39",
+				"parentId": "hideout",
+				"slotId": "hideout",
+				"upd": {
+				  "StackObjectsCount": 1000
+				}
+			  },
+			  {
+				"_id": "valmod3_orig_barrelID",
+				"_tpl": "valmod3_barrel",
+				"parentId": "valmod3_orig_id",
+				"slotId": "mod_muzzle"
+			},
+			{
+				"_id": "valmod3_orig_receiverID",
+				"_tpl": "valmod3_receiver",
+				"parentId": "valmod3_orig_id",
+				"slotId": "mod_reciever"
+			},
+			{
+				"_id": "valmod3_orig_pgID",
+				"_tpl": "5649ae4a4bdc2d1b2b8b4588",
+				"parentId": "valmod3_orig_id",
+				"slotId": "mod_pistol_grip"
+			},
+			{
+				"_id": "valmod3_orig_magazineID",
+				"_tpl": "valmod3_magazine",
+				"parentId": "valmod3_orig_id",
+				"slotId": "mod_magazine"
+			},
+			{
+				"_id": "valmod3_orig_adapterID",
+				"_tpl": "valmod3_tube_adapter",
+				"parentId": "valmod3_orig_id",
+				"slotId": "mod_stock"
+			},
+			{
+				"_id": "valmod3_orig_stockID",
+				"_tpl": "valmod3_stock",
+				"parentId": "valmod3_orig_adapterID",
+				"slotId": "mod_stock"
+			},
+			{
+				"_id": "valmod3_orig_rsID",
+				"_tpl": "valmod3_rear_sight",
+				"parentId": "valmod3_orig_receiverID",
+				"slotId": "mod_sight_rear"
+			},
+			{
+				"_id": "valmod3_orig_fsID",
+				"_tpl": "valmod3_front_sight",
+				"parentId": "valmod3_orig_barrelID",
+				"slotId": "mod_sight_front"
+			},
+			{
+				"_id": "valmod3_orig_recsopeID",
+				"_tpl": "5c7d55f52e221644f31bff6a",
+				"parentId": "valmod3_orig_receiverID",
+				"slotId": "mod_scope"
+			},
+			{
+				"_id": "valmod3_orig_scopeID",
+				"_tpl": "5c7d55de2e221644f31bff68",
+				"parentId": "valmod3_orig_recsopeID",
+				"slotId": "mod_scope"
+			},
+			{
+				"_id": "valmod3_orig_anpeqID",
+				"_tpl": "544909bb4bdc2d6f028b4577",
+				"parentId": "valmod3_orig_barrelID",
+				"slotId": "mod_tactical_001"
+			},
+			{
+				"_id": "valmod3_orig_tac00ID",
+				"_tpl": "560d657b4bdc2da74d8b4572",
+				"parentId": "valmod3_orig_barrelID",
+				"slotId": "mod_tactical_000"
+			},
+			{
+				"_id": "valmod3_orig_foregripID",
+				"_tpl": "valmod3_foregrip",
+				"parentId": "valmod3_orig_barrelID",
+				"slotId": "mod_foregrip"
+			}
+        ],
+        "barter_scheme": {
+			"66c269000c1333ca9765e6be": [
+				[
+					{
+						"count": 153897,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				]
+			],
+			"valmod3_orig_id": [
+				[
+					{
+						"count": 270000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				]
+			],
+			"66c28b7c1351933c49c3ae4b": [
+				[
+					{
+						"count": 43650,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				]
+			]
+		},
+		"loyal_level_items": {
+			"66c269000c1333ca9765e6be": 2,
+			"valmod3_orig_id": 3,
+			"66c28b7c1351933c49c3ae4b": 2
+		}
+    }
+}
