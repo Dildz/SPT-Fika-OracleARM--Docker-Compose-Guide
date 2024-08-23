@@ -6,18 +6,28 @@ docker run --pull=never -v $HOME/docker/containers/spt-fika-modded/server:/opt/s
 
 docker start modded-fika
 
-docker stop modded-fika
-
 docker logs modded-fika -f
+
+docker stop modded-fika
 
 docker update --restart always modded-fika  (after 1st run)
 
-Ownership Commands:
-sudo chmod -R 775 $HOME/docker/containers/spt-fika/server/user/profiles
-sudo chown -R ubuntu:ubuntu $HOME/docker/containers/spt-fika/server/user/profiles
+docker ps -a
 
-sudo chmod -R 775 $HOME/docker/containers/spt-fika/server/user/mods
-sudo chown -R ubuntu:ubuntu $HOME/docker/containers/spt-fika/server/user/mods
+docker rm [container-name/id]
+
+docker images -a
+
+docker rmi [image-name/id]
+
+docker image prune
+
+Ownership Commands:
+sudo chmod -R 775 /home/ubuntu/docker/containers/spt-fika/server/user/profiles
+sudo chown -R ubuntu:ubuntu /home/ubuntu/docker/containers/spt-fika/server/user/profiles
+
+sudo chmod -R 775 /home/ubuntu/docker/containers/spt-fika/server/user/mods
+sudo chown -R ubuntu:ubuntu /home/ubuntu/docker/containers/spt-fika/server/user/mods
 
 Reboot Command (run inside fika folder):
 sudo ./restart_fika.sh

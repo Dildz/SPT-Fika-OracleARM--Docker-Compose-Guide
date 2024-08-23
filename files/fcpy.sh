@@ -1,19 +1,17 @@
 # fcpy.sh
 
 #!/bin/bash
-echo "MODDED FIKA Docker (SPT 3.9.5)"
+echo "MODDED FIKA Docker (SPT 3.9.x)"
 
-LOGFILE="$HOME/docker/logs/modded-fika.log"
+LOGFILE="/home/ubuntu/docker/logs/modded-fika.log"
 
 # Ensure the log directory exists and set permissions
-mkdir -p "$HOME/docker/logs"
-chmod 775 "$HOME/docker/logs"
-chown ubuntu:ubuntu "$HOME/docker/logs"
+mkdir -p "/home/ubuntu/docker/logs"
+chmod 775 "/home/ubuntu/docker/logs"
+chown ubuntu:ubuntu "/home/ubuntu/docker/logs"
 
 # Clear the log file if it exists, or create it if it doesn't
 > $LOGFILE
-chmod 664 $LOGFILE
-chown ubuntu:ubuntu $LOGFILE
 
 if [ -d "/opt/srv" ]; then
     start=$(date +%s)
@@ -25,8 +23,6 @@ if [ -d "/opt/srv" ]; then
     echo "Files copied to your machine in $(($end-$start)) seconds."
     echo "Starting the server to generate all the required files"
     cd /opt/server
-    chown -R ubuntu:ubuntu ./*
-    chmod -R 775 ./*
     sed -i 's/127.0.0.1/0.0.0.0/g' /opt/server/SPT_Data/Server/configs/http.json
     NODE_CHANNEL_FD= timeout --preserve-status 40s ./SPT.Server.exe </dev/null >/dev/null 2>&1 
     echo "Follow the instructions to proceed!"
