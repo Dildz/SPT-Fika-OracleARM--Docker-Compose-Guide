@@ -42,11 +42,62 @@ Where Hostname is your server's assigned ZT IP & IdentityFile is the SSH key fil
 **DON"T LOOSE YOUR SSH KEY FILE!!!** Without this you won't be able to connect to your Oracle server - keep it somewhere **SAFE**
 
 ## Installing Docker
-First of all you need Docker. [You can download it by following this guide here.](https://docs.docker.com/engine/install/ubuntu/)
+First of all you need Docker. [Official setup guide here.](https://docs.docker.com/engine/install/ubuntu/)
 
 This guide is for ubuntu but you can find guides for other operating systems/distributions on their website.
 
-You can verify your Docker installation by running `docker --version`
+Here is a summary of the install commands...
+
+Step 1: Update the Package Index and Install Prerequisites
+```
+sudo apt-get update
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+```
+
+Step 2: Add Docker’s Official GPG Key
+```
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+```
+
+Step 3: Set Up the Stable Repository
+```
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] \
+https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | \
+sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+
+Step 4: Update the Package Index Again
+```
+sudo apt-get update
+```
+
+Step 5: Install latest Docker Engine
+```
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+Step 6: Enable and Start Docker
+```
+sudo systemctl enable docker
+```
+```
+sudo systemctl start docker
+```
+
+Step 5: Add user to the docker group & activate the changes
+```
+sudo usermod -aG docker $USER
+```
+```
+newgrp docker
+```
+
+You can verify your Docker installation by running `docker --version` or by running `docker run hello-world`
 
 ## Pre-Setup
 Use the pre_FIKA_setup.sh file found in [Releases](https://github.com/Dildz/SPT-Fika-modded--Docker-Guide) to create the docker folders, clone the Github repository & copy the required files into the fika directory.
