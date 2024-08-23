@@ -57,9 +57,6 @@ COPY fcpy.sh /opt/fcpy.sh
 # Fix for Windows
 RUN dos2unix /opt/fcpy.sh
 
-# Set permissions and change ownership to ubuntu user (change to your user)
-RUN chmod -R 775 /opt && chown -R ubuntu:ubuntu /opt
-
 # Exposing FIKA ports
 EXPOSE 6969
 
