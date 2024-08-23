@@ -3,6 +3,7 @@
 		"BepInEx/plugins",
 		"BepInEx/patchers",
 		"BepInEx/config",
+		"SPT_Data/Server/images/traders",
 		{
 			"enabled": false,
 			"path": "user/mods",
