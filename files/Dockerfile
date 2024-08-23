@@ -6,9 +6,9 @@
 # Change the FIKA & SPT tags to the latest versions found in the SPT and FIKA discords
 FROM ubuntu:latest AS builder
 ARG FIKA=HEAD^
-ARG FIKA_TAG=v2.2.7
+ARG FIKA_TAG=v2.2.8
 ARG SPT=HEAD^
-ARG SPT_TAG=3.9.5
+ARG SPT_TAG=3.9.8
 ARG NODE=20.11.1
 
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
