@@ -183,7 +183,7 @@ Logs are also parsed to a file in the $HOME/docker/logs folder for further proce
 
 For example - I have a bot for my discord server that updates an embed message every 10sec showing FIKA server information.
 
-![FIKA status embed](images/embedFIKAstatuse.png)
+![status embed](images/embedFIKAstatus.png)
 
 This way other players can quickly see if the fika server is online, who is online, if a raid is active & when the server is going to restart.
 
