@@ -1,0 +1,60 @@
+{
+    // This config file is used to set the probabilities of each heavy trroper mask in the loot pool.
+    // Probabilities are weights and NOT percentages of spawning, the higher the number the higher the chance of spawning, lower numbers will make it less likely to spawn.
+
+    // ONLY change the numbers, do NOT change the names of the items.
+    // If you want to disable an item from spawning in a specific loot container, set the number to 0.
+
+    "probabilities": {
+        "heavy": { // Armor Class 5, rare and expensive
+            "5909d89086f77472591234a0": 20, // Weapon Box 1
+            "5909d7cf86f77470ee57d75a": 20, // Weapon Box 2
+            "5909d76c86f77471e53d2adf": 20, // Weapon Box 3
+            "5909d5ef86f77467974efbd8": 20, // Weapon Box 4
+            "5d6d2b5486f774785c2ba8ea": 25, // Ground Cache
+            "578f87ad245977356274f2cc": 5, // Wooden Crate
+            "578f87a3245977356274f2cb": 15, // Duffle Bag
+            "5909e4b686f7747f5b744fa4": 20  // Dead Scav
+        },
+        "heavycult": { // Armor Class 5, extremely rare and expensive
+            "5909d89086f77472591234a0": 15, // Weapon Box 1
+            "5909d7cf86f77470ee57d75a": 15, // Weapon Box 2
+            "5909d76c86f77471e53d2adf": 15, // Weapon Box 3
+            "5909d5ef86f77467974efbd8": 15, // Weapon Box 4
+            "5d6d2b5486f774785c2ba8ea": 20, // Ground Cache
+            "578f87ad245977356274f2cc": 5, // Wooden Crate
+            "578f87a3245977356274f2cb": 10, // Duffle Bag
+            "5909e4b686f7747f5b744fa4": 20  // Dead Scav
+        },
+        "heavytan": { // Armor Class 4
+            "5909d89086f77472591234a0": 35, // Weapon Box 1
+            "5909d7cf86f77470ee57d75a": 35, // Weapon Box 2
+            "5909d76c86f77471e53d2adf": 35, // Weapon Box 3
+            "5909d5ef86f77467974efbd8": 35, // Weapon Box 4
+            "5d6d2b5486f774785c2ba8ea": 35, // Ground Cache
+            "578f87ad245977356274f2cc": 15, // Wooden Crate
+            "578f87a3245977356274f2cb": 20, // Duffle Bag
+            "5909e4b686f7747f5b744fa4": 30  // Dead Scav
+        },
+        "heavyblack": { // Armor Class 4
+            "5909d89086f77472591234a0": 35, // Weapon Box 1
+            "5909d7cf86f77470ee57d75a": 35, // Weapon Box 2
+            "5909d76c86f77471e53d2adf": 35, // Weapon Box 3
+            "5909d5ef86f77467974efbd8": 35, // Weapon Box 4
+            "5d6d2b5486f774785c2ba8ea": 35, // Ground Cache
+            "578f87ad245977356274f2cc": 15, // Wooden Crate
+            "578f87a3245977356274f2cb": 20, // Duffle Bag
+            "5909e4b686f7747f5b744fa4": 30  // Dead Scav
+        },
+        "heavycoyote": { // Armor Class 4
+            "5909d89086f77472591234a0": 35, // Weapon Box 1
+            "5909d7cf86f77470ee57d75a": 35, // Weapon Box 2
+            "5909d76c86f77471e53d2adf": 35, // Weapon Box 3
+            "5909d5ef86f77467974efbd8": 35, // Weapon Box 4
+            "5d6d2b5486f774785c2ba8ea": 35, // Ground Cache
+            "578f87ad245977356274f2cc": 15, // Wooden Crate
+            "578f87a3245977356274f2cb": 20, // Duffle Bag
+            "5909e4b686f7747f5b744fa4": 30  // Dead Scav
+        }
+    }
+}

@@ -68,18 +68,18 @@
          "woods": 0
       },
       "scav_snipers": {
-         "customs": 65,
+         "customs": 85,
          "factory": 0,
          "factory_night": 0,
          "groundzero": 0,
          "groundzero_high": 0,
          "interchange": 0,
          "laboratory": 0,
-         "lighthouse": 65,
+         "lighthouse": 85,
          "reserve": 0,
-         "shoreline": 65,
-         "streets": 65,
-         "woods": 65
+         "shoreline": 85,
+         "streets": 85,
+         "woods": 85
       }
    },
    "MaxBotCap": {

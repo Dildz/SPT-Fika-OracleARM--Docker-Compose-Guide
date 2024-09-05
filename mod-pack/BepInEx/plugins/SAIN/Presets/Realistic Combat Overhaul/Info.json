@@ -1,0 +1,11 @@
+{
+  "Name": "Realistic Combat Overhaul",
+  "Description": "Balances AI behavior to play out firefights in a realistic way",
+  "Creator": "Tritantrfl7",
+  "SAINVersion": "3.1.0",
+  "SAINPresetVersion": "3.1.0",
+  "DateCreated": "08/08/2024 00:00:00",
+  "BaseSAINDifficulty": "hard",
+  "IsCustom": true,
+  "CanEditName": true
+}

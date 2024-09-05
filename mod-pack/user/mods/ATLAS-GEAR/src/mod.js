@@ -35,6 +35,21 @@ class AddItems {
             "dollars": "5696686a4bdc2da3298b456a",
             "euros": "569668774bdc2da2298b4568"
         };
+        //Map Names
+        const maps = {
+            "customs": "bigmap",
+            "factoryDay": "factory4_day",
+            "factoryNight": "factory4_night",
+            "woods": "woods",
+            "reserve": "rezervbase",
+            "shoreline": "shoreline",
+            "interchange": "interchange",
+            "streets": "tarkovstreets",
+            "lighthouse": "lighthouse",
+            "labs": "laboratory",
+            "groundzero": "sandbox",
+            "groundzero20": "sandbox_high"
+        };
         //Get the server database and our custom database
         this.db = databaseServer.getTables();
         this.mydb = databaseImporter.loadRecursive(`${modLoader.getModPath(modFolderName)}database/`);
@@ -58,6 +73,10 @@ class AddItems {
                 this.addLocales(customID, sptID, customItem);
                 //Trades
                 //this.addTrades(customID, customItem, traders, currencies);
+                //Static Loot
+                if ("addToStaticLoot" in customItem) {
+                    this.addToStaticLoot(sptID, customItem.addToStaticLoot, maps);
+                }
             }
         }
         this.logger.debug(modFolderName + " items and handbook finished");
@@ -104,9 +123,11 @@ class AddItems {
             dbMastering.push(this.mydb.globals.config.Mastering[weapon]);
         for (const weapon in dbMastering) {
             if (dbMastering[weapon].Name == "SR25")
-                dbMastering[weapon].Templates.push("0088_ATL_SR25_FDE_8800");
+                dbMastering[weapon].Templates.push("4D4341544C4153474541520C");
         }
         this.logger.debug(modFolderName + " mastery finished");
+        //Maps
+        //for (const map of Object.values(maps)){}
     }
     cloneItem(itemToClone, customID, sptID) {
         //Clone an item by its ID from the SPT items.json
@@ -429,6 +450,24 @@ class AddItems {
             if (isItem && customItem.presets) {
                 for (const preset in customItem.presets) {
                     this.db.locales.global[localeID][preset] = customItem.presets[preset];
+                }
+            }
+        }
+    }
+    addToStaticLoot(sptID, staticLootProbabilities, maps) {
+        //For every map
+        for (const map of Object.values(maps)) {
+            const mapStaticLoot = this.db.locations[map].staticLoot;
+            //Add a probability to spawn custom item in each given container type
+            for (const [staticLootContainer, probability] of Object.entries(staticLootProbabilities)) {
+                try {
+                    mapStaticLoot[staticLootContainer].itemDistribution.push({
+                        "tpl": sptID,
+                        "relativeProbability": probability
+                    });
+                }
+                catch (error) {
+                    this.logger.debug("Could not add " + sptID + " to container " + staticLootContainer + " on map " + map);
                 }
             }
         }

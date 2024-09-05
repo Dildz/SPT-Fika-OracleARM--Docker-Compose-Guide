@@ -1,0 +1,72 @@
+{
+	"manifest": [
+		{
+			"key": "assets/content/items/mods/sights rear/sight_rear_ak_izhmash_ak12_rear_sight_std.bundle",
+			"dependencyKeys": []
+		},
+		{
+			"key": "assets/content/items/mods/sights rear/sight_rear_all_hk_mp7_std.bundle",
+			"dependencyKeys": []
+		},
+		{
+			"key": "assets/content/items/mods/sights rear/sight_rear_all_kac_folding_micro_sight.bundle",
+			"dependencyKeys": []
+		},
+		{
+			"key": "assets/content/items/mods/sights rear/sight_rear_all_kac_folding_sight.bundle",
+			"dependencyKeys": []
+		},
+		{
+			"key": "assets/content/items/mods/sights rear/sight_rear_m14_springfield_armory_enlarged_military_aperture_135.bundle",
+			"dependencyKeys": []
+		},
+		{
+			"key": "assets/content/items/mods/sights rear/sight_rear_sa58_ds_arms_metric_holand_type_rear_sight.bundle",
+			"dependencyKeys": []
+		},
+		{
+			"key": "assets/content/items/mods/sights rear/sight_rear_g36_hk_std.bundle",
+			"dependencyKeys": []
+		},
+		{
+			"key": "assets/content/items/mods/sights rear/sight_rear_all_kriss_defiance_low_profile_flip_up.bundle",
+			"dependencyKeys": []
+		},
+		{
+			"key": "assets/content/items/mods/sights rear/sight_rear_all_hk_416_flip_up.bundle",
+			"dependencyKeys": []
+		},
+		{
+			"key": "assets/content/items/mods/sights rear/sight_rear_all_fn_scar_rear_sight_std.bundle",
+			"dependencyKeys": []
+		},
+		{
+			"key": "assets/content/items/mods/sights rear/sight_rear_all_ckib_ash12_std.bundle",
+			"dependencyKeys": []
+		},
+		{
+			"key": "assets/content/items/mods/sights rear/sight_rear_ak_sag_mk3_chassis_rear_sight.bundle",
+			"dependencyKeys": []
+		},
+		{
+			"key": "assets/content/items/mods/sights rear/sight_rear_ak_izhmash_rpk16_rear_sight_std.bundle",
+			"dependencyKeys": []
+		},
+		{
+			"key": "assets/content/items/mods/sights rear/sight_rear_ar15_colt_a2.bundle",
+			"dependencyKeys": []
+		},
+		{
+			"key": "assets/content/items/mods/sights rear/sight_rear_ar15_colt_carry_hande_std.bundle",
+			"dependencyKeys": []
+		},
+		{
+			"key": "assets/content/items/mods/sights rear/sight_rear_ak_tactica_tula_tt01.bundle",
+			"dependencyKeys": []
+		},
+		{
+			"key": "assets/content/items/mods/sights rear/sight_rear_mp9_bt_mp9_std.bundle",
+			"dependencyKeys": []
+		}
+	]
+}

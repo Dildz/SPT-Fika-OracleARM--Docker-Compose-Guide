@@ -1,0 +1,11 @@
+{
+    // Liklihood of boss having a lega medal in pocket
+    // It's not strictly a percentage - see examples below
+    // A setting of 15 is roughly 15% chance
+    // A setting of 20 is roughly 19% chance
+    // A setting of 40 is roughly 36% chance
+    // A setting of 100 is roughly 66% chance
+    // A setting of 500 is roughly 97% chance
+    // IF YOU WANT TO SEE THE CHANCE OF THE VALUE YOU SET, LOOK IN YOUR SERVER LOG
+    "legaMedalChance": 20
+}

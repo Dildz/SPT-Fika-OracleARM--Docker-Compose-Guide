@@ -3,6 +3,7 @@
 		"BepInEx/plugins",
 		"BepInEx/patchers",
 		"BepInEx/config",
+		"BepInEx/plugins/BobbysMusicPlayer",
 		"SPT_Data/Server/images/traders",
 		{
 			"enabled": false,

@@ -24,8 +24,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.InstanceManager = void 0;
-const fs = __importStar(require("fs"));
-const path = __importStar(require("path"));
+const path = __importStar(require("node:path"));
 class InstanceManager {
     //#region Accessible in or after preAkiLoad
     modName;
@@ -43,6 +42,7 @@ class InstanceManager {
     itemHelper;
     logger;
     staticRouter;
+    vfs;
     //#endregion
     //#region Accessible in or after postDBLoad
     database;
@@ -65,7 +65,7 @@ class InstanceManager {
         this.itemHelper = container.resolve("ItemHelper");
         this.logger = container.resolve("WinstonLogger");
         this.staticRouter = container.resolve("StaticRouterModService");
-        this.getPath();
+        this.vfs = container.resolve("VFS");
     }
     postDBLoad(container) {
         this.database = container.resolve("DatabaseServer").getTables();
@@ -75,17 +75,6 @@ class InstanceManager {
         this.ragfairPriceService = container.resolve("RagfairPriceService");
         this.importerUtil = container.resolve("ImporterUtil");
         this.hashUtil = container.resolve("HashUtil");
-    }
-    getPath() {
-        const dirPath = path.dirname(__filename);
-        const modDir = path.join(dirPath, '..', '..');
-        const key = "V2F5ZmFyZXI=";
-        const keyDE = Buffer.from(key, 'base64');
-        const contents = fs.readdirSync(modDir).includes(keyDE.toString());
-        if (contents) {
-            return true;
-        }
-        return false;
     }
 }
 exports.InstanceManager = InstanceManager;

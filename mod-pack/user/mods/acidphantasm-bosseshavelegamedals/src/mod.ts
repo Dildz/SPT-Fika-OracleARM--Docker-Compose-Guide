@@ -1,13 +1,19 @@
-import { DependencyContainer } from "tsyringe";
+import { container, DependencyContainer } from "tsyringe";
 
 import { IPostDBLoadMod } from "@spt/models/external/IPostDBLoadMod";
 import { DatabaseService } from "@spt/services/DatabaseService";
 import { IDatabaseTables } from "@spt/models/spt/server/IDatabaseTables";
 import { ILogger } from "@spt/models/spt/utils/ILogger";
+import jsonc from "jsonc";
+import path from "path";
+import { VFS } from "@spt/utils/VFS";
 
 class BossesHaveLegaMedals implements IPostDBLoadMod
 {
     private logger: ILogger
+
+    private static vfs = container.resolve<VFS>("VFS");    
+    private static config: Config = jsonc.parse(BossesHaveLegaMedals.vfs.readFile(path.resolve(__dirname, "../config/config.jsonc")));
 
     public postDBLoad(container: DependencyContainer): void
     {
@@ -15,74 +21,35 @@ class BossesHaveLegaMedals implements IPostDBLoadMod
         this.logger = container.resolve<ILogger>("WinstonLogger");
         const tables: IDatabaseTables = databaseService.getTables();
 
-        const glukhar = tables.bots.types.bossgluhar.inventory.items.Pockets;
-        const kaban = tables.bots.types.bossboar.inventory.items.Pockets;
-        const killa = tables.bots.types.bosskilla.inventory.items.Pockets;
-        const kollontay = tables.bots.types.bosskolontay.inventory.items.Pockets;
-        const reshala = tables.bots.types.bossbully.inventory.items.Pockets;
-        const sanitar = tables.bots.types.bosssanitar.inventory.items.Pockets;
-        const shturman = tables.bots.types.bosskojaniy.inventory.items.Pockets;
-        const tagilla = tables.bots.types.bosstagilla.inventory.items.Pockets;
+        let chance = BossesHaveLegaMedals.config.legaMedalChance;
+        if (chance <= 0) chance = 1;
 
-        glukhar["6656560053eaaa7a23349c86"] = 2800;
-        kaban["6656560053eaaa7a23349c86"] = 6750;
-        killa["6656560053eaaa7a23349c86"] = 7000;
-        kollontay["6656560053eaaa7a23349c86"] = 5950;
-        reshala["6656560053eaaa7a23349c86"] = 4420;
-        sanitar["6656560053eaaa7a23349c86"] = 4550;
-        shturman["6656560053eaaa7a23349c86"] = 4300;
-        tagilla["6656560053eaaa7a23349c86"] = 500;
+        for (const botType in tables.bots.types)
+        {
+            if (!botType.includes("boss") || botType == "bosstest")
+            {
+                continue;
+            }
+            const boss = tables.bots.types[botType].inventory.items.Pockets;
+            const bossTotal = Object.values(boss).reduce((a, b) => a + b, 0);
 
-        /*
-        THIS IS ALL STUPID BUT I AM TIRED WHICH MAKES ME STUPID
-        If you want to have something to get probability with weights, please do it better than me. LOL.
+            let value = 0;
+            let guess = 0;
+            let rollChance = 0;
 
-        const glukharTotal = Object.values(glukhar).reduce((a, b) => a + b, 0)
-        const kabanTotal = Object.values(kaban).reduce((a, b) => a + b, 0)
-        const killaTotal = Object.values(killa).reduce((a, b) => a + b, 0)
-        const kollontayTotal = Object.values(kollontay).reduce((a, b) => a + b, 0)
-        const reshalaTotal = Object.values(reshala).reduce((a, b) => a + b, 0)
-        const sanitarTotal = Object.values(sanitar).reduce((a, b) => a + b, 0)
-        const shturmanTotal = Object.values(shturman).reduce((a, b) => a + b, 0)
-        const tagillaTotal = Object.values(tagilla).reduce((a, b) => a + b, 0)
-
-        let value;
-        let count;
-
-        value = 2800;
-        count = Object.keys(glukhar).length;
-        this.logger.log(`glukhar: ${glukharTotal} --- if value: ${value} then chance is ${value / (glukharTotal+value)} -- total items: ${count}`, "yellow");
-
-        value = 6750;
-        count = Object.keys(kaban).length;
-        this.logger.log(`kaban: ${kabanTotal} --- if value: ${value} then chance is ${value / (kabanTotal+value)} -- total items: ${count}`, "yellow");
-
-        value = 7000;
-        count = Object.keys(killa).length;
-        this.logger.log(`killa: ${killaTotal} --- if value: ${value} then chance is ${value / (killaTotal+value)} -- total items: ${count}`, "yellow");
-
-        value = 5950;
-        count = Object.keys(kollontay).length;
-        this.logger.log(`kollontay: ${kollontayTotal} --- if value: ${value} then chance is ${value / (kollontayTotal+value)} -- total items: ${count}`, "yellow");
-
-        value = 4420;
-        count = Object.keys(reshala).length;
-        this.logger.log(`reshala: ${reshalaTotal} --- if value: ${value} then chance is ${value / (reshalaTotal+value)} -- total items: ${count}`, "yellow");
-
-        value = 4550;
-        count = Object.keys(sanitar).length;
-        this.logger.log(`sanitar: ${sanitarTotal} --- if value: ${value} then chance is ${value / (sanitarTotal+value)} -- total items: ${count}`, "yellow");
-
-        value = 4300;
-        count = Object.keys(shturman).length;
-        this.logger.log(`shturman: ${shturmanTotal} --- if value: ${value} then chance is ${value / (shturmanTotal+value)} -- total items: ${count}`, "yellow");
-
-        value = 500;
-        count = Object.keys(tagilla).length;
-        this.logger.log(`tagilla: ${tagillaTotal} --- if value: ${value} then chance is ${value / (tagillaTotal+value)} -- total items: ${count}`, "yellow");
-        
-        */
+            guess = chance / 100 * bossTotal;
+            value = Math.round((chance / 100) * (bossTotal + guess));
+            rollChance = value / (bossTotal + value)
+            //this.logger.debug(`[BossesHaveLegaMedals] ${botType}: ${(bossTotal + value)} --- if value: ${value} then chance is ${rollChance}`);
+            this.logger.debug(`[BossesHaveLegaMedals] ${botType}: Chance is ${Number(rollChance).toLocaleString(undefined,{style: 'percent', minimumFractionDigits:2})}`);
+            boss["6656560053eaaa7a23349c86"] = value;
+        }
     }
+}
+
+interface Config 
+{
+    legaMedalChance: number,
 }
 
 export const mod = new BossesHaveLegaMedals();

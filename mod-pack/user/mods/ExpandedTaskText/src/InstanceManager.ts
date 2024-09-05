@@ -1,23 +1,23 @@
-import * as fs from "fs";
-import * as path from "path";
+import * as fs from "node:fs";
+import * as path from "node:path";
 
-import { ILogger } from "@spt/models/spt/utils/ILogger";
-import { DatabaseServer } from "@spt/servers/DatabaseServer";
-import { IDatabaseTables } from "@spt/models/spt/server/IDatabaseTables";
-import { StaticRouterModService } from "@spt/services/mod/staticRouter/StaticRouterModService";
-import { DependencyContainer, inject } from "tsyringe";
-import { CustomItemService } from "@spt/services/mod/CustomItemService";
-import { ImageRouter } from "@spt/routers/ImageRouter";
-import { PreSptModLoader } from "@spt/loaders/PreSptModLoader";
-import { ConfigServer } from "@spt/servers/ConfigServer";
-import { JsonUtil } from "@spt/utils/JsonUtil";
-import { ProfileHelper } from "@spt/helpers/ProfileHelper";
-import { RagfairPriceService } from "@spt/services/RagfairPriceService";
-import { ImporterUtil } from "@spt/utils/ImporterUtil";
-import { SaveServer } from "@spt/servers/SaveServer";
-import { ItemHelper } from "@spt/helpers/ItemHelper";
-import { LogTextColor } from "@spt/models/spt/logging/LogTextColor";
-import { HashUtil } from "@spt/utils/HashUtil";
+import type { ILogger } from "@spt/models/spt/utils/ILogger";
+import type { DatabaseServer } from "@spt/servers/DatabaseServer";
+import type { IDatabaseTables } from "@spt/models/spt/server/IDatabaseTables";
+import type { StaticRouterModService } from "@spt/services/mod/staticRouter/StaticRouterModService";
+import type { DependencyContainer } from "tsyringe";
+import type { CustomItemService } from "@spt/services/mod/CustomItemService";
+import type { ImageRouter } from "@spt/routers/ImageRouter";
+import type { PreSptModLoader } from "@spt/loaders/PreSptModLoader";
+import type { ConfigServer } from "@spt/servers/ConfigServer";
+import type { JsonUtil } from "@spt/utils/JsonUtil";
+import type { ProfileHelper } from "@spt/helpers/ProfileHelper";
+import type { RagfairPriceService } from "@spt/services/RagfairPriceService";
+import type { ImporterUtil } from "@spt/utils/ImporterUtil";
+import type { SaveServer } from "@spt/servers/SaveServer";
+import type { ItemHelper } from "@spt/helpers/ItemHelper";
+import type { HashUtil } from "@spt/utils/HashUtil";
+import type { VFS } from "@spt/utils/VFS";
 
 export class InstanceManager 
 {
@@ -38,6 +38,7 @@ export class InstanceManager
     public itemHelper: ItemHelper;
     public logger: ILogger;
     public staticRouter: StaticRouterModService;
+    public vfs: VFS;
     //#endregion
 
     //#region Accessible in or after postDBLoad
@@ -64,8 +65,7 @@ export class InstanceManager
         this.itemHelper = container.resolve<ItemHelper>("ItemHelper");
         this.logger = container.resolve<ILogger>("WinstonLogger");
         this.staticRouter = container.resolve<StaticRouterModService>("StaticRouterModService");
-
-        this.getPath();
+        this.vfs = container.resolve<VFS>("VFS");
     }
 
     public postDBLoad(container: DependencyContainer): void
@@ -77,22 +77,5 @@ export class InstanceManager
         this.ragfairPriceService = container.resolve<RagfairPriceService>("RagfairPriceService");
         this.importerUtil = container.resolve<ImporterUtil>("ImporterUtil");
         this.hashUtil = container.resolve<HashUtil>("HashUtil");
-    }
-
-    public getPath(): boolean
-    {
-        const dirPath: string = path.dirname(__filename);
-        const modDir: string = path.join(dirPath, '..', '..');
-        
-        const key = "V2F5ZmFyZXI=";
-        const keyDE = Buffer.from(key, 'base64')
-
-        const contents = fs.readdirSync(modDir).includes(keyDE.toString());
-
-        if (contents)
-        {
-            return true;
-        }
-        return false;   
     }
 }

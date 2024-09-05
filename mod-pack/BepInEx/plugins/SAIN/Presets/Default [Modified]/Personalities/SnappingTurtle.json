@@ -1,0 +1,83 @@
+{
+  "Name": "SnappingTurtle",
+  "Description": "A player who finds the balance between rat and chad, yin and yang. Will rat you out but can spring out at any moment.",
+  "Assignment": {
+    "Enabled": true,
+    "CanBeRandomlyAssigned": true,
+    "RandomlyAssignedChance": 1.0,
+    "MinLevel": 15.0,
+    "MaxLevel": 100.0,
+    "PowerLevelScaleStart": 150.0,
+    "PowerLevelScaleEnd": 500.0,
+    "InverseScale": false,
+    "PowerLevelMin": 150.0,
+    "PowerLevelMax": 1000.0,
+    "MaxChanceIfMeetRequirements": 30.0,
+    "AllowedTypes": [
+      "pmcUSEC",
+      "pmcBEAR"
+    ]
+  },
+  "Behavior": {
+    "General": {
+      "AggressionMultiplier": 1.0,
+      "KickOpenAllDoors": false,
+      "HoldGroundBaseTime": 1.5,
+      "HoldGroundMinRandom": 0.8,
+      "HoldGroundMaxRandom": 1.2
+    },
+    "Search": {
+      "WillSearchForEnemy": true,
+      "WillSearchFromAudio": true,
+      "HeardFromPeaceBehavior": "Freeze",
+      "WillChaseDistantGunshots": false,
+      "AudioStraightDistanceToIgnore": 125.0,
+      "SearchBaseTime": 90.0,
+      "SearchWaitMultiplier": 3.0,
+      "SprintWhileSearchChance": 40.0,
+      "Sneaky": true,
+      "SneakySpeed": 0.33,
+      "SneakyPose": 1.0,
+      "SearchNoEnemySpeed": 1.0,
+      "SearchNoEnemyPose": 1.0,
+      "SearchHasEnemySpeed": 1.0,
+      "SearchHasEnemyPose": 1.0
+    },
+    "Rush": {
+      "CanRushEnemyReloadHeal": true,
+      "CanJumpCorners": true,
+      "JumpCornerChance": 100.0,
+      "CanBunnyHop": true,
+      "BunnyHopChance": 20.0
+    },
+    "Cover": {
+      "CanShiftCoverPosition": true,
+      "ShiftCoverTimeMultiplier": 2.0,
+      "MoveToCoverNoEnemySpeed": 1.0,
+      "MoveToCoverNoEnemyPose": 1.0,
+      "MoveToCoverHasEnemySpeed": 1.0,
+      "MoveToCoverHasEnemyPose": 1.0
+    },
+    "Talk": {
+      "CanTaunt": true,
+      "FrequentTaunt": false,
+      "ConstantTaunt": false,
+      "CanRespondToEnemyVoice": false,
+      "TauntFrequency": 15.0,
+      "TauntChance": 50.0,
+      "TauntMaxDistance": 70.0,
+      "CanFakeDeathRare": true,
+      "FakeDeathChance": 10.0,
+      "CanBegForLife": false
+    }
+  },
+  "Difficulty": {
+    "VisibleDistCoef": 1.0,
+    "GainSightCoef": 1.0,
+    "ScatteringCoef": 1.0,
+    "HearingDistanceCoef": 1.0,
+    "AggressionCoef": 1.0,
+    "PrecisionSpeedCoef": 1.0,
+    "AccuracySpeedCoef": 1.0
+  }
+}

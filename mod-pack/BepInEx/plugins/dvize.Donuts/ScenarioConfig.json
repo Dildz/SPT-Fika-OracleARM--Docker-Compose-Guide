@@ -235,16 +235,16 @@
     "Name": "starting-pmcs-only-live-like",
   	"PMCBotLimitPresets": {
       "FactoryBotLimit": 4,
-      "InterchangeBotLimit": 9,
-      "LaboratoryBotLimit": 9,
-      "LighthouseBotLimit": 9,
-      "ReserveBotLimit": 9,
+      "InterchangeBotLimit": 5,
+      "LaboratoryBotLimit": 5,
+      "LighthouseBotLimit": 5,
+      "ReserveBotLimit": 5,
       "ShorelineBotLimit": 9,
       "WoodsBotLimit": 9,
-      "CustomsBotLimit": 9,
-      "TarkovStreetsBotLimit": 9,
+      "CustomsBotLimit": 5,
+      "TarkovStreetsBotLimit": 5,
       "GroundZeroBotLimit": 4,
-      "GroundZeroHighBotLimit": 8
+      "GroundZeroHighBotLimit": 5
     },
     "SCAVBotLimitPresets": {
       "FactoryBotLimit": 6,
@@ -293,16 +293,16 @@
     "Name": "starting-pmcs-only-morescavs",
     "PMCBotLimitPresets": {
       "FactoryBotLimit": 4,
-      "InterchangeBotLimit": 9,
-      "LaboratoryBotLimit": 9,
-      "LighthouseBotLimit": 9,
-      "ReserveBotLimit": 9,
+      "InterchangeBotLimit": 5,
+      "LaboratoryBotLimit": 5,
+      "LighthouseBotLimit": 5,
+      "ReserveBotLimit": 5,
       "ShorelineBotLimit": 9,
       "WoodsBotLimit": 9,
-      "CustomsBotLimit": 9,
-      "TarkovStreetsBotLimit": 9,
+      "CustomsBotLimit": 5,
+      "TarkovStreetsBotLimit": 5,
       "GroundZeroBotLimit": 4,
-      "GroundZeroHighBotLimit": 8
+      "GroundZeroHighBotLimit": 5
     },
     "SCAVBotLimitPresets": {
       "FactoryBotLimit": 8,
@@ -322,16 +322,16 @@
     "Name": "starting-pmcs-only-quietraids",
     "PMCBotLimitPresets": {
       "FactoryBotLimit": 4,
-      "InterchangeBotLimit": 9,
-      "LaboratoryBotLimit": 8,
-      "LighthouseBotLimit": 9,
-      "ReserveBotLimit": 9,
+      "InterchangeBotLimit": 5,
+      "LaboratoryBotLimit": 5,
+      "LighthouseBotLimit": 5,
+      "ReserveBotLimit": 5,
       "ShorelineBotLimit": 9,
       "WoodsBotLimit": 9,
-      "CustomsBotLimit": 9,
-      "TarkovStreetsBotLimit": 9,
+      "CustomsBotLimit": 5,
+      "TarkovStreetsBotLimit": 5,
       "GroundZeroBotLimit": 4,
-      "GroundZeroHighBotLimit": 6
+      "GroundZeroHighBotLimit": 5
     },
     "SCAVBotLimitPresets": {
       "FactoryBotLimit": 6,
