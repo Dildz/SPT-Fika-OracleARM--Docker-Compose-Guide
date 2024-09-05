@@ -10,7 +10,7 @@ docker logs modded-fika -f
 
 docker stop modded-fika
 
-docker update --restart always modded-fika  (after 1st run)
+docker update --restart unless-stopped modded-fika  (after 1st run)
 
 docker ps -a
 

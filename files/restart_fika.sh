@@ -6,7 +6,7 @@
 CONTAINER_NAME="modded-fika"
 
 # Define the path to the log file
-LOG_FILE="/home/ubuntu/docker/logs/modded-fika.log"
+LOG_FILE="/home/ubuntu/docker/containers/spt-fika-modded/logs/modded-fika.log"
 
 # Function to check if the Docker container is running
 is_container_running() {

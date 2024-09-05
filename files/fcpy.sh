@@ -3,12 +3,12 @@
 #!/bin/bash
 echo "MODDED FIKA Docker (SPT 3.9.x)"
 
-LOGFILE="/home/ubuntu/docker/logs/modded-fika.log"
+LOGFILE="/home/ubuntu/docker/containers/spt-fika-modded/logs/modded-fika.log"
 
 # Ensure the log directory exists and set permissions
-mkdir -p "/home/ubuntu/docker/logs"
-chmod 775 "/home/ubuntu/docker/logs"
-chown ubuntu:ubuntu "/home/ubuntu/docker/logs"
+mkdir -p "home/ubuntu/docker/containers/spt-fika-modded/logs"
+chmod 775 "home/ubuntu/docker/containers/spt-fika-modded/logs"
+chown ubuntu:ubuntu "home/ubuntu/docker/containers/spt-fika-modded/logs"
 
 # Clear the log file if it exists, or create it if it doesn't
 > $LOGFILE
