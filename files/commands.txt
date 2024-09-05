@@ -22,6 +22,8 @@ docker rmi [image-name/id]
 
 docker image prune
 
+docker builder prune
+
 Ownership Commands:
 sudo chmod -R 775 /home/ubuntu/docker/containers/spt-fika/server/user/profiles
 sudo chown -R ubuntu:ubuntu /home/ubuntu/docker/containers/spt-fika/server/user/profiles
