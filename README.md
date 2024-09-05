@@ -167,7 +167,7 @@ sudo $HOME/github-repos/SPT-Fika-modded--Docker-Guide/files/modscpy.sh
 ```
 With the mods, configs & HD trader images copied - we can now start the server using the restart script:
 ```
-$HOME/docker/containers/spt-fika-modded/fika/restart_fika.sh
+$HOME/docker/containers/spt-fika-modded/files/restart_fika.sh
 ```
 The restart script will stop/start the server (or just start if already stopped), clear modded-fika.log & display the logs in real-time.
 
@@ -236,7 +236,7 @@ docker stop modded-fika
 
 To start/restart the container:
 ```
-$HOME/docker/containers/spt-fika-modded/fika/restart_fika.sh
+$HOME/docker/containers/spt-fika-modded/files/restart_fika.sh
 ```
 
 See the included commands.txt file for a full list of commands used.
@@ -383,7 +383,7 @@ cp -r $HOME/docker/backups/spt-fika-modded/BepInEx/* $HOME/docker/containers/spt
 
 Once the mods & profiles are restored, start the server with:
 ```
-sudo $HOME/docker/containers/spt-fika-modded/fika/restart_fika.sh
+sudo $HOME/docker/containers/spt-fika-modded/files/restart_fika.sh
 ```
 
 Now the FIKA server is updated.
