@@ -187,7 +187,7 @@ This way other players can quickly see if the fika server is online, who is onli
 Note - The modded-fika container logs are cleared each time the restart_fika.sh script runs.
 
 ## Starting mods for new players
-Any new players to the modded-fika server will need to have a fresh SPT v3.9.5 install with the ONLY following mods installed before connecting:
+Any new players to the modded-fika server will need to have a fresh SPT install with the ONLY following mods installed before connecting:
 
 1: [(FIKA client release & instructions)](https://github.com/project-fika/Fika-Plugin/releases)
 
