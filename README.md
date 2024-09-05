@@ -157,6 +157,8 @@ docker stop modded-fika
 ## Copying the "mod-pack"
 NOTE: if you have your own set of mods you can skip this step but FIKA & CorterModsync mods are required - the rest is up to you to install manually...
 
+You can also use this modpack as a base & simply remove or add any mods & configs after the copy. Make sure you also edit the order.json file before starting the server after adding/removing any server (user) mods.
+
 List of mods used in this "mod-pack" [(Google Doc Link)](https://docs.google.com/document/d/1eBul9mYMUJPAPbLsmKR8M5sK6DMl647HM87JrKmG2Vg/edit)
 
 Now we can run the modscpy.sh script **as sudo** to copy the mod-pack files:
@@ -174,7 +176,7 @@ To exit live logs - press **Ctrl + C**
 ## FIKA logs
 You can see the logs again at any time with the `docker logs modded-fika -f` command.
 
-Logs are also parsed to a file in the $HOME/docker/logs folder for further processing with a discord bot (which can also be hosted on the same Oracle VPS),by using webhooks or other methods.
+Logs are also parsed to a file in the $HOME/docker/containers/spt-fika-modded/logs folder for further processing with a discord bot (which can also be hosted on the same Oracle VPS),by using webhooks or other methods.
 
 For example - I have a bot for my discord server that updates an embed message every 10sec showing FIKA server information.
 
