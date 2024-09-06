@@ -1,17 +1,17 @@
-# fcpy.sh
+# init-server.sh
+
+## This script is a work in progress. Replace testing names & paths when testing is complete.
 
 #!/bin/bash
 echo "MODDED FIKA Docker (SPT 3.9.x)"
 
-LOGFILE="/home/ubuntu/docker/containers/spt-fika-modded/logs/modded-fika.log"
+LOGFILE="/home/ubuntu/docker/containers/spt-fika-test/logs/test-fika.log"
 
 # Ensure the log directory exists and set permissions
-mkdir -p "home/ubuntu/docker/containers/spt-fika-modded/logs"
-chmod 775 "home/ubuntu/docker/containers/spt-fika-modded/logs"
-chown ubuntu:ubuntu "home/ubuntu/docker/containers/spt-fika-modded/logs"
+mkdir -p "/home/ubuntu/docker/containers/spt-fika-test/logs"
 
 # Clear the log file if it exists, or create it if it doesn't
-> $LOGFILE
+> "$LOGFILE"
 
 if [ -d "/opt/srv" ]; then
     start=$(date +%s)
@@ -38,8 +38,8 @@ fi
 
 cd /opt/server
 
-# Start the server and log output to both stdout and the log file
-./SPT.Server.exe 2>&1 | tee -a "$LOGFILE" &
+# Start the server in the background
+./SPT.Server.exe &
 SPT_SERVER_PID=$!
 
 # Wait for the server process to end
@@ -47,4 +47,3 @@ wait $SPT_SERVER_PID
 
 echo "Exiting."
 exit 0
-

@@ -1,0 +1,26 @@
+##
+## DOCKER-COMPOSE FILE
+## TEST FIKA LINUX Container
+##
+
+## This file is a work in progress. Replace testing names & paths when testing is complete.
+
+version: "3.8"
+
+services:
+  test-fika:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        FIKA_TAG: v2.2.8  # Set to the latest version
+        SPT_TAG: 3.9.8    # Set to the latest version
+    image: test-fika
+    container_name: test-fika
+    ports:
+      - "7969:7969"
+    volumes:
+      - "/home/ubuntu/docker/containers/spt-fika-test/server:/opt/server:rw"
+      - "/home/ubuntu/docker/containers/spt-fika-test/logs:/home/ubuntu/docker/containers/spt-fika-test/logs:rw"
+    restart: unless-stopped
+    command: ["bash", "/opt/init-server.sh"]
