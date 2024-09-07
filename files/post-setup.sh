@@ -97,4 +97,8 @@ echo "Cron tasks have been set up:
 - SPT-FIKA server will restart daily at 2:00 AM.
 - Launcher background images will change daily at midnight."
 
+# Remove pre-setup.sh from the home directory
+rm /home/ubuntu/pre-setup.sh
+echo "pre-setup.sh removed from the home directory."
+
 echo "post-setup.sh completed."
