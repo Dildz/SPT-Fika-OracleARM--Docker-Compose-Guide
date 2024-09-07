@@ -1,0 +1,24 @@
+##
+## DOCKER-COMPOSE FILE
+## SPT FIKA LINUX Container
+##
+
+version: "3.8"
+
+services:
+  spt-fika:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        FIKA_TAG: v2.2.8  # Set to the latest version
+        SPT_TAG: 3.9.8    # Set to the latest version
+    image: spt-fika
+    container_name: spt-fika
+    ports:
+      - "6969:6969"
+    volumes:
+      - "/home/ubuntu/docker/containers/spt-fika/server:/opt/server:rw"
+      - "/home/ubuntu/docker/containers/spt-fika/logs:/home/ubuntu/docker/containers/spt-fika/logs:rw"
+    restart: unless-stopped
+    command: ["bash", "/opt/init-server.sh"]
