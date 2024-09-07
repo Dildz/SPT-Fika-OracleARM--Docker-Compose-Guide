@@ -1,6 +1,6 @@
 ##
 ## Dockerfile
-## MODDED FIKA LINUX Container
+## SPT FIKA LINUX Container
 ##
 
 # Define a build stage to handle dependencies and building
@@ -65,7 +65,7 @@ COPY --chmod=755 init-server.sh /opt/init-server.sh
 RUN dos2unix /opt/init-server.sh
 
 # Expose necessary ports
-EXPOSE 7969
+EXPOSE 6969
 
 # Specify the default command to run when the container starts
 CMD ["bash", "/opt/init-server.sh"]

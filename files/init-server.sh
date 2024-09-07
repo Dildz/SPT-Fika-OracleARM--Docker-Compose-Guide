@@ -1,18 +1,23 @@
 # init-server.sh
 
-## This script is a work in progress. Replace testing names & paths when testing is complete.
+## This script is responsible for setting up the SPT-FIKA server Docker container.
 
 #!/bin/bash
-echo "MODDED FIKA Docker (SPT 3.9.x)"
 
-LOGFILE="/home/ubuntu/docker/containers/spt-fika-test/logs/test-fika.log"
+echo "Running init-server.sh ..."
+echo "SPT FIKA Docker (SPT 3.9.x)"
+
+LOGFILE="/home/ubuntu/docker/containers/spt-fika/logs/spt-fika.log"
 
 # Ensure the log directory exists and set permissions
-mkdir -p "/home/ubuntu/docker/containers/spt-fika-test/logs"
+mkdir -p "/home/ubuntu/docker/containers/spt-fika/logs"
 
 # Clear the log file if it exists, or create it if it doesn't
 > "$LOGFILE"
+chmod 775 "$LOGFILE"
+chown ubuntu:ubuntu "$LOGFILE"
 
+# Function to move the server files and start the server to generate the required files
 if [ -d "/opt/srv" ]; then
     start=$(date +%s)
     echo "Started copying files to your volume/directory.. Please wait."
@@ -23,12 +28,15 @@ if [ -d "/opt/srv" ]; then
     echo "Files copied to your machine in $(($end-$start)) seconds."
     echo "Starting the server to generate all the required files"
     cd /opt/server
+
+    # Modify the http.json file
     sed -i 's/127.0.0.1/0.0.0.0/g' /opt/server/SPT_Data/Server/configs/http.json
-    NODE_CHANNEL_FD= timeout --preserve-status 40s ./SPT.Server.exe </dev/null >/dev/null 2>&1 
-    echo "Follow the instructions to proceed!"
+
+    NODE_CHANNEL_FD= timeout --preserve-status 40s ./SPT.Server.exe </dev/null >/dev/null 2>&1
     exit 0
 fi
 
+# Check for the safety file
 if [ -e "/opt/server/delete_me" ]; then
     echo "Error: Safety file found. Exiting."
     echo "Please follow the instructions."
@@ -38,12 +46,12 @@ fi
 
 cd /opt/server
 
-# Start the server in the background
-./SPT.Server.exe &
-SPT_SERVER_PID=$!
+# Capture the start time to filter logs accordingly
+START_TIME=$(date +%s)
+echo "Server starting at $(date)" | tee "$LOGFILE"
 
-# Wait for the server process to end
-wait $SPT_SERVER_PID
+# Start the server and log output, ensuring only new logs are recorded
+./SPT.Server.exe 2>&1 | tee -a "$LOGFILE"
 
-echo "Exiting."
+echo "Please follow the instructions to proceed."
 exit 0

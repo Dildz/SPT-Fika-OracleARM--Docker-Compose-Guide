@@ -1,12 +1,15 @@
 # restart_fika.sh
 
+## This script will restart the SPT-FIKA server Docker container and log the output to a file.
+## It can be run manually from the file folder or set up as a cron task to automate the restart process.
+
 #!/bin/bash
 
 # Define the name of the container
-CONTAINER_NAME="modded-fika"
+CONTAINER_NAME="spt-fika"
 
 # Define the path to the log file
-LOG_FILE="/home/ubuntu/docker/containers/spt-fika-modded/logs/modded-fika.log"
+LOG_FILE="/home/ubuntu/docker/containers/spt-fika/logs/spt-fika.log"
 
 # Function to check if the Docker container is running
 is_container_running() {
