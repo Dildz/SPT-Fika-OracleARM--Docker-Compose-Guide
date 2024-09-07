@@ -112,7 +112,7 @@ cd ~
 ./pre-setup.sh
 ```
 
-You can safely remove this file once it has finished running.
+This file will be removed later by the post-setup script.
 
 ## Post-Setup
 Once the server has finished starting for the 1st time we are going to exit out of the live-logs by pressing **Ctrl + C**
