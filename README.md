@@ -8,11 +8,11 @@ Reworked to use docker compose & simplified the install process with scripts.
 [For support you should join the Fika Discord server](https://discord.gg/project-fika)
 
 ## Table Of Contents
-[Installation](https://github.com/Dildz/SPT-Fika---Docker-Guide#installing-docker)
+[Installation](https://github.com/Dildz/SPT-Fika-modded--Docker-Guide#installing-docker)
 
-[Updating The Server](https://github.com/Dildz/SPT-Fika--DockerCompose-Guide#updating-to-newer-versions)
+[Updating The Server](https://github.com/Dildz/SPT-Fika-modded--Docker-Guide#updating-to-newer-versions)
 
-[Other Possibly Helpful Info](https://github.com/Dildz/SPT-Fika--DockerCompose-Guide#modding-and-other-possibly-helpful-info)
+[Other Possibly Helpful Info](https://github.com/Dildz/SPT-Fika-modded--Docker-Guide#modding-and-other-possibly-helpful-info)
 
 ## Free VPS
 [A good free VPS from Oracle. It offers 24GB RAM, 4 CPU cores and 200GB of storage. It's ARM but works with this setup.](https://www.oracle.com/cloud/free/)
@@ -102,7 +102,7 @@ newgrp docker
 You can verify your Docker installation by running `docker --version` or by running `docker run hello-world`
 
 ## Pre-Setup
-Use the pre-setup.sh file found in [Releases](https://github.com/Dildz/SPT-Fika--DockerCompose-Guide) to create the docker folders, clone the Github repository, copy the required files and create the container image, build the container image & up the server.
+Use the pre-setup.sh file found in [Releases](https://github.com/Dildz/SPT-Fika-modded--Docker-Guide) to create the docker folders, clone the Github repository, copy the required files and create the container image, build the container image & up the server.
 
 Download & place the pre-setup.sh file in your home folder & run with:
 ```
@@ -124,7 +124,7 @@ docker stop spt-fika
 
 Then we are going to run the post-setup.sh script in the github repo folder:
 ```
-cd $HOME/github-repos/SPT-Fika--DockerCompose-Guide
+cd $HOME/github-repos/SPT-Fika-modded--Docker-Guide
 ```
 ```
 ./post-setup.sh
@@ -191,11 +191,11 @@ Then we will change the profile permissions:
 
 **Change [PROFILE_ID] to the ID of the profile you want to edit**
 ```
-sudo chmod 775 $HOME/docker/containers/spt-fika-new/server/user/profiles/PROFILE_ID.json
+sudo chmod 775 $HOME/docker/containers/spt-fika/server/user/profiles/PROFILE_ID.json
 ```
 **make sure to replace [USERNAME] with your username**
 ```
-sudo chown USERNAME:USERNAME $HOME/docker/containers/spt-fika-new/server/user/profiles/PROFILE_ID.json
+sudo chown USERNAME:USERNAME $HOME/docker/containers/spt-fika/server/user/profiles/PROFILE_ID.json
 ```
 
 Browse to & open the profile / Make changes & save / Start the spt-fika server
