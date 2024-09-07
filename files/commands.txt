@@ -9,7 +9,7 @@ docker-compose up -d spt-fika && docker-compose logs -f spt-fika
 View logs:
 docker-compose logs -f spt-fika
 docker logs spt-fika -f
-tail -f /home/ubuntu/docker/containers/spt-fika-spt/logs/spt-fika.log
+tail -f /home/ubuntu/docker/containers/spt-fika/logs/spt-fika.log
 
 Stop the container:
 docker-compose stop spt-fika
@@ -35,4 +35,4 @@ docker image prune
 Remove all unused containers:
 docker builder prune
 
-sudo rm -rf $HOME/docker/containers/spt-fika-spt/server/*
+sudo rm -rf $HOME/docker/containers/spt-fika/server/*
