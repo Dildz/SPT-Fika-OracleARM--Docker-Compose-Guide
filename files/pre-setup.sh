@@ -26,29 +26,29 @@ echo "Creating GitHub repository directory..."
 mkdir -p /home/ubuntu/github-repos
 
 # Define the repository path
-REPO_DIR="/home/ubuntu/github-repos/SPT-Fika--DockerCompose-Guide"
+REPO_DIR="/home/ubuntu/github-repos/SPT-Fika-modded--Docker-Guide"
 
 # Check if the repository already exists
 if [ -d "$REPO_DIR" ]; then
     echo "Repository already exists. Continuing without cloning..."
 else
-    # Clone the SPT-Fika--Docker-Guide repository
-    echo "Cloning the SPT-Fika--Docker-Guide repository..."
+    # Clone the SPT-Fika-modded--Docker-Guide repository
+    echo "Cloning the SPT-Fika-modded--Docker-Guide repository..."
     cd /home/ubuntu/github-repos
-    git clone -b SPT-Fika--DockerCompose-Guide https://github.com/Dildz/SPT-Fika--DockerCompose-Guide.git # Replace with main branch after testing
+    git clone https://github.com/Dildz/SPT-Fika-modded--Docker-Guide.git
 fi
 
 # Copy the Dockerfile and scripts to the files directory
 echo "Copying files to the FIKA directory..."
-cp /home/ubuntu/github-repos/SPT-Fika--DockerCompose-Guide/files/docker-compose.yml $FIKA_FILES
-cp /home/ubuntu/github-repos/SPT-Fika--DockerCompose-Guide/files/Dockerfile $FIKA_FILES
-cp /home/ubuntu/github-repos/SPT-Fika--DockerCompose-Guide/files/init-server.sh $FIKA_FILES
-cp /home/ubuntu/github-repos/SPT-Fika--DockerCompose-Guide/files/randomize-bg.sh $FIKA_FILES
-cp /home/ubuntu/github-repos/SPT-Fika--DockerCompose-Guide/files/restart-fika.sh $FIKA_FILES
+cp /home/ubuntu/github-repos/SPT-Fika-modded--Docker-Guide/files/docker-compose.yml $FIKA_FILES
+cp /home/ubuntu/github-repos/SPT-Fika-modded--Docker-Guide/files/Dockerfile $FIKA_FILES
+cp /home/ubuntu/github-repos/SPT-Fika-modded--Docker-Guide/files/init-server.sh $FIKA_FILES
+cp /home/ubuntu/github-repos/SPT-Fika-modded--Docker-Guide/files/randomize-bg.sh $FIKA_FILES
+cp /home/ubuntu/github-repos/SPT-Fika-modded--Docker-Guide/files/restart-fika.sh $FIKA_FILES
 
 # Copy the SPT launcher background images folder to the FIKA directory
 echo "Copying launcher images to the FIKA directory..."
-cp -r "/home/ubuntu/github-repos/SPT-Fika--DockerCompose-Guide/files/SPT-launcher-images" $FIKA_FILES
+cp -r "/home/ubuntu/github-repos/SPT-Fika-modded--Docker-Guide/files/SPT-launcher-images" $FIKA_FILES
 
 # Navigate to the container's files directory
 cd $FIKA_FILES || {

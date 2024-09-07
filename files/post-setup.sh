@@ -46,9 +46,9 @@ while true; do
             # If the user responds with 'y' or 'Y', proceed with copying mods
             echo "Copying mods and HD Trader Images..."
             # Define paths for mod copy
-            MODS_SOURCE="/home/ubuntu/github-repos/SPT-Fika--DockerCompose-Guide/mod-pack/*"
+            MODS_SOURCE="/home/ubuntu/github-repos/SPT-Fika-modded--Docker-Guide/mod-pack/*"
             MODS_DEST="/home/ubuntu/docker/containers/spt-fika/server"
-            TRADER_IMAGES_SOURCE="/home/ubuntu/github-repos/SPT-Fika--DockerCompose-Guide/files/HD-trader-images/*"
+            TRADER_IMAGES_SOURCE="/home/ubuntu/github-repos/SPT-Fika-modded--Docker-Guide/files/HD-trader-images/*"
             TRADER_IMAGES_DEST="/home/ubuntu/docker/containers/spt-fika/server/SPT_Data/Server/images/traders/"
 
             echo "Copying mods from $MODS_SOURCE to $MODS_DEST"
