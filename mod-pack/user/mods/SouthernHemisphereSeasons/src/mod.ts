@@ -41,11 +41,12 @@ function getRealLifeSeason(): number {
     const now = new Date();
     const year = now.getFullYear();
 
+    // Define the start dates for each season based on the 1st of the month
     const seasons = {
-      SUMMER: new Date(year, 11, 21), // Dec 21
-      AUTUMN: new Date(year, 2, 20),  // Mar 20
-      WINTER: new Date(year, 5, 21),  // Jun 21
-      SPRING: new Date(year, 8, 23)   // Sep 23
+      SUMMER: new Date(year, 11, 1), // Starts Dec 1
+      AUTUMN: new Date(year, 2, 1),  // Starts Mar 1
+      WINTER: new Date(year, 5, 1),  // Starts Jun 1
+      SPRING: new Date(year, 8, 1)   // Starts Sep 1
     };
 
     if (now >= seasons.SUMMER || now < seasons.AUTUMN) {
