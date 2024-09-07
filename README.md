@@ -102,7 +102,7 @@ newgrp docker
 You can verify your Docker installation by running `docker --version` or by running `docker run hello-world`
 
 ## Pre-Setup
-Use the pre-setup.sh file found in [Releases](https://github.com/Dildz/SPT-Fika-modded--Docker-Guide) to create the docker folders, clone the Github repository, copy the required files and create the container image, build the container image & up the server.
+Use the pre-setup.sh file found in [Releases](https://github.com/Dildz/SPT-Fika-modded--Docker-Guide) to create the docker folders, clone the Github repository, copy the required files, build the container image & up the server.
 
 Download & place the pre-setup.sh file in your home folder & run with:
 ```
@@ -112,7 +112,7 @@ cd ~
 ./pre-setup.sh
 ```
 
-You can safely remove this file once it has finished running as it will have copied the files & created the container image.
+You can safely remove this file once it has finished running.
 
 ## Post-Setup
 Once the server has finished starting for the 1st time we are going to exit out of the live-logs by pressing **Ctrl + C**
