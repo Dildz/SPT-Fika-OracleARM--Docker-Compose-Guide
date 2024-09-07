@@ -1,16 +1,18 @@
-# Setting up Fika SPT server with docker for Ubuntu on Oracle Cloud ARM instance
-Last updated: 05/09/2024 | Dildz
+# Setting up Fika SPT server with docker compose for Ubuntu on Oracle Cloud ARM instance
+Last updated: 07/09/2024 | Dildz
+
+Reworked to use docker compose & simplified the install process with scripts.
 
 **Make sure your oracle instance is 64-bit! Arm64 works too!**
 
 [For support you should join the Fika Discord server](https://discord.gg/project-fika)
 
 ## Table Of Contents
-[Installation](https://github.com/Dildz/SPT-Fika-modded--Docker-Guide#installing-docker)
+[Installation](https://github.com/Dildz/SPT-Fika---Docker-Guide#installing-docker)
 
-[Updating The Server](https://github.com/Dildz/SPT-Fika-modded--Docker-Guide#updating-to-newer-versions)
+[Updating The Server](https://github.com/Dildz/SPT-Fika--DockerCompose-Guide#updating-to-newer-versions)
 
-[Other Possibly Helpful Info](https://github.com/Dildz/SPT-Fika-modded--Docker-Guide#modding-and-other-possibly-helpful-info)
+[Other Possibly Helpful Info](https://github.com/Dildz/SPT-Fika--DockerCompose-Guide#modding-and-other-possibly-helpful-info)
 
 ## Free VPS
 [A good free VPS from Oracle. It offers 24GB RAM, 4 CPU cores and 200GB of storage. It's ARM but works with this setup.](https://www.oracle.com/cloud/free/)
@@ -100,83 +102,59 @@ newgrp docker
 You can verify your Docker installation by running `docker --version` or by running `docker run hello-world`
 
 ## Pre-Setup
-Use the pre_setup.sh file found in [Releases](https://github.com/Dildz/SPT-Fika-modded--Docker-Guide) to create the docker folders, clone the Github repository, copy the required files and create the container image.
+Use the pre-setup.sh file found in [Releases](https://github.com/Dildz/SPT-Fika--DockerCompose-Guide) to create the docker folders, clone the Github repository, copy the required files and create the container image, build the container image & up the server.
 
-Download & place the pre_setup.sh file in your home folder & run with:
+Download & place the pre-setup.sh file in your home folder & run with:
 ```
 cd ~
 ```
 ```
-./pre_setup.sh
+./pre-setup.sh
 ```
 
 You can safely remove this file once it has finished running as it will have copied the files & created the container image.
 
-## Setting up the Docker container
-Next, we are going to make sure we are in the server directory:
-```
-cd $HOME/docker/containers/spt-fika-modded/server
-```
-
-Then, we are going to run the FIKA server for the first time using the following command:
-```
-docker run --pull=never -v $HOME/docker/containers/spt-fika-modded/server:/opt/server -v $HOME/docker/containers/spt-fika-modded/logs:$HOME/docker/containers/spt-fika-modded/logs -p 6969:6969 -it --name modded-fika --log-opt max-size=10m --log-opt max-file=3 modded-fika
-```
-
-It will take a while but once completed - run:
-```
-docker update --restart unless-stopped modded-fika
-```
-```
-docker start modded-fika
-```
-```
-docker logs modded-fika -f
-```
-
 ## Post-Setup
 Once the server has finished starting for the 1st time we are going to exit out of the live-logs by pressing **Ctrl + C**
 
+Stop the server:
+```
+docker stop spt-fika
+```
+
 Then we are going to run the post-setup.sh script in the github repo folder:
 ```
-cd $HOME/github-repos/SPT-Fika-modded--Docker-Guide
+cd $HOME/github-repos/SPT-Fika--DockerCompose-Guide
 ```
 ```
-./post_setup.sh
+./post-setup.sh
 ```
 
 This will create a cron-job that restarts the FIKA server every day at midnight as well change the SPT launcher backgrounds.
 
-As an alternative - you can incorporate the randomize_bg.sh into the restart_fika.sh file so that the script stops the server, changes the bg.png image, then starts the server. The background change cron task & the randomize_bg.sh file could then be removed. I left this as 2 scripts as this makes it an optional (fun) but non-essential addition.
+You will also get prompted to install the mod-pack with a y/n response.
+- If you choose No, you will need to install any additional mods manually. Only the fika server & corter-modsync mods are installed by default.
+- If you choose Yes, the script will copy the mod-pack client & server mods. You can remove any unwanted mods & BepInEx configs but remember to edit the order.json file.
 
-Before copying the modpack - stop the FIKA server with:
+For the launcher background changing - you can incorporate the randomize_bg.sh into the restart_fika.sh file so that the script stops the server, changes the bg.png image, then starts the server. The background change cron task & the randomize_bg.sh file could then be removed. I left this as 2 scripts as this makes it an optional (fun) but non-essential addition.
+
+Once the post-setup is completed you can start the server with:
 ```
-docker stop modded-fika
+cd $HOME/docker/containers/spt-fika/files
+```
+```
+docker-compose start spt-fika && docker-compose logs -f spt-fika
 ```
 
-## Copying the "mod-pack"
-NOTE: if you have your own set of mods you can skip this step but FIKA & CorterModsync mods are required - the rest is up to you to install manually...
-
-You can also use this modpack as a base & simply remove or add any mods & configs after the copy. Make sure you also edit the order.json file before starting the server after adding/removing any server (user) mods.
-
-List of mods used in this "mod-pack" [(Google Doc Link)](https://docs.google.com/document/d/1eBul9mYMUJPAPbLsmKR8M5sK6DMl647HM87JrKmG2Vg/edit)
-
-Now we can run the modscpy.sh script **as sudo** to copy the mod-pack files:
+Or from outside of the spt-fika/files directory:
 ```
-sudo $HOME/github-repos/SPT-Fika-modded--Docker-Guide/files/modscpy.sh
+docker start spt-fika && docker logs -f spt-fika
 ```
-With the mods, configs & HD trader images copied - we can now start the server using the restart script:
-```
-$HOME/docker/containers/spt-fika-modded/files/restart_fika.sh
-```
-The restart script will stop/start the server (or just start if already stopped), clear modded-fika.log & display the logs in real-time.
-
-To exit live logs - press **Ctrl + C**
 
 ## FIKA logs
-You can see the logs again at any time with the `docker logs modded-fika -f` command.
+You can see the logs again at any time with the `docker logs spt-fika -f` command.
 
-Logs are also parsed to a file in the $HOME/docker/containers/spt-fika-modded/logs folder for further processing with a discord bot (which can also be hosted on the same Oracle VPS),by using webhooks or other methods.
+Logs are also parsed to a file in the $HOME/docker/containers/spt-fika/logs folder for further processing with a discord bot (which can also be hosted on the same Oracle VPS),by using webhooks or other methods.
 
 For example - I have a bot for my discord server that updates an embed message every 10sec showing FIKA server information.
 
@@ -184,10 +162,10 @@ For example - I have a bot for my discord server that updates an embed message e
 
 This way other players can quickly see if the fika server is online, who is online, if a raid is active & when the server is going to restart.
 
-Note - The modded-fika container logs are cleared each time the restart_fika.sh script runs.
+Note - The spt-fika container logs are cleared each time the restart_fika.sh script runs.
 
 ## Starting mods for new players
-Any new players to the modded-fika server will need to have a fresh SPT install with the ONLY following mods installed before connecting:
+Any new players to the spt-fika server will need to have a fresh SPT install with the ONLY following mods installed before connecting:
 
 1: [(FIKA client release & instructions)](https://github.com/project-fika/Fika-Plugin/releases)
 
@@ -206,37 +184,37 @@ To make changes to player profile we need to run the following commands:
 
 First stop the container:
 ```
-docker stop modded-fika
+docker stop spt-fika
 ```
 
 Then we will change the profile permissions:
 
 **Change [PROFILE_ID] to the ID of the profile you want to edit**
 ```
-sudo chmod 775 $HOME/docker/containers/spt-fika-modded-new/server/user/profiles/PROFILE_ID.json
+sudo chmod 775 $HOME/docker/containers/spt-fika-new/server/user/profiles/PROFILE_ID.json
 ```
 **make sure to replace [USERNAME] with your username**
 ```
-sudo chown USERNAME:USERNAME $HOME/docker/containers/spt-fika-modded-new/server/user/profiles/PROFILE_ID.json
+sudo chown USERNAME:USERNAME $HOME/docker/containers/spt-fika-new/server/user/profiles/PROFILE_ID.json
 ```
 
-Browse to & open the profile / Make changes & save / Start the modded-fika server
+Browse to & open the profile / Make changes & save / Start the spt-fika server
 
 ## Helpful Docker commands
 View container logs:
 ```
-docker logs modded-fika -f
+docker logs spt-fika -f
 ```
 Press **Ctrl + C** to exit the logs.
 
 Stop the container:
 ```
-docker stop modded-fika
+docker stop spt-fika
 ```
 
 To start/restart the container:
 ```
-$HOME/docker/containers/spt-fika-modded/files/restart_fika.sh
+$HOME/docker/containers/spt-fika/files/restart_fika.sh
 ```
 
 See the included commands.txt file for a full list of commands used.
@@ -244,7 +222,7 @@ See the included commands.txt file for a full list of commands used.
 ## Updating to newer SPT & FIKA versions
 First you will have to stop the server:
 ```
-docker stop modded-fika
+docker stop spt-fika
 ```
 
 [Adapting a backup script example](https://gist.github.com/OnniSaarni/a3f840cef63335212ae085a3c6c10d5c#setting-up-the-docker-container)
@@ -254,29 +232,29 @@ It is recommended to backup your players profiles and the BepInEx / user mods fo
 
 First we create the backup folders:
 ```
-mkdir -p $HOME/docker/backups/spt-fika-modded/user/profiles
+mkdir -p $HOME/docker/backups/spt-fika/user/profiles
 ```
 ```
-mkdir -p $HOME/docker/backups/spt-fika-modded/user/mods
+mkdir -p $HOME/docker/backups/spt-fika/user/mods
 ```
 ```
-mkdir -p $HOME/docker/backups/spt-fika-modded/BepInEx
+mkdir -p $HOME/docker/backups/spt-fika/BepInEx
 ```
 
 Now we can backup the files with:
 ```
-cp -r $HOME/docker/containers/spt-fika-modded/server/BepInEx/* $HOME/docker/backups/spt-fika-modded/BepInEx
+cp -r $HOME/docker/containers/spt-fika/server/BepInEx/* $HOME/docker/backups/spt-fika/BepInEx
 ```
 ```
-cp -r $HOME/docker/containers/spt-fika-modded/server/user/profiles/* $HOME/docker/backups/spt-fika-modded/user/profiles
+cp -r $HOME/docker/containers/spt-fika/server/user/profiles/* $HOME/docker/backups/spt-fika/user/profiles
 ```
 ```
-cp -r $HOME/docker/containers/spt-fika-modded/server/user/mods/* $HOME/docker/backups/spt-fika-modded/user/mods
+cp -r $HOME/docker/containers/spt-fika/server/user/mods/* $HOME/docker/backups/spt-fika/user/mods
 ```
 
 Now we need to remove the old version of FIKA server mod from the backup using:
 ```
-rm -rf $HOME/docker/backups/spt-fika-modded/user/mods/fika-server
+rm -rf $HOME/docker/backups/spt-fika/user/mods/fika-server
 ```
 (the latest FIKA version will be installed when we rebuild the container)
 
@@ -284,106 +262,89 @@ Next we need to delete the container and the image. We can do that by running th
 
 Remove container:
 ```
-docker rm modded-fika
+docker rm spt-fika
 ```
 Remove image:
 ```
-docker rmi modded-fika
+docker rmi spt-fika
 ```
 Prune images:
 ```
 docker image prune
 ```
+Remove all unused containers:
+```
+docker builder prune
+```
 
 Now we need to remove the contents of server directory:
 ```
-sudo rm -rf $HOME/docker/containers/spt-fika-modded/server/*
+sudo rm -rf $HOME/docker/containers/spt-fika/server/*
 ```
 
-**!!Before rebuilding the server - you MUST update the version numbers for FIKA & SPT to the latest versions in the Dockerfile!!**
+**!!Before rebuilding the server - you MUST update the version numbers for FIKA & SPT to the latest versions in the docker-compose.yml file!!**
 ```
-# Change the FIKA & SPT tags to the latest versions found in the SPT and FIKA discords
-FROM ubuntu:latest AS builder
-ARG FIKA=HEAD^
-ARG FIKA_TAG=v2.2.8   << CHANGE TO NEW VERSION
-ARG SPT=HEAD^
-ARG SPT_TAG=3.9.8     << CHANGE TO NEW VERSION
-ARG NODE=20.11.1
+# Change the FIKA & SPT tags in the yml file to the latest versions found in the SPT and FIKA discords
+      args:
+        FIKA_TAG: v2.2.8  << Change to the latest version
+        SPT_TAG: 3.9.8    << Change to the latest version
 ```
 
-Now we can rebuild the container:
+Now we can rebuild the image:
 ```
-cd $HOME/docker/containers/spt-fika-modded/fika
-```
-```
-docker build --no-cache --label modded-fika -t modded-fika .
-```
-
-Move to the server directory:
-```
-cd ..
+cd $HOME/docker/containers/spt-fika/files
 ```
 ```
-cd server
-```
-```
-docker run --pull=never -v $HOME/docker/containers/spt-fika-modded/server:/opt/server -v $HOME/docker/containers/spt-fika-modded/logs:$HOME/docker/containers/spt-fika-modded/logs -p 6969:6969 -it --name modded-fika --log-opt max-size=10m --log-opt max-file=3 modded-fika
+docker-compose build --no-cache spt-fika
 ```
 
-Now we start the container to make sure we verify the build:
+When complete we can up the container:
 ```
-docker start modded-fika
+docker-compose up -d spt-fika && docker-compose logs -f spt-fika
 ```
-Set the restart behavior:
-```
-docker update --restart unless-stopped modded-fika
-```
-Check the logs:
-```
-docker logs modded-fika -f
-```
+
 When the server is ready - exit logs with **Ctrl + C** and run:
 ```
-docker stop modded-fika
+docker stop spt-fika
 ```
 
 Then run the following command to change the permissions for the profiles and mods folders.
 
 **Change [USERNAME] to your system username**
 ```
-sudo chmod -R 775 $HOME/docker/containers/spt-fika-modded/server/user/profiles
+sudo chmod -R 775 $HOME/docker/containers/spt-fika/server/user/profiles
 ```
 ```
-sudo chown -R USERNAME:USERNAME $HOME/docker/containers/spt-fika-modded/server/user/profiles
+sudo chown -R USERNAME:USERNAME $HOME/docker/containers/spt-fika/server/user/profiles
 ```
 ```
-sudo chmod -R 775 $HOME/docker/containers/spt-fika-modded/server/user/mods
+sudo chmod -R 775 $HOME/docker/containers/spt-fika/server/user/mods
 ```
 ```
-sudo chown -R USERNAME:USERNAME $HOME/docker/containers/spt-fika-modded/server/user/mods
+sudo chown -R USERNAME:USERNAME $HOME/docker/containers/spt-fika/server/user/mods
 ```
 
 Now you can restore the backed up profiles and server mods.
 
 To do that run the following commands:
 ```
-cp -r $HOME/docker/backups/spt-fika-modded/server/user/profiles/* $HOME/docker/containers/spt-fika-modded/server/user/profiles/
+cp -r $HOME/docker/backups/spt-fika/server/user/profiles/* $HOME/docker/containers/spt-fika/server/user/profiles/
 ```
 ```
-cp -r $HOME/docker/backups/spt-fika-modded/server/user/mods/* $HOME/docker/containers/spt-fika-modded/server/user/mods/
+cp -r $HOME/docker/backups/spt-fika/server/user/mods/* $HOME/docker/containers/spt-fika/server/user/mods/
 ```
 Make the BepInEx folder in the server directory:
 ```
-mkdir -p $HOME/docker/containers/spt-fika-modded/server/BepInEx
+mkdir -p $HOME/docker/containers/spt-fika/server/BepInEx
 ```
 Restore the client mods:
 ```
-cp -r $HOME/docker/backups/spt-fika-modded/BepInEx/* $HOME/docker/containers/spt-fika-modded/server/BepInEx/
+cp -r $HOME/docker/backups/spt-fika/BepInEx/* $HOME/docker/containers/spt-fika/server/BepInEx/
 ```
 
 Once the mods & profiles are restored, start the server with:
 ```
-sudo $HOME/docker/containers/spt-fika-modded/files/restart_fika.sh
+sudo $HOME/docker/containers/spt-fika/files/restart-fika.sh
 ```
 
 Now the FIKA server is updated.

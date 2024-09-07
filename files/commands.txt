@@ -3,7 +3,7 @@ All docker compose commands need to be run in the spt-fika/files directory.
 Build Command:
 docker-compose build --no-cache spt-fika
 
-Start the container & view logs:
+Bring up the container & view logs:
 docker-compose up -d spt-fika && docker-compose logs -f spt-fika
 
 View logs:
